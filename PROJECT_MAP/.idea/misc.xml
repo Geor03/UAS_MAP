@@ -3,8 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/georgestuff/smester 5/IF 570 - Mobile programming/PROJECT_MAP/UAS_MAP/PROJECT_MAP/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/georgestuff/smester 5/IF 570 - Mobile programming/PROJECT_MAP/UAS_MAP/PROJECT_MAP/app/src/main/res/layout/coupon_view.xml" value="0.25" />
+        <entry key="..\:/Casey/University/SEM 5/IF570-ALBL MOBILE APPLICATION PROGRAMMING/UAS/Application/UAS_MAP/PROJECT_MAP/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Casey/University/SEM 5/IF570-ALBL MOBILE APPLICATION PROGRAMMING/UAS/Application/UAS_MAP/PROJECT_MAP/app/src/main/res/layout/activity_profile.xml" value="0.33" />
+        <entry key="..\:/Casey/University/SEM 5/IF570-ALBL MOBILE APPLICATION PROGRAMMING/UAS/Application/UAS_MAP/PROJECT_MAP/app/src/main/res/layout/activity_sign_up.xml" value="0.17074275362318841" />
       </map>
     </option>
   </component>
