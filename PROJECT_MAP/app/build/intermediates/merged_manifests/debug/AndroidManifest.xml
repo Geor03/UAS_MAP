@@ -19,7 +19,25 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/AppTheme.NoActionBar" >
+        android:theme="@style/Theme.PROJECT_MAP" >
+        <activity
+            android:name="umn.ac.id.project_map.Receipt"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.project_map.RatingOutlet"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.project_map.RatingDriver"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.project_map.Profile"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.project_map.SignUp"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.project_map.Login"
+            android:exported="false" />
         <activity
             android:name="umn.ac.id.project_map.MainActivity"
             android:exported="true" >
