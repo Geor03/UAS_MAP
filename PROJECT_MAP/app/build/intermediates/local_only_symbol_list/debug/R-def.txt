@@ -25,6 +25,7 @@ id button4
 id button5
 id button6
 id button7
+id card_view
 id checkBox
 id checkBox2
 id coupontext
@@ -60,6 +61,7 @@ id imageView6
 id imageView7
 id imageView8
 id imageView9
+id mapView
 id ratingBar
 id rvHorizontal
 id textView
@@ -125,6 +127,7 @@ layout activity_select_laundry
 layout activity_select_laundry_outlet
 layout activity_sign_up
 layout coupon_view
+layout order_page
 layout select_laundry_card_layout
 layout select_laundry_outlet_card_layout
 mipmap ic_launcher
