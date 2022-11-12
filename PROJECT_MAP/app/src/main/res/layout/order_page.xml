@@ -32,20 +32,20 @@
 
             <com.google.android.gms.maps.MapView
                 android:id="@+id/mapView"
-                android:layout_width="113dp"
-                android:layout_height="71dp"
+                android:layout_width="99dp"
+                android:layout_height="78dp"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="237dp"
-                android:layout_marginBottom="46dp"
+                android:layout_marginEnd="251dp"
+                android:layout_marginBottom="39dp"
                 android:layout_weight="1" />
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="378dp"
-        android:layout_height="96dp"
+        android:layout_width="377dp"
+        android:layout_height="76dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -54,40 +54,40 @@
         card_view:cardElevation="3dp"
         card_view:layout_constraintBottom_toBottomOf="parent"
         card_view:layout_constraintTop_toTopOf="parent"
-        card_view:layout_constraintVertical_bias="0.656"
+        card_view:layout_constraintVertical_bias="0.636"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="17dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="86dp">
+            android:layout_height="63dp">
 
             <TextView
                 android:id="@+id/Coupon"
-                android:layout_width="70dp"
-                android:layout_height="17dp"
+                android:layout_width="75dp"
+                android:layout_height="33dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginStart="37dp"
                 android:layout_marginTop="27dp"
-                android:layout_marginEnd="273dp"
-                android:layout_marginBottom="39dp"
+                android:layout_marginEnd="262dp"
+                android:layout_marginBottom="16dp"
                 android:text="Coupons" />
 
             <TextView
                 android:id="@+id/Add"
-                android:layout_width="80dp"
-                android:layout_height="20dp"
+                android:layout_width="75dp"
+                android:layout_height="32dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="288dp"
+                android:layout_marginStart="287dp"
                 android:layout_marginTop="27dp"
                 android:layout_marginEnd="12dp"
-                android:layout_marginBottom="39dp"
+                android:layout_marginBottom="17dp"
                 android:text="Add" />
 
         </RelativeLayout>
@@ -150,10 +150,10 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentBottom="true"
-                android:layout_marginStart="320dp"
+                android:layout_marginStart="296dp"
                 android:layout_marginTop="44dp"
                 android:layout_marginEnd="11dp"
-                android:layout_marginBottom="36dp"
+                android:layout_marginBottom="37dp"
                 android:text="RP.10.000" />
 
             <TextView
@@ -169,6 +169,57 @@
                 android:layout_marginEnd="9dp"
                 android:layout_marginBottom="73dp"
                 android:text="Price/Gram" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="377dp"
+        android:layout_height="115dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="3dp"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:layout_constraintVertical_bias="0.832"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="17dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <TextView
+                android:id="@+id/Item_details"
+                android:layout_width="86dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="22dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="269dp"
+                android:layout_marginBottom="49dp"
+                android:text="Item Details" />
+
+            <TextView
+                android:id="@+id/Total_price"
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="289dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="11dp"
+                android:layout_marginBottom="44dp"
+                android:text="Total Price" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
