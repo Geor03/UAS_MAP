@@ -1,4 +1,4 @@
-#Fri Nov 11 17:46:33 ICT 2022
+#Sat Nov 12 09:48:34 ICT 2022
 base.2=C\:\\Users\\LENOVO\\UASMobile\\UAS_MAP\\PROJECT_MAP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\5\\classes.dex
 path.2=5/classes.dex
 base.1=C\:\\Users\\LENOVO\\UASMobile\\UAS_MAP\\PROJECT_MAP\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

@@ -21,6 +21,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.PROJECT_MAP" >
         <activity
+            android:name="umn.ac.id.project_map.SelectLaundry"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.project_map.CheckOut"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.project_map.ConfirmOrder"
+            android:exported="false" />
+        <activity
             android:name="umn.ac.id.project_map.Receipt"
             android:exported="false" />
         <activity

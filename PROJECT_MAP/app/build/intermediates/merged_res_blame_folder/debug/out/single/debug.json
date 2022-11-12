@@ -1,98 +1,150 @@
 [
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_activity_rating_outlet.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/layout/activity_rating_outlet.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_activity_confirm_order.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\activity_confirm_order.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\drawable_laundry_button.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\drawable\\laundry_button.png"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_activity_select_laundry.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-31:/layout/activity_select_laundry.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_activity_receipt.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\activity_receipt.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_activity_sign_up.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/layout/activity_sign_up.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_select_laundry_outlet_card_layout.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-31:/layout/select_laundry_outlet_card_layout.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_activity_login.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/layout/activity_login.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/layout/activity_main.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_activity_check_out.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\activity_check_out.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/xml_data_extraction_rules.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_activity_select_laundry.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\activity_select_laundry.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_coupon_view.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/layout/coupon_view.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_activity_rating_driver.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/layout/activity_rating_driver.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_activity_login.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\activity_login.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_coupon_view.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\coupon_view.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-pngs-24:\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/drawable_ic_launcher_background.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/drawable/ic_launcher_background.xml"
+        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_select_laundry_card_layout.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-31:/layout/select_laundry_card_layout.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_activity_receipt.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/layout/activity_receipt.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\activity_profile.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "umn.ac.id.project_map.app-pngs-24:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_activity_rating_outlet.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\activity_rating_outlet.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/xml_backup_rules.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\activity_main.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_activity_profile.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-31:/layout/activity_profile.xml"
+        "merged": "umn.ac.id.project_map.app-merged_res-29:/layout_activity_select_laundry_outlet.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-31:/layout/activity_select_laundry_outlet.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\drawable_star.jpg.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\drawable\\star.jpg"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\drawable_satu.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\drawable\\satu.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_select_laundry_card_layout.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\select_laundry_card_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_activity_rating_driver.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\activity_rating_driver.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\drawable_notif_button.png.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\drawable\\notif_button.png"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\layout_activity_sign_up.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-29:\\drawable_circle.xml.flat",
+        "source": "C:\\Users\\LENOVO\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-31:\\drawable\\circle.xml"
     }
 ]

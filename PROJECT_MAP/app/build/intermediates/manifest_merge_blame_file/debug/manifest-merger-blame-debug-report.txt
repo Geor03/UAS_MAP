@@ -11,7 +11,7 @@
 9-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-43:19
+11-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-52:19
 12        android:allowBackup="true"
 12-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:7:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -34,79 +34,97 @@
 22-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-49
 23        <activity
 23-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:16:9-18:40
-24            android:name="umn.ac.id.project_map.Receipt"
-24-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:17:13-36
+24            android:name="umn.ac.id.project_map.SelectLaundry"
+24-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:17:13-42
 25            android:exported="false" />
 25-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:18:13-37
 26        <activity
 26-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:19:9-21:40
-27            android:name="umn.ac.id.project_map.RatingOutlet"
-27-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:20:13-41
+27            android:name="umn.ac.id.project_map.CheckOut"
+27-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:20:13-37
 28            android:exported="false" />
 28-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:21:13-37
 29        <activity
 29-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:22:9-24:40
-30            android:name="umn.ac.id.project_map.RatingDriver"
+30            android:name="umn.ac.id.project_map.ConfirmOrder"
 30-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:23:13-41
 31            android:exported="false" />
 31-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:24:13-37
 32        <activity
 32-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:25:9-27:40
-33            android:name="umn.ac.id.project_map.Profile"
+33            android:name="umn.ac.id.project_map.Receipt"
 33-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:13-36
 34            android:exported="false" />
 34-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:27:13-37
 35        <activity
 35-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:9-30:40
-36            android:name="umn.ac.id.project_map.SignUp"
-36-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:29:13-35
+36            android:name="umn.ac.id.project_map.RatingOutlet"
+36-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:29:13-41
 37            android:exported="false" />
 37-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:30:13-37
 38        <activity
 38-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:31:9-33:40
-39            android:name="umn.ac.id.project_map.Login"
-39-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:32:13-34
+39            android:name="umn.ac.id.project_map.RatingDriver"
+39-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:32:13-41
 40            android:exported="false" />
 40-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:33:13-37
 41        <activity
-41-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:34:9-42:20
-42            android:name="umn.ac.id.project_map.MainActivity"
-42-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:35:13-41
-43            android:exported="true" >
-43-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:36:13-36
-44            <intent-filter>
-44-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:37:13-41:29
-45                <action android:name="android.intent.action.MAIN" />
-45-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:38:17-69
-45-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:38:25-66
-46
-47                <category android:name="android.intent.category.LAUNCHER" />
-47-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:40:17-77
-47-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:40:27-74
-48            </intent-filter>
-49        </activity>
-50
-51        <provider
-51-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-52            android:name="androidx.startup.InitializationProvider"
-52-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-53            android:authorities="umn.ac.id.project_map.androidx-startup"
-53-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-54            android:exported="false" >
-54-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-55            <meta-data
-55-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-56                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-56-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-57                android:value="androidx.startup" />
-57-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-58            <meta-data
-58-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-59                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-59-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-60                android:value="androidx.startup" />
-60-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-61        </provider>
-62    </application>
-63
-64</manifest>
+41-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:34:9-36:40
+42            android:name="umn.ac.id.project_map.Profile"
+42-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:35:13-36
+43            android:exported="false" />
+43-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:36:13-37
+44        <activity
+44-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:37:9-39:40
+45            android:name="umn.ac.id.project_map.SignUp"
+45-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:38:13-35
+46            android:exported="false" />
+46-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:39:13-37
+47        <activity
+47-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:40:9-42:40
+48            android:name="umn.ac.id.project_map.Login"
+48-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:41:13-34
+49            android:exported="false" />
+49-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:42:13-37
+50        <activity
+50-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:43:9-51:20
+51            android:name="umn.ac.id.project_map.MainActivity"
+51-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:13-41
+52            android:exported="true" >
+52-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:45:13-36
+53            <intent-filter>
+53-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:46:13-50:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:17-69
+54-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:49:17-77
+56-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:49:27-74
+57            </intent-filter>
+58        </activity>
+59
+60        <provider
+60-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+61            android:name="androidx.startup.InitializationProvider"
+61-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+62            android:authorities="umn.ac.id.project_map.androidx-startup"
+62-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+63            android:exported="false" >
+63-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+64            <meta-data
+64-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+65                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+65-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+66                android:value="androidx.startup" />
+66-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+67            <meta-data
+67-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+68                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+68-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+69                android:value="androidx.startup" />
+69-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+70        </provider>
+71    </application>
+72
+73</manifest>
