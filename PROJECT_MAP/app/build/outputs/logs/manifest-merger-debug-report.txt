@@ -108,7 +108,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\georg\.gradle\cach
 	android:allowBackup
 		ADDED from C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-49
+		ADDED from C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-52
 	android:dataExtractionRules
 		ADDED from C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:8:9-65
 activity#umn.ac.id.project_map.OrderPage

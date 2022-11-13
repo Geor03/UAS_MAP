@@ -54,8 +54,8 @@
 34        android:supportsRtl="true"
 34-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:13:9-35
 35        android:testOnly="true"
-36        android:theme="@style/Theme.PROJECT_MAP" >
-36-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-49
+36        android:theme="@style/AppTheme.NoActionBar" >
+36-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-52
 37        <activity
 37-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:16:9-18:40
 38            android:name="umn.ac.id.project_map.OrderPage"
