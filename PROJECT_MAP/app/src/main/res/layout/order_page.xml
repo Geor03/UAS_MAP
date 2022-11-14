@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="match_parent"
     android:layout_width="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:background="@drawable/bg_dark">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,17 +19,43 @@
         tools:layout_editor_absoluteY="1dp"
         android:orientation="vertical">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="112.91dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="76dp"
+                android:src="@drawable/logo_hygieia"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button_back"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/back_button"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view"
-            android:layout_width="381dp"
-            android:layout_height="165dp"
-            android:layout_margin="16dp"
+            android:layout_width="370dp"
+            android:layout_height="338dp"
             android:layout_alignParentTop="true"
             android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
             android:clickable="true"
             android:foreground="?selectableItemBackground"
             card_view:cardBackgroundColor="#ffffff"
-            card_view:cardCornerRadius="3dp"
+            card_view:cardCornerRadius="13dp"
             card_view:cardElevation="3dp"
             card_view:contentPadding="10dp"
             card_view:layout_constraintBottom_toBottomOf="parent"
@@ -39,32 +66,73 @@
             card_view:layout_constraintVertical_bias="1.0">
 
             <RelativeLayout
-                android:layout_width="366dp"
-                android:layout_height="133dp"
-                android:padding="16dp">
+                android:layout_width="360dp"
+                android:layout_height="162dp">
 
                 <com.google.android.gms.maps.MapView
                     android:id="@+id/mapView"
-                    android:layout_width="99dp"
-                    android:layout_height="78dp"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginEnd="251dp"
-                    android:layout_marginBottom="39dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_weight="1" />
             </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="37dp">
+
+                <TextView
+                    android:id="@+id/titleAddress"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="80dp"
+                    android:text="Home"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.106"
+                    card_view:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="279dp"
+                    android:layout_height="67dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Jl. Curug Sangereng Village No.81, Curug Sangereng, Kec. clp. Dua, Tangerang Regency, Banten 15810"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.225"
+                    card_view:layout_constraintStart_toStartOf="parent" />
+
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="25dp"
+                    android:layout_marginBottom="116dp"
+                    android:background="@drawable/custom_button_address"
+                    android:text="Change Address"
+                    android:textColor="@color/white"
+                    android:textSize="8sp"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.936"
+                    card_view:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
             android:layout_width="381dp"
-            android:layout_height="76dp"
-            android:layout_margin="16dp"
+            android:layout_height="117dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            card_view:cardCornerRadius="3dp"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            card_view:cardCornerRadius="13dp"
             card_view:cardElevation="3dp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
@@ -105,6 +173,25 @@
                     android:text="Add" />
 
             </RelativeLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Switch
+                    android:id="@+id/switch1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Self pick-up?"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.498"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent"
+                    card_view:layout_constraintVertical_bias="0.822" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
@@ -112,11 +199,12 @@
             android:layout_width="381dp"
             android:layout_height="149dp"
             android:layout_margin="16dp"
+            android:layout_gravity="center"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            card_view:cardCornerRadius="3dp"
+            card_view:cardCornerRadius="13dp"
             card_view:cardElevation="3dp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
@@ -193,11 +281,12 @@
             android:layout_width="381dp"
             android:layout_height="115dp"
             android:layout_margin="16dp"
+            android:layout_gravity="center"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            card_view:cardCornerRadius="3dp"
+            card_view:cardCornerRadius="13dp"
             card_view:cardElevation="3dp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
@@ -245,11 +334,12 @@
             android:layout_width="381dp"
             android:layout_height="200dp"
             android:layout_margin="16dp"
+            android:layout_gravity="center"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            card_view:cardCornerRadius="3dp"
+            card_view:cardCornerRadius="13dp"
             card_view:cardElevation="3dp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
@@ -325,11 +415,12 @@
             android:layout_width="381dp"
             android:layout_height="200dp"
             android:layout_margin="16dp"
+            android:layout_gravity="center"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            card_view:cardCornerRadius="3dp"
+            card_view:cardCornerRadius="13dp"
             card_view:cardElevation="3dp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
@@ -371,5 +462,26 @@
 
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="116dp">
+
+            <Button
+                android:id="@+id/button_confirm"
+                android:layout_width="205dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="131dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginEnd="129dp"
+                android:layout_marginBottom="36dp"
+                android:background="@drawable/custom_button_confirm"
+                android:gravity="center"
+                android:text="Confirm Order" />
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>
