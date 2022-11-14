@@ -11,10 +11,13 @@ import java.util.ArrayList;
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rvHorizontal;
+    private RecyclerView orderHorizontal;
     private ArrayList<String> titleDataList;
     private ArrayList<String> messageDataList;
     private RecyclerView.LayoutManager mLayoutManagerHorizontal;
-    private CouponAdapter horizontalAdapter;
+    private RecyclerView.LayoutManager orderManagerHorizontal;
+    private CouponAdapter couponAdapter;
+    private OrderAdapter orderAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         //________initialize
         rvHorizontal = (RecyclerView) findViewById(R.id.rvHorizontal);
+        orderHorizontal = (RecyclerView) findViewById(R.id.orderHorizontal);
         titleDataList = new ArrayList<>();
         messageDataList = new ArrayList<>();
 
@@ -33,15 +37,20 @@ public class MainActivity extends AppCompatActivity {
         }
 
         //________initialize adapters
-        horizontalAdapter = new CouponAdapter(titleDataList, messageDataList);
+        couponAdapter = new CouponAdapter(titleDataList, messageDataList);
+        orderAdapter = new OrderAdapter(titleDataList, messageDataList);
 
         //________initialize layout managers
+        orderManagerHorizontal = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         mLayoutManagerHorizontal = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
 
+
         //________set layout managers
+        orderHorizontal.setLayoutManager(orderManagerHorizontal);
         rvHorizontal.setLayoutManager(mLayoutManagerHorizontal);
 
         //________set adapters
-        rvHorizontal.setAdapter(horizontalAdapter);
+        orderHorizontal.setAdapter(orderAdapter);
+        rvHorizontal.setAdapter(couponAdapter);
     }
 }
