@@ -1,14 +1,24 @@
 package umn.ac.id.project_map;
 
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Gravity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toolbar;
+
+import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
 
@@ -28,11 +38,46 @@ public class MainActivity extends AppCompatActivity {
     private OrderAdapter orderAdapter;
     private Button btnOrder;
 
+    private DrawerLayout mDrawer;
+    private NavigationView nvDrawer;
+    private Button sidebar;
+    boolean mSlideState;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btnOrder = (Button) findViewById(R.id.button_order);
+        sidebar = (Button) findViewById(R.id.button_burger);
+        mDrawer= (DrawerLayout)findViewById(R.id.drawer_layout);
+        nvDrawer = (NavigationView) findViewById(R.id.nvView);
+        setupDrawerContent(nvDrawer);
+
+        mDrawer.setDrawerListener(new ActionBarDrawerToggle(this,
+                mDrawer,
+                0,
+                0){
+            @Override
+            public void onDrawerClosed(View drawerView) {
+                super.onDrawerClosed(drawerView);
+                mSlideState=false;//is Closed
+            }
+            @Override
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+                mSlideState=true;//is Opened
+            }});
+
+        sidebar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(mSlideState){
+                    mDrawer.closeDrawer(GravityCompat.START);
+                }else{
+                    mDrawer.openDrawer(GravityCompat.START);
+                }
+            }
+        });
 
         btnOrder.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +86,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intentOrderButton);
             }
         });
+
+
         //________initialize
         rvHorizontal = (RecyclerView) findViewById(R.id.rvHorizontal);
         orderHorizontal = (RecyclerView) findViewById(R.id.orderHorizontal);
@@ -81,5 +128,38 @@ public class MainActivity extends AppCompatActivity {
         //________set adapters
         orderHorizontal.setAdapter(orderAdapter);
         rvHorizontal.setAdapter(couponAdapter);
+    }
+
+    private void setupDrawerContent(NavigationView navigationView) {
+        navigationView.setNavigationItemSelectedListener(
+            new NavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(MenuItem menuItem) {
+                    selectDrawerItem(menuItem);
+                    return true;
+                }
+            });
+    }
+
+    public void selectDrawerItem(MenuItem menuItem) {
+        // Create a new fragment and specify the fragment to show based on nav item clicked
+        Fragment fragment = null;
+        Intent intent;
+        switch(menuItem.getItemId()) {
+            case R.id.nav_first_fragment:
+                intent = new Intent(this, MainActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.nav_second_fragment:
+                intent = new Intent(this, Profile.class);
+//                menuItem.setChecked(true);
+//                // Close the navigation drawer
+//                mDrawer.closeDrawers();
+                startActivity(intent);
+                break;
+            default:
+//                fragmentClass = MainActivity.class;
+        }
+
     }
 }

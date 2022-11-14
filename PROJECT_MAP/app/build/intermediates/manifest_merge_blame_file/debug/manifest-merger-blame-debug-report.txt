@@ -6,208 +6,208 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
+8-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
+9-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
 10
 11    <!-- Include required permissions for Google Maps API to run. -->
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:5-79
-12-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:22-76
+12-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:5-79
+12-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:22-76
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:5-67
-13-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:22-64
+13-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:5-67
+13-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:22-64
 14
 15    <uses-feature
-15-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:26:5-28:35
+15-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:26:5-28:35
 16        android:glEsVersion="0x00020000"
-16-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:27:9-41
+16-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:27:9-41
 17        android:required="true" />
-17-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:28:9-32
+17-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:28:9-32
 18
 19    <queries>
-19-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:30:5-34:15
+19-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:30:5-34:15
 20
 21        <!-- Needs to be explicitly declared on Android R+ -->
 22        <package android:name="com.google.android.apps.maps" />
-22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:9-64
-22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:18-61
+22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:9-64
+22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:18-61
 23    </queries>
 24
 25    <application
-25-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-69:19
+25-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-69:19
 26        android:allowBackup="true"
-26-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:7:9-35
+26-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:7:9-35
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.8.0] C:\Users\LENOVO\.gradle\caches\transforms-3\0638d9dacb5fd10604e28ec2b4d3c80b\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+27-->[androidx.core:core:1.8.0] C:\Users\georg\.gradle\caches\transforms-3\0638d9dacb5fd10604e28ec2b4d3c80b\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 28        android:dataExtractionRules="@xml/data_extraction_rules"
-28-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:8:9-65
+28-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:8:9-65
 29        android:debuggable="true"
 30        android:fullBackupContent="@xml/backup_rules"
-30-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:9:9-54
+30-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:9:9-54
 31        android:icon="@mipmap/ic_launcher"
-31-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:10:9-43
+31-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:10:9-43
 32        android:label="@string/app_name"
-32-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:11:9-41
+32-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:11:9-41
 33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:12:9-54
+33-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:12:9-54
 34        android:supportsRtl="true"
-34-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:13:9-35
+34-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:13:9-35
 35        android:testOnly="true"
 36        android:theme="@style/AppTheme.NoActionBar" >
-36-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-52
+36-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-52
 37        <activity
-37-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:16:9-18:39
+37-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:16:9-18:39
 38            android:name="umn.ac.id.project_map.Notification"
-38-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:17:13-41
+38-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:17:13-41
 39            android:exported="false" />
-39-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:18:13-37
+39-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:18:13-37
 40        <activity
-40-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:19:9-21:40
+40-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:19:9-21:40
 41            android:name="umn.ac.id.project_map.Coupon_list"
-41-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:20:13-40
+41-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:20:13-40
 42            android:exported="false" />
-42-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:21:13-37
+42-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:21:13-37
 43        <activity
-43-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:22:9-30:20
+43-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:22:9-30:20
 44            android:name="umn.ac.id.project_map.SplashScreen"
-44-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:23:13-41
+44-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:23:13-41
 45            android:exported="true" >
-45-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:24:13-36
+45-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:24:13-36
 46            <intent-filter>
-46-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:25:13-29:29
+46-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:25:13-29:29
 47                <action android:name="android.intent.action.MAIN" />
-47-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:17-69
-47-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:25-66
+47-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:17-69
+47-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:25-66
 48
 49                <category android:name="android.intent.category.LAUNCHER" />
-49-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:17-77
-49-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:27-74
+49-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:17-77
+49-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:27-74
 50            </intent-filter>
 51        </activity>
 52        <activity
-52-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:31:9-33:40
+52-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:31:9-33:40
 53            android:name="umn.ac.id.project_map.OrderPage"
-53-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:32:13-38
+53-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:32:13-38
 54            android:exported="false" />
-54-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:33:13-37
+54-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:33:13-37
 55        <activity
-55-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:34:9-36:40
+55-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:34:9-36:40
 56            android:name="umn.ac.id.project_map.SelectLaundry"
-56-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:35:13-42
+56-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:35:13-42
 57            android:exported="false" />
-57-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:36:13-37
+57-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:36:13-37
 58        <activity
-58-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:37:9-39:40
+58-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:37:9-39:40
 59            android:name="umn.ac.id.project_map.CheckOut"
-59-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:38:13-37
+59-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:38:13-37
 60            android:exported="false" />
-60-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:39:13-37
+60-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:39:13-37
 61        <activity
-61-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:40:9-42:40
+61-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:40:9-42:40
 62            android:name="umn.ac.id.project_map.ConfirmOrder"
-62-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:41:13-41
+62-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:41:13-41
 63            android:exported="false" />
-63-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:42:13-37
+63-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:42:13-37
 64        <activity
-64-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:43:9-45:40
+64-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:43:9-45:40
 65            android:name="umn.ac.id.project_map.Receipt"
-65-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:13-36
+65-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:13-36
 66            android:exported="false" />
-66-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:45:13-37
+66-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:45:13-37
 67        <activity
-67-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:46:9-48:40
+67-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:46:9-48:40
 68            android:name="umn.ac.id.project_map.RatingOutlet"
-68-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:13-41
+68-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:13-41
 69            android:exported="false" />
-69-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:48:13-37
+69-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:48:13-37
 70        <activity
-70-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:49:9-51:40
+70-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:49:9-51:40
 71            android:name="umn.ac.id.project_map.RatingDriver"
-71-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:50:13-41
+71-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:50:13-41
 72            android:exported="false" />
-72-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:51:13-37
+72-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:51:13-37
 73        <activity
-73-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:52:9-54:40
+73-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:52:9-54:40
 74            android:name="umn.ac.id.project_map.Profile"
-74-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:53:13-36
+74-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:53:13-36
 75            android:exported="false" />
-75-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:54:13-37
+75-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:54:13-37
 76        <activity
-76-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:55:9-57:40
+76-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:55:9-57:40
 77            android:name="umn.ac.id.project_map.SignUp"
-77-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:56:13-35
+77-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:56:13-35
 78            android:exported="false" />
-78-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:57:13-37
+78-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:57:13-37
 79        <activity
-79-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:58:9-60:39
+79-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:58:9-60:39
 80            android:name="umn.ac.id.project_map.Login"
-80-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:59:13-34
+80-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:59:13-34
 81            android:exported="false" />
-81-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:60:13-37
+81-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:60:13-37
 82        <activity
-82-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:61:9-63:39
+82-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:61:9-63:39
 83            android:name="umn.ac.id.project_map.MainActivity"
-83-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:62:13-41
+83-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:62:13-41
 84            android:exported="false" />
-84-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:63:13-37
+84-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:63:13-37
 85        <activity
-85-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:9-65:39
+85-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:9-65:39
 86            android:name="umn.ac.id.project_map.SelectLaundryOutlet"
-86-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:19-54
+86-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:19-54
 87            android:exported="false" />
-87-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:65:13-37
+87-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:65:13-37
 88        <activity
-88-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:9-67:39
+88-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:9-67:39
 89            android:name="umn.ac.id.project_map.SelectLaundryItem"
-89-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:19-52
+89-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:19-52
 90            android:exported="false" />
-90-->C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:67:13-37
+90-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:67:13-37
 91
 92        <!-- Needs to be explicitly declared on P+ -->
 93        <uses-library
-93-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
+93-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
 94            android:name="org.apache.http.legacy"
-94-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:40:13-50
+94-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:40:13-50
 95            android:required="false" />
-95-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\LENOVO\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:41:13-37
+95-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:41:13-37
 96
 97        <activity
-97-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+97-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
 98            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-98-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+98-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
 99            android:exported="false"
-99-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+99-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
 100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-100-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+100-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
 101
 102        <meta-data
-102-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\fbab71f90269795658f51a6f7fc9e43f\transformed\play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+102-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\fbab71f90269795658f51a6f7fc9e43f\transformed\play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
 103            android:name="com.google.android.gms.version"
-103-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\fbab71f90269795658f51a6f7fc9e43f\transformed\play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+103-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\fbab71f90269795658f51a6f7fc9e43f\transformed\play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
 104            android:value="@integer/google_play_services_version" />
-104-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\LENOVO\.gradle\caches\transforms-3\fbab71f90269795658f51a6f7fc9e43f\transformed\play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+104-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\fbab71f90269795658f51a6f7fc9e43f\transformed\play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
 105
 106        <provider
-106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
 107            android:name="androidx.startup.InitializationProvider"
-107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
 108            android:authorities="umn.ac.id.project_map.androidx-startup"
-108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
 109            android:exported="false" >
-109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
 110            <meta-data
-110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
 111                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
 112                android:value="androidx.startup" />
-112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\LENOVO\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
 113            <meta-data
-113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
 114                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
 115                android:value="androidx.startup" />
-115-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\LENOVO\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+115-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
 116        </provider>
 117    </application>
 118
