@@ -4,52 +4,63 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Login">
+    tools:context=".Login"
+    android:background="@drawable/gradient_bg_login">
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="151dp"
-        android:layout_height="166dp"
+        android:layout_width="192dp"
+        android:layout_height="111dp"
+        android:background="@drawable/logo_hygieia"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.16"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintVertical_bias="0.154" />
 
     <EditText
-        android:layout_width="238dp"
-        android:layout_height="62dp"
+        android:id="@+id/editText9"
+        android:layout_width="305dp"
+        android:layout_height="52dp"
+        android:background="@drawable/custom_input_login_logout"
         android:hint="Username"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.435" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.385" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="238dp"
-        android:layout_height="62dp"
-        android:layout_marginBottom="16dp"
+        android:layout_width="305dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="332dp"
+        android:background="@drawable/custom_input_login_logout"
         android:hint="Password"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/white"
         android:inputType="textPassword"
-        app:layout_constraintBottom_toTopOf="@+id/checkBox"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText9"
+        app:layout_constraintVertical_bias="0.0" />
 
     <CheckBox
         android:id="@+id/checkBox"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="284dp"
         android:text="Remember me next time"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.377"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
