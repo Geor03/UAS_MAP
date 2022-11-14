@@ -1,6 +1,10 @@
 package umn.ac.id.project_map;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -9,10 +13,20 @@ import java.util.ArrayList;
 
 public class SelectLaundryOutlet extends AppCompatActivity{
 
+    private Button btnOrder;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_laundry_outlet);
+        btnOrder = (Button) findViewById(R.id.button);
+
+        btnOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentOrderButton = new Intent(SelectLaundryOutlet.this, SelectLaundryItem.class);
+                startActivity(intentOrderButton);
+            }
+        });
 
         RecyclerView laundryRV = findViewById(R.id.idRVLaundry);
 

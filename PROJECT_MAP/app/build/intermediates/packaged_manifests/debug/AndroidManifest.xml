@@ -41,6 +41,15 @@
             android:name="umn.ac.id.project_map.Coupon_list"
             android:exported="false" />
         <activity
+            android:name="umn.ac.id.project_map.SplashScreen"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="umn.ac.id.project_map.OrderPage"
             android:exported="false" />
         <activity
@@ -72,13 +81,14 @@
             android:exported="false" />
         <activity
             android:name="umn.ac.id.project_map.MainActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.project_map.SelectLaundryOutlet"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.project_map.SelectLaundryItem"
+            android:exported="false" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <!-- Needs to be explicitly declared on P+ -->
         <uses-library
             android:name="org.apache.http.legacy"

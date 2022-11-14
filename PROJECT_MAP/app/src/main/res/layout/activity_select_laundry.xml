@@ -40,9 +40,9 @@
         android:id="@+id/button"
         android:layout_width="36dp"
         android:layout_height="36dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/back_button"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="112dp"
+        android:background="@drawable/next_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
