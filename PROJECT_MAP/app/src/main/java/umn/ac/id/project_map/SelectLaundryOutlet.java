@@ -13,30 +13,38 @@ import java.util.ArrayList;
 
 public class SelectLaundryOutlet extends AppCompatActivity{
 
-    private Button btnOrder;
+    private Button btnBackToSelectLaundry;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_laundry_outlet);
-        btnOrder = (Button) findViewById(R.id.button);
-
-        btnOrder.setOnClickListener(new View.OnClickListener() {
+        btnBackToSelectLaundry = (Button) findViewById(R.id.button_backSelectLaundry);
+        btnBackToSelectLaundry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentOrderButton = new Intent(SelectLaundryOutlet.this, SelectLaundryItem.class);
-                startActivity(intentOrderButton);
+                Intent intentBackToHome = new Intent(SelectLaundryOutlet.this, SelectLaundry.class);
+                startActivity(intentBackToHome);
             }
         });
+//        btnOrder = (Button) findViewById(R.id.button);
+
+//        btnOrder.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intentOrderButton = new Intent(SelectLaundryOutlet.this, SelectLaundryItem.class);
+//                startActivity(intentOrderButton);
+//            }
+//        });
 
         RecyclerView laundryRV = findViewById(R.id.idRVLaundry);
 
         // Here, we have created new array list and added data to it
         ArrayList<SelectLaundryOutletModel> laundryModelArrayList = new ArrayList<SelectLaundryOutletModel>();
-        laundryModelArrayList.add(new SelectLaundryOutletModel("Laundry Libro", R.drawable.satu));
-        laundryModelArrayList.add(new SelectLaundryOutletModel("Laundry Minahasa", R.drawable.satu));
-        laundryModelArrayList.add(new SelectLaundryOutletModel("Laundry Vit",  R.drawable.satu));
-        laundryModelArrayList.add(new SelectLaundryOutletModel("Laundry Waterfall",  R.drawable.satu));
-        laundryModelArrayList.add(new SelectLaundryOutletModel("Laundry Casey", R.drawable.satu));
+        laundryModelArrayList.add(new SelectLaundryOutletModel("Laundry Libro", R.drawable.libro_outlet));
+        laundryModelArrayList.add(new SelectLaundryOutletModel("Laundry Minahasa", R.drawable.minahasa_outlet));
+        laundryModelArrayList.add(new SelectLaundryOutletModel("Laundry Vit",  R.drawable.vit_outlet));
+        laundryModelArrayList.add(new SelectLaundryOutletModel("Laundry Waterfall",  R.drawable.waterfall_outlet));
+        laundryModelArrayList.add(new SelectLaundryOutletModel("Laundry Casey", R.drawable.casey_outlet));
 
         // we are initializing our adapter class and passing our arraylist to it.
         SelectLaundryOutletAdapter laundryAdapter = new SelectLaundryOutletAdapter(this, laundryModelArrayList);

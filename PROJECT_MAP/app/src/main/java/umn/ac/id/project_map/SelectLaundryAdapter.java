@@ -5,6 +5,7 @@ package umn.ac.id.project_map;
 //}
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -60,6 +61,13 @@ public class SelectLaundryAdapter extends RecyclerView.Adapter<SelectLaundryAdap
             super(view);
             selectlaundryIV = view.findViewById(R.id.idIVSelectLaundryImage);
             selectlaundryNameTV = view.findViewById(R.id.idTVSelectLaundryName);
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intentToSelectOutlet = new Intent(view.getContext(), SelectLaundryOutlet.class);
+                    view.getContext().startActivity(intentToSelectOutlet);
+                }
+            });
             //laundryRatingTV = itemView.findViewById(R.id.idTVLaundryRating);
         }
     }

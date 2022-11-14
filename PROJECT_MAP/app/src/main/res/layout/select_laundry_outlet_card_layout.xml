@@ -8,35 +8,55 @@
     app:cardCornerRadius="8dp"
     app:cardElevation="8dp"
     app:cardMaxElevation="10dp"
-    app:cardPreventCornerOverlap="true"
-    app:cardUseCompatPadding="true">
+    app:cardPreventCornerOverlap="true">
 
-    <RelativeLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="86dp">
 
         <!-- ImageVIew to display our Course Image -->
         <ImageView
             android:id="@+id/idIVLaundryImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="10dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:contentDescription="@string/app_name"
             android:padding="5dp"
-            android:src="@drawable/satu" />
+            android:src="@drawable/satu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.046"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"  />
 
         <!-- Text View to display Course Name -->
         <TextView
             android:id="@+id/idTVLaundryName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:layout_toEndOf="@id/idIVLaundryImage"
+            android:layout_width="200dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="36dp"
+            android:layout_toEndOf="@+id/idIVLaundryImage"
             android:text="laundry_name"
             android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toEndOf="@+id/idIVLaundryImage" />
+
+        <TextView
+            android:id="@+id/idTVSelectOutletDesc"
+            android:layout_width="200dp"
+            android:layout_height="34dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toEndOf="@+id/idIVLaundryImage"
+            android:text="We provide the most advanced dry cleaning service"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.158"
+            app:layout_constraintStart_toEndOf="@+id/idIVLaundryImage" />
 
 <!--        <TextView-->
 <!--            android:id="@+id/idTVCourseRating"-->
@@ -49,5 +69,5 @@
 <!--            android:drawablePadding="1dp"-->
 <!--            android:text="@string/laundry_rating"-->
 <!--            app:drawableStartCompat="@drawable/star" />-->
-    </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

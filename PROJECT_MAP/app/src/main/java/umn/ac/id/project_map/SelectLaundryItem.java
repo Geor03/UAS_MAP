@@ -4,28 +4,38 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
 public class SelectLaundryItem extends AppCompatActivity {
-
+    private Button btnConfirm;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_laundry_item);
-
+        btnConfirm = (Button) findViewById(R.id.button_confirm);
+        btnConfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentToCheckOut = new Intent(SelectLaundryItem.this, CheckOut.class);
+                startActivity(intentToCheckOut);
+            }
+        });
         RecyclerView laundryRV = findViewById(R.id.idRVSelectLaundryItem);
 
         // Here, we have created new array list and added data to it
         ArrayList<SelectLaundryItemModel> laundryModelArrayList = new ArrayList<SelectLaundryItemModel>();
-        laundryModelArrayList.add(new SelectLaundryItemModel("T-Shirts", R.drawable.satu));
-        laundryModelArrayList.add(new SelectLaundryItemModel("Pants", R.drawable.satu));
-        laundryModelArrayList.add(new SelectLaundryItemModel("Cardigans",  R.drawable.satu));
-        laundryModelArrayList.add(new SelectLaundryItemModel("Dresses",  R.drawable.satu));
-        laundryModelArrayList.add(new SelectLaundryItemModel("Short pants", R.drawable.satu));
-        laundryModelArrayList.add(new SelectLaundryItemModel("Outwear", R.drawable.satu));
-        laundryModelArrayList.add(new SelectLaundryItemModel("Others", R.drawable.satu));
+        laundryModelArrayList.add(new SelectLaundryItemModel("T-Shirts", R.drawable.tshirt_item));
+        laundryModelArrayList.add(new SelectLaundryItemModel("Pants", R.drawable.pants_item));
+        laundryModelArrayList.add(new SelectLaundryItemModel("Cardigans",  R.drawable.cardigan_item));
+        laundryModelArrayList.add(new SelectLaundryItemModel("Dresses",  R.drawable.dress_item));
+        laundryModelArrayList.add(new SelectLaundryItemModel("Short pants", R.drawable.shorts_item));
+        laundryModelArrayList.add(new SelectLaundryItemModel("Outwear", R.drawable.outwear_item));
+        laundryModelArrayList.add(new SelectLaundryItemModel("Others", R.drawable.others_item));
 
 
         // we are initializing our adapter class and passing our arraylist to it.
