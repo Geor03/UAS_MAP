@@ -7,10 +7,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:orientation="horizontal">
+    android:orientation="vertical"
+    android:fillViewport="true">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
         <TextView
             android:id="@+id/coupontext"
             android:layout_width="112dp"
@@ -23,27 +26,29 @@
             app:layout_constraintHorizontal_bias="0.053"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.93"
+            app:layout_constraintVertical_bias="0.854"
             tools:ignore="MissingConstraints" />
+
         <TextView
             android:id="@+id/Coupontext"
-            android:layout_width="83dp"
-            android:layout_height="32dp"
+            android:layout_width="111dp"
+            android:layout_height="34dp"
+
             android:text="Coupon"
             android:textSize="22sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintHorizontal_bias="0.053"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.695"
+            app:layout_constraintVertical_bias="0.619"
             tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/WelcomeText"
-            android:layout_width="226dp"
-            android:layout_height="41dp"
+            android:layout_width="222dp"
+            android:layout_height="29dp"
             android:text="Hello, Casey Limbert"
             android:textSize="24sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -51,7 +56,7 @@
             app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.102"
+            app:layout_constraintVertical_bias="0.086"
             tools:ignore="MissingConstraints" />
 
         <TextView
@@ -59,27 +64,27 @@
             android:layout_width="203dp"
             android:layout_height="32dp"
             android:gravity="center"
-            android:textStyle="bold"
             android:text="Click to laundry your clothes"
             android:textSize="14sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.143"
+            app:layout_constraintVertical_bias="0.127"
             tools:ignore="MissingConstraints" />
 
         <ImageButton
             android:id="@+id/OrderButton"
-            android:layout_width="320dp"
-            android:layout_height="320dp"
+            android:layout_width="305dp"
+            android:layout_height="302dp"
             android:background="@drawable/laundry_button"
+            android:paddingTop="100dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.615"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
+            app:layout_constraintVertical_bias="0.318"
             tools:ignore="MissingConstraints" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -91,7 +96,7 @@
             app:layout_constraintHorizontal_bias="0.457"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.859"
+            app:layout_constraintVertical_bias="0.766"
             tools:ignore="MissingConstraints" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -102,8 +107,8 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.457"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.859"
+            app:layout_constraintTop_toBottomOf="@+id/coupontext"
+            app:layout_constraintVertical_bias="1.0"
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatButton
