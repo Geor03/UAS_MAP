@@ -13,16 +13,25 @@ import java.util.ArrayList;
 
 public class SelectLaundryItem extends AppCompatActivity {
     private Button btnConfirm;
+    private Button btnBackToOutlet;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_laundry_item);
         btnConfirm = (Button) findViewById(R.id.button_confirm);
+        btnBackToOutlet = (Button) findViewById(R.id.button_backSelectOutlet);
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intentToCheckOut = new Intent(SelectLaundryItem.this, CheckOut.class);
                 startActivity(intentToCheckOut);
+            }
+        });
+        btnBackToOutlet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentBackToOutlet = new Intent(SelectLaundryItem.this, SelectLaundryOutlet.class);
+                startActivity(intentBackToOutlet);
             }
         });
         RecyclerView laundryRV = findViewById(R.id.idRVSelectLaundryItem);
