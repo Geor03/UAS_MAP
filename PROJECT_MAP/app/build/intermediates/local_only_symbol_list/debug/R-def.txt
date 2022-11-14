@@ -1,6 +1,8 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color dark_slate
+color dark_slate_input
 color purple_200
 color purple_500
 color purple_700
@@ -9,13 +11,19 @@ color teal_700
 color trans
 color white
 drawable circle
+drawable clothes_green
 drawable coupon_card
+drawable custom_button_dark
+drawable custom_input_login_logout
+drawable gradient_bg_login
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable laundry_button
+drawable logo_hygieia
 drawable notif_button
 drawable satu
 drawable star
+drawable stripe_black
 drawable usecode_button
 id Add
 id Coupon
@@ -30,6 +38,7 @@ id Subtotal
 id Total_order
 id Total_price
 id WelcomeText
+id appCompatButton
 id button
 id button2
 id button3
@@ -45,6 +54,7 @@ id cardView5
 id card_view
 id checkBox
 id checkBox2
+id couponVertical
 id coupontext
 id editText
 id editText2
@@ -54,15 +64,19 @@ id editText5
 id editText6
 id editText7
 id editText8
+id editText9
 id idIVLaundryImage
 id idIVSelectLaundryImage
 id idIVSelectLaundryItemImage
 id idRVLaundry
+id idRVNotification
 id idRVSelectLaundry
 id idRVSelectLaundryItem
 id idTVLaundryName
+id idTVMessage
 id idTVSelectLaundryItemName
 id idTVSelectLaundryName
+id idTVTitle
 id imageView
 id imageView10
 id imageView11
@@ -73,7 +87,9 @@ id imageView15
 id imageView16
 id imageView17
 id imageView18
+id imageView19
 id imageView2
+id imageView20
 id imageView3
 id imageView4
 id imageView5
@@ -144,8 +160,10 @@ id visa
 id welcomeText
 layout activity_check_out
 layout activity_confirm_order
+layout activity_coupon_list
 layout activity_login
 layout activity_main
+layout activity_notification
 layout activity_profile
 layout activity_rating_driver
 layout activity_rating_outlet
@@ -155,6 +173,7 @@ layout activity_select_laundry_item
 layout activity_select_laundry_outlet
 layout activity_sign_up
 layout coupon_view
+layout notification_card_layout
 layout order_page
 layout select_laundry_card_layout
 layout select_laundry_item_card_layout
