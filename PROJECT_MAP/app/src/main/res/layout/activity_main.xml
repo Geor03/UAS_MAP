@@ -43,8 +43,8 @@
             app:layout_constraintVertical_bias="0.127"
             tools:ignore="MissingConstraints" />
 
-        <ImageButton
-            android:id="@+id/OrderButton"
+        <Button
+            android:id="@+id/button_order"
             android:layout_width="305dp"
             android:layout_height="302dp"
             android:background="@drawable/laundry_button"

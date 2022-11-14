@@ -15,7 +15,7 @@ public class SelectLaundryModel {
 
     // Getter and Setter
     public String getLaundry_name() {
-        return laundry_name;
+        return this.laundry_name;
     }
 
     public void setLaundry_name(String laundry_name) {
@@ -31,10 +31,10 @@ public class SelectLaundryModel {
 //        }
 
     public int getLaundry_image() {
-        return laundry_image;
+        return this.laundry_image;
     }
 
-    public void setCourse_image(int laundry_image) {
+    public void setLaundry_image(int laundry_image) {
         this.laundry_image = laundry_image;
     }
 }

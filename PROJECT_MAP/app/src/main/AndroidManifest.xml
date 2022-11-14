@@ -14,13 +14,12 @@
         android:theme="@style/AppTheme.NoActionBar"
         tools:targetApi="31">
         <activity
-<<<<<<< Updated upstream
             android:name=".Notification"
             android:exported="false"/>
         <activity
             android:name=".Coupon_list"
             android:exported="false" />
-=======
+        <activity
             android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
@@ -29,7 +28,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
->>>>>>> Stashed changes
         <activity
             android:name=".OrderPage"
             android:exported="false" />
@@ -59,11 +57,10 @@
             android:exported="false" />
         <activity
             android:name=".Login"
-            android:exported="false">
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false"/>
     </application>
 
 </manifest>

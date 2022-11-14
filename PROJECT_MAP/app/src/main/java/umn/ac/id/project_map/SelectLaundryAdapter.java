@@ -31,7 +31,7 @@ public class SelectLaundryAdapter extends RecyclerView.Adapter<SelectLaundryAdap
     @Override
     public SelectLaundryAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         // to inflate the layout for each item of recycler view.
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.select_laundry_outlet_card_layout, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.select_laundry_card_layout, parent, false);
         return new ViewHolder(view);
     }
 
@@ -39,9 +39,9 @@ public class SelectLaundryAdapter extends RecyclerView.Adapter<SelectLaundryAdap
     public void onBindViewHolder(@NonNull SelectLaundryAdapter.ViewHolder holder, int position) {
         // to set data to textview and imageview of each card layout
         SelectLaundryModel model = laundryModelArrayList.get(position);
-        holder.laundryNameTV.setText(model.getLaundry_name());
+        holder.selectlaundryNameTV.setText(model.getLaundry_name());
 //        holder.LaundryRatingTV.setText("" + model.getLaundry_rating());
-        holder.laundryIV.setImageResource(model.getLaundry_image());
+        holder.selectlaundryIV.setImageResource(model.getLaundry_image());
     }
 
     @Override
@@ -52,14 +52,14 @@ public class SelectLaundryAdapter extends RecyclerView.Adapter<SelectLaundryAdap
 
     // View holder class for initializing of your views such as TextView and Imageview
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private final ImageView laundryIV;
-        private final TextView laundryNameTV;
+        public ImageView selectlaundryIV;
+        public TextView selectlaundryNameTV;
         //private final TextView laundryRatingTV;
 
-        public ViewHolder(@NonNull View itemView) {
-            super(itemView);
-            laundryIV = itemView.findViewById(R.id.idIVSelectLaundryImage);
-            laundryNameTV = itemView.findViewById(R.id.idTVSelectLaundryName);
+        public ViewHolder(@NonNull View view) {
+            super(view);
+            selectlaundryIV = view.findViewById(R.id.idIVSelectLaundryImage);
+            selectlaundryNameTV = view.findViewById(R.id.idTVSelectLaundryName);
             //laundryRatingTV = itemView.findViewById(R.id.idTVLaundryRating);
         }
     }
