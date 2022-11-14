@@ -2722,6 +2722,7 @@ id META
 id NO_DEBUG
 id Notification
 id OrderButton
+id Payment_detail
 id Price
 id SHIFT
 id SHOW_ALL
@@ -2729,8 +2730,10 @@ id SHOW_PATH
 id SHOW_PROGRESS
 id SYM
 id Service
+id Subtotal
 id TOP_END
 id TOP_START
+id Total_order
 id Total_price
 id WelcomeText
 id accelerate
@@ -2833,6 +2836,8 @@ id cancel_button
 id cardView
 id cardView2
 id cardView3
+id cardView4
+id cardView5
 id card_view
 id carryVelocity
 id center
@@ -3091,6 +3096,7 @@ id notification_main_column_container
 id off
 id on
 id onInterceptTouchReturnSwipe
+id orderHorizontal
 id outline
 id outward
 id overshoot
@@ -3186,6 +3192,8 @@ id stop
 id stretch
 id submenuarrow
 id submit_area
+id subtotal
+id subtotal2
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3297,6 +3305,7 @@ id view_tree_lifecycle_owner
 id view_tree_on_back_pressed_dispatcher_owner
 id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
+id visa
 id visible
 id visible_removing_fragment_view_tag
 id welcomeText

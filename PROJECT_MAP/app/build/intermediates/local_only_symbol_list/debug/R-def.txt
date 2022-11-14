@@ -23,8 +23,11 @@ id Coupontext
 id Item_details
 id Notification
 id OrderButton
+id Payment_detail
 id Price
 id Service
+id Subtotal
+id Total_order
 id Total_price
 id WelcomeText
 id button
@@ -37,6 +40,8 @@ id button7
 id cardView
 id cardView2
 id cardView3
+id cardView4
+id cardView5
 id card_view
 id checkBox
 id checkBox2
@@ -77,10 +82,13 @@ id imageView7
 id imageView8
 id imageView9
 id mapView
+id orderHorizontal
 id ratingBar
 id rvHorizontal
 id service
 id service2
+id subtotal
+id subtotal2
 id textView
 id textView10
 id textView11
@@ -132,6 +140,7 @@ id textView8
 id textView9
 id tvMessage
 id tvTitle
+id visa
 id welcomeText
 layout activity_check_out
 layout activity_confirm_order

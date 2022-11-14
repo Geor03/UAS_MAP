@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "umn.ac.id.project_map.app-mergeDebugResources-3:/values-night-v8/values-night-v8.xml",
+            "outputFile": "umn.ac.id.project_map.app-mergeDebugResources-30:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\b26501d9553d08a11b3cfe721422cf55\\transformed\\material-1.7.0\\res\\values-night-v8\\values-night-v8.xml",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\5d666d306352f7fdca8df50525096bc2\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,125,209,293,389,491,593,687",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "120,204,288,384,486,588,682,771"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8,46",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "100,170,254,338,434,536,638,3988",
-                        "endColumns": "69,83,83,95,101,101,93,88",
-                        "endOffsets": "165,249,333,429,531,633,727,4072"
-                    }
-                },
-                {
-                    "source": "C:\\KULI(ah)\\smester 5\\IF 570 Lab - Mobile Programming\\MAP\\PROJECT_MAP\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "D:\\georgestuff\\smester 5\\IF 570 - Mobile programming\\PROJECT_MAP\\PROJECT_MAP\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -54,6 +37,23 @@
                         "endLines": "45",
                         "endColumns": "12",
                         "endOffsets": "3983"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\5d666d306352f7fdca8df50525096bc2\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,125,209,293,389,491,593,687",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "120,204,288,384,486,588,682,771"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,46",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "100,170,254,338,434,536,638,3988",
+                        "endColumns": "69,83,83,95,101,101,93,88",
+                        "endOffsets": "165,249,333,429,531,633,727,4072"
                     }
                 }
             ]
