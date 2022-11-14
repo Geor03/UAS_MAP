@@ -14,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
     private RecyclerView orderHorizontal;
     private ArrayList<String> titleDataList;
     private ArrayList<String> messageDataList;
+    private ArrayList<String> statusDataList;
+    private ArrayList<String> orderidDataList;
+    private ArrayList<String> dateOrderDataList;
+    private ArrayList<String> priceOrderDataList;
     private RecyclerView.LayoutManager mLayoutManagerHorizontal;
     private RecyclerView.LayoutManager orderManagerHorizontal;
     private CouponAdapter couponAdapter;
@@ -29,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
         orderHorizontal = (RecyclerView) findViewById(R.id.orderHorizontal);
         titleDataList = new ArrayList<>();
         messageDataList = new ArrayList<>();
+        statusDataList = new ArrayList<>();
+        orderidDataList = new ArrayList<>();
+        dateOrderDataList = new ArrayList<>();
+        priceOrderDataList = new ArrayList<>();
 
         //________add dummy titles and message
         for (int i = 1; i <= 20; i++) {
@@ -36,9 +44,17 @@ public class MainActivity extends AppCompatActivity {
             messageDataList.add("message " + i);
         }
 
+        //_______add dummy status,order,date,price
+        for(int k = 1; k <= 20; k++){
+            statusDataList.add("Status " + k);
+            orderidDataList.add("Order ID: " + k);
+            dateOrderDataList.add("oct : " + k);
+            priceOrderDataList.add("Rp " + k + ".000");
+        }
+
         //________initialize adapters
         couponAdapter = new CouponAdapter(titleDataList, messageDataList);
-        orderAdapter = new OrderAdapter(titleDataList, messageDataList);
+        orderAdapter = new OrderAdapter(statusDataList, orderidDataList, dateOrderDataList, priceOrderDataList);
 
         //________initialize layout managers
         orderManagerHorizontal = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);

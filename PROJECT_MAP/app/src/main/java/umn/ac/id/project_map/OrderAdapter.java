@@ -12,15 +12,19 @@ import java.util.ArrayList;
 public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> {
 
     //________create number of objects according to your need
-    private ArrayList<String> titleDataList;
-    private ArrayList<String> messageDataList;
+    private ArrayList<String> statusDataList;
+    private ArrayList<String> orderidDataList;
+    private ArrayList<String> dateOrderDataList;
+    private ArrayList<String> priceOrderDataList;
 
     //________create  constructor with required parameter
-    public OrderAdapter(ArrayList<String> titleDataList, ArrayList<String> messageDataList) {
+    public OrderAdapter(ArrayList<String> statusDataList, ArrayList<String> orderidDataList, ArrayList<String>dateOrderDataList, ArrayList<String>priceOrderDataList) {
 
         //________initialize
-        this.titleDataList = titleDataList;
-        this.messageDataList = messageDataList;
+        this.statusDataList = statusDataList;
+        this.orderidDataList = orderidDataList;
+        this.dateOrderDataList = dateOrderDataList;
+        this.priceOrderDataList = priceOrderDataList;
     }
 
     @Override
@@ -28,7 +32,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
         View itemView;
 
         //________show data in the horizontal listing
-        itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.coupon_view, parent, false);
+        itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.order_view, parent, false);
 
 
         //________return child view
@@ -38,25 +42,29 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
         //________set data to the objects of each row widget
-        holder.tvTitle.setText(titleDataList.get(position));
-        holder.tvMessage.setText(messageDataList.get(position));
+        holder.status.setText(statusDataList.get(position));
+        holder.orderid.setText(orderidDataList.get(position));
+        holder.dateOrder.setText(dateOrderDataList.get(position));
+        holder.priceOrder.setText(priceOrderDataList.get(position));
     }
 
     @Override
     public int getItemCount() {
-        return titleDataList.size();
+        return statusDataList.size();
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
 
         //________create objects of each row widget
-        public TextView tvTitle, tvMessage;
+        public TextView status, orderid, dateOrder, priceOrder;
         public ViewHolder(View view) {
             super(view);
 
             //________initialize objects of each row widget
-            tvTitle = (TextView) view.findViewById(R.id.tvTitle);
-            tvMessage = (TextView) view.findViewById(R.id.tvMessage);
+            status = (TextView) view.findViewById(R.id.status);
+            orderid = (TextView) view.findViewById(R.id.orderId);
+            dateOrder = (TextView) view.findViewById(R.id.dateFirstOrder);
+            priceOrder = (TextView) view.findViewById(R.id.priceOrders);
         }
     }
 }
