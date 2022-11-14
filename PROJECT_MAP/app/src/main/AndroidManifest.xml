@@ -14,7 +14,11 @@
         android:theme="@style/AppTheme.NoActionBar"
         tools:targetApi="31">
         <activity
+<<<<<<< Updated upstream
             android:name=".Notification"
+=======
+            android:name=".Coupon_list"
+>>>>>>> Stashed changes
             android:exported="false" />
         <activity
             android:name=".OrderPage"
