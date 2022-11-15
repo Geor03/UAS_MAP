@@ -61,25 +61,26 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/orderHorizontal"
-                android:layout_width="match_parent"
+                android:layout_width="370dp"
                 android:layout_height="120dp"
-                android:layout_marginTop="744dp"
+                android:layout_marginTop="10dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.428"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/coupontext"
                 tools:ignore="MissingConstraints" />
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvHorizontal"
-                android:layout_width="match_parent"
+                android:layout_width="370dp"
                 android:layout_height="120dp"
+                android:layout_marginTop="10dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.428"
+                app:layout_constraintHorizontal_bias="0.39"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.753"
+                app:layout_constraintTop_toBottomOf="@+id/Coupontext"
+                app:layout_constraintVertical_bias="0.0"
                 tools:ignore="MissingConstraints" />
 
             <TextView
@@ -95,7 +96,7 @@
                 app:layout_constraintHorizontal_bias="0.053"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.635"
+                app:layout_constraintVertical_bias="0.625"
                 tools:ignore="MissingConstraints" />
 
             <TextView
@@ -110,7 +111,7 @@
                 app:layout_constraintHorizontal_bias="0.053"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.836"
+                app:layout_constraintVertical_bias="0.826"
                 tools:ignore="MissingConstraints" />
 
             <androidx.appcompat.widget.AppCompatButton

@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.PermissionRequest;
+import android.widget.Button;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -26,13 +27,22 @@ import java.util.ArrayList;
 public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
     boolean isPermissionGranted;
     MapView mapView;
-
+    private Button btnConfirmToCheckOut;
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order_page);
 
         mapView = findViewById(R.id.mapView);
+        btnConfirmToCheckOut = findViewById(R.id.button_confirmToCheckout);
+
+        btnConfirmToCheckOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentConfirmToCheckOut = new Intent(OrderPage.this, CheckOut.class);
+                startActivity(intentConfirmToCheckOut);
+            }
+        });
 //        checkMyPermission();
         if(isPermissionGranted){
             mapView.getMapAsync(this);
