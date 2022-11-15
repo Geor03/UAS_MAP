@@ -61,9 +61,9 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/orderHorizontal"
-                android:layout_width="376dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:layout_marginTop="604dp"
+                android:layout_marginTop="744dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.428"
                 app:layout_constraintStart_toStartOf="parent"
@@ -72,14 +72,14 @@
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvHorizontal"
-                android:layout_width="376dp"
+                android:layout_width="match_parent"
                 android:layout_height="120dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.457"
+                app:layout_constraintHorizontal_bias="0.428"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.78"
+                app:layout_constraintVertical_bias="0.753"
                 tools:ignore="MissingConstraints" />
 
             <TextView
@@ -107,10 +107,10 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.05"
+                app:layout_constraintHorizontal_bias="0.053"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.817"
+                app:layout_constraintVertical_bias="0.836"
                 tools:ignore="MissingConstraints" />
 
             <androidx.appcompat.widget.AppCompatButton
