@@ -20,6 +20,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
 
@@ -44,10 +46,10 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
             }
         });
 //        checkMyPermission();
-        if(isPermissionGranted){
-            mapView.getMapAsync(this);
+//        if(isPermissionGranted){
             mapView.onCreate(savedInstanceState);
-        }
+            mapView.getMapAsync(this);
+//        }
     }
 
 //    private void checkMyPermission(){
@@ -71,7 +73,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
 //    }
     @Override
     public void onMapReady(GoogleMap googleMap){
-
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(0,0)).title("Marker"));
     }
 
     @Override

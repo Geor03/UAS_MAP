@@ -12,203 +12,235 @@
 10
 11    <!-- Include required permissions for Google Maps API to run. -->
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:5-79
-12-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:22-76
+12-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:5-79
+12-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:22-76
 13    <uses-permission android:name="android.permission.INTERNET" />
-13-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:5-67
-13-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:22-64
+13-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:5-67
+13-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:22-64
 14
 15    <uses-feature
-15-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:26:5-28:35
+15-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:26:5-28:35
 16        android:glEsVersion="0x00020000"
-16-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:27:9-41
+16-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:27:9-41
 17        android:required="true" />
-17-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:28:9-32
+17-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:28:9-32
 18
 19    <queries>
-19-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:30:5-34:15
+19-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:30:5-34:15
 20
 21        <!-- Needs to be explicitly declared on Android R+ -->
 22        <package android:name="com.google.android.apps.maps" />
-22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:9-64
-22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:18-61
+22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:9-64
+22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:18-61
 23    </queries>
 24
 25    <application
-25-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-69:19
+25-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-77:19
 26        android:allowBackup="true"
-26-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:7:9-35
+26-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:8:9-35
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.8.0] C:\Users\georg\.gradle\caches\transforms-3\0638d9dacb5fd10604e28ec2b4d3c80b\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+27-->[androidx.core:core:1.8.0] C:\Users\georg\.gradle\caches\transforms-3\c753f98465b3fe6a9a4b0918a2ab20f8\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 28        android:dataExtractionRules="@xml/data_extraction_rules"
-28-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:8:9-65
+28-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:9:9-65
 29        android:debuggable="true"
 30        android:fullBackupContent="@xml/backup_rules"
-30-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:9:9-54
+30-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:10:9-54
 31        android:icon="@mipmap/ic_launcher"
-31-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:10:9-43
+31-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:11:9-43
 32        android:label="@string/app_name"
-32-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:11:9-41
+32-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:12:9-41
 33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:12:9-54
+33-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:13:9-54
 34        android:supportsRtl="true"
-34-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:13:9-35
+34-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-35
 35        android:testOnly="true"
 36        android:theme="@style/AppTheme.NoActionBar" >
-36-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-52
-37        <activity
-37-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:16:9-18:39
-38            android:name="umn.ac.id.project_map.Notification"
-38-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:17:13-41
-39            android:exported="false" />
-39-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:18:13-37
-40        <activity
-40-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:19:9-21:40
-41            android:name="umn.ac.id.project_map.Coupon_list"
-41-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:20:13-40
-42            android:exported="false" />
-42-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:21:13-37
-43        <activity
-43-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:22:9-30:20
-44            android:name="umn.ac.id.project_map.SplashScreen"
-44-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:23:13-41
-45            android:exported="true" >
-45-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:24:13-36
-46            <intent-filter>
-46-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:25:13-29:29
-47                <action android:name="android.intent.action.MAIN" />
-47-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:17-69
-47-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:25-66
-48
-49                <category android:name="android.intent.category.LAUNCHER" />
-49-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:17-77
-49-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:27-74
-50            </intent-filter>
-51        </activity>
-52        <activity
-52-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:31:9-33:40
-53            android:name="umn.ac.id.project_map.OrderPage"
-53-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:32:13-38
-54            android:exported="false" />
-54-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:33:13-37
-55        <activity
-55-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:34:9-36:40
-56            android:name="umn.ac.id.project_map.SelectLaundry"
-56-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:35:13-42
-57            android:exported="false" />
-57-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:36:13-37
-58        <activity
-58-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:37:9-39:40
-59            android:name="umn.ac.id.project_map.CheckOut"
-59-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:38:13-37
-60            android:exported="false" />
-60-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:39:13-37
-61        <activity
-61-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:40:9-42:40
-62            android:name="umn.ac.id.project_map.ConfirmOrder"
-62-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:41:13-41
-63            android:exported="false" />
-63-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:42:13-37
-64        <activity
-64-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:43:9-45:40
-65            android:name="umn.ac.id.project_map.Receipt"
-65-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:13-36
-66            android:exported="false" />
-66-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:45:13-37
-67        <activity
-67-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:46:9-48:40
-68            android:name="umn.ac.id.project_map.RatingOutlet"
-68-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:13-41
-69            android:exported="false" />
-69-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:48:13-37
-70        <activity
-70-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:49:9-51:40
-71            android:name="umn.ac.id.project_map.RatingDriver"
-71-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:50:13-41
-72            android:exported="false" />
-72-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:51:13-37
-73        <activity
-73-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:52:9-54:40
-74            android:name="umn.ac.id.project_map.Profile"
-74-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:53:13-36
-75            android:exported="false" />
-75-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:54:13-37
-76        <activity
-76-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:55:9-57:40
-77            android:name="umn.ac.id.project_map.SignUp"
-77-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:56:13-35
-78            android:exported="false" />
-78-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:57:13-37
-79        <activity
-79-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:58:9-60:39
-80            android:name="umn.ac.id.project_map.Login"
-80-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:59:13-34
-81            android:exported="false" />
-81-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:60:13-37
-82        <activity
-82-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:61:9-63:39
-83            android:name="umn.ac.id.project_map.MainActivity"
-83-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:62:13-41
-84            android:exported="false" />
-84-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:63:13-37
-85        <activity
-85-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:9-65:39
-86            android:name="umn.ac.id.project_map.SelectLaundryOutlet"
-86-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:19-54
-87            android:exported="false" />
-87-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:65:13-37
-88        <activity
-88-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:9-67:39
-89            android:name="umn.ac.id.project_map.SelectLaundryItem"
-89-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:19-52
-90            android:exported="false" />
-90-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:67:13-37
-91
-92        <!-- Needs to be explicitly declared on P+ -->
-93        <uses-library
-93-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
-94            android:name="org.apache.http.legacy"
-94-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:40:13-50
-95            android:required="false" />
-95-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\bec74d5ab4c3a8327068a8171eaeeeeb\transformed\play-services-maps-17.0.1\AndroidManifest.xml:41:13-37
-96
-97        <activity
-97-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
-98            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-98-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
-99            android:exported="false"
-99-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
-100            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-100-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\19cdcb4084ff3473f8f549381b64a3c3\transformed\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
-101
-102        <meta-data
-102-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\fbab71f90269795658f51a6f7fc9e43f\transformed\play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
-103            android:name="com.google.android.gms.version"
-103-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\fbab71f90269795658f51a6f7fc9e43f\transformed\play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
-104            android:value="@integer/google_play_services_version" />
-104-->[com.google.android.gms:play-services-basement:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\fbab71f90269795658f51a6f7fc9e43f\transformed\play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
-105
-106        <provider
-106-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-107            android:name="androidx.startup.InitializationProvider"
-107-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-108            android:authorities="umn.ac.id.project_map.androidx-startup"
-108-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-109            android:exported="false" >
-109-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-110            <meta-data
-110-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-111                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-111-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-112                android:value="androidx.startup" />
-112-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\9f99c19470d8bf18ee15270d078c3173\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-113            <meta-data
-113-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-114                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-114-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-115                android:value="androidx.startup" />
-115-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\a68586d9ac6fc4872d4884a947d1c1d5\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-116        </provider>
-117    </application>
-118
-119</manifest>
+36-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:15:9-52
+37        <meta-data
+37-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:17:9-19:69
+38            android:name="com.google.android.gms.version"
+38-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:18:13-58
+39            android:value="@integer/google_play_services_version" />
+39-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:19:13-66
+40        <meta-data
+40-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:21:9-127
+41            android:name="com.google.android.maps.v2.API_KEY"
+41-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:21:20-69
+42            android:value="AIzaSyAHK382K2j15tX1bvtMhmOdlWm8UHVY2LM" />
+42-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:21:70-125
+43
+44        <activity
+44-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:22:9-24:39
+45            android:name="umn.ac.id.project_map.Notification"
+45-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:23:13-41
+46            android:exported="false" />
+46-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:24:13-37
+47        <activity
+47-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:25:9-27:40
+48            android:name="umn.ac.id.project_map.Coupon_list"
+48-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:13-40
+49            android:exported="false" />
+49-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:27:13-37
+50        <activity
+50-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:9-36:20
+51            android:name="umn.ac.id.project_map.SplashScreen"
+51-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:29:13-41
+52            android:exported="true" >
+52-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:30:13-36
+53            <intent-filter>
+53-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:31:13-35:29
+54                <action android:name="android.intent.action.MAIN" />
+54-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:32:17-69
+54-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:32:25-66
+55
+56                <category android:name="android.intent.category.LAUNCHER" />
+56-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:34:17-77
+56-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:34:27-74
+57            </intent-filter>
+58        </activity>
+59        <activity
+59-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:37:9-39:40
+60            android:name="umn.ac.id.project_map.OrderPage"
+60-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:38:13-38
+61            android:exported="false" />
+61-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:39:13-37
+62        <activity
+62-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:40:9-42:40
+63            android:name="umn.ac.id.project_map.SelectLaundry"
+63-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:41:13-42
+64            android:exported="false" />
+64-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:42:13-37
+65        <activity
+65-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:43:9-45:40
+66            android:name="umn.ac.id.project_map.CheckOut"
+66-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:13-37
+67            android:exported="false" />
+67-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:45:13-37
+68        <activity
+68-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:46:9-48:40
+69            android:name="umn.ac.id.project_map.ConfirmOrder"
+69-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:13-41
+70            android:exported="false" />
+70-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:48:13-37
+71        <activity
+71-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:49:9-51:40
+72            android:name="umn.ac.id.project_map.Receipt"
+72-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:50:13-36
+73            android:exported="false" />
+73-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:51:13-37
+74        <activity
+74-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:52:9-54:40
+75            android:name="umn.ac.id.project_map.RatingOutlet"
+75-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:53:13-41
+76            android:exported="false" />
+76-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:54:13-37
+77        <activity
+77-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:55:9-57:40
+78            android:name="umn.ac.id.project_map.RatingDriver"
+78-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:56:13-41
+79            android:exported="false" />
+79-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:57:13-37
+80        <activity
+80-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:58:9-60:40
+81            android:name="umn.ac.id.project_map.Profile"
+81-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:59:13-36
+82            android:exported="false" />
+82-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:60:13-37
+83        <activity
+83-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:61:9-63:40
+84            android:name="umn.ac.id.project_map.SignUp"
+84-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:62:13-35
+85            android:exported="false" />
+85-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:63:13-37
+86        <activity
+86-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:9-66:39
+87            android:name="umn.ac.id.project_map.Login"
+87-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:65:13-34
+88            android:exported="false" />
+88-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:13-37
+89        <activity
+89-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:67:9-69:39
+90            android:name="umn.ac.id.project_map.MainActivity"
+90-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:68:13-41
+91            android:exported="false" />
+91-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:69:13-37
+92        <activity
+92-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:70:9-72:39
+93            android:name="umn.ac.id.project_map.SelectLaundryOutlet"
+93-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:71:13-48
+94            android:exported="false" />
+94-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:72:13-37
+95        <activity
+95-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:73:9-75:39
+96            android:name="umn.ac.id.project_map.SelectLaundryItem"
+96-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:74:13-46
+97            android:exported="false" />
+97-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:75:13-37
+98
+99        <!-- Needs to be explicitly declared on P+ -->
+100        <uses-library
+100-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
+101            android:name="org.apache.http.legacy"
+101-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:40:13-50
+102            android:required="false" />
+102-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\919a1669f2c7ad77b677f75b34e6e8b5\transformed\play-services-maps-17.0.1\AndroidManifest.xml:41:13-37
+103
+104        <service
+104-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\e5b71d2c10d1b2679c9065f1246bea36\transformed\firebase-storage-19.1.1\AndroidManifest.xml:30:9-36:19
+105            android:name="com.google.firebase.components.ComponentDiscoveryService"
+105-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\e5b71d2c10d1b2679c9065f1246bea36\transformed\firebase-storage-19.1.1\AndroidManifest.xml:31:13-84
+106            android:directBootAware="true"
+106-->[com.google.firebase:firebase-common:19.3.0] C:\Users\georg\.gradle\caches\transforms-3\812598aa1f9327f9a035b94727ff18f8\transformed\firebase-common-19.3.0\AndroidManifest.xml:34:13-43
+107            android:exported="false" >
+107-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\e5b71d2c10d1b2679c9065f1246bea36\transformed\firebase-storage-19.1.1\AndroidManifest.xml:32:13-37
+108            <meta-data
+108-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\e5b71d2c10d1b2679c9065f1246bea36\transformed\firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+109                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+109-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\e5b71d2c10d1b2679c9065f1246bea36\transformed\firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+110                android:value="com.google.firebase.components.ComponentRegistrar" />
+110-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\e5b71d2c10d1b2679c9065f1246bea36\transformed\firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+111        </service>
+112
+113        <activity
+113-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\6e79402ffe2778a32bb481eea8a7fc10\transformed\play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+114            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+114-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\6e79402ffe2778a32bb481eea8a7fc10\transformed\play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+115            android:exported="false"
+115-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\6e79402ffe2778a32bb481eea8a7fc10\transformed\play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+116            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+116-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\georg\.gradle\caches\transforms-3\6e79402ffe2778a32bb481eea8a7fc10\transformed\play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+117
+118        <provider
+118-->[com.google.firebase:firebase-common:19.3.0] C:\Users\georg\.gradle\caches\transforms-3\812598aa1f9327f9a035b94727ff18f8\transformed\firebase-common-19.3.0\AndroidManifest.xml:26:9-30:39
+119            android:name="com.google.firebase.provider.FirebaseInitProvider"
+119-->[com.google.firebase:firebase-common:19.3.0] C:\Users\georg\.gradle\caches\transforms-3\812598aa1f9327f9a035b94727ff18f8\transformed\firebase-common-19.3.0\AndroidManifest.xml:27:13-77
+120            android:authorities="umn.ac.id.project_map.firebaseinitprovider"
+120-->[com.google.firebase:firebase-common:19.3.0] C:\Users\georg\.gradle\caches\transforms-3\812598aa1f9327f9a035b94727ff18f8\transformed\firebase-common-19.3.0\AndroidManifest.xml:28:13-72
+121            android:exported="false"
+121-->[com.google.firebase:firebase-common:19.3.0] C:\Users\georg\.gradle\caches\transforms-3\812598aa1f9327f9a035b94727ff18f8\transformed\firebase-common-19.3.0\AndroidManifest.xml:29:13-37
+122            android:initOrder="100" />
+122-->[com.google.firebase:firebase-common:19.3.0] C:\Users\georg\.gradle\caches\transforms-3\812598aa1f9327f9a035b94727ff18f8\transformed\firebase-common-19.3.0\AndroidManifest.xml:30:13-36
+123        <provider
+123-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\cd60c7e69bcf395cbe0b97139bc8b317\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+124            android:name="androidx.startup.InitializationProvider"
+124-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\cd60c7e69bcf395cbe0b97139bc8b317\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+125            android:authorities="umn.ac.id.project_map.androidx-startup"
+125-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\cd60c7e69bcf395cbe0b97139bc8b317\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+126            android:exported="false" >
+126-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\cd60c7e69bcf395cbe0b97139bc8b317\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+127            <meta-data
+127-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\cd60c7e69bcf395cbe0b97139bc8b317\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+128                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+128-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\cd60c7e69bcf395cbe0b97139bc8b317\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+129                android:value="androidx.startup" />
+129-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\cd60c7e69bcf395cbe0b97139bc8b317\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+130            <meta-data
+130-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\63616f8d194787622844a407c14ae5f1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+131                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+131-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\63616f8d194787622844a407c14ae5f1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+132                android:value="androidx.startup" />
+132-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\63616f8d194787622844a407c14ae5f1\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+133        </provider>
+134    </application>
+135
+136</manifest>
