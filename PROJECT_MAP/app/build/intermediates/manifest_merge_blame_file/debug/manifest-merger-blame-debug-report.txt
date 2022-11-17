@@ -6,9 +6,9 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="21"
-8-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
+8-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="32" />
-9-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
+9-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
 10
 11    <!-- Include required permissions for Google Maps API to run. -->
 12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -35,134 +35,134 @@
 23    </queries>
 24
 25    <application
-25-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-69:19
+25-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-69:19
 26        android:allowBackup="true"
-26-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:7:9-35
+26-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:7:9-35
 27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 27-->[androidx.core:core:1.8.0] C:\Users\georg\.gradle\caches\transforms-3\0638d9dacb5fd10604e28ec2b4d3c80b\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 28        android:dataExtractionRules="@xml/data_extraction_rules"
-28-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:8:9-65
+28-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:8:9-65
 29        android:debuggable="true"
 30        android:fullBackupContent="@xml/backup_rules"
-30-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:9:9-54
+30-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:9:9-54
 31        android:icon="@mipmap/ic_launcher"
-31-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:10:9-43
+31-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:10:9-43
 32        android:label="@string/app_name"
-32-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:11:9-41
+32-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:11:9-41
 33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:12:9-54
+33-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:12:9-54
 34        android:supportsRtl="true"
-34-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:13:9-35
+34-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:13:9-35
 35        android:testOnly="true"
 36        android:theme="@style/AppTheme.NoActionBar" >
-36-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-52
+36-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-52
 37        <activity
-37-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:16:9-18:39
+37-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:16:9-18:39
 38            android:name="umn.ac.id.project_map.Notification"
-38-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:17:13-41
+38-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:17:13-41
 39            android:exported="false" />
-39-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:18:13-37
+39-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:18:13-37
 40        <activity
-40-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:19:9-21:40
+40-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:19:9-21:40
 41            android:name="umn.ac.id.project_map.Coupon_list"
-41-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:20:13-40
+41-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:20:13-40
 42            android:exported="false" />
-42-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:21:13-37
+42-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:21:13-37
 43        <activity
-43-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:22:9-30:20
+43-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:22:9-30:20
 44            android:name="umn.ac.id.project_map.SplashScreen"
-44-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:23:13-41
+44-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:23:13-41
 45            android:exported="true" >
-45-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:24:13-36
+45-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:24:13-36
 46            <intent-filter>
-46-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:25:13-29:29
+46-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:25:13-29:29
 47                <action android:name="android.intent.action.MAIN" />
-47-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:17-69
-47-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:25-66
+47-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:17-69
+47-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:25-66
 48
 49                <category android:name="android.intent.category.LAUNCHER" />
-49-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:17-77
-49-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:27-74
+49-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:17-77
+49-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:27-74
 50            </intent-filter>
 51        </activity>
 52        <activity
-52-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:31:9-33:40
+52-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:31:9-33:40
 53            android:name="umn.ac.id.project_map.OrderPage"
-53-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:32:13-38
+53-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:32:13-38
 54            android:exported="false" />
-54-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:33:13-37
+54-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:33:13-37
 55        <activity
-55-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:34:9-36:40
+55-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:34:9-36:40
 56            android:name="umn.ac.id.project_map.SelectLaundry"
-56-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:35:13-42
+56-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:35:13-42
 57            android:exported="false" />
-57-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:36:13-37
+57-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:36:13-37
 58        <activity
-58-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:37:9-39:40
+58-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:37:9-39:40
 59            android:name="umn.ac.id.project_map.CheckOut"
-59-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:38:13-37
+59-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:38:13-37
 60            android:exported="false" />
-60-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:39:13-37
+60-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:39:13-37
 61        <activity
-61-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:40:9-42:40
+61-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:40:9-42:40
 62            android:name="umn.ac.id.project_map.ConfirmOrder"
-62-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:41:13-41
+62-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:41:13-41
 63            android:exported="false" />
-63-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:42:13-37
+63-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:42:13-37
 64        <activity
-64-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:43:9-45:40
+64-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:43:9-45:40
 65            android:name="umn.ac.id.project_map.Receipt"
-65-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:13-36
+65-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:13-36
 66            android:exported="false" />
-66-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:45:13-37
+66-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:45:13-37
 67        <activity
-67-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:46:9-48:40
+67-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:46:9-48:40
 68            android:name="umn.ac.id.project_map.RatingOutlet"
-68-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:13-41
+68-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:13-41
 69            android:exported="false" />
-69-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:48:13-37
+69-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:48:13-37
 70        <activity
-70-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:49:9-51:40
+70-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:49:9-51:40
 71            android:name="umn.ac.id.project_map.RatingDriver"
-71-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:50:13-41
+71-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:50:13-41
 72            android:exported="false" />
-72-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:51:13-37
+72-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:51:13-37
 73        <activity
-73-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:52:9-54:40
+73-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:52:9-54:40
 74            android:name="umn.ac.id.project_map.Profile"
-74-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:53:13-36
+74-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:53:13-36
 75            android:exported="false" />
-75-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:54:13-37
+75-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:54:13-37
 76        <activity
-76-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:55:9-57:40
+76-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:55:9-57:40
 77            android:name="umn.ac.id.project_map.SignUp"
-77-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:56:13-35
+77-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:56:13-35
 78            android:exported="false" />
-78-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:57:13-37
+78-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:57:13-37
 79        <activity
-79-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:58:9-60:39
+79-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:58:9-60:39
 80            android:name="umn.ac.id.project_map.Login"
-80-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:59:13-34
+80-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:59:13-34
 81            android:exported="false" />
-81-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:60:13-37
+81-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:60:13-37
 82        <activity
-82-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:61:9-63:39
+82-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:61:9-63:39
 83            android:name="umn.ac.id.project_map.MainActivity"
-83-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:62:13-41
+83-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:62:13-41
 84            android:exported="false" />
-84-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:63:13-37
+84-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:63:13-37
 85        <activity
-85-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:9-65:39
+85-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:9-65:39
 86            android:name="umn.ac.id.project_map.SelectLaundryOutlet"
-86-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:19-54
+86-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:19-54
 87            android:exported="false" />
-87-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:65:13-37
+87-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:65:13-37
 88        <activity
-88-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:9-67:39
+88-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:9-67:39
 89            android:name="umn.ac.id.project_map.SelectLaundryItem"
-89-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:19-52
+89-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:19-52
 90            android:exported="false" />
-90-->C:\KULI(ah)\smester 5\IF 570 Lab - Mobile Programming\MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:67:13-37
+90-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:67:13-37
 91
 92        <!-- Needs to be explicitly declared on P+ -->
 93        <uses-library

@@ -2,6 +2,7 @@ R_DEF: Internal format may change without notice
 local
 color black
 color dark_slate
+color dark_slate_addres
 color dark_slate_input
 color dark_slate_select
 color purple_200
@@ -20,6 +21,7 @@ drawable circle
 drawable clothes_green
 drawable clothes_order
 drawable coupon_card
+drawable custom_button_address
 drawable custom_button_confirm
 drawable custom_button_dark
 drawable custom_button_login
@@ -160,6 +162,7 @@ id service2
 id status
 id subtotal
 id subtotal2
+id switch1
 id textView
 id textView10
 id textView11
@@ -179,6 +182,7 @@ id textView23
 id textView24
 id textView25
 id textView26
+id textView27
 id textView28
 id textView29
 id textView3
@@ -210,6 +214,7 @@ id textView6
 id textView7
 id textView8
 id textView9
+id titleAddress
 id titleLaundry
 id titleOutlet
 id tvMessage

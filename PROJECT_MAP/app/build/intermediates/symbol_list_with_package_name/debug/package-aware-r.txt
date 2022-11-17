@@ -1322,6 +1322,7 @@ color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
 color dark_slate
+color dark_slate_addres
 color dark_slate_input
 color dark_slate_select
 color design_bottom_navigation_shadow_color
@@ -2625,6 +2626,7 @@ drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
 drawable coupon_card
+drawable custom_button_address
 drawable custom_button_confirm
 drawable custom_button_dark
 drawable custom_button_login
@@ -3266,6 +3268,7 @@ id submit_area
 id subtotal
 id subtotal2
 id supportScrollUp
+id switch1
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3307,6 +3310,7 @@ id textView23
 id textView24
 id textView25
 id textView26
+id textView27
 id textView28
 id textView29
 id textView3
@@ -3349,6 +3353,7 @@ id textinput_prefix_text
 id textinput_suffix_text
 id time
 id title
+id titleAddress
 id titleDividerNoCustom
 id titleLaundry
 id titleOutlet
