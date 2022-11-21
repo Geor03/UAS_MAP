@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.185" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/email"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
         android:layout_marginBottom="8dp"
@@ -31,13 +31,13 @@
         android:paddingLeft="10dp"
         android:textColorHint="@color/white"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintBottom_toTopOf="@+id/username"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText7"
+        android:id="@+id/confirm_password"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
         android:layout_marginBottom="196dp"
@@ -53,7 +53,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/username"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
         android:layout_marginBottom="8dp"
@@ -62,13 +62,13 @@
         android:paddingLeft="10dp"
         android:textColorHint="@color/white"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText6"
+        app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/password"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
         android:layout_marginBottom="8dp"
@@ -78,13 +78,13 @@
         android:paddingLeft="10dp"
         android:textColorHint="@color/white"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText7"
+        app:layout_constraintBottom_toTopOf="@+id/confirm_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/last_name"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
         android:background="@drawable/custom_input_login_logout"
@@ -92,7 +92,7 @@
         android:paddingLeft="10dp"
         android:textColorHint="@color/white"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,7 +100,7 @@
         app:layout_constraintVertical_bias="0.961" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/first_name"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
         android:background="@drawable/custom_input_login_logout"
@@ -108,7 +108,7 @@
         android:paddingLeft="10dp"
         android:textColorHint="@color/white"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintBottom_toTopOf="@+id/last_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
