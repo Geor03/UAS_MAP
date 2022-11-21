@@ -2886,6 +2886,7 @@ id button_confirm
 id button_confirmToCheckout
 id button_forgotPass
 id button_login
+id button_logout
 id button_minus
 id button_order
 id button_plus
@@ -2977,9 +2978,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editText
 id editText5
-id editText9
 id edit_query
 id elastic
 id email

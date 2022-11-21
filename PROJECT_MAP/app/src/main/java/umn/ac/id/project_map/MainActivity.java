@@ -19,6 +19,7 @@ import android.widget.ImageButton;
 import android.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 
@@ -161,5 +162,11 @@ public class MainActivity extends AppCompatActivity {
 //                fragmentClass = MainActivity.class;
         }
 
+    }
+
+    public void logout(View view){
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(),Login.class));
+        finish();
     }
 }

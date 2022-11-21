@@ -17,7 +17,7 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class SignUp extends AppCompatActivity {
-    private Button btnRegisterAccount;
+    private Button btnRegisterAccount, mLoginBtn;
     EditText mFirstName, mLastName, mEmail, mPassword, mUsername, mConfirm;
     FirebaseAuth fAuth;
 
@@ -32,6 +32,7 @@ public class SignUp extends AppCompatActivity {
         mUsername = (EditText) findViewById(R.id.username);
         mPassword = (EditText) findViewById(R.id.password);
         mConfirm = (EditText) findViewById(R.id.confirm_password);
+        mLoginBtn = findViewById(R.id.button_singup);
 
         fAuth = FirebaseAuth.getInstance();
 
@@ -62,6 +63,15 @@ public class SignUp extends AppCompatActivity {
                     mFirstName.setError("Username is required");
                     return;
                 }
+                if(TextUtils.isEmpty(password)){
+                    mPassword.setError("Password is required");
+                    return;
+                }
+
+                if(password.length() < 6){
+                    mPassword.setError("Password must be >=  6 characters");
+                    return;
+                }
                 fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
@@ -78,6 +88,13 @@ public class SignUp extends AppCompatActivity {
 //                startActivity(intenRegisterAccount);
             }
         });
+
+//        mLoginBtn.setOnClickListener(new View.OnClickListener(){
+//            @Override
+//            public void onClick(View v){
+//                startActivity(new Intent(getApplicationContext(),Login.class));
+//            }
+//        });
         
 
     }
