@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "umn.ac.id.project_map.app-mergeDebugResources-31:/values-v23/values-v23.xml",
+            "outputFile": "umn.ac.id.project_map.app-mergeDebugResources-33:/values-v23/values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\94b483304486bf07189d8637d82d34d5\\transformed\\material-1.7.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\87606915cb75dd283dad04b313f974fa\\transformed\\material-1.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,5,8,13,17,20,23,26,31,34,38",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\042380abd8eb0ae8843f5711282cb5a1\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\3356d90462adedd71f061cae49c8d2ed\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\40797a61c7bca20bbb67ca3600d63fec\\transformed\\appcompat-1.5.1\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\5fdf0eec002d7dce7d8375bc37b0ed41\\transformed\\appcompat-1.5.1\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",

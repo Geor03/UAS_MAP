@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "umn.ac.id.project_map.app-mergeDebugResources-31:/values-v22/values-v22.xml",
+            "outputFile": "umn.ac.id.project_map.app-mergeDebugResources-33:/values-v22/values-v22.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\40797a61c7bca20bbb67ca3600d63fec\\transformed\\appcompat-1.5.1\\res\\values-v22\\values-v22.xml",
+                    "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\5fdf0eec002d7dce7d8375bc37b0ed41\\transformed\\appcompat-1.5.1\\res\\values-v22\\values-v22.xml",
                     "from": {
                         "startLines": "2,3,4,9",
                         "startColumns": "4,4,4,4",

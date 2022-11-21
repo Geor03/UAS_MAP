@@ -34,19 +34,15 @@ public class SignUp extends AppCompatActivity {
         mConfirm = (EditText) findViewById(R.id.confirm_password);
 
         fAuth = FirebaseAuth.getInstance();
-        
+
 
 
         btnRegisterAccount.setOnClickListener(new View.OnClickListener() {
             String password;
             @Override
             public void onClick(View view) {
-                if(mPassword == mConfirm){
                     password = mPassword.getText().toString().trim();
-                }
-                else{
-                    return;
-                }
+
                 String firstname = mFirstName.getText().toString().trim();
                 String lastName = mLastName.getText().toString().trim();
                 String email = mEmail.getText().toString().trim();

@@ -96,19 +96,16 @@ id cardView5
 id card_view
 id checkBox
 id checkBox2
+id confirm_password
 id couponVertical
 id coupontext
 id dateFirstOrder
 id drawer_layout
 id editText
-id editText2
-id editText3
-id editText4
 id editText5
-id editText6
-id editText7
-id editText8
 id editText9
+id email
+id first_name
 id idIVLaundryImage
 id idIVSelectLaundryImage
 id idIVSelectLaundryItemImage
@@ -147,6 +144,7 @@ id imageView6
 id imageView7
 id imageView8
 id imageView9
+id last_name
 id mapView
 id mapView2
 id nav_first_fragment
@@ -155,6 +153,7 @@ id nav_third_fragment
 id nvView
 id orderHorizontal
 id orderId
+id password
 id priceOrders
 id ratingBar
 id rvHorizontal
@@ -220,6 +219,7 @@ id titleLaundry
 id titleOutlet
 id tvMessage
 id tvTitle
+id username
 id visa
 id welcomeText
 layout activity_check_out

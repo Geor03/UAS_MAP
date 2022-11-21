@@ -1304,6 +1304,10 @@ color bright_foreground_inverse_material_dark
 color bright_foreground_inverse_material_light
 color bright_foreground_material_dark
 color bright_foreground_material_light
+color browser_actions_bg_grey
+color browser_actions_divider_color
+color browser_actions_text_color
+color browser_actions_title_color
 color button_material_dark
 color button_material_light
 color cardview_dark_background
@@ -1972,6 +1976,8 @@ dimen abc_text_size_subtitle_material_toolbar
 dimen abc_text_size_title_material
 dimen abc_text_size_title_material_toolbar
 dimen appcompat_dialog_background_inset
+dimen browser_actions_context_menu_max_width
+dimen browser_actions_context_menu_min_padding
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
 dimen cardview_default_radius
@@ -2863,6 +2869,11 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id browser_actions_header_text
+id browser_actions_menu_item_icon
+id browser_actions_menu_item_text
+id browser_actions_menu_items
+id browser_actions_menu_view
 id button5
 id button6
 id button7
@@ -2913,6 +2924,7 @@ id closest
 id collapseActionView
 id compress
 id confirm_button
+id confirm_password
 id constraint
 id container
 id content
@@ -2966,16 +2978,11 @@ id easeInOut
 id easeOut
 id east
 id editText
-id editText2
-id editText3
-id editText4
 id editText5
-id editText6
-id editText7
-id editText8
 id editText9
 id edit_query
 id elastic
+id email
 id embed
 id end
 id endToStart
@@ -2989,6 +2996,7 @@ id fill
 id fill_horizontal
 id fill_vertical
 id filled
+id first_name
 id fitCenter
 id fitEnd
 id fitStart
@@ -3073,6 +3081,7 @@ id item_touch_helper_previous_elevation
 id jumpToEnd
 id jumpToStart
 id labeled
+id last_name
 id layout
 id left
 id leftToRight
@@ -3178,6 +3187,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id password
 id password_toggle
 id path
 id pathRelative
@@ -3378,6 +3388,7 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id vertical_only
 id view_offset_helper
 id view_transition
@@ -3537,6 +3548,8 @@ layout activity_select_laundry_item
 layout activity_select_laundry_outlet
 layout activity_sign_up
 layout activity_splash_screen
+layout browser_actions_context_menu_page
+layout browser_actions_context_menu_row
 layout coupon_view
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3622,6 +3635,7 @@ menu side_bar
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+raw firebase_common_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3680,12 +3694,16 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string copy_toast_msg
 string default_web_client_id
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string fallback_menu_item_copy_link
+string fallback_menu_item_open_in_browser
+string fallback_menu_item_share_link
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
@@ -4997,3 +5015,4 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
+xml image_share_filepaths
