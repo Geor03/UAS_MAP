@@ -3,17 +3,21 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_first_fragment"
+            android:id="@+id/home"
             android:title="Home"
             android:checked="true"
             android:clickable = "true"/>
         <item
-            android:id="@+id/nav_second_fragment"
+            android:id="@+id/profile"
             android:title="Profile"
             android:clickable = "true"/>
         <item
-            android:id="@+id/nav_third_fragment"
+            android:id="@+id/faq"
             android:title="FAQ"
+            android:clickable = "true"/>
+        <item
+            android:id="@+id/logout"
+            android:title="Log Out"
             android:clickable = "true"/>
     </group>
 </menu>
