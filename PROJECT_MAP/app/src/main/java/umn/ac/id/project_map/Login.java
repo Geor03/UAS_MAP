@@ -1,15 +1,34 @@
 package umn.ac.id.project_map;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ProgressBar;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class Login extends AppCompatActivity {
     private Button btnLogin;
     private Button btnSingup;
+//    EditText mEmail, mPassword;
+//    Button mLoginBtn;
+    TextView mSingup;
+    ProgressBar progressBar;
+    FirebaseAuth firebaseAuth;
+    EditText mFirstName, mLastName, mEmail, mPassword, mUsername, mConfirm;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,19 +36,63 @@ public class Login extends AppCompatActivity {
         btnLogin = (Button) findViewById(R.id.button_login);
         btnSingup = (Button) findViewById(R.id.button_singup);
 
+        mEmail = (EditText)findViewById(R.id.email);
+        mPassword = (EditText) findViewById(R.id.password);
+        firebaseAuth = FirebaseAuth.getInstance();
+//        mLoginBtn = findViewById(R.id.button_login);
+//        mSingup = findViewById(R.id.button_singup);
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentLoginToHome = new Intent(Login.this, MainActivity.class);
-                startActivity(intentLoginToHome);
+//                Intent intentLoginToHome = new Intent(Login.this, MainActivity.class);
+//                startActivity(intentLoginToHome);
+
+                String password = mPassword.getText().toString().trim();
+                String email = mEmail.getText().toString().trim();
+
+                if(TextUtils.isEmpty(email)){
+                    mEmail.setError("Email is required");
+                    return;
+
+                }
+                if(TextUtils.isEmpty(password)){
+                    mPassword.setError("Password is required");
+                    return;
+                }
+
+                if(password.length() < 6){
+                    mPassword.setError("Password must be >=  6 characters");
+                    return;
+                }
+
+                firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        if(task.isSuccessful()) {
+                            Toast.makeText(Login.this, "Logged In Successfully.", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                        }else{
+                            Toast.makeText(Login.this, "Error!!" + task.getException().getMessage() , Toast.LENGTH_SHORT).show();
+
+                        }
+                    }
+                });
             }
         });
 
-        btnSingup.setOnClickListener(new View.OnClickListener() {
+//        btnSingup.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intentSingUp = new Intent(Login.this, SignUp.class);
+//                startActivity(intentSingUp);
+//            }
+//        });
+
+        btnSingup.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                Intent intentSingUp = new Intent(Login.this, SignUp.class);
-                startActivity(intentSingUp);
+            public void onClick(View v){
+                startActivity(new Intent(getApplicationContext(),SignUp.class));
             }
         });
     }

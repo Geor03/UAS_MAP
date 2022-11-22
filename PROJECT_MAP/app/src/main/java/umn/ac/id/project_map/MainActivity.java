@@ -19,6 +19,7 @@ import android.widget.ImageButton;
 import android.widget.Toolbar;
 
 import com.google.android.material.navigation.NavigationView;
+import com.google.firebase.auth.FirebaseAuth;
 
 import java.util.ArrayList;
 
@@ -146,20 +147,26 @@ public class MainActivity extends AppCompatActivity {
         Fragment fragment = null;
         Intent intent;
         switch(menuItem.getItemId()) {
-            case R.id.nav_first_fragment:
+            case R.id.home:
                 intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
                 break;
-            case R.id.nav_second_fragment:
+            case R.id.profile:
                 intent = new Intent(this, Profile.class);
-//                menuItem.setChecked(true);
-//                // Close the navigation drawer
-//                mDrawer.closeDrawers();
                 startActivity(intent);
+                break;
+            case R.id.logout:
+                logout();
                 break;
             default:
 //                fragmentClass = MainActivity.class;
         }
 
+    }
+
+    public void logout(){
+        FirebaseAuth.getInstance().signOut();
+        startActivity(new Intent(getApplicationContext(),Login.class));
+        finish();
     }
 }
