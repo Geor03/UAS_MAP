@@ -52,6 +52,10 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
 //        }
     }
 
+    public void showMore(View view){
+
+    }
+
 //    private void checkMyPermission(){
 //        Dexter.withContext(this).withPermission(Manifest.permission.ACCESS_FINE_LOCATION).withListener(new PermissionListener(){
 //            @Override
