@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
@@ -18,6 +19,7 @@
         card_view:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteY="1dp"
         android:orientation="vertical">
+
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -42,6 +44,8 @@
                 android:background="@drawable/back_button"
                 card_view:layout_constraintStart_toStartOf="parent"
                 card_view:layout_constraintTop_toTopOf="parent" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.cardview.widget.CardView
@@ -88,6 +92,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="80dp"
                     android:text="Home"
+                    android:textAllCaps="false"
                     android:textColor="@color/black"
                     card_view:layout_constraintBottom_toBottomOf="parent"
                     card_view:layout_constraintEnd_toEndOf="parent"
@@ -101,6 +106,7 @@
                     android:layout_marginBottom="10dp"
                     android:text="Jl. Curug Sangereng Village No.81, Curug Sangereng, Kec. clp. Dua, Tangerang Regency, Banten 15810"
                     android:textColor="@color/black"
+                    android:textAllCaps="false"
                     card_view:layout_constraintBottom_toBottomOf="parent"
                     card_view:layout_constraintEnd_toEndOf="parent"
                     card_view:layout_constraintHorizontal_bias="0.225"
@@ -112,6 +118,7 @@
                     android:layout_marginBottom="116dp"
                     android:background="@drawable/custom_button_address"
                     android:text="Change Address"
+                    android:textAllCaps="false"
                     android:textColor="@color/white"
                     android:textSize="8sp"
                     card_view:layout_constraintBottom_toBottomOf="parent"
@@ -124,7 +131,7 @@
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView"
-            android:layout_width="381dp"
+            android:layout_width="370dp"
             android:layout_height="117dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
@@ -140,43 +147,53 @@
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="17dp">
 
-            <RelativeLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="63dp">
 
+
                 <TextView
-                    android:id="@+id/Coupon"
-                    android:layout_width="75dp"
-                    android:layout_height="33dp"
+                    android:id="@+id/coupon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="37dp"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginEnd="262dp"
-                    android:layout_marginBottom="16dp"
-                    android:text="Coupons" />
+                    android:drawableLeft="@drawable/ic_coupon_icon"
+                    android:drawablePadding="6dp"
+                    android:text="Coupon"
+                    android:textAllCaps="false"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toStartOf="@+id/Add"
+                    card_view:layout_constraintHorizontal_bias="0.083"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
+                <Button
                     android:id="@+id/Add"
-                    android:layout_width="75dp"
-                    android:layout_height="32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="287dp"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginEnd="12dp"
-                    android:layout_marginBottom="17dp"
-                    android:text="Add" />
+                    android:layout_marginEnd="29dp"
+                    android:text="+ Add"
+                    android:textSize="13sp"
+                    android:textAllCaps="false"
+                    android:background="@color/trans"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent" />
 
-            </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
+
+
 
                 <Switch
                     android:id="@+id/switch1"
@@ -195,15 +212,15 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
-            android:id="@+id/cardView2"
-            android:layout_width="381dp"
-            android:layout_height="149dp"
-            android:layout_margin="16dp"
-            android:layout_gravity="center"
+            android:id="@+id/cardview_expandable"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
             card_view:cardCornerRadius="13dp"
             card_view:cardElevation="3dp"
             card_view:layout_constraintBottom_toBottomOf="parent"
@@ -213,143 +230,162 @@
             card_view:layout_constraintTop_toTopOf="parent"
             card_view:layout_constraintVertical_bias="0.426">
 
-            <RelativeLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="102dp">
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteX="91dp"
+                tools:layout_editor_absoluteY="11dp">
 
                 <TextView
-                    android:id="@+id/Service"
+                    android:id="@+id/Item_details"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginTop="9dp"
-                    android:layout_marginEnd="341dp"
-                    android:layout_marginBottom="73dp"
-                    android:text="Service" />
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Item Details"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent" />
 
-                <TextView
-                    android:id="@+id/service"
-                    android:layout_width="104dp"
-                    android:layout_height="20dp"
+                <Button
+                    android:id="@+id/Addmoreitem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="18dp"
-                    android:layout_marginTop="36dp"
-                    android:layout_marginEnd="283dp"
-                    android:layout_marginBottom="45dp"
-                    android:text="Laundry Full" />
+                    android:layout_marginStart="169dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/trans"
+                    android:fontFamily="sans-serif"
+                    android:text="Add more item"
+                    android:textAllCaps="false"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toEndOf="@+id/Item_details"
+                    card_view:layout_constraintTop_toTopOf="parent" />
+
 
                 <TextView
-                    android:id="@+id/service2"
-                    android:layout_width="74dp"
-                    android:layout_height="21dp"
+                    android:id="@+id/item_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="296dp"
-                    android:layout_marginTop="44dp"
-                    android:layout_marginEnd="11dp"
-                    android:layout_marginBottom="37dp"
-                    android:text="RP.10.000" />
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="13dp"
+                    android:text="Item Type"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/Item_details" />
 
                 <TextView
-                    android:id="@+id/Price"
-                    android:layout_width="91dp"
-                    android:layout_height="17dp"
+                    android:id="@+id/qty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="305dp"
-                    android:layout_marginTop="11dp"
-                    android:layout_marginEnd="9dp"
-                    android:layout_marginBottom="73dp"
-                    android:text="Price/Gram" />
-
-            </RelativeLayout>
-        </androidx.cardview.widget.CardView>
-
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView3"
-            android:layout_width="381dp"
-            android:layout_height="115dp"
-            android:layout_margin="16dp"
-            android:layout_gravity="center"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            card_view:cardCornerRadius="13dp"
-            card_view:cardElevation="3dp"
-            card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.832"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="17dp">
-
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="100dp">
+                    android:layout_marginTop="12dp"
+                    android:text="Qty"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/Item_details" />
 
                 <TextView
-                    android:id="@+id/Item_details"
-                    android:layout_width="86dp"
-                    android:layout_height="24dp"
+                    android:id="@+id/total_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginEnd="269dp"
-                    android:layout_marginBottom="49dp"
-                    android:text="Item Details" />
+                    android:layout_marginTop="12dp"
+                    android:text="Total Price"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.954"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/Item_details" />
 
-                <TextView
-                    android:id="@+id/Total_price"
-                    android:layout_width="80dp"
-                    android:layout_height="20dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginStart="289dp"
-                    android:layout_marginTop="22dp"
-                    android:layout_marginEnd="11dp"
-                    android:layout_marginBottom="44dp"
-                    android:text="Total Price" />
 
-            </RelativeLayout>
+
+<!--                <TextView-->
+<!--                    android:id="@+id/showMore"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height=""-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_alignParentTop="true"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_marginTop="28dp"-->
+<!--                    android:onClick="showMore"-->
+<!--                    android:text="Show item details"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:textSize="10sp"-->
+<!--                    card_view:layout_constraintEnd_toEndOf="parent"-->
+<!--                    card_view:layout_constraintStart_toStartOf="parent"-->
+<!--                    card_view:layout_constraintTop_toBottomOf="@+id/qty" />-->
+
+<!--                <androidx.recyclerview.widget.RecyclerView-->
+<!--                    android:layout_width="335dp"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_marginTop="28dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    card_view:layout_constraintBottom_toBottomOf="parent"-->
+<!--                    card_view:layout_constraintEnd_toEndOf="parent"-->
+<!--                    card_view:layout_constraintHorizontal_bias="0.502"-->
+<!--                    card_view:layout_constraintStart_toStartOf="parent"-->
+<!--                    card_view:layout_constraintTop_toBottomOf="@+id/qty" />-->
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_margin="10dp"-->
+<!--                android:orientation="vertical"-->
+<!--                android:visibility="visible">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="this is just testing"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="20sp"-->
+
+<!--            </LinearLayout>-->
+
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView4"
-            android:layout_width="381dp"
-            android:layout_height="200dp"
-            android:layout_margin="16dp"
-            android:layout_gravity="center"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
             card_view:cardCornerRadius="13dp"
-            card_view:cardElevation="3dp"
+            card_view:cardMaxElevation="0dp"
             card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintTop_toTopOf="parent"
             card_view:layout_constraintVertical_bias="0.832"
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="17dp">
 
-            <RelativeLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="151dp">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp">
 
                 <TextView
                     android:id="@+id/Total_order"
@@ -359,11 +395,12 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginEnd="267dp"
-                    android:layout_marginBottom="103dp"
-                    android:text="Total Order" />
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Total Order"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
                     android:id="@+id/Subtotal"
@@ -373,11 +410,13 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginTop="54dp"
-                    android:layout_marginEnd="278dp"
-                    android:layout_marginBottom="77dp"
-                    android:text="Subtotal" />
+                    android:layout_marginTop="8dp"
+                    android:text="Subtotal"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.055"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/Total_order" />
 
                 <TextView
                     android:id="@+id/subtotal"
@@ -387,11 +426,14 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginTop="78dp"
-                    android:layout_marginEnd="248dp"
-                    android:layout_marginBottom="54dp"
-                    android:text="Shipping Cost" />
+                    android:layout_marginTop="8dp"
+                    android:text="Shipping Cost"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.061"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/Subtotal" />
 
                 <TextView
                     android:id="@+id/subtotal2"
@@ -401,18 +443,114 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginTop="102dp"
-                    android:layout_marginEnd="248dp"
-                    android:layout_marginBottom="25dp"
-                    android:text="Promo" />
+                    android:layout_marginTop="8dp"
+                    android:text="Promo"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.048"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/subtotal" />
 
-            </RelativeLayout>
+                <TextView
+                    android:id="@+id/price_subtotal"
+                    android:layout_width="81dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="8dp"
+                    android:text="Rp.xxx.xxx"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.944"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/Total_order" />
+
+                <TextView
+                    android:id="@+id/price_shippingCost"
+                    android:layout_width="81dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="8dp"
+                    android:text="Rp.xxx.xxx"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.944"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/price_subtotal" />
+
+                <TextView
+                    android:id="@+id/price_promo"
+                    android:layout_width="81dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="8dp"
+                    android:text="Rp.xxx.xxx"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.944"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/price_shippingCost" />
+
+                <ImageView
+                    android:id="@+id/imageView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/stripe_black_horizontal"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="131dp" />
+
+                <TextView
+                    android:id="@+id/total_harga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="2dp"
+                    android:text="Total Price"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.048"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/imageView25" />
+
+                <TextView
+                    android:id="@+id/price_totalharga"
+                    android:layout_width="81dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="2dp"
+                    android:text="Rp.xxx.xxx"
+                    android:textColor="@color/black"
+                    android:visibility="visible"
+
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.944"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/imageView25" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView5"
-            android:layout_width="381dp"
+            android:layout_width="370dp"
             android:layout_height="200dp"
             android:layout_margin="16dp"
             android:layout_gravity="center"
@@ -428,39 +566,64 @@
             tools:ignore="MissingConstraints"
             tools:layout_editor_absoluteX="17dp">
 
-            <RelativeLayout
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="100dp">
+                android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/Payment_detail"
-                    android:layout_width="86dp"
-                    android:layout_height="24dp"
+                    android:id="@+id/choose_paymentMethod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginTop="27dp"
-                    android:layout_marginEnd="269dp"
-                    android:layout_marginBottom="49dp"
-                    android:text="Payment Detail" />
+                    android:layout_marginTop="8dp"
+                    android:text="Choose Payment Method"
+                    android:textAllCaps="false"
+                    card_view:layout_constraintTop_toBottomOf="@+id/title_paymentMethodl"
+                    tools:layout_editor_absoluteX="16dp" />
+
+                <TextView
+                    android:id="@+id/title_paymentMethodl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Payment Method"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    card_view:layout_constraintEnd_toEndOf="parent"
+                    card_view:layout_constraintHorizontal_bias="0.0"
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toTopOf="parent" />
+
+
 
                 <TextView
                     android:id="@+id/visa"
-                    android:layout_width="80dp"
-                    android:layout_height="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
-                    android:layout_marginStart="22dp"
-                    android:layout_marginTop="54dp"
-                    android:layout_marginEnd="278dp"
-                    android:layout_marginBottom="12dp"
-                    android:text="Visa" />
+                    android:text="Virtual Account"
+                    android:textColor="@color/white"
+                    android:drawableLeft="@drawable/ic_va"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="2dp"
+                    android:drawablePadding="12dp"
+                    android:background="@drawable/custom_button_dark"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="78dp" />
 
-            </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
         <RelativeLayout

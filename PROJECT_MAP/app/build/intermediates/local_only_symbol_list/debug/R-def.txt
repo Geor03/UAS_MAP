@@ -35,8 +35,10 @@ drawable folding_image
 drawable gradient_bg_login
 drawable gradient_bg_logout
 drawable gradient_bg_splashscreen
+drawable ic_coupon_icon
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_va
 drawable ironing_image
 drawable laundry_button
 drawable laundry_image
@@ -54,22 +56,25 @@ drawable satu
 drawable shorts_item
 drawable star
 drawable stripe_black
+drawable stripe_black_horizontal
+drawable total_order_bg
 drawable tshirt_item
 drawable usecode_button
 drawable vit_outlet
 drawable waterfall_outlet
 id Add
-id Coupon
+id Addmoreitem
 id Coupontext
 id Item_details
 id Notification
-id Payment_detail
-id Price
-id Service
 id Subtotal
 id Total_order
+<<<<<<< Updated upstream
 id Total_price
 id agree
+=======
+id WelcomeText
+>>>>>>> Stashed changes
 id appCompatButton
 id button5
 id button6
@@ -89,12 +94,18 @@ id button_registerAccount
 id button_singup
 id button_toSelectOutlet
 id cardView
-id cardView2
-id cardView3
 id cardView4
 id cardView5
 id card_view
+<<<<<<< Updated upstream
+=======
+id cardview_expandable
+id checkBox
+id checkBox2
+id choose_paymentMethod
+>>>>>>> Stashed changes
 id confirm_password
+id coupon
 id couponVertical
 id coupontext
 id dateFirstOrder
@@ -135,6 +146,8 @@ id imageView21
 id imageView22
 id imageView23
 id imageView24
+id imageView25
+id imageView26
 id imageView3
 id imageView4
 id imageView5
@@ -142,23 +155,42 @@ id imageView6
 id imageView7
 id imageView8
 id imageView9
+id item_type
 id last_name
 id logout
 id mapView
 id mapView2
+<<<<<<< Updated upstream
 id name
+=======
+>>>>>>> Stashed changes
 id nvView
 id orderHorizontal
 id orderId
 id password
 id phone
 id priceOrders
+<<<<<<< Updated upstream
 id profile
 id ratingBar
 id rvHorizontal
 id savelogin
 id service
 id service2
+=======
+id price_promo
+id price_shippingCost
+id price_subtotal
+id price_totalharga
+id profile
+id profileEmailAddress
+id profileFirstName
+id profileLastName
+id profilePhoneNo
+id qty
+id ratingBar
+id rvHorizontal
+>>>>>>> Stashed changes
 id status
 id subtotal
 id subtotal2
@@ -213,6 +245,9 @@ id textView9
 id titleAddress
 id titleLaundry
 id titleOutlet
+id title_paymentMethodl
+id total_harga
+id total_price
 id tvMessage
 id tvTitle
 id username
@@ -221,6 +256,7 @@ id welcomeText
 layout activity_check_out
 layout activity_confirm_order
 layout activity_coupon_list
+layout activity_edit_profile
 layout activity_login
 layout activity_main
 layout activity_notification
