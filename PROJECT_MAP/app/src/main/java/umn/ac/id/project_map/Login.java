@@ -4,10 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -21,12 +23,12 @@ import com.google.firebase.auth.FirebaseAuth;
 public class Login extends AppCompatActivity {
     private Button btnLogin;
     private Button btnSingup;
-//    EditText mEmail, mPassword;
-//    Button mLoginBtn;
-    TextView mSingup;
-    ProgressBar progressBar;
     FirebaseAuth firebaseAuth;
-    EditText mFirstName, mLastName, mEmail, mPassword, mUsername, mConfirm;
+    EditText mEmail, mPassword;
+    CheckBox mSave;
+    Boolean agree;
+    SharedPreferences signupPreferences;
+
 
 
     @Override
@@ -35,19 +37,14 @@ public class Login extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         btnLogin = (Button) findViewById(R.id.button_login);
         btnSingup = (Button) findViewById(R.id.button_singup);
-
         mEmail = (EditText)findViewById(R.id.email);
         mPassword = (EditText) findViewById(R.id.password);
+        mSave = (CheckBox) findViewById(R.id.savelogin);
         firebaseAuth = FirebaseAuth.getInstance();
-//        mLoginBtn = findViewById(R.id.button_login);
-//        mSingup = findViewById(R.id.button_singup);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                Intent intentLoginToHome = new Intent(Login.this, MainActivity.class);
-//                startActivity(intentLoginToHome);
-
                 String password = mPassword.getText().toString().trim();
                 String email = mEmail.getText().toString().trim();
 
@@ -80,14 +77,6 @@ public class Login extends AppCompatActivity {
                 });
             }
         });
-
-//        btnSingup.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intentSingUp = new Intent(Login.this, SignUp.class);
-//                startActivity(intentSingUp);
-//            }
-//        });
 
         btnSingup.setOnClickListener(new View.OnClickListener(){
             @Override

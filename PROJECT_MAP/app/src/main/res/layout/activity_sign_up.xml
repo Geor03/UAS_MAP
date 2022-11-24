@@ -32,7 +32,7 @@
         android:textColorHint="@color/white"
         android:textSize="14sp"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintBottom_toTopOf="@+id/phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent" />
@@ -55,12 +55,12 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/username"
+        android:id="@+id/phone"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/custom_input_login_logout"
-        android:hint="Username"
+        android:hint="Phone Number"
         android:paddingLeft="10dp"
         android:textColorHint="@color/white"
         android:textSize="14sp"
@@ -127,7 +127,6 @@
         android:layout_height="41.93dp"
         android:layout_marginBottom="68dp"
         android:background="@drawable/custom_button_login"
-
         android:text="Register my account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,7 +134,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <CheckBox
-        android:id="@+id/checkBox2"
+        android:id="@+id/agree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="140dp"

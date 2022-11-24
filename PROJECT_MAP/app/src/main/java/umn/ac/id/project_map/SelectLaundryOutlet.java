@@ -22,19 +22,9 @@ public class SelectLaundryOutlet extends AppCompatActivity{
         btnBackToSelectLaundry.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentBackToHome = new Intent(SelectLaundryOutlet.this, SelectLaundry.class);
-                startActivity(intentBackToHome);
+                onBackPressed();
             }
         });
-//        btnOrder = (Button) findViewById(R.id.button);
-
-//        btnOrder.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intentOrderButton = new Intent(SelectLaundryOutlet.this, SelectLaundryItem.class);
-//                startActivity(intentOrderButton);
-//            }
-//        });
 
         RecyclerView laundryRV = findViewById(R.id.idRVLaundry);
 

@@ -18,7 +18,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/WelcomeText"
+                android:id="@+id/name"
                 android:layout_width="222dp"
                 android:layout_height="29dp"
                 android:text="Hello, Casey Limbert"
@@ -29,6 +29,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.086"
+                android:textAlignment="center"
                 tools:ignore="MissingConstraints" />
 
             <TextView
@@ -46,16 +47,6 @@
                 app:layout_constraintVertical_bias="0.127"
                 tools:ignore="MissingConstraints" />
 
-
-            <Button
-                android:id="@+id/button_logout"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:onClick="logout"
-                android:text="logout"
-                tools:layout_editor_absoluteX="161dp"
-                tools:layout_editor_absoluteY="15dp"
-                tools:ignore="MissingConstraints" />
 
             <Button
                 android:id="@+id/button_order"

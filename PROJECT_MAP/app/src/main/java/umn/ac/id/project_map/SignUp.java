@@ -4,11 +4,13 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -25,10 +27,14 @@ import java.util.Map;
 
 public class SignUp extends AppCompatActivity {
     private Button btnRegisterAccount, mLoginBtn;
-    EditText mFirstName, mLastName, mEmail, mPassword, mUsername, mConfirm;
+    EditText mFirstName, mLastName, mEmail, mPassword, mPNumber, mConfirm;
+    CheckBox mAgree;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
     String userID;
+    Boolean agree;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,26 +44,30 @@ public class SignUp extends AppCompatActivity {
         mFirstName = (EditText) findViewById(R.id.first_name);
         mLastName = (EditText) findViewById(R.id.last_name);
         mEmail = (EditText) findViewById(R.id.email);
-        mUsername = (EditText) findViewById(R.id.username);
+        mPNumber = (EditText) findViewById(R.id.phone);
         mPassword = (EditText) findViewById(R.id.password);
         mConfirm = (EditText) findViewById(R.id.confirm_password);
+        mAgree = (CheckBox) findViewById(R.id.agree);
         mLoginBtn = findViewById(R.id.button_singup);
-
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
 
 
         btnRegisterAccount.setOnClickListener(new View.OnClickListener() {
-            String password;
             @Override
             public void onClick(View view) {
-                password = mPassword.getText().toString().trim();
+                String password = mPassword.getText().toString().trim();
+                String confirm = mConfirm.getText().toString().trim();
                 String firstname = mFirstName.getText().toString().trim();
                 String lastName = mLastName.getText().toString().trim();
                 String email = mEmail.getText().toString().trim();
-                String username = mUsername.getText().toString().trim();
+                String phone = mPNumber.getText().toString().trim();
 
+                if(TextUtils.isEmpty(confirm)){
+                    mConfirm.setError("Name is required");
+                    return;
+                }
                 if(TextUtils.isEmpty(firstname)){
                     mFirstName.setError("Name is required");
                     return;
@@ -68,7 +78,7 @@ public class SignUp extends AppCompatActivity {
                     return;
 
                 }
-                if(TextUtils.isEmpty(username)){
+                if(TextUtils.isEmpty(phone)){
                     mFirstName.setError("Username is required");
                     return;
                 }
@@ -81,46 +91,43 @@ public class SignUp extends AppCompatActivity {
                     mPassword.setError("Password must be >=  6 characters");
                     return;
                 }
-                fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
-                    @Override
-                    public void onComplete(@NonNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
-                            Toast.makeText(SignUp.this, "User Created.", Toast.LENGTH_SHORT).show();
-                            userID = fAuth.getCurrentUser().getUid();
-                            DocumentReference documentReference = fStore.collection("users").document(userID);
-                            Map<String, Object> user = new HashMap<>();
-                            user.put("fName", firstname);
-                            user.put("lName", lastName);
-                            user.put("email", email);
-                            user.put("username",username);
-                            documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
-                                @Override
-                                public void onSuccess(Void unused) {
-                                    Log.d("TAG","onSuccess: user profile is created for"+userID);
+                if (mAgree.isChecked()) {
+
+                    if(password.equals(confirm)){
+                        fAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                            @Override
+                            public void onComplete(@NonNull Task<AuthResult> task) {
+                                if(task.isSuccessful()){
+                                    Toast.makeText(SignUp.this, "User Created.", Toast.LENGTH_SHORT).show();
+                                    userID = fAuth.getCurrentUser().getUid();
+                                    DocumentReference documentReference = fStore.collection("users").document(userID);
+                                    Map<String, Object> user = new HashMap<>();
+                                    user.put("fName", firstname);
+                                    user.put("lName", lastName);
+                                    user.put("email", email);
+                                    user.put("phoneNum",phone);
+                                    documentReference.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                                        @Override
+                                        public void onSuccess(Void unused) {
+                                            Log.d("TAG","onSuccess: user profile is created for"+userID);
+                                        }
+                                        public void onFailure(@NonNull Exception e){
+                                            Log.d("TAG","onFailure:"+e.toString());
+                                        }
+                                    });
+                                    startActivity(new Intent(SignUp.this, Login.class));
                                 }
-                                public void onFailure(@NonNull Exception e){
-                                    Log.d("TAG","onFailure:"+e.toString());
+                                else{
+                                    Toast.makeText(SignUp.this, "Error!!" + task.getException().getMessage() , Toast.LENGTH_SHORT).show();
                                 }
-                            });
-                            startActivity(new Intent(SignUp.this, Login.class));
-                        }
-                        else{
-                            Toast.makeText(SignUp.this, "Error!!" + task.getException().getMessage() , Toast.LENGTH_SHORT).show();
-                        }
+                            }
+                        });
                     }
-                });
-//                Intent intenRegisterAccount = new Intent(SignUp.this, Login.class);
-//                startActivity(intenRegisterAccount);
+                    else{
+                        Toast.makeText(SignUp.this, "Konfirmasi password tidak tepat", Toast.LENGTH_SHORT).show();
+                    }
+                }
             }
         });
-
-//        mLoginBtn.setOnClickListener(new View.OnClickListener(){
-//            @Override
-//            public void onClick(View v){
-//                startActivity(new Intent(getApplicationContext(),Login.class));
-//            }
-//        });
-        
-
     }
 }

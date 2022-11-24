@@ -30,8 +30,7 @@ public class SelectLaundryItem extends AppCompatActivity {
         btnBackToOutlet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentBackToOutlet = new Intent(SelectLaundryItem.this, SelectLaundryOutlet.class);
-                startActivity(intentBackToOutlet);
+                onBackPressed();
             }
         });
         RecyclerView laundryRV = findViewById(R.id.idRVSelectLaundryItem);

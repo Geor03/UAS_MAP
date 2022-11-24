@@ -19,21 +19,12 @@ public class SelectLaundry extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_laundry);
-//        btnToSelectOutlet = (Button) findViewById(R.id.idRVSelectLaundry);
         btnBack = (Button) findViewById(R.id.button_back);
-//        btnToSelectOutlet.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Intent intentOrderButton = new Intent(SelectLaundry.this, SelectLaundryOutlet.class);
-//                startActivity(intentOrderButton);
-//            }
-//        });
 
         btnBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentBackToHome = new Intent(SelectLaundry.this, MainActivity.class);
-                startActivity(intentBackToHome);
+                onBackPressed();
             }
         });
 

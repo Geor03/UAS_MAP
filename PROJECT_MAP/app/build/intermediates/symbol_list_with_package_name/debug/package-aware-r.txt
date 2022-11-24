@@ -2781,7 +2781,6 @@ id TOP_END
 id TOP_START
 id Total_order
 id Total_price
-id WelcomeText
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -2841,6 +2840,7 @@ id activity_chooser_view_content
 id add
 id adjust_height
 id adjust_width
+id agree
 id alertTitle
 id aligned
 id all
@@ -2886,7 +2886,6 @@ id button_confirm
 id button_confirmToCheckout
 id button_forgotPass
 id button_login
-id button_logout
 id button_minus
 id button_order
 id button_plus
@@ -2911,8 +2910,6 @@ id center_vertical
 id chain
 id chain2
 id chains
-id checkBox
-id checkBox2
 id checkbox
 id checked
 id chronometer
@@ -2991,6 +2988,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
+id faq
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3091,6 +3089,7 @@ id line3
 id linear
 id listMode
 id list_item
+id logout
 id mapView
 id mapView2
 id marquee
@@ -3150,9 +3149,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-id nav_first_fragment
-id nav_second_fragment
-id nav_third_fragment
+id name
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3192,11 +3189,13 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id phone
 id pin
 id position
 id postLayout
 id pressed
 id priceOrders
+id profile
 id progress_circular
 id progress_horizontal
 id radio
@@ -3214,6 +3213,7 @@ id rvHorizontal
 id satellite
 id save_non_transition_alpha
 id save_overlay_view
+id savelogin
 id sawtooth
 id scale
 id screen
@@ -3301,7 +3301,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView
 id textView10
 id textView11
 id textView12
@@ -3334,7 +3333,6 @@ id textView36
 id textView37
 id textView38
 id textView39
-id textView4
 id textView40
 id textView41
 id textView42
@@ -3345,10 +3343,8 @@ id textView46
 id textView47
 id textView48
 id textView49
-id textView5
 id textView50
 id textView51
-id textView6
 id textView7
 id textView8
 id textView9
@@ -3703,6 +3699,7 @@ string fab_transformation_sheet_behavior
 string fallback_menu_item_copy_link
 string fallback_menu_item_open_in_browser
 string fallback_menu_item_share_link
+string firebase_database_url
 string gcm_defaultSenderId
 string google_api_key
 string google_app_id
