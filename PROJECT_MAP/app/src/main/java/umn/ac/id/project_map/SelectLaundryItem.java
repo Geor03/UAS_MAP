@@ -23,7 +23,8 @@ public class SelectLaundryItem extends AppCompatActivity {
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onBackPressed();
+                Intent intentToCheckOut = new Intent(SelectLaundryItem.this, OrderPage.class);
+                startActivity(intentToCheckOut);
             }
         });
         btnBackToOutlet.setOnClickListener(new View.OnClickListener() {
