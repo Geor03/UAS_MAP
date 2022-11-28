@@ -115,7 +115,7 @@ public class SignUp extends AppCompatActivity {
                                             Log.d("TAG","onFailure:"+e.toString());
                                         }
                                     });
-                                    startActivity(new Intent(SignUp.this, Login.class));
+                                    startActivity(new Intent(SignUp.this, MainActivity.class));
                                 }
                                 else{
                                     Toast.makeText(SignUp.this, "Error!!" + task.getException().getMessage() , Toast.LENGTH_SHORT).show();

@@ -2781,11 +2781,6 @@ id Subtotal
 id TOP_END
 id TOP_START
 id Total_order
-<<<<<<< Updated upstream
-id Total_price
-=======
-id WelcomeText
->>>>>>> Stashed changes
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3158,10 +3153,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
-<<<<<<< Updated upstream
 id name
-=======
->>>>>>> Stashed changes
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
 id navigation_bar_item_icon_view
@@ -3207,9 +3199,6 @@ id position
 id postLayout
 id pressed
 id priceOrders
-<<<<<<< Updated upstream
-id profile
-=======
 id price_promo
 id price_shippingCost
 id price_subtotal
@@ -3219,7 +3208,6 @@ id profileEmailAddress
 id profileFirstName
 id profileLastName
 id profilePhoneNo
->>>>>>> Stashed changes
 id progress_circular
 id progress_horizontal
 id qty

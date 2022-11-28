@@ -69,12 +69,7 @@ id Item_details
 id Notification
 id Subtotal
 id Total_order
-<<<<<<< Updated upstream
-id Total_price
 id agree
-=======
-id WelcomeText
->>>>>>> Stashed changes
 id appCompatButton
 id button5
 id button6
@@ -97,13 +92,8 @@ id cardView
 id cardView4
 id cardView5
 id card_view
-<<<<<<< Updated upstream
-=======
 id cardview_expandable
-id checkBox
-id checkBox2
 id choose_paymentMethod
->>>>>>> Stashed changes
 id confirm_password
 id coupon
 id couponVertical
@@ -160,24 +150,13 @@ id last_name
 id logout
 id mapView
 id mapView2
-<<<<<<< Updated upstream
 id name
-=======
->>>>>>> Stashed changes
 id nvView
 id orderHorizontal
 id orderId
 id password
 id phone
 id priceOrders
-<<<<<<< Updated upstream
-id profile
-id ratingBar
-id rvHorizontal
-id savelogin
-id service
-id service2
-=======
 id price_promo
 id price_shippingCost
 id price_subtotal
@@ -190,7 +169,7 @@ id profilePhoneNo
 id qty
 id ratingBar
 id rvHorizontal
->>>>>>> Stashed changes
+id savelogin
 id status
 id subtotal
 id subtotal2
