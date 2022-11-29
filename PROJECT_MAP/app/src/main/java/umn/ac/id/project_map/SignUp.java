@@ -51,7 +51,9 @@ public class SignUp extends AppCompatActivity {
         mLoginBtn = findViewById(R.id.button_singup);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
-
+        if(FirebaseAuth.getInstance().getCurrentUser() != null){
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        }
 
 
         btnRegisterAccount.setOnClickListener(new View.OnClickListener() {

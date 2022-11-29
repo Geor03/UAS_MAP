@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class SplashScreen extends AppCompatActivity {
 
     @Override
@@ -16,10 +18,16 @@ public class SplashScreen extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intentSplashScreen = new Intent(SplashScreen.this, Login.class);
-                startActivity(intentSplashScreen);
-
-                finish();
+                if(FirebaseAuth.getInstance().getCurrentUser() != null){
+                    Intent intentSplashScreen = new Intent(SplashScreen.this, MainActivity.class);
+                    startActivity(intentSplashScreen);
+                    finish();
+                }
+                else{
+                    Intent intentSplashScreen = new Intent(SplashScreen.this, Login.class);
+                    startActivity(intentSplashScreen);
+                    finish();
+                }
             }
         }, 3000);
 

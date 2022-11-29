@@ -29,8 +29,6 @@ public class Login extends AppCompatActivity {
     Boolean agree;
     SharedPreferences signupPreferences;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,24 +40,33 @@ public class Login extends AppCompatActivity {
         mSave = (CheckBox) findViewById(R.id.savelogin);
         firebaseAuth = FirebaseAuth.getInstance();
 
+        if(FirebaseAuth.getInstance().getCurrentUser() != null){
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        }
+
+
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                btnLogin.setEnabled(false);
                 String password = mPassword.getText().toString().trim();
                 String email = mEmail.getText().toString().trim();
 
                 if(TextUtils.isEmpty(email)){
                     mEmail.setError("Email is required");
+                    btnLogin.setEnabled(true);
                     return;
 
                 }
                 if(TextUtils.isEmpty(password)){
                     mPassword.setError("Password is required");
+                    btnLogin.setEnabled(true);
                     return;
                 }
 
                 if(password.length() < 6){
                     mPassword.setError("Password must be >=  6 characters");
+                    btnLogin.setEnabled(true);
                     return;
                 }
 
@@ -71,7 +78,7 @@ public class Login extends AppCompatActivity {
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
                         }else{
                             Toast.makeText(Login.this, "Error!!" + task.getException().getMessage() , Toast.LENGTH_SHORT).show();
-
+                            btnLogin.setEnabled(true);
                         }
                     }
                 });

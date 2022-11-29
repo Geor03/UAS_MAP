@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
@@ -19,16 +20,19 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.auth.User;
 
 public class Profile extends AppCompatActivity {
     //    TextView fName, email, phone;
-    TextView email, phone;
-    EditText fName;
+
+    EditText fName, email, phone;
+
+    public String firstName, lastName, dbEmail, dbPhone;
 
 
-    FirebaseAuth fAuth;
-    FirebaseFirestore fStore;
-    String userID,_FIRSTNAME, _EMAIL, _PHONENO;
+    protected FirebaseAuth fAuth;
+    protected FirebaseFirestore fStore;
+    String userID;
 
     DocumentReference reference;
 
@@ -43,20 +47,26 @@ public class Profile extends AppCompatActivity {
 
         reference = FirebaseFirestore.getInstance().collection("users").document(userID);
 
-        phone = (TextView) findViewById(R.id.phone);
+        phone = (EditText) findViewById(R.id.phone);
         fName = (EditText) findViewById(R.id.name);
-        email = (TextView) findViewById(R.id.email);
+        email = (EditText) findViewById(R.id.email);
 
 //        showAllUserData();
 
 
         DocumentReference documentReference = fStore.collection("users").document(userID);
-        documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
+        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
-            public void onEvent(@Nullable DocumentSnapshot documentSnapshot, @Nullable FirebaseFirestoreException error) {
-                phone.setText(documentSnapshot.getString("phoneNum"));
-                fName.setText(documentSnapshot.getString("fName")+" "+documentSnapshot.getString("lName"));
-                email.setText(documentSnapshot.getString("email"));
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                dbPhone = documentSnapshot.getString("phoneNum");
+                firstName = documentSnapshot.getString("fName");
+                lastName = documentSnapshot.getString("lName");
+                dbEmail = documentSnapshot.getString("email");
+                phone.setText(dbPhone);
+                fName.setText(firstName+" "+lastName);
+                email.setText(dbEmail);
+                //user = documentSnapshot.toObject(User.class);
+
             }
         });
     }
@@ -72,7 +82,6 @@ public class Profile extends AppCompatActivity {
 //        fName.setText(_FIRSTNAME);
 //    }
 
-
     public void update(View view){
 
         if(isNameChanged()){
@@ -84,10 +93,10 @@ public class Profile extends AppCompatActivity {
 
 
     public boolean isNameChanged() {
+
 //        if(!_FIRSTNAME.equals(fName.getEditableText().toString())){
-        if(!_FIRSTNAME.equals(fName.getText().toString())){
+        if(!firstName.equals(fName.getText().toString())){
             reference.update("fName",fName.getText().toString());//iini itu buat se ke DB nya
-            _FIRSTNAME = fName.getEditableText().toString();
             return true;
         }
         else{

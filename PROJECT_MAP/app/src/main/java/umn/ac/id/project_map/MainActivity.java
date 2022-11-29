@@ -68,6 +68,10 @@ public class MainActivity extends AppCompatActivity {
         fName = findViewById(R.id.name);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
+        
+        if(FirebaseAuth.getInstance().getCurrentUser() != null){
+            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        }
 
         userID = fAuth.getCurrentUser().getUid();
         DocumentReference documentReference = fStore.collection("users").document(userID);
@@ -166,6 +170,13 @@ public class MainActivity extends AppCompatActivity {
         //________set adapters
         orderHorizontal.setAdapter(orderAdapter);
         rvHorizontal.setAdapter(couponAdapter);
+    }
+
+    @Override
+    public void onRestart() {
+        super.onRestart();
+        //When BACK BUTTON is pressed, the activity on the stack is restarted
+        //Do what you want on the refresh procedure here
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
