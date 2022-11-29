@@ -71,6 +71,7 @@ id Subtotal
 id Total_order
 id agree
 id appCompatButton
+id btnUpdate
 id button5
 id button6
 id button7
@@ -121,7 +122,6 @@ id idTVSelectOutletDesc
 id idTVTitle
 id imageView
 id imageView10
-id imageView11
 id imageView12
 id imageView13
 id imageView14
@@ -179,7 +179,6 @@ id textView11
 id textView12
 id textView13
 id textView14
-id textView15
 id textView16
 id textView17
 id textView18

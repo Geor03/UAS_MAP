@@ -30,15 +30,18 @@ public class Profile extends AppCompatActivity {
     FirebaseFirestore fStore;
     String userID,_FIRSTNAME, _EMAIL, _PHONENO;
 
-    DatabaseReference reference;
+    DocumentReference reference;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
+        fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
+        userID = fAuth.getCurrentUser().getUid();
 
-        reference = FirebaseDatabase.getInstance().getReference("users");
 
+        reference = FirebaseFirestore.getInstance().collection("users").document(userID);
 
         phone = (TextView) findViewById(R.id.phone);
         fName = (EditText) findViewById(R.id.name);
@@ -47,10 +50,6 @@ public class Profile extends AppCompatActivity {
 //        showAllUserData();
 
 
-        fAuth = FirebaseAuth.getInstance();
-        fStore = FirebaseFirestore.getInstance();
-
-        userID = fAuth.getCurrentUser().getUid();
         DocumentReference documentReference = fStore.collection("users").document(userID);
         documentReference.addSnapshotListener(this, new EventListener<DocumentSnapshot>() {
             @Override
@@ -87,7 +86,7 @@ public class Profile extends AppCompatActivity {
     public boolean isNameChanged() {
 //        if(!_FIRSTNAME.equals(fName.getEditableText().toString())){
         if(!_FIRSTNAME.equals(fName.getText().toString())){
-            reference.child(userID).child("name").setValue(fName.getEditableText().toString());
+            reference.update("fName",fName.getText().toString());//iini itu buat se ke DB nya
             _FIRSTNAME = fName.getEditableText().toString();
             return true;
         }

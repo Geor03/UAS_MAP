@@ -2874,6 +2874,7 @@ id browser_actions_menu_item_icon
 id browser_actions_menu_item_text
 id browser_actions_menu_items
 id browser_actions_menu_view
+id btnUpdate
 id button5
 id button6
 id button7
@@ -3046,7 +3047,6 @@ id ignoreRequest
 id image
 id imageView
 id imageView10
-id imageView11
 id imageView12
 id imageView13
 id imageView14
@@ -3317,7 +3317,6 @@ id textView11
 id textView12
 id textView13
 id textView14
-id textView15
 id textView16
 id textView17
 id textView18
