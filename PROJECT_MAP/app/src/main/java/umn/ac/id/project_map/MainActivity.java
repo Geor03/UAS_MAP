@@ -69,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
         
-        if(FirebaseAuth.getInstance().getCurrentUser() != null){
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
+        if(FirebaseAuth.getInstance().getCurrentUser() == null){
+            startActivity(new Intent(getApplicationContext(), Login.class));
         }
 
         userID = fAuth.getCurrentUser().getUid();
