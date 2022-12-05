@@ -28,9 +28,15 @@
         <activity
             android:name=".Notification"
             android:exported="false" />
-        <activity
-            android:name=".Coupon_list"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".Coupon_list"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".CouponAdapter"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".Coupon_list"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".SplashScreen"
             android:exported="true">

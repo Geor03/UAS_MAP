@@ -11,8 +11,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
@@ -25,18 +27,22 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
+//    RecyclerView recyclerView;
     private RecyclerView rvHorizontal;
     private RecyclerView orderHorizontal;
+    ArrayList<Coupon_list> couponArrayList;
     private ArrayList<String> titleDataList;
     private ArrayList<String> messageDataList;
     private ArrayList<String> statusDataList;
@@ -45,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<String> priceOrderDataList;
     private RecyclerView.LayoutManager mLayoutManagerHorizontal;
     private RecyclerView.LayoutManager orderManagerHorizontal;
-    private CouponAdapter couponAdapter;
+    CouponAdapter couponAdapter;
     private OrderAdapter orderAdapter;
     private Button btnOrder;
 
@@ -54,20 +60,37 @@ public class MainActivity extends AppCompatActivity {
     private Button sidebar;
     boolean mSlideState;
     private TextView fName;
-    String userID;
+    String userID, voucherID;
 
 
     FirebaseAuth fAuth;
+    //FirebaseFirestore db;
     FirebaseFirestore fStore;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ProgressDialog progressDialog = new ProgressDialog(this);
+        progressDialog.setCancelable(false);
+        progressDialog.setMessage("Fetching Data...");
+        progressDialog.show();
+
+        rvHorizontal = findViewById(R.id.rvHorizontal);
+        rvHorizontal.setHasFixedSize(true);
+        rvHorizontal.setLayoutManager(new LinearLayoutManager(this));
+
         fName = findViewById(R.id.name);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
+        couponArrayList = new ArrayList<Coupon_list>();
+        couponAdapter = new CouponAdapter(MainActivity.this, couponArrayList);
+
+        rvHorizontal.setAdapter(couponAdapter);
+
+        EventChangeListener();
         
         if(FirebaseAuth.getInstance().getCurrentUser() == null){
             startActivity(new Intent(getApplicationContext(), Login.class));
@@ -75,6 +98,8 @@ public class MainActivity extends AppCompatActivity {
 
         userID = fAuth.getCurrentUser().getUid();
         DocumentReference documentReference = fStore.collection("users").document(userID);
+
+
         documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -170,6 +195,38 @@ public class MainActivity extends AppCompatActivity {
         //________set adapters
         orderHorizontal.setAdapter(orderAdapter);
         rvHorizontal.setAdapter(couponAdapter);
+    }
+    //kelar onCreate
+    private void EventChangeListener(){
+        fStore.collection("vouchers")
+                .addSnapshotListener(new EventListener<QuerySnapshot>(){
+            @Override
+            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error){
+
+                if(error != null){
+
+                    if(progressDialog.isShowing())
+                        progressDialog.dismiss();
+
+
+                    Log.e("Firestore error", error.getMessage());
+                    return;
+                }
+
+                for(DocumentChange dc : value.getDocumentChanges()){
+
+                    if(dc.getType() == DocumentChange.Type.ADDED){
+
+                        couponArrayList.add(dc.getDocument().toObject(Coupon_list.class));
+
+                    }
+
+                    couponAdapter.notifyDataSetChanged();
+                    if(progressDialog.isShowing())
+                        progressDialog.dismiss();
+                }
+            }
+        });
     }
 
     @Override

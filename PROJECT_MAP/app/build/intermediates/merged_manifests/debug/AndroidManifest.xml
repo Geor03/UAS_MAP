@@ -49,9 +49,15 @@
         <activity
             android:name="umn.ac.id.project_map.Notification"
             android:exported="false" />
-        <activity
-            android:name="umn.ac.id.project_map.Coupon_list"
-            android:exported="false" />
+        <!-- <activity -->
+        <!-- android:name=".Coupon_list" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".CouponAdapter" -->
+        <!-- android:exported="false" /> -->
+        <!-- <activity -->
+        <!-- android:name=".Coupon_list" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name="umn.ac.id.project_map.SplashScreen"
             android:exported="true" >
