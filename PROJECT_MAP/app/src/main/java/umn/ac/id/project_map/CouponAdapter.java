@@ -36,7 +36,7 @@ public class CouponAdapter extends RecyclerView.Adapter<CouponAdapter.ViewHolder
         Coupon_list coupon = couponArrayList.get(position);
 
         holder.name.setText(coupon.name);
-        holder.desc.setText(coupon.desc);
+        holder.date.setText(coupon.date);
     }
 // 08.57
     @Override
@@ -50,7 +50,7 @@ public class CouponAdapter extends RecyclerView.Adapter<CouponAdapter.ViewHolder
         public ViewHolder(@NonNull View itemView){
             super(itemView);
             name = itemView.findViewById(R.id.tvTitle);
-            desc = itemView.findViewById(R.id.tvMessage);
+            date = itemView.findViewById(R.id.tvMessage);
 
         }
 

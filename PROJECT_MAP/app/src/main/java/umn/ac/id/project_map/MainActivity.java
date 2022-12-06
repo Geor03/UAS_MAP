@@ -39,40 +39,31 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-//    RecyclerView recyclerView;
     private RecyclerView rvHorizontal;
     private RecyclerView orderHorizontal;
-    ArrayList<Coupon_list> couponArrayList;
-    private ArrayList<String> titleDataList;
-    private ArrayList<String> messageDataList;
     private ArrayList<OrderModel> orderArrayList;
-    private ArrayList<String> addressDataList;
-    private ArrayList<String> dateOrderDataList;
-    private ArrayList<String> priceOrderDataList;
+    private ArrayList<Coupon_list> couponArrayList;
     private RecyclerView.LayoutManager mLayoutManagerHorizontal;
     private RecyclerView.LayoutManager orderManagerHorizontal;
     CouponAdapter couponAdapter;
-    private OrderAdapter orderAdapter;
+    OrderAdapter orderAdapter;
+
     private Button btnOrder;
+    private Button sidebar;
+    private DrawerLayout mDrawer;
     private NavigationView nvDrawer;
+    boolean mSlideState;
+
     private TextView fName;
 
     String userID;
-    List<String> myListOfDocuments = new ArrayList<>();
-
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
-    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        ProgressDialog progressDialog = new ProgressDialog(this);
-        progressDialog.setCancelable(false);
-        progressDialog.setMessage("Fetching Data...");
-        progressDialog.show();
 
         rvHorizontal = findViewById(R.id.rvHorizontal);
         rvHorizontal.setHasFixedSize(true);
@@ -81,13 +72,7 @@ public class MainActivity extends AppCompatActivity {
         fName = findViewById(R.id.name);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
-        couponArrayList = new ArrayList<Coupon_list>();
-        couponAdapter = new CouponAdapter(MainActivity.this, couponArrayList);
 
-        rvHorizontal.setAdapter(couponAdapter);
-
-        EventChangeListener();
-        
         if(FirebaseAuth.getInstance().getCurrentUser() == null){
             startActivity(new Intent(getApplicationContext(), Login.class));
         }
@@ -153,70 +138,47 @@ public class MainActivity extends AppCompatActivity {
 
         //________initialize
         rvHorizontal = (RecyclerView) findViewById(R.id.rvHorizontal);
-
         orderHorizontal = (RecyclerView) findViewById(R.id.orderHorizontal);
+
         orderManagerHorizontal = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        orderHorizontal.setLayoutManager(orderManagerHorizontal);
-
-        orderArrayList = new ArrayList<OrderModel>();
-        orderAdapter = new OrderAdapter(orderArrayList, this);
-
-        CouponAdapter couponAdapter;
-
-        orderHorizontal.setAdapter(orderAdapter);
-        titleDataList = new ArrayList<>();
-        messageDataList = new ArrayList<>();
-
-        fetchData();
-
-        //________add dummy titles and message
-        for (int i = 1; i <= 20; i++) {
-            titleDataList.add("Title " + i);
-            messageDataList.add("message " + i);
-        }
-
-
-        //________initialize adapters
-        couponAdapter = new CouponAdapter(titleDataList, messageDataList);
-
-        //________initialize layout managers
         mLayoutManagerHorizontal = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
 
         //________set layout managers
+        orderHorizontal.setLayoutManager(orderManagerHorizontal);
         rvHorizontal.setLayoutManager(mLayoutManagerHorizontal);
 
+
+        orderArrayList = new ArrayList<OrderModel>();
+        couponArrayList = new ArrayList<Coupon_list>();
+
+        //________initialize adapters
+        couponAdapter = new CouponAdapter(this, couponArrayList);
+        orderAdapter = new OrderAdapter(orderArrayList, this);
+
         //________set adapters
+        orderHorizontal.setAdapter(orderAdapter);
         rvHorizontal.setAdapter(couponAdapter);
+
+
+        fetchData();
+        EventChangeListener();
 
     }
     //kelar onCreate
     private void EventChangeListener(){
-        fStore.collection("vouchers")
-                .addSnapshotListener(new EventListener<QuerySnapshot>(){
+        fStore.collection("vouchers").orderBy("date", Query.Direction.ASCENDING).addSnapshotListener(new EventListener<QuerySnapshot>(){
             @Override
             public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error){
-
                 if(error != null){
-
-                    if(progressDialog.isShowing())
-                        progressDialog.dismiss();
-
-
                     Log.e("Firestore error", error.getMessage());
                     return;
                 }
-
                 for(DocumentChange dc : value.getDocumentChanges()){
-
                     if(dc.getType() == DocumentChange.Type.ADDED){
-
                         couponArrayList.add(dc.getDocument().toObject(Coupon_list.class));
-
                     }
 
                     couponAdapter.notifyDataSetChanged();
-                    if(progressDialog.isShowing())
-                        progressDialog.dismiss();
                 }
             }
         });
