@@ -75,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(FirebaseAuth.getInstance().getCurrentUser() == null){
             startActivity(new Intent(getApplicationContext(), Login.class));
+            finish();
         }
 
         userID = fAuth.getCurrentUser().getUid();
@@ -230,6 +231,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.home:
                 intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
+                finish();
                 break;
             case R.id.profile:
                 intent = new Intent(this, Profile.class);

@@ -42,6 +42,7 @@ public class Login extends AppCompatActivity {
 
         if(FirebaseAuth.getInstance().getCurrentUser() != null){
             startActivity(new Intent(getApplicationContext(), MainActivity.class));
+            finish();
         }
 
 
@@ -76,6 +77,7 @@ public class Login extends AppCompatActivity {
                         if(task.isSuccessful()) {
                             Toast.makeText(Login.this, "Logged In Successfully.", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                            finish();
                         }else{
                             Toast.makeText(Login.this, "Error!!" + task.getException().getMessage() , Toast.LENGTH_SHORT).show();
                             btnLogin.setEnabled(true);

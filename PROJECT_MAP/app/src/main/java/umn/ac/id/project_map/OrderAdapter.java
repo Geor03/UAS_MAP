@@ -9,11 +9,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> {
     Context context;
     ArrayList<OrderModel>orderArrayList;
+    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
     //________create  constructor with required parameter
     public OrderAdapter(ArrayList<OrderModel>orderArrayList, Context context){
 
@@ -39,7 +42,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
         //________set data to the objects of each row widget
         holder.status.setText(order.status);
         holder.address.setText(order.address);
-        holder.dateOrder.setText(order.date.toString());
+        holder.dateOrder.setText(format.format(order.date));
         holder.priceOrder.setText(order.total_price);
     }
 
