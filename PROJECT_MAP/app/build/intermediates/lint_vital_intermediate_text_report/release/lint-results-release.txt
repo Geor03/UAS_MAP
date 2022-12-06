@@ -1,0 +1,16 @@
+C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\res\layout\activity_login.xml:62: Error: The id "username" is not defined anywhere. [UnknownId]
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:\Users\LENOVO\UASMobile\UAS_MAP\PROJECT_MAP\app\src\main\res\layout\order_view.xml:85: Error: The id "orderId" is not defined anywhere. [UnknownId]
+                card_view:layout_constraintStart_toEndOf="@+id/orderId"
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   Explanation for issues of type "UnknownId":
+   The @+id/ syntax refers to an existing id, or creates a new one if it has
+   not already been defined elsewhere. However, this means that if you have a
+   typo in your reference, or if the referred view no longer exists, you do
+   not get a warning since the id will be created on demand. This check
+   catches errors where you have renamed an id without updating all of the
+   references to it.
+
+2 errors, 0 warnings

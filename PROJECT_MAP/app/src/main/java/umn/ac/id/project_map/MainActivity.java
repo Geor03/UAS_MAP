@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         if(FirebaseAuth.getInstance().getCurrentUser() == null){
             startActivity(new Intent(getApplicationContext(), Login.class));
+            finish();
         }
 
         userID = fAuth.getCurrentUser().getUid();
