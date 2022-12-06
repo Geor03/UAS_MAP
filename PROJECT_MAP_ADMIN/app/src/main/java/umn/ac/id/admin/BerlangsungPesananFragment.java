@@ -16,10 +16,10 @@ import java.util.ArrayList;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link TerimaFragment#newInstance} factory method to
+ * Use the {@link BerlangsungPesananFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class TerimaFragment extends Fragment {
+public class BerlangsungPesananFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -29,12 +29,12 @@ public class TerimaFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private ArrayList<TerimaPesananModel> TerimaPesananModelArrayList;
+    private ArrayList<PesananBerlangsungModel> PesananBerlangsungArraylist;
     private String[] detailNamaPelanggan;
     private String[] detailTotalItem;
-    private RecyclerView recyclerviewTerimaPesanan;
+    private RecyclerView recyclerviewPesananBerlangsung;
 
-    public TerimaFragment() {
+    public BerlangsungPesananFragment() {
         // Required empty public constructor
     }
 
@@ -44,11 +44,11 @@ public class TerimaFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment TerimaFragment.
+     * @return A new instance of fragment BerlangsungPesananFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static TerimaFragment newInstance(String param1, String param2) {
-        TerimaFragment fragment = new TerimaFragment();
+    public static BerlangsungPesananFragment newInstance(String param1, String param2) {
+        BerlangsungPesananFragment fragment = new BerlangsungPesananFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -69,7 +69,7 @@ public class TerimaFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_terima, container, false);
+        return inflater.inflate(R.layout.fragment_berlangsung_pesanan, container, false);
     }
 
     @Override
@@ -78,29 +78,34 @@ public class TerimaFragment extends Fragment {
 
         dataInitialize();
 
-        recyclerviewTerimaPesanan = view.findViewById(R.id.rvTerimaPesanan);
-        recyclerviewTerimaPesanan.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerviewTerimaPesanan.setHasFixedSize(true);
-        TerimaPesananAdapter TerimaPesananAdapter = new TerimaPesananAdapter(getContext(),TerimaPesananModelArrayList);
-        recyclerviewTerimaPesanan.setAdapter(TerimaPesananAdapter);
-        TerimaPesananAdapter.notifyDataSetChanged();
+        recyclerviewPesananBerlangsung = view.findViewById(R.id.rvPesananBerlangsung);
+        recyclerviewPesananBerlangsung.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerviewPesananBerlangsung.setHasFixedSize(true);
+        PesananBerlangsungAdapter PesananBerlangsungAdapter = new PesananBerlangsungAdapter(getContext(), PesananBerlangsungArraylist);
+        recyclerviewPesananBerlangsung.setAdapter(PesananBerlangsungAdapter);
+        PesananBerlangsungAdapter.notifyDataSetChanged();
+
     }
 
     private void dataInitialize() {
-        TerimaPesananModelArrayList = new ArrayList<>();
+        PesananBerlangsungArraylist = new ArrayList<>();
 
         detailNamaPelanggan = new String[]{
                 getString(R.string.nama1),
-                getString(R.string.nama2)
+                getString(R.string.nama2),
+                getString(R.string.nama3),
+                getString(R.string.nama4)
         };
         detailTotalItem = new String[]{
                 getString(R.string.item1),
                 getString(R.string.item2),
+                getString(R.string.item3),
+                getString(R.string.item4)
         };
 
         for(int i = 0; i < detailNamaPelanggan.length; i++){
-            TerimaPesananModel terimaPesananModel = new TerimaPesananModel(detailNamaPelanggan[i], detailTotalItem[i]);
-            TerimaPesananModelArrayList.add(terimaPesananModel);
+            PesananBerlangsungModel pesananBerlangsungModel = new PesananBerlangsungModel(detailNamaPelanggan[i], detailTotalItem[i]);
+            PesananBerlangsungArraylist.add(pesananBerlangsungModel);
         }
     }
 }
