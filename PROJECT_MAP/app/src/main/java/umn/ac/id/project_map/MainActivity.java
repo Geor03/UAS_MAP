@@ -7,21 +7,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.nfc.Tag;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toolbar;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -33,9 +31,11 @@ import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -45,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Coupon_list> couponArrayList;
     private ArrayList<String> titleDataList;
     private ArrayList<String> messageDataList;
-    private ArrayList<String> statusDataList;
-    private ArrayList<String> orderidDataList;
+    private ArrayList<OrderModel> orderArrayList;
+    private ArrayList<String> addressDataList;
     private ArrayList<String> dateOrderDataList;
     private ArrayList<String> priceOrderDataList;
     private RecyclerView.LayoutManager mLayoutManagerHorizontal;
@@ -54,17 +54,13 @@ public class MainActivity extends AppCompatActivity {
     CouponAdapter couponAdapter;
     private OrderAdapter orderAdapter;
     private Button btnOrder;
-
-    private DrawerLayout mDrawer;
     private NavigationView nvDrawer;
-    private Button sidebar;
-    boolean mSlideState;
     private TextView fName;
-    String userID, voucherID;
 
+    String userID;
+    List<String> myListOfDocuments = new ArrayList<>();
 
     FirebaseAuth fAuth;
-    //FirebaseFirestore db;
     FirebaseFirestore fStore;
     ProgressDialog progressDialog;
 
@@ -157,13 +153,21 @@ public class MainActivity extends AppCompatActivity {
 
         //________initialize
         rvHorizontal = (RecyclerView) findViewById(R.id.rvHorizontal);
+
         orderHorizontal = (RecyclerView) findViewById(R.id.orderHorizontal);
+        orderManagerHorizontal = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+        orderHorizontal.setLayoutManager(orderManagerHorizontal);
+
+        orderArrayList = new ArrayList<OrderModel>();
+        orderAdapter = new OrderAdapter(orderArrayList, this);
+
+        CouponAdapter couponAdapter;
+
+        orderHorizontal.setAdapter(orderAdapter);
         titleDataList = new ArrayList<>();
         messageDataList = new ArrayList<>();
-        statusDataList = new ArrayList<>();
-        orderidDataList = new ArrayList<>();
-        dateOrderDataList = new ArrayList<>();
-        priceOrderDataList = new ArrayList<>();
+
+        fetchData();
 
         //________add dummy titles and message
         for (int i = 1; i <= 20; i++) {
@@ -171,30 +175,19 @@ public class MainActivity extends AppCompatActivity {
             messageDataList.add("message " + i);
         }
 
-        //_______add dummy status,order,date,price
-        for(int k = 1; k <= 20; k++){
-            statusDataList.add("Status " + k);
-            orderidDataList.add("Order ID: " + k);
-            dateOrderDataList.add("oct : " + k);
-            priceOrderDataList.add("Rp " + k + ".000");
-        }
 
         //________initialize adapters
         couponAdapter = new CouponAdapter(titleDataList, messageDataList);
-        orderAdapter = new OrderAdapter(statusDataList, orderidDataList, dateOrderDataList, priceOrderDataList);
 
         //________initialize layout managers
-        orderManagerHorizontal = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
         mLayoutManagerHorizontal = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
 
-
         //________set layout managers
-        orderHorizontal.setLayoutManager(orderManagerHorizontal);
         rvHorizontal.setLayoutManager(mLayoutManagerHorizontal);
 
         //________set adapters
-        orderHorizontal.setAdapter(orderAdapter);
         rvHorizontal.setAdapter(couponAdapter);
+
     }
     //kelar onCreate
     private void EventChangeListener(){
@@ -229,6 +222,26 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void fetchData(){
+        //_______add dummy status,order,date,price
+        fStore.collection("users").document(userID).collection("orders").orderBy("address", Query.Direction.ASCENDING).addSnapshotListener(new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error){
+                if(error != null){
+                    Log.e("Firestore error", error.getMessage());
+                    return;
+                }
+                for(DocumentChange dc : value.getDocumentChanges()){
+                    if(dc.getType() == DocumentChange.Type.ADDED){
+                        orderArrayList.add(dc.getDocument().toObject(OrderModel.class));
+                    }
+                }
+                orderAdapter.notifyDataSetChanged();
+
+            }
+        });
+
+    }
     @Override
     public void onRestart() {
         super.onRestart();
