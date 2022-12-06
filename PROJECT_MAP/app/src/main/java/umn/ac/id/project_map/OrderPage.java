@@ -55,25 +55,6 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
 
     }
 
-//    private void checkMyPermission(){
-//        Dexter.withContext(this).withPermission(Manifest.permission.ACCESS_FINE_LOCATION).withListener(new PermissionListener(){
-//            @Override
-//            public void onPermissionGranted(PermissionGrantedResponse permissionGrantedResponse){
-//                Toast.makeText(OrderPage.this, "Permission Granted", Toast.LENGTH_SHORT).show();
-//                isPermissionGranted = true;
-//            }
-//            @Override
-//            public void onPermissionDenied(PermissionDeniedResponse premissionDeniedResponse){
-//                Intent intent = new Intent();
-//                intent.setAction(Settings.ACTION_APPLICATION_DETAILS_SETTINGS);
-//                Uri uri = Uri.fromParts("package", getPackageName(), "");
-//            }
-//            @Override
-//            public void onPermissionRationaleShouldBeShown(PermissionRequest permissionRequest, PermissionToken permissionToken){
-//                permissionToken.continuePermissionRequest();
-//            }
-//        }).check();
-//    }
     @Override
     public void onMapReady(GoogleMap googleMap){
         googleMap.addMarker(new MarkerOptions().position(new LatLng(0,0)).title("Marker"));

@@ -6,39 +6,39 @@ import android.os.Bundle;
 
     public class SelectLaundryOutletModel {
 
-        private String laundry_name;
-//        private int laundry_rating;
-        private int laundry_image;
+        public String outlet_name;
+        public int laundry_image;
+        public String tagline;
 
+        public SelectLaundryOutletModel(){}
         // Constructor
-        public SelectLaundryOutletModel(String laundry_name, int laundry_image) {
-            this.laundry_name = laundry_name;
-//            this.course_rating = course_rating;
-            this.laundry_image = laundry_image;
+        public SelectLaundryOutletModel(String outlet_name, String tagline) {
+            this.outlet_name = outlet_name;
+            this.tagline = tagline;
         }
 
         // Getter and Setter
         public String getLaundry_name() {
-            return laundry_name;
+            return outlet_name;
         }
+
+        public String getLaundry_desc() {
+            return tagline;
+        }
+
+//        public int getLaundry_image() {
+//            return laundry_image;
+//        }
 
         public void setLaundry_name(String laundry_name) {
-            this.laundry_name = laundry_name;
+            this.outlet_name = outlet_name;
         }
 
-//        public int getCourse_rating() {
-//            return course_rating;
+        public void setLaundry_desc(String tagline) {
+            this.tagline = tagline;
+        }
+
+//        public void setLaundry_image(int laundry_image) {
+//            this.laundry_image = laundry_image;
 //        }
-
-//        public void setCourse_rating(int course_rating) {
-//            this.course_rating = course_rating;
-//        }
-
-        public int getLaundry_image() {
-            return laundry_image;
-        }
-
-        public void setCourse_image(int laundry_image) {
-            this.laundry_image = laundry_image;
-        }
     }

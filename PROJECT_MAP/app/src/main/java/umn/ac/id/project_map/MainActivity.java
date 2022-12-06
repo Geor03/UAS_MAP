@@ -65,10 +65,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        rvHorizontal = findViewById(R.id.rvHorizontal);
-        rvHorizontal.setHasFixedSize(true);
-        rvHorizontal.setLayoutManager(new LinearLayoutManager(this));
-
         fName = findViewById(R.id.name);
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
@@ -79,8 +75,6 @@ public class MainActivity extends AppCompatActivity {
 
         userID = fAuth.getCurrentUser().getUid();
         DocumentReference documentReference = fStore.collection("users").document(userID);
-
-
         documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
@@ -230,6 +224,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.home:
                 intent = new Intent(this, MainActivity.class);
                 startActivity(intent);
+                finish();
                 break;
             case R.id.profile:
                 intent = new Intent(this, Profile.class);
@@ -239,7 +234,6 @@ public class MainActivity extends AppCompatActivity {
                 logout();
                 break;
             default:
-//                fragmentClass = MainActivity.class;
         }
 
     }

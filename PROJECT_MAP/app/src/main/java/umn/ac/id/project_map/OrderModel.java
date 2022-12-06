@@ -3,16 +3,17 @@ package umn.ac.id.project_map;
 import java.util.Date;
 
 public class OrderModel {
-    String address, outlet, status;
+    String address, outlet, status, laundry_type;
     Date date;
     String total_cardigans, total_dress, total_outwear, total_pants, total_shirt, total_shorts, total_tshirts, total_tie;
     String total_price;
 
     public OrderModel(){}
-    public OrderModel(String address, Date date,String outlet,String status, String total_cardigans,String total_dress,String total_outwear,String total_pants,String total_shirt,String total_shorts,String total_tshirts,String total_tie, String total_price){
+    public OrderModel(String address, Date date,String outlet,String status, String total_cardigans,String total_dress,String total_outwear,String total_pants,String total_shirt,String total_shorts,String total_tshirts,String total_tie, String total_price, String laundry_type){
         this.address = address;
         this.date = date;
         this.outlet = outlet;
+        this.laundry_type = laundry_type;
         this.status = status;
         this.total_cardigans = total_cardigans;
         this.total_dress = total_dress;
@@ -23,6 +24,10 @@ public class OrderModel {
         this.total_tshirts = total_tshirts;
         this.total_tie = total_tie;
         this.total_price = total_price;
+    }
+
+    public String getLaundry_type() {
+        return laundry_type;
     }
 
     public String getAddress(){
@@ -95,6 +100,10 @@ public class OrderModel {
 
     public void setTotal_cardigans(String total_cardigans) {
         this.total_cardigans = total_cardigans;
+    }
+
+    public void setLaundry_type(String laundry_type) {
+        this.laundry_type = laundry_type;
     }
 
     public void setTotal_dress(String total_dress) {

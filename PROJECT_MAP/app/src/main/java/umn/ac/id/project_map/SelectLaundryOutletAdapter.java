@@ -1,8 +1,5 @@
 package umn.ac.id.project_map;
 
-//public class LaundryAdapter {
-//
-//}
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -37,9 +34,9 @@ public class SelectLaundryOutletAdapter extends RecyclerView.Adapter<SelectLaund
     public void onBindViewHolder(@NonNull SelectLaundryOutletAdapter.ViewHolder holder, int position) {
         // to set data to textview and imageview of each card layout
         SelectLaundryOutletModel model = laundryModelArrayList.get(position);
-        holder.laundryNameTV.setText(model.getLaundry_name());
-//        holder.LaundryRatingTV.setText("" + model.getLaundry_rating());
-        holder.laundryIV.setImageResource(model.getLaundry_image());
+
+        holder.laundryNameTV.setText(model.outlet_name);
+        holder.laundryDesc.setText(model.tagline);
     }
 
     @Override
@@ -50,14 +47,16 @@ public class SelectLaundryOutletAdapter extends RecyclerView.Adapter<SelectLaund
 
     // View holder class for initializing of your views such as TextView and Imageview
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private final ImageView laundryIV;
-        private final TextView laundryNameTV;
+        public ImageView laundryIV;
+        public TextView laundryNameTV;
+        public TextView laundryDesc;
         //private final TextView laundryRatingTV;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             laundryIV = itemView.findViewById(R.id.idIVLaundryImage);
-            laundryNameTV = itemView.findViewById(R.id.idTVLaundryName);
+            laundryNameTV = (TextView) itemView.findViewById(R.id.idTVLaundryName);
+            laundryDesc = (TextView) itemView.findViewById(R.id.idTVSelectOutletDesc);
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
