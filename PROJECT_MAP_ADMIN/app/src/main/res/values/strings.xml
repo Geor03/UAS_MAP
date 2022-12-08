@@ -2,4 +2,13 @@
     <string name="app_name">Admin</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="nama1">joji</string>
+    <string name="nama2">limbert</string>
+    <string name="nama3">chard</string>
+    <string name="nama4">rofty</string>
+
+    <string name="item1">x20 item(s)</string>
+    <string name="item2">x14 item(s)</string>
+    <string name="item3">x8 item(s)</string>
+    <string name="item4">x19 item(s)</string>
 </resources>

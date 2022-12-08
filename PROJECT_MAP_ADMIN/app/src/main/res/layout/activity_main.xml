@@ -32,21 +32,20 @@
                 android:textAlignment="center"
                 tools:ignore="MissingConstraints" />
 
+
             <TextView
                 android:id="@+id/welcomeText"
                 android:layout_width="203dp"
                 android:layout_height="32dp"
+                android:layout_marginTop="4dp"
                 android:gravity="center"
-                android:text="Terima Pesanan"
+                android:text="Semoga sukses terus ya... :)"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.127"
+                app:layout_constraintTop_toBottomOf="@+id/name"
                 tools:ignore="MissingConstraints" />
-
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvHorizontal"
@@ -85,9 +84,11 @@
                 android:clickable = "true"/>
 
             <FrameLayout
+                android:id="@+id/frame_layout"
                 android:layout_width="363dp"
-                android:layout_height="541dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="1dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginEnd="1dp"
                 android:layout_marginBottom="1dp"
                 android:background="@drawable/custom_background_dark_gray"
@@ -95,7 +96,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/welcomeText"
-                app:layout_constraintVertical_bias="0.382">
+                app:layout_constraintVertical_bias="0.0">
 
             </FrameLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -106,7 +107,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:background="@android:color/white"
-        app:menu="@menu/side_bar"
+        app:menu="@menu/drawer_menuadminsidebar"
         tools:ignore="MissingConstraints" />
 
 </androidx.drawerlayout.widget.DrawerLayout>
