@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView fName;
 
-    String userID;
+    String userID, orderID;
     FirebaseAuth fAuth;
     FirebaseFirestore fStore;
 

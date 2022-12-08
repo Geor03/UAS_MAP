@@ -3038,7 +3038,6 @@ id idRVSelectLaundryItem
 id idTVLaundryName
 id idTVMessage
 id idTVSelectLaundryDesc
-id idTVSelectLaundryItemName
 id idTVSelectLaundryName
 id idTVSelectOutletDesc
 id idTVTitle
@@ -3078,6 +3077,7 @@ id info
 id invisible
 id inward
 id italic
+id item_name
 id item_touch_helper_previous_elevation
 id item_type
 id jumpToEnd
@@ -3342,7 +3342,6 @@ id textView34
 id textView35
 id textView36
 id textView37
-id textView38
 id textView39
 id textView40
 id textView41

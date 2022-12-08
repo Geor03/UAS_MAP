@@ -17,7 +17,7 @@
 
         <!-- ImageVIew to display our Course Image -->
         <TextView
-            android:id="@+id/textView38"
+            android:id="@+id/qty"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0"
@@ -46,11 +46,11 @@
 
         <!-- Text View to display Course Name -->
         <TextView
-            android:id="@+id/idTVSelectLaundryItemName"
+            android:id="@+id/item_name"
             android:layout_width="150dp"
             android:layout_height="25dp"
             android:layout_toEndOf="@+id/idIVSelectLaundryItemImage"
-            android:text="laundry_name"
+            android:text="item name"
             android:textColor="@color/black"
             android:textSize="17sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -78,7 +78,7 @@
             android:layout_height="32dp"
             android:background="@drawable/minus_button"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/textView38"
+            app:layout_constraintEnd_toStartOf="@+id/qty"
             app:layout_constraintHorizontal_bias="0.948"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"

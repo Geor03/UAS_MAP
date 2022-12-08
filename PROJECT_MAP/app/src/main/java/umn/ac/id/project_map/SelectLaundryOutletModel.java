@@ -4,17 +4,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-    public class SelectLaundryOutletModel {
+import com.google.firebase.firestore.DocumentId;
 
-        public String outlet_name;
+public class SelectLaundryOutletModel {
+
+        public String outlet_name, docId;
         public int laundry_image;
         public String tagline;
 
         public SelectLaundryOutletModel(){}
         // Constructor
-        public SelectLaundryOutletModel(String outlet_name, String tagline) {
+        public SelectLaundryOutletModel(String outlet_name, String tagline, String docId) {
             this.outlet_name = outlet_name;
             this.tagline = tagline;
+            this.docId = docId;
         }
 
         // Getter and Setter
@@ -41,4 +44,15 @@ import android.os.Bundle;
 //        public void setLaundry_image(int laundry_image) {
 //            this.laundry_image = laundry_image;
 //        }
+
+    @DocumentId
+    public String getDocId() {
+        return docId;
     }
+
+    @DocumentId
+    public void setDocId(String docId) {
+        this.docId = docId;
+    }
+
+}

@@ -1,14 +1,11 @@
 package umn.ac.id.project_map;
 
-//public class LaundryAdapter {
-//
-//}
-
 import android.content.Context;
 import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -40,9 +37,27 @@ public class SelectLaundryItemAdapter extends RecyclerView.Adapter<SelectLaundry
     public void onBindViewHolder(@NonNull SelectLaundryItemAdapter.ViewHolder holder, int position) {
         // to set data to textview and imageview of each card layout
         SelectLaundryItemModel model = laundryModelArrayList.get(position);
-        holder.laundryNameTV.setText(model.getLaundry_name());
-//        holder.LaundryRatingTV.setText("" + model.getLaundry_rating());
-        holder.laundryIV.setImageResource(model.getLaundry_image());
+
+        holder.laundryNameTV.setText(model.item_name);
+//        holder.laundryIV.setImageResource(model.gv);
+        holder.qty.setText(String.valueOf(model.qty));
+        holder.add.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                model.addToQuantity();
+                holder.qty.setText(String.valueOf(model.qty));
+                notifyDataSetChanged();
+            }
+        });
+        holder.min.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                model.removeFromQuantity();
+                holder.qty.setText(String.valueOf(model.qty));
+                notifyDataSetChanged();
+            }
+        });
+
     }
 
     @Override
@@ -55,13 +70,18 @@ public class SelectLaundryItemAdapter extends RecyclerView.Adapter<SelectLaundry
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final ImageView laundryIV;
         private final TextView laundryNameTV;
-        //private final TextView laundryRatingTV;
+        private final TextView qty;
+        private final Button add;
+        private final Button min;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             laundryIV = itemView.findViewById(R.id.idIVSelectLaundryItemImage);
-            laundryNameTV = itemView.findViewById(R.id.idTVSelectLaundryItemName);
-            //laundryRatingTV = itemView.findViewById(R.id.idTVLaundryRating);
+            laundryNameTV = itemView.findViewById(R.id.item_name);
+            qty = itemView.findViewById(R.id.qty);
+            add = (Button) itemView.findViewById(R.id.button_plus);
+            min = (Button) itemView.findViewById(R.id.button_minus);
+
         }
     }
 }

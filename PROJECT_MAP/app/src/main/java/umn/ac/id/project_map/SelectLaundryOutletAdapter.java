@@ -2,6 +2,8 @@ package umn.ac.id.project_map;
 
 import android.content.Context;
 import android.content.Intent;
+import android.os.Parcelable;
+import android.util.Log;
 import android.view.LayoutInflater;
         import android.view.View;
         import android.view.ViewGroup;
@@ -9,7 +11,9 @@ import android.view.LayoutInflater;
         import android.widget.TextView;
         import androidx.annotation.NonNull;
         import androidx.recyclerview.widget.RecyclerView;
-        import java.util.ArrayList;
+
+import java.io.Serializable;
+import java.util.ArrayList;
 
 public class SelectLaundryOutletAdapter extends RecyclerView.Adapter<SelectLaundryOutletAdapter.ViewHolder> {
 
@@ -37,6 +41,15 @@ public class SelectLaundryOutletAdapter extends RecyclerView.Adapter<SelectLaund
 
         holder.laundryNameTV.setText(model.outlet_name);
         holder.laundryDesc.setText(model.tagline);
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentToSelectOutlet = new Intent(view.getContext(), SelectLaundryItem.class);
+                intentToSelectOutlet.putExtra("laundry_outlet", model.getDocId());
+                view.getContext().startActivity(intentToSelectOutlet);
+            }
+        });
+        Log.d("Isi dari position", String.valueOf(model.getDocId()));
     }
 
     @Override
@@ -46,7 +59,7 @@ public class SelectLaundryOutletAdapter extends RecyclerView.Adapter<SelectLaund
     }
 
     // View holder class for initializing of your views such as TextView and Imageview
-    public static class ViewHolder extends RecyclerView.ViewHolder {
+    public class ViewHolder extends RecyclerView.ViewHolder {
         public ImageView laundryIV;
         public TextView laundryNameTV;
         public TextView laundryDesc;
@@ -60,7 +73,9 @@ public class SelectLaundryOutletAdapter extends RecyclerView.Adapter<SelectLaund
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    int position = getAdapterPosition();
                     Intent intentToSelectOutlet = new Intent(view.getContext(), SelectLaundryItem.class);
+//                    intentToSelectOutlet.putExtra("laundry_outlet", laundryModelArrayList.get(position).getId());
                     view.getContext().startActivity(intentToSelectOutlet);
                 }
             });

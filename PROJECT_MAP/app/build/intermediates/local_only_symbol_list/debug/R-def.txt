@@ -117,7 +117,6 @@ id idRVSelectLaundryItem
 id idTVLaundryName
 id idTVMessage
 id idTVSelectLaundryDesc
-id idTVSelectLaundryItemName
 id idTVSelectLaundryName
 id idTVSelectOutletDesc
 id idTVTitle
@@ -146,6 +145,7 @@ id imageView6
 id imageView7
 id imageView8
 id imageView9
+id item_name
 id item_type
 id last_name
 id logout
@@ -204,7 +204,6 @@ id textView34
 id textView35
 id textView36
 id textView37
-id textView38
 id textView39
 id textView40
 id textView41
