@@ -59,13 +59,13 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btnPesananBerlangsung"
-                android:layout_width="150dp"
+                android:id="@+id/btnPesananSelesai"
+                android:layout_width="125dp"
                 android:layout_height="30dp"
                 android:layout_marginEnd="16dp"
-                android:background="@drawable/custom_button_pesananberlangsung"
+                android:background="@drawable/custom_button_pesananselesai"
                 android:fontFamily="@font/sfprodisplayregular"
-                android:text="Pesanan Berlangsung"
+                android:text="total_harga"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="14sp"

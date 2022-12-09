@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TerimaFragment">
+    tools:context=".PesananSelesaiFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+        <!-- TODO: Update blank fragment layout -->
         <TextView
             android:id="@+id/welcomeText"
             android:layout_width="203dp"
             android:layout_height="32dp"
             android:layout_marginTop="16dp"
             android:gravity="center"
-            android:text="Terima Pesanan"
+            android:text="Pesanan Selesai"
             android:textColor="@color/white"
             android:textSize="17sp"
             android:textStyle="bold"
@@ -26,7 +27,7 @@
             tools:ignore="MissingConstraints" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvTerimaPesanan"
+            android:id="@+id/rvPesananSelesai"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="12dp"
@@ -36,6 +37,5 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/welcomeText" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 
 </FrameLayout>

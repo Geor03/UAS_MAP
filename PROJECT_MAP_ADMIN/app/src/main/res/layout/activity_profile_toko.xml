@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileToko"
+    android:background="@color/dark_blue">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="360dp"
+        android:layout_height="534dp"
+        android:background="@drawable/custom_card_bgprofile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.67" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="141dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/profile_dummy"
+        app:civ_border_color="#FF284956"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  START TEXTVIEW NAMA TOKO  -->
+
+    <TextView
+        android:id="@+id/tvTitleNamaToko"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="124dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:gravity="center"
+        android:text="Nama Toko"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+    <TextView
+        android:id="@+id/tvNamaToko"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginEnd="73dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:gravity="center"
+        android:text="Laundry Casey"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleNamaToko" />
+
+    <!--  END TEXTVIEW NAMA TOKO  -->
+
+
+    <!--  START TEXTVIEW ALAMAT TOKO  -->
+
+
+    <TextView
+        android:id="@+id/tvTitleAlamatTOko"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="74dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="73dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:gravity="center"
+        android:text="Alamat Toko"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamaToko" />
+
+
+    <TextView
+        android:id="@+id/tvAlamatToko"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="53dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:gravity="center"
+        android:text="Jl. Desa Curug Sangereng No.81, Curug Sangereng, Kec. Klp. Dua, Kabupaten Tangerang, Banten 15810"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.50"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleAlamatTOko" />
+
+    <!--  END TEXTVIEW ALAMAT TOKO  -->
+
+
+    <!--  START TEXTVIEW NOMOR TOKO  -->
+    <TextView
+        android:id="@+id/tvTitleNomorToko"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/sfprodisplayregular"
+        android:gravity="center"
+        android:text="Nomor Toko"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvAlamatToko" />
+
+    <TextView
+        android:id="@+id/tvNomorToko"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="+62 815 6578 9960"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleNomorToko" />
+
+    <!--  END TEXTVIEW NOMOR TOKO  -->
+
+
+    <!--  START TEXTVIEW EMAIL TOKO  -->
+    <TextView
+        android:id="@+id/tvTitleEmailToko"
+        android:layout_width="203dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Email Toko"
+        android:textAllCaps="false"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvNomorToko" />
+
+    <TextView
+
+        android:id="@+id/tvEmailToko"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="laundrycasey@gmail.com"
+        android:textAllCaps="false"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitleEmailToko" />
+    <!--  END TEXTVIEW EMAIL TOKO  -->
+
+
+    <!--  BUTTON EDIT PROFILE  -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnEditProfile"
+        android:layout_width="157dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/custom_button_editprofile"
+        android:gravity="center"
+        android:text="Edit profile"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:fontFamily="@font/sfprodisplaymedium"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmailToko" />
+
+    <!--  BUTTON BACK TO MAIN  -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnBackToMain"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

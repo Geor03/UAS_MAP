@@ -89,6 +89,14 @@ public class MainActivity extends AppCompatActivity {
                         getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,
                                 new BerlangsungPesananFragment()).commit();
                         break;
+                    case R.id.nav_PesananSelesai:
+                        getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout,
+                                new PesananSelesaiFragment()).commit();
+                        break;
+                    case R.id.nav_profileAdmin:
+                        Intent intentProfileToko = new Intent(MainActivity.this, ProfileToko.class);
+                        startActivity(intentProfileToko);
+                        break;
                 }
                 return true;
             }
