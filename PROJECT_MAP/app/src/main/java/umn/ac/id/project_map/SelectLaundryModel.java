@@ -37,4 +37,6 @@ public class SelectLaundryModel {
     public void setLaundry_image(int laundry_image) {
         this.laundry_image = laundry_image;
     }
+
+
 }
