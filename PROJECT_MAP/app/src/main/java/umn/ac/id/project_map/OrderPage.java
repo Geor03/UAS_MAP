@@ -30,11 +30,16 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
     boolean isPermissionGranted;
     MapView mapView;
     private Button btnConfirmToCheckOut;
+    private ArrayList<SelectLaundryItemModel> orderArrayList;
+    private String orderId;
+
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order_page);
-
+        Intent intent = getIntent();
+        orderId = intent.getParcelableExtra("id_outlet");
+        orderArrayList = intent.getParcelableExtra("jumlah_item");
         mapView = findViewById(R.id.mapView);
         btnConfirmToCheckOut = findViewById(R.id.button_confirmToCheckout);
 
@@ -48,17 +53,12 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
 //        if(isPermissionGranted){
             mapView.onCreate(savedInstanceState);
             mapView.getMapAsync(this);
-//        }
     }
 
     public void showMore(View view){
 
     }
 
-    @Override
-    public void onMapReady(GoogleMap googleMap){
-        googleMap.addMarker(new MarkerOptions().position(new LatLng(0,0)).title("Marker"));
-    }
 
     @Override
     protected void onStart(){
@@ -98,5 +98,10 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
     public void onLowMemory() {
         super.onLowMemory();
         mapView.onLowMemory();
+    }
+
+    @Override
+    public void onMapReady(@NonNull GoogleMap googleMap) {
+        googleMap.addMarker(new MarkerOptions().position(new LatLng(0,0)).title("Marker"));
     }
 }
