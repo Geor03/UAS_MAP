@@ -25,7 +25,7 @@ public class SelectLaundryItem extends AppCompatActivity {
     private Button btnBackToOutlet;
     private RecyclerView laundryRV;
     private ArrayList<SelectLaundryItemModel> itemArrayList;
-    private String order;
+    public String order;
     private RecyclerView.LayoutManager mLayoutManager;
     SelectLaundryItemAdapter itemAdapter;
 
@@ -35,8 +35,7 @@ public class SelectLaundryItem extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_laundry_item);
         Intent intent=getIntent();
-        order = intent.getParcelableExtra("laundry_outlet");
-//        Log.d("Isi dari order", String.valueOf(order.size()));
+        order = intent.getStringExtra("laundry_outlet");
 
         btnConfirm = (Button) findViewById(R.id.button_confirm);
         btnBackToOutlet = (Button) findViewById(R.id.button_backSelectOutlet);
@@ -44,10 +43,10 @@ public class SelectLaundryItem extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intentToCheckOut = new Intent(SelectLaundryItem.this, OrderPage.class);
-                // Disini haru ada extra yang ngirim docId dari outlet
-                intentToCheckOut.putExtra("id_outlet",order);
                 // dan total input baju.
-                intentToCheckOut.putExtra("Jumlah_item",itemArrayList.toArray());
+                intentToCheckOut.putParcelableArrayListExtra("Jumlah_item",itemArrayList);
+                intentToCheckOut.putExtra("outlet", order);
+                Log.d("Isi dari order", String.valueOf(order));
                 startActivity(intentToCheckOut);
             }
         });

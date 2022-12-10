@@ -55,6 +55,8 @@ public class MainActivity extends AppCompatActivity {
     boolean mSlideState;
 
     private TextView fName;
+    private Button btnViewAllCoupon;
+    private Button btnViewAllOrder;
 
     String userID, orderID;
     FirebaseAuth fAuth;
@@ -138,6 +140,27 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentOrderButton = new Intent(MainActivity.this, SelectLaundry.class);
                 startActivity(intentOrderButton);
+            }
+        });
+
+        btnViewAllCoupon = findViewById(R.id.btnViewAlloupon);
+        btnViewAllOrder = findViewById(R.id.btnViewAllorder);
+
+        btnViewAllCoupon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentHomeToCouponList = new Intent(MainActivity.this, Coupon_list.class);
+                startActivity(intentHomeToCouponList);
+                finish();
+            }
+        });
+
+        btnViewAllOrder.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentHomeToOrderList = new Intent(MainActivity.this, Order_list.class);
+                startActivity(intentHomeToOrderList);
+                finish();
             }
         });
 

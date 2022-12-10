@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.provider.Settings;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,12 +38,15 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order_page);
-        Intent intent = getIntent();
-        orderId = intent.getParcelableExtra("id_outlet");
-        orderArrayList = intent.getParcelableExtra("jumlah_item");
+        Intent intent=getIntent();
+        Log.d("Isi dari order id", intent.getStringExtra("outlet"));
+//        orderId = intent.getStringExtra("id_outlet");
+        Log.d("Isi dari order id", String.valueOf(orderId));
+
+        orderArrayList = intent.getParcelableArrayListExtra("jumlah_item");
+
         mapView = findViewById(R.id.mapView);
         btnConfirmToCheckOut = findViewById(R.id.button_confirmToCheckout);
-
         btnConfirmToCheckOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

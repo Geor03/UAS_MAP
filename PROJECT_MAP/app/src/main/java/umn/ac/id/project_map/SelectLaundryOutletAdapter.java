@@ -70,16 +70,6 @@ public class SelectLaundryOutletAdapter extends RecyclerView.Adapter<SelectLaund
             laundryIV = itemView.findViewById(R.id.idIVLaundryImage);
             laundryNameTV = (TextView) itemView.findViewById(R.id.idTVLaundryName);
             laundryDesc = (TextView) itemView.findViewById(R.id.idTVSelectOutletDesc);
-            itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    int position = getAdapterPosition();
-                    Intent intentToSelectOutlet = new Intent(view.getContext(), SelectLaundryItem.class);
-//                    intentToSelectOutlet.putExtra("laundry_outlet", laundryModelArrayList.get(position).getId());
-                    view.getContext().startActivity(intentToSelectOutlet);
-                }
-            });
-            //laundryRatingTV = itemView.findViewById(R.id.idTVLaundryRating);
         }
     }
 }
