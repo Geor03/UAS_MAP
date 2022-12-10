@@ -96,5 +96,6 @@ public class SelectLaundryItemModel implements Parcelable {
     public void writeToParcel(Parcel parcel, int i) {
         parcel.writeString(item_name);
         parcel.writeInt(qty);
+        parcel.writeString(docId);
     }
 }

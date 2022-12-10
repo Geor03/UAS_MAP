@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "umn.ac.id.project_map.app-mergeDebugResources-33:/values/values.xml",
+            "outputFile": "umn.ac.id.project_map.app-mergeDebugResources-4:/values/values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\5fdf0eec002d7dce7d8375bc37b0ed41\\transformed\\appcompat-1.5.1\\res\\values\\values.xml",
@@ -37,6 +37,23 @@
                         "startOffsets": "99370",
                         "endColumns": "49",
                         "endOffsets": "99415"
+                    }
+                },
+                {
+                    "source": "C:\\KULI(ah)\\smester 5\\IF 570 Lab - Mobile Programming\\MAP\\PROJECT_MAP\\app\\src\\main\\res\\values\\colors.xml",
+                    "from": {
+                        "startLines": "7,10,13,11,12,2,3,4,5,6,9,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "293,422,573,468,520,57,105,153,201,247,379,336",
+                        "endColumns": "41,44,51,50,51,46,46,46,44,44,41,41",
+                        "endOffsets": "330,462,620,514,567,99,147,195,241,287,416,373"
+                    },
+                    "to": {
+                        "startLines": "611,636,637,638,639,851,852,853,864,865,868,869",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "31106,32958,33003,33055,33106,48284,48331,48378,49122,49167,49333,49375",
+                        "endColumns": "41,44,51,50,51,46,46,46,44,44,41,41",
+                        "endOffsets": "31143,32998,33050,33101,33153,48326,48373,48420,49162,49207,49370,49412"
                     }
                 },
                 {
@@ -112,20 +129,22 @@
                     }
                 },
                 {
-                    "source": "D:\\georgestuff\\smester 5\\IF 570 - Mobile programming\\PROJECT_MAP\\PROJECT_MAP\\app\\src\\main\\res\\values\\colors.xml",
+                    "source": "C:\\KULI(ah)\\smester 5\\IF 570 Lab - Mobile Programming\\MAP\\PROJECT_MAP\\app\\src\\main\\res\\values\\themes.xml",
                     "from": {
-                        "startLines": "7,10,13,11,12,2,3,4,5,6,9,8",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "293,422,573,468,520,57,105,153,201,247,379,336",
-                        "endColumns": "41,44,51,50,51,46,46,46,44,44,41,41",
-                        "endOffsets": "330,462,620,514,567,99,147,195,241,287,416,373"
+                        "startLines": "15,2",
+                        "startColumns": "4,4",
+                        "startOffsets": "840,102",
+                        "endLines": "20,14",
+                        "endColumns": "12,12",
+                        "endOffsets": "1158,834"
                     },
                     "to": {
-                        "startLines": "611,636,637,638,639,851,852,853,864,865,868,869",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "31106,32958,33003,33055,33106,48284,48331,48378,49122,49167,49333,49375",
-                        "endColumns": "41,44,51,50,51,46,46,46,44,44,41,41",
-                        "endOffsets": "31143,32998,33050,33101,33153,48326,48373,48420,49162,49207,49370,49412"
+                        "startLines": "1875,6039",
+                        "startColumns": "4,4",
+                        "startOffsets": "128246,413889",
+                        "endLines": "1880,6051",
+                        "endColumns": "12,12",
+                        "endOffsets": "128559,414486"
                     }
                 },
                 {
@@ -184,42 +203,6 @@
                     }
                 },
                 {
-                    "source": "D:\\georgestuff\\smester 5\\IF 570 - Mobile programming\\PROJECT_MAP\\PROJECT_MAP\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,200,347,430,534,644,764,865",
-                        "endColumns": "144,146,82,103,109,119,100,77",
-                        "endOffsets": "195,342,425,529,639,759,860,938"
-                    },
-                    "to": {
-                        "startLines": "1741,1752,1753,1754,1755,1756,1757,1859",
-                        "startColumns": "4,4,4,4,4,4,4,4",
-                        "startOffsets": "110689,111677,111824,111907,112011,112121,112241,127040",
-                        "endColumns": "144,146,82,103,109,119,100,77",
-                        "endOffsets": "110829,111819,111902,112006,112116,112236,112337,127113"
-                    }
-                },
-                {
-                    "source": "D:\\georgestuff\\smester 5\\IF 570 - Mobile programming\\PROJECT_MAP\\PROJECT_MAP\\app\\src\\main\\res\\values\\themes.xml",
-                    "from": {
-                        "startLines": "15,2",
-                        "startColumns": "4,4",
-                        "startOffsets": "840,102",
-                        "endLines": "20,14",
-                        "endColumns": "12,12",
-                        "endOffsets": "1158,834"
-                    },
-                    "to": {
-                        "startLines": "1875,6039",
-                        "startColumns": "4,4",
-                        "startOffsets": "128246,413889",
-                        "endLines": "1880,6051",
-                        "endColumns": "12,12",
-                        "endOffsets": "128559,414486"
-                    }
-                },
-                {
                     "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\a7dbb22a7c9ae1e2c76876e284bc35aa\\transformed\\viewpager2-1.0.0\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2",
@@ -255,23 +238,6 @@
                         "endLines": "443,605,606,841,842,958,959,960,961,962,963,964,1468,1469,1470,1471,1472,1473,1474,1475,1476,1477,1478,1479,1480,1481,1482,1493,1494,1495,1496,1497,1498,1499,1500,1501,1502,1503,1504,1505,1506,1507,1508,1509,1510,1511,1512,1513,1514,1515,1516,1517,1518,1519,1520,1521,1522,1523,1524,1525,1526,1527,1537,1538,1565,1566,1567,1568,1569,1570,1571,1572,1573,1574,1575,1576,1577,1578,1579,1587,1677,1861,5568,5572,5573,5577,5578,6603,6604,9305,9673,10530,10551,10599,10605",
                         "endColumns": "59,71,87,68,62,69,67,71,69,60,73,72,60,60,61,63,61,60,67,99,59,65,72,68,56,51,61,71,75,64,58,58,59,59,59,59,59,59,59,59,59,59,58,59,59,59,59,59,59,59,59,59,59,58,59,59,58,58,58,58,58,58,34,34,54,62,54,57,57,60,62,56,50,49,60,56,65,33,34,34,69,70,116,12,109,12,128,71,66,24,24,24,24,24,24",
                         "endOffsets": "22569,30694,30782,47628,47691,55364,55432,55504,55574,55635,55709,55782,91930,91991,92053,92117,92179,92240,92308,92408,92468,92534,92607,92676,92733,92785,92847,93649,93725,93790,93849,93908,93968,94028,94088,94148,94208,94268,94328,94388,94448,94508,94567,94627,94687,94747,94807,94867,94927,94987,95047,95107,95167,95226,95286,95346,95405,95464,95523,95582,95641,95700,96184,96219,97666,97729,97784,97842,97900,97961,98024,98081,98132,98182,98243,98300,98366,98400,98435,98817,104349,127237,382297,382498,382608,382809,382938,454258,454325,598286,610941,645851,646532,647758,647925"
-                    }
-                },
-                {
-                    "source": "D:\\georgestuff\\smester 5\\IF 570 - Mobile programming\\PROJECT_MAP\\PROJECT_MAP\\app\\src\\main\\res\\values\\strings.xml",
-                    "from": {
-                        "startLines": "1",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "48",
-                        "endOffsets": "61"
-                    },
-                    "to": {
-                        "startLines": "1710",
-                        "startColumns": "4",
-                        "startOffsets": "106623",
-                        "endColumns": "48",
-                        "endOffsets": "106667"
                     }
                 },
                 {
@@ -313,6 +279,23 @@
                     }
                 },
                 {
+                    "source": "C:\\KULI(ah)\\smester 5\\IF 570 Lab - Mobile Programming\\MAP\\PROJECT_MAP\\app\\build\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,200,347,430,534,644,764,865",
+                        "endColumns": "144,146,82,103,109,119,100,77",
+                        "endOffsets": "195,342,425,529,639,759,860,938"
+                    },
+                    "to": {
+                        "startLines": "1741,1752,1753,1754,1755,1756,1757,1859",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "110689,111677,111824,111907,112011,112121,112241,127040",
+                        "endColumns": "144,146,82,103,109,119,100,77",
+                        "endOffsets": "110829,111819,111902,112006,112116,112236,112337,127113"
+                    }
+                },
+                {
                     "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\6af420f253c2822b8ea7f0e6d120b0ce\\transformed\\fragment-1.3.6\\res\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,10",
@@ -346,6 +329,23 @@
                         "startOffsets": "95967,96007,97089,97271,97326,98822,98876,98928,98977,99038",
                         "endColumns": "39,46,42,54,46,53,51,48,60,49",
                         "endOffsets": "96002,96049,97127,97321,97368,98871,98923,98972,99033,99083"
+                    }
+                },
+                {
+                    "source": "C:\\KULI(ah)\\smester 5\\IF 570 Lab - Mobile Programming\\MAP\\PROJECT_MAP\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "1",
+                        "startColumns": "4",
+                        "startOffsets": "16",
+                        "endColumns": "48",
+                        "endOffsets": "60"
+                    },
+                    "to": {
+                        "startLines": "1710",
+                        "startColumns": "4",
+                        "startOffsets": "106623",
+                        "endColumns": "48",
+                        "endOffsets": "106667"
                     }
                 },
                 {
