@@ -89,7 +89,6 @@
                 android:id="@+id/Coupontext"
                 android:layout_width="111dp"
                 android:layout_height="34dp"
-
                 android:text="Coupon"
                 android:textSize="22sp"
                 android:textStyle="bold"
@@ -101,19 +100,55 @@
                 app:layout_constraintVertical_bias="0.625"
                 tools:ignore="MissingConstraints" />
 
+            <Button
+                android:id="@+id/btnViewAlloupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@color/trans"
+                android:padding="0dp"
+                android:text="View all"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/rvHorizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.927"
+                app:layout_constraintStart_toEndOf="@+id/Coupontext"
+                app:layout_constraintTop_toBottomOf="@+id/button_order"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/btnViewAllorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trans"
+                android:padding="0dp"
+                android:text="View all"
+                android:textAllCaps="false"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/orderHorizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.93"
+                app:layout_constraintStart_toEndOf="@+id/coupontext"
+                app:layout_constraintTop_toBottomOf="@+id/rvHorizontal"
+                tools:ignore="MissingConstraints" />
+
             <TextView
                 android:id="@+id/coupontext"
                 android:layout_width="112dp"
                 android:layout_height="29dp"
+                android:layout_marginTop="8dp"
                 android:text="My Order"
                 android:textSize="22sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.053"
+                app:layout_constraintHorizontal_bias="0.06"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.826"
+                app:layout_constraintTop_toBottomOf="@+id/rvHorizontal"
                 tools:ignore="MissingConstraints" />
 
             <androidx.appcompat.widget.AppCompatButton
