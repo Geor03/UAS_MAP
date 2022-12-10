@@ -15,7 +15,7 @@ public class Notification extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
 
-        RecyclerView laundryRV = findViewById(R.id.idRVNotification);
+        RecyclerView notificationRV = findViewById(R.id.idRVNotification);
 
         // Here, we have created new array list and added data to it
         ArrayList<NotificationModel> laundryModelArrayList = new ArrayList<NotificationModel>();
@@ -31,7 +31,7 @@ public class Notification extends AppCompatActivity {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
 
         // in below two lines we are setting layoutmanager and adapter to our recycler view.
-        laundryRV.setLayoutManager(linearLayoutManager);
-        laundryRV.setAdapter(laundryAdapter);
+        notificationRV.setLayoutManager(linearLayoutManager);
+        notificationRV.setAdapter(laundryAdapter);
     }
 }

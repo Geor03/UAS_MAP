@@ -21,12 +21,12 @@ import java.util.ArrayList;
 public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapter.ViewHolder> {
 
     private final Context context;
-    private final ArrayList<NotificationModel> laundryModelArrayList;
+    private final ArrayList<NotificationModel> notificationModelArrayList;
 
     // Constructor
-    public NotificationAdapter(Context context, ArrayList<NotificationModel> laundryModelArrayList) {
+    public NotificationAdapter(Context context, ArrayList<NotificationModel> notificationModelArrayList) {
         this.context = context;
-        this.laundryModelArrayList = laundryModelArrayList;
+        this.notificationModelArrayList = notificationModelArrayList;
     }
 
     @NonNull
@@ -40,28 +40,29 @@ public class NotificationAdapter extends RecyclerView.Adapter<NotificationAdapte
     @Override
     public void onBindViewHolder(@NonNull NotificationAdapter.ViewHolder holder, int position) {
         // to set data to textview and imageview of each card layout
-        NotificationModel model = laundryModelArrayList.get(position);
-        holder.laundryNameTV.setText(model.getLaundry_name());
+
+        NotificationModel model = notificationModelArrayList.get(position);
+        holder.notificationNameTV.setText(model.getNotification_title());
 //        holder.LaundryRatingTV.setText("" + model.getLaundry_rating());
-        holder.laundryIV.setText(model.getLaundry_message());
+        holder.notificationMessageTV.setText(model.getNotification_message());
     }
 
     @Override
     public int getItemCount() {
         // this method is used for showing number of card items in recycler view
-        return laundryModelArrayList.size();
+        return notificationModelArrayList.size();
     }
 
     // View holder class for initializing of your views such as TextView and Imageview
     public static class ViewHolder extends RecyclerView.ViewHolder {
-        private final TextView laundryIV;
-        private final TextView laundryNameTV;
+        private final TextView notificationMessageTV;
+        private final TextView notificationNameTV;
         //private final TextView laundryRatingTV;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            laundryIV = itemView.findViewById(R.id.idIVLaundryImage);
-            laundryNameTV = itemView.findViewById(R.id.idTVLaundryName);
+            notificationMessageTV = itemView.findViewById(R.id.idTVMessage);
+            notificationNameTV = itemView.findViewById(R.id.idTVTitle);
             //laundryRatingTV = itemView.findViewById(R.id.idTVLaundryRating);
         }
     }

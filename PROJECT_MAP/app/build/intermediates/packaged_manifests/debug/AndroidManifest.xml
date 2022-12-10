@@ -35,10 +35,6 @@
         android:testOnly="true"
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true" >
-        <activity
-            android:name="umn.ac.id.project_map.EditProfile"
-            android:exported="false" />
-
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
@@ -46,9 +42,9 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyAHK382K2j15tX1bvtMhmOdlWm8UHVY2LM" />
 
-        <activity
-            android:name="umn.ac.id.project_map.Notification"
-            android:exported="false" />
+        <!-- <activity -->
+        <!-- android:name=".Notification" -->
+        <!-- android:exported="false" /> -->
         <!-- <activity -->
         <!-- android:name=".Coupon_list" -->
         <!-- android:exported="false" /> -->
@@ -105,6 +101,12 @@
             android:exported="false" />
         <activity
             android:name="umn.ac.id.project_map.SelectLaundryItem"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.project_map.EditProfile"
+            android:exported="false" />
+        <activity
+            android:name="umn.ac.id.project_map.Notification"
             android:exported="false" />
         <!-- Needs to be explicitly declared on P+ -->
         <uses-library

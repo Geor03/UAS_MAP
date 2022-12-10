@@ -69,6 +69,17 @@ public class MainActivity extends AppCompatActivity {
         fAuth = FirebaseAuth.getInstance();
         fStore = FirebaseFirestore.getInstance();
 
+        Button btnNotification = findViewById(R.id.Notification);
+
+        btnNotification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+//                startActivity(new Intent(MainActivity.this, Notification.class));
+                Intent intentToNotif = new Intent(MainActivity.this, Notification.class);
+                startActivity(intentToNotif);
+            }
+        });
+
         if(FirebaseAuth.getInstance().getCurrentUser() == null){
             startActivity(new Intent(getApplicationContext(), Login.class));
             finish();
