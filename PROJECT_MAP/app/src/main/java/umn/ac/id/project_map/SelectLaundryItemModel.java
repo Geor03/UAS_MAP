@@ -1,8 +1,11 @@
 package umn.ac.id.project_map;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import com.google.firebase.firestore.DocumentId;
 
-public class SelectLaundryItemModel {
+public class SelectLaundryItemModel implements Parcelable {
 
     public String item_name, docId;
     public int item_image;
@@ -17,6 +20,25 @@ public class SelectLaundryItemModel {
         this.docId = docId;
 
     }
+
+    protected SelectLaundryItemModel(Parcel in) {
+        item_name = in.readString();
+        docId = in.readString();
+//        item_image = in.readInt();
+        qty = in.readInt();
+    }
+
+    public static final Creator<SelectLaundryItemModel> CREATOR = new Creator<SelectLaundryItemModel>() {
+        @Override
+        public SelectLaundryItemModel createFromParcel(Parcel in) {
+            return new SelectLaundryItemModel(in);
+        }
+
+        @Override
+        public SelectLaundryItemModel[] newArray(int size) {
+            return new SelectLaundryItemModel[size];
+        }
+    };
 
     // Getter and Setter
     public String getLaundry_name() {
@@ -65,4 +87,14 @@ public class SelectLaundryItemModel {
         this.docId = docId;
     }
 
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel parcel, int i) {
+        parcel.writeString(item_name);
+        parcel.writeInt(qty);
+    }
 }
