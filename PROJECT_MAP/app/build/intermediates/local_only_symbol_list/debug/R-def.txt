@@ -37,7 +37,9 @@ drawable gradient_bg_logout
 drawable gradient_bg_splashscreen
 drawable ic_coupon_icon
 drawable ic_launcher_background
+drawable ic_launcher_background2
 drawable ic_launcher_foreground
+drawable ic_launcher_foreground2
 drawable ic_va
 drawable ironing_image
 drawable laundry_button

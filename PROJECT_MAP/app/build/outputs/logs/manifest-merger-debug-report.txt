@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-90:12
-INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-90:12
-INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-90:12
-INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-90:12
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-91:12
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\georg\.gradle\caches\transforms-3\87606915cb75dd283dad04b313f974fa\transformed\material-1.7.0\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\georg\.gradle\caches\transforms-3\aaaf705607347707bcc38933f46c2d29\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.5.1] C:\Users\georg\.gradle\caches\transforms-3\4a385af99a3664f3b8daf10ae73955e1\transformed\appcompat-resources-1.5.1\AndroidManifest.xml:17:1-22:12
@@ -62,27 +62,31 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\georg\.gradle\caches\transform
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\georg\.gradle\caches\transforms-3\271a4fefd03799128bee8c0810fddd78\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] C:\Users\georg\.gradle\caches\transforms-3\d1e6d0913ccb376378eea8a57a4836a9\transformed\protolite-well-known-types-18.0.0\AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.50.2] C:\Users\georg\.gradle\caches\transforms-3\9c16ce57687e0e720fd10bcf4c34da21\transformed\grpc-android-1.50.2\AndroidManifest.xml:2:1-11:12
-INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-90:12
-INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-90:12
-INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-90:12
+INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-91:12
+INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-91:12
 	package
 		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:4:5-36
 		INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
 		INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-90:12
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-91:12
 		INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
 	xmlns:tools
 		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-90:12
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:1-91:12
 		INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:5:5-97
+	android:name
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:5:22-95
 application
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-88:19
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-89:19
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\georg\.gradle\caches\transforms-3\87606915cb75dd283dad04b313f974fa\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.7.0] C:\Users\georg\.gradle\caches\transforms-3\87606915cb75dd283dad04b313f974fa\transformed\material-1.7.0\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\georg\.gradle\caches\transforms-3\aaaf705607347707bcc38933f46c2d29\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -144,125 +148,125 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\georg\.gradle\cach
 	android:usesCleartextTraffic
 		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:15:9-44
 activity#umn.ac.id.project_map.EditProfile
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:17:9-19:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:18:9-20:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:19:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:20:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:18:13-40
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:19:13-40
 meta-data#com.google.android.gms.version
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:21:9-23:69
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:22:9-24:69
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\georg\.gradle\caches\transforms-3\b16db81d41a43f0b9998abd0f4ba6578\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
 MERGED from [com.google.android.gms:play-services-basement:18.1.0] C:\Users\georg\.gradle\caches\transforms-3\b16db81d41a43f0b9998abd0f4ba6578\transformed\play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
 	android:value
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:23:13-66
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:24:13-66
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:22:13-58
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:23:13-58
 meta-data#com.google.android.maps.v2.API_KEY
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:24:9-26:71
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:25:9-27:71
 	android:value
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:13-68
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:27:13-68
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:25:13-62
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:13-62
 activity#umn.ac.id.project_map.Notification
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:9-30:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:29:9-31:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:30:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:29:13-41
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:30:13-41
 activity#umn.ac.id.project_map.SplashScreen
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:40:9-48:20
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:41:9-49:20
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:42:13-36
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:43:13-36
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:41:13-41
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:42:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:43:13-47:29
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:13-48:29
 action#android.intent.action.MAIN
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:17-69
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:45:17-69
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:25-66
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:45:25-66
 category#android.intent.category.LAUNCHER
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:46:17-77
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:17-77
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:46:27-74
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:27-74
 activity#umn.ac.id.project_map.OrderPage
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:49:9-51:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:50:9-52:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:51:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:52:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:50:13-38
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:51:13-38
 activity#umn.ac.id.project_map.SelectLaundry
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:52:9-54:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:53:9-55:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:54:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:55:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:53:13-42
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:54:13-42
 activity#umn.ac.id.project_map.CheckOut
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:55:9-57:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:56:9-58:40
 	android:exported
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:58:13-37
+	android:name
 		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:57:13-37
-	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:56:13-37
 activity#umn.ac.id.project_map.ConfirmOrder
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:58:9-60:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:59:9-61:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:60:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:61:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:59:13-41
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:60:13-41
 activity#umn.ac.id.project_map.Receipt
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:61:9-63:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:62:9-64:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:63:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:62:13-36
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:63:13-36
 activity#umn.ac.id.project_map.RatingOutlet
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:9-66:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:65:9-67:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:67:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:65:13-41
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:13-41
 activity#umn.ac.id.project_map.RatingDriver
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:67:9-69:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:68:9-70:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:69:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:70:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:68:13-41
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:69:13-41
 activity#umn.ac.id.project_map.Profile
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:70:9-72:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:71:9-73:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:72:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:73:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:71:13-36
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:72:13-36
 activity#umn.ac.id.project_map.SignUp
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:73:9-75:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:74:9-76:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:75:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:76:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:74:13-35
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:75:13-35
 activity#umn.ac.id.project_map.Login
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:76:9-78:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:77:9-79:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:78:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:79:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:77:13-34
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:78:13-34
 activity#umn.ac.id.project_map.MainActivity
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:79:9-81:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:80:9-82:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:81:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:82:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:80:13-41
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:81:13-41
 activity#umn.ac.id.project_map.SelectLaundryOutlet
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:82:9-84:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:83:9-85:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:84:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:85:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:83:13-48
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:84:13-48
 activity#umn.ac.id.project_map.SelectLaundryItem
-ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:85:9-87:40
+ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:86:9-88:40
 	android:exported
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:87:13-37
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:88:13-37
 	android:name
-		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:86:13-46
+		ADDED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:87:13-46
 uses-sdk
 INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml

@@ -1,19 +1,11 @@
 [
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-hdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/layout_activity_coupon_list.xml.flat",
         "source": "umn.ac.id.project_map.app-main-36:/layout/activity_coupon_list.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/mipmap-mdpi/ic_launcher_round.png"
     },
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_logo_hygieia.png.flat",
@@ -56,12 +48,12 @@
         "source": "umn.ac.id.project_map.app-main-36:/drawable/shorts_item.png"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_ironing_image.png.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/drawable/ironing_image.png"
-    },
-    {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_gradient_bg_splashscreen.xml.flat",
         "source": "umn.ac.id.project_map.app-main-36:/drawable/gradient_bg_splashscreen.xml"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_ironing_image.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/drawable/ironing_image.png"
     },
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/layout_order_page.xml.flat",
@@ -96,6 +88,10 @@
         "source": "umn.ac.id.project_map.app-main-36:/drawable/minus_button.png"
     },
     {
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_laundry_image.png.flat",
         "source": "umn.ac.id.project_map.app-main-36:/drawable/laundry_image.png"
     },
@@ -106,6 +102,10 @@
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/layout_activity_sign_up.xml.flat",
         "source": "umn.ac.id.project_map.app-main-36:/layout/activity_sign_up.xml"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/mipmap-hdpi/ic_launcher_round.png"
     },
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_casey_outlet.png.flat",
@@ -120,6 +120,10 @@
         "source": "umn.ac.id.project_map.app-main-36:/layout/activity_rating_outlet.xml"
     },
     {
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
         "source": "umn.ac.id.project_map.app-pngs-30:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
@@ -132,28 +136,20 @@
         "source": "umn.ac.id.project_map.app-main-36:/drawable/minahasa_outlet.png"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xxhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_ic_launcher_foreground2.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/drawable/ic_launcher_foreground2.xml"
     },
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/xml_data_extraction_rules.xml.flat",
         "source": "umn.ac.id.project_map.app-main-36:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_burger_button.png.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/drawable/burger_button.png"
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xxhdpi/ic_launcher_round.png"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_burger_button.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/drawable/burger_button.png"
     },
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_custom_button_address.xml.flat",
@@ -162,6 +158,10 @@
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_libro_outlet.png.flat",
         "source": "umn.ac.id.project_map.app-main-36:/drawable/libro_outlet.png"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/mipmap-hdpi/ic_launcher.png"
     },
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_vit_outlet.png.flat",
@@ -190,10 +190,6 @@
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_eclipse_bottom.png.flat",
         "source": "umn.ac.id.project_map.app-main-36:/drawable/eclipse_bottom.png"
-    },
-    {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/layout_activity_notification.xml.flat",
@@ -228,6 +224,10 @@
         "source": "umn.ac.id.project_map.app-main-36:/drawable/stripe_black.png"
     },
     {
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_cardigan_item.png.flat",
         "source": "umn.ac.id.project_map.app-main-36:/drawable/cardigan_item.png"
     },
@@ -236,20 +236,16 @@
         "source": "umn.ac.id.project_map.app-main-36:/drawable/eclipse_top.png"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-hdpi/ic_launcher.webp"
-    },
-    {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_custom_button_dark.xml.flat",
         "source": "umn.ac.id.project_map.app-main-36:/drawable/custom_button_dark.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable-v24_coupon_card.png.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/drawable-v24/coupon_card.png"
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable-anydpi-v24_ic_launcher_background2.xml.flat",
+        "source": "umn.ac.id.project_map.app-pngs-30:/drawable-anydpi-v24/ic_launcher_background2.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable-v24_coupon_card.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/drawable-v24/coupon_card.png"
     },
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/layout_select_laundry_outlet_card_layout.xml.flat",
@@ -272,10 +268,6 @@
         "source": "umn.ac.id.project_map.app-main-36:/drawable/bg_dark.png"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable-v24_stripe_black_horizontal.png.flat",
         "source": "umn.ac.id.project_map.app-main-36:/drawable-v24/stripe_black_horizontal.png"
     },
@@ -286,6 +278,10 @@
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_back_button.png.flat",
         "source": "umn.ac.id.project_map.app-main-36:/drawable/back_button.png"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xhdpi/ic_launcher.png"
     },
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_drycleaning_image.png.flat",
@@ -300,10 +296,6 @@
         "source": "umn.ac.id.project_map.app-main-36:/drawable/plus_button.png"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xxhdpi/ic_launcher_round.webp"
-    },
-    {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_ic_va.xml.flat",
         "source": "umn.ac.id.project_map.app-main-36:/drawable/ic_va.xml"
     },
@@ -312,8 +304,16 @@
         "source": "umn.ac.id.project_map.app-main-36:/xml/backup_rules.xml"
     },
     {
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/drawable_custom_input_login_logout.xml.flat",
         "source": "umn.ac.id.project_map.app-main-36:/drawable/custom_input_login_logout.xml"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-35:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "umn.ac.id.project_map.app-main-36:/mipmap-xxxhdpi/ic_launcher.png"
     },
     {
         "merged": "umn.ac.id.project_map.app-merged_res-35:/layout_select_laundry_item_card_layout.xml.flat",

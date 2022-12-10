@@ -10,338 +10,342 @@
 9        android:targetSdkVersion="32" />
 9-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml
 10
-11    <!-- Include required permissions for Google Maps API to run. -->
-12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-12-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:5-79
-12-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:22-76
-13    <uses-permission android:name="android.permission.INTERNET" />
-13-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:5-67
-13-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:22-64
-14
-15    <uses-feature
-15-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:26:5-28:35
-16        android:glEsVersion="0x00020000"
-16-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:27:9-41
-17        android:required="true" />
-17-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:28:9-32
-18
-19    <queries>
-19-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:30:5-34:15
+11    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+11-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:5:5-97
+11-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:5:22-95
+12
+13    <!-- Include required permissions for Google Maps API to run. -->
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:5-79
+14-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:23:22-76
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:5-67
+15-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:24:22-64
+16
+17    <uses-feature
+17-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:26:5-28:35
+18        android:glEsVersion="0x00020000"
+18-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:27:9-41
+19        android:required="true" />
+19-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:28:9-32
 20
-21        <!-- Needs to be explicitly declared on Android R+ -->
-22        <package android:name="com.google.android.apps.maps" />
-22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:9-64
-22-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:18-61
-23    </queries>
-24
-25    <application
-25-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-88:19
-26        android:allowBackup="true"
-26-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:7:9-35
-27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-27-->[androidx.core:core:1.8.0] C:\Users\georg\.gradle\caches\transforms-3\79a46e953edd88b1e72210272ad2b9ad\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-28        android:dataExtractionRules="@xml/data_extraction_rules"
-28-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:8:9-65
-29        android:debuggable="true"
-30        android:fullBackupContent="@xml/backup_rules"
-30-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:9:9-54
-31        android:icon="@mipmap/ic_launcher"
-31-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:10:9-43
-32        android:label="@string/app_name"
-32-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:11:9-41
-33        android:roundIcon="@mipmap/ic_launcher_round"
-33-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:12:9-54
-34        android:supportsRtl="true"
-34-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:13:9-35
-35        android:testOnly="true"
-36        android:theme="@style/AppTheme.NoActionBar"
-36-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-52
-37        android:usesCleartextTraffic="true" >
-37-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:15:9-44
-38        <activity
-38-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:17:9-19:40
-39            android:name="umn.ac.id.project_map.EditProfile"
-39-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:18:13-40
-40            android:exported="false" />
-40-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:19:13-37
-41
-42        <meta-data
-42-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:21:9-23:69
-43            android:name="com.google.android.gms.version"
-43-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:22:13-58
-44            android:value="@integer/google_play_services_version" />
-44-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:23:13-66
-45        <meta-data
-45-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:24:9-26:71
-46            android:name="com.google.android.maps.v2.API_KEY"
-46-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:25:13-62
-47            android:value="AIzaSyAHK382K2j15tX1bvtMhmOdlWm8UHVY2LM" />
-47-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:13-68
-48
-49        <activity
-49-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:28:9-30:40
-50            android:name="umn.ac.id.project_map.Notification"
-50-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:29:13-41
-51            android:exported="false" />
-51-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:30:13-37
-52        <!-- <activity -->
-53        <!-- android:name=".Coupon_list" -->
-54        <!-- android:exported="false" /> -->
-55        <!-- <activity -->
-56        <!-- android:name=".CouponAdapter" -->
-57        <!-- android:exported="false" /> -->
-58        <!-- <activity -->
-59        <!-- android:name=".Coupon_list" -->
-60        <!-- android:exported="false" /> -->
-61        <activity
-61-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:40:9-48:20
-62            android:name="umn.ac.id.project_map.SplashScreen"
-62-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:41:13-41
-63            android:exported="true" >
-63-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:42:13-36
-64            <intent-filter>
-64-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:43:13-47:29
-65                <action android:name="android.intent.action.MAIN" />
-65-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:17-69
-65-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:25-66
-66
-67                <category android:name="android.intent.category.LAUNCHER" />
-67-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:46:17-77
-67-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:46:27-74
-68            </intent-filter>
-69        </activity>
-70        <activity
-70-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:49:9-51:40
-71            android:name="umn.ac.id.project_map.OrderPage"
-71-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:50:13-38
-72            android:exported="false" />
-72-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:51:13-37
-73        <activity
-73-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:52:9-54:40
-74            android:name="umn.ac.id.project_map.SelectLaundry"
-74-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:53:13-42
-75            android:exported="false" />
-75-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:54:13-37
-76        <activity
-76-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:55:9-57:40
-77            android:name="umn.ac.id.project_map.CheckOut"
-77-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:56:13-37
-78            android:exported="false" />
-78-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:57:13-37
-79        <activity
-79-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:58:9-60:40
-80            android:name="umn.ac.id.project_map.ConfirmOrder"
-80-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:59:13-41
-81            android:exported="false" />
-81-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:60:13-37
-82        <activity
-82-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:61:9-63:40
-83            android:name="umn.ac.id.project_map.Receipt"
-83-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:62:13-36
-84            android:exported="false" />
-84-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:63:13-37
-85        <activity
-85-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:9-66:40
-86            android:name="umn.ac.id.project_map.RatingOutlet"
-86-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:65:13-41
-87            android:exported="false" />
-87-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:13-37
-88        <activity
-88-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:67:9-69:40
-89            android:name="umn.ac.id.project_map.RatingDriver"
-89-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:68:13-41
-90            android:exported="false" />
-90-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:69:13-37
-91        <activity
-91-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:70:9-72:40
-92            android:name="umn.ac.id.project_map.Profile"
-92-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:71:13-36
-93            android:exported="false" />
-93-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:72:13-37
-94        <activity
-94-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:73:9-75:40
-95            android:name="umn.ac.id.project_map.SignUp"
-95-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:74:13-35
-96            android:exported="false" />
-96-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:75:13-37
-97        <activity
-97-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:76:9-78:40
-98            android:name="umn.ac.id.project_map.Login"
-98-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:77:13-34
-99            android:exported="false" />
-99-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:78:13-37
-100        <activity
-100-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:79:9-81:40
-101            android:name="umn.ac.id.project_map.MainActivity"
-101-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:80:13-41
-102            android:exported="false" />
-102-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:81:13-37
-103        <activity
-103-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:82:9-84:40
-104            android:name="umn.ac.id.project_map.SelectLaundryOutlet"
-104-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:83:13-48
-105            android:exported="false" />
-105-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:84:13-37
-106        <activity
-106-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:85:9-87:40
-107            android:name="umn.ac.id.project_map.SelectLaundryItem"
-107-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:86:13-46
-108            android:exported="false" />
-108-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:87:13-37
-109        <!-- Needs to be explicitly declared on P+ -->
-110        <uses-library
-110-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
-111            android:name="org.apache.http.legacy"
-111-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:40:13-50
-112            android:required="false" />
-112-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:41:13-37
-113
-114        <service
-114-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:30:9-36:19
-115            android:name="com.google.firebase.components.ComponentDiscoveryService"
-115-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:31:13-84
-116            android:directBootAware="true"
-116-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
-117            android:exported="false" >
-117-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:32:13-37
-118            <meta-data
-118-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
-119                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
-119-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
-120                android:value="com.google.firebase.components.ComponentRegistrar" />
-120-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
-121            <meta-data
-121-->[com.google.firebase:firebase-database:20.1.0] C:\Users\georg\.gradle\caches\transforms-3\f423388c118323ac1f139e905d254fa6\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
-122                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
-122-->[com.google.firebase:firebase-database:20.1.0] C:\Users\georg\.gradle\caches\transforms-3\f423388c118323ac1f139e905d254fa6\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
-123                android:value="com.google.firebase.components.ComponentRegistrar" />
-123-->[com.google.firebase:firebase-database:20.1.0] C:\Users\georg\.gradle\caches\transforms-3\f423388c118323ac1f139e905d254fa6\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
-124            <meta-data
-124-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
-125                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
-125-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
-126                android:value="com.google.firebase.components.ComponentRegistrar" />
-126-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
-127            <meta-data
-127-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\georg\.gradle\caches\transforms-3\4edec0daf16b23722503482547d240e8\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:19:13-21:85
-128                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
-128-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\georg\.gradle\caches\transforms-3\4edec0daf16b23722503482547d240e8\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:20:17-111
-129                android:value="com.google.firebase.components.ComponentRegistrar" />
-129-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\georg\.gradle\caches\transforms-3\4edec0daf16b23722503482547d240e8\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:21:17-82
-130        </service>
-131
-132        <activity
-132-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
-133            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
-133-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
-134            android:excludeFromRecents="true"
-134-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
-135            android:exported="true"
-135-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
-136            android:launchMode="singleTask"
-136-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
-137            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-137-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
-138            <intent-filter>
-138-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
-139                <action android:name="android.intent.action.VIEW" />
-139-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
-139-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
-140
-141                <category android:name="android.intent.category.DEFAULT" />
-141-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
-141-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
-142                <category android:name="android.intent.category.BROWSABLE" />
-142-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
-142-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
-143
-144                <data
-144-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
-145                    android:host="firebase.auth"
-145-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
-146                    android:path="/"
-146-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
-147                    android:scheme="genericidp" />
-147-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
-148            </intent-filter>
-149        </activity>
-150        <activity
-150-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
-151            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
-151-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
-152            android:excludeFromRecents="true"
-152-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
-153            android:exported="true"
-153-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
-154            android:launchMode="singleTask"
-154-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
-155            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-155-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
-156            <intent-filter>
-156-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
-157                <action android:name="android.intent.action.VIEW" />
-157-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
-157-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
-158
-159                <category android:name="android.intent.category.DEFAULT" />
-159-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
-159-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
-160                <category android:name="android.intent.category.BROWSABLE" />
-160-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
-160-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
-161
-162                <data
-162-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
-163                    android:host="firebase.auth"
-163-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
-164                    android:path="/"
-164-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
-165                    android:scheme="recaptcha" />
-165-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
-166            </intent-filter>
-167        </activity>
-168        <activity
-168-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\georg\.gradle\caches\transforms-3\4c8e6d12f5149f864440bbda36957948\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
-169            android:name="com.google.android.gms.common.api.GoogleApiActivity"
-169-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\georg\.gradle\caches\transforms-3\4c8e6d12f5149f864440bbda36957948\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
-170            android:exported="false"
-170-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\georg\.gradle\caches\transforms-3\4c8e6d12f5149f864440bbda36957948\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
-171            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
-171-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\georg\.gradle\caches\transforms-3\4c8e6d12f5149f864440bbda36957948\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
-172
-173        <provider
-173-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
-174            android:name="com.google.firebase.provider.FirebaseInitProvider"
-174-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
-175            android:authorities="umn.ac.id.project_map.firebaseinitprovider"
-175-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
-176            android:directBootAware="true"
-176-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
-177            android:exported="false"
-177-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
-178            android:initOrder="100" />
-178-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
-179        <provider
-179-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
-180            android:name="androidx.startup.InitializationProvider"
-180-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
-181            android:authorities="umn.ac.id.project_map.androidx-startup"
-181-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
-182            android:exported="false" >
-182-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
-183            <meta-data
-183-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
-184                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-184-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
-185                android:value="androidx.startup" />
-185-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
-186            <meta-data
-186-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\40731945f017327b3b8ab712185de4d2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
-187                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-187-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\40731945f017327b3b8ab712185de4d2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
-188                android:value="androidx.startup" />
-188-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\40731945f017327b3b8ab712185de4d2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
-189        </provider>
-190    </application>
-191
-192</manifest>
+21    <queries>
+21-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:30:5-34:15
+22
+23        <!-- Needs to be explicitly declared on Android R+ -->
+24        <package android:name="com.google.android.apps.maps" />
+24-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:9-64
+24-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:33:18-61
+25    </queries>
+26
+27    <application
+27-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:6:5-89:19
+28        android:allowBackup="true"
+28-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:7:9-35
+29        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+29-->[androidx.core:core:1.8.0] C:\Users\georg\.gradle\caches\transforms-3\79a46e953edd88b1e72210272ad2b9ad\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+30        android:dataExtractionRules="@xml/data_extraction_rules"
+30-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:8:9-65
+31        android:debuggable="true"
+32        android:fullBackupContent="@xml/backup_rules"
+32-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:9:9-54
+33        android:icon="@mipmap/ic_launcher"
+33-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:10:9-43
+34        android:label="@string/app_name"
+34-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:11:9-41
+35        android:roundIcon="@mipmap/ic_launcher_round"
+35-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:12:9-54
+36        android:supportsRtl="true"
+36-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:13:9-35
+37        android:testOnly="true"
+38        android:theme="@style/AppTheme.NoActionBar"
+38-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:14:9-52
+39        android:usesCleartextTraffic="true" >
+39-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:15:9-44
+40        <activity
+40-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:18:9-20:40
+41            android:name="umn.ac.id.project_map.EditProfile"
+41-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:19:13-40
+42            android:exported="false" />
+42-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:20:13-37
+43
+44        <meta-data
+44-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:22:9-24:69
+45            android:name="com.google.android.gms.version"
+45-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:23:13-58
+46            android:value="@integer/google_play_services_version" />
+46-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:24:13-66
+47        <meta-data
+47-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:25:9-27:71
+48            android:name="com.google.android.maps.v2.API_KEY"
+48-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:26:13-62
+49            android:value="AIzaSyAHK382K2j15tX1bvtMhmOdlWm8UHVY2LM" />
+49-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:27:13-68
+50
+51        <activity
+51-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:29:9-31:40
+52            android:name="umn.ac.id.project_map.Notification"
+52-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:30:13-41
+53            android:exported="false" />
+53-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:31:13-37
+54        <!-- <activity -->
+55        <!-- android:name=".Coupon_list" -->
+56        <!-- android:exported="false" /> -->
+57        <!-- <activity -->
+58        <!-- android:name=".CouponAdapter" -->
+59        <!-- android:exported="false" /> -->
+60        <!-- <activity -->
+61        <!-- android:name=".Coupon_list" -->
+62        <!-- android:exported="false" /> -->
+63        <activity
+63-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:41:9-49:20
+64            android:name="umn.ac.id.project_map.SplashScreen"
+64-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:42:13-41
+65            android:exported="true" >
+65-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:43:13-36
+66            <intent-filter>
+66-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:44:13-48:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:45:17-69
+67-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:45:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:17-77
+69-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:47:27-74
+70            </intent-filter>
+71        </activity>
+72        <activity
+72-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:50:9-52:40
+73            android:name="umn.ac.id.project_map.OrderPage"
+73-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:51:13-38
+74            android:exported="false" />
+74-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:52:13-37
+75        <activity
+75-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:53:9-55:40
+76            android:name="umn.ac.id.project_map.SelectLaundry"
+76-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:54:13-42
+77            android:exported="false" />
+77-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:55:13-37
+78        <activity
+78-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:56:9-58:40
+79            android:name="umn.ac.id.project_map.CheckOut"
+79-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:57:13-37
+80            android:exported="false" />
+80-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:58:13-37
+81        <activity
+81-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:59:9-61:40
+82            android:name="umn.ac.id.project_map.ConfirmOrder"
+82-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:60:13-41
+83            android:exported="false" />
+83-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:61:13-37
+84        <activity
+84-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:62:9-64:40
+85            android:name="umn.ac.id.project_map.Receipt"
+85-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:63:13-36
+86            android:exported="false" />
+86-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:64:13-37
+87        <activity
+87-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:65:9-67:40
+88            android:name="umn.ac.id.project_map.RatingOutlet"
+88-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:66:13-41
+89            android:exported="false" />
+89-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:67:13-37
+90        <activity
+90-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:68:9-70:40
+91            android:name="umn.ac.id.project_map.RatingDriver"
+91-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:69:13-41
+92            android:exported="false" />
+92-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:70:13-37
+93        <activity
+93-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:71:9-73:40
+94            android:name="umn.ac.id.project_map.Profile"
+94-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:72:13-36
+95            android:exported="false" />
+95-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:73:13-37
+96        <activity
+96-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:74:9-76:40
+97            android:name="umn.ac.id.project_map.SignUp"
+97-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:75:13-35
+98            android:exported="false" />
+98-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:76:13-37
+99        <activity
+99-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:77:9-79:40
+100            android:name="umn.ac.id.project_map.Login"
+100-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:78:13-34
+101            android:exported="false" />
+101-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:79:13-37
+102        <activity
+102-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:80:9-82:40
+103            android:name="umn.ac.id.project_map.MainActivity"
+103-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:81:13-41
+104            android:exported="false" />
+104-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:82:13-37
+105        <activity
+105-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:83:9-85:40
+106            android:name="umn.ac.id.project_map.SelectLaundryOutlet"
+106-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:84:13-48
+107            android:exported="false" />
+107-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:85:13-37
+108        <activity
+108-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:86:9-88:40
+109            android:name="umn.ac.id.project_map.SelectLaundryItem"
+109-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:87:13-46
+110            android:exported="false" />
+110-->D:\georgestuff\smester 5\IF 570 - Mobile programming\PROJECT_MAP\PROJECT_MAP\app\src\main\AndroidManifest.xml:88:13-37
+111        <!-- Needs to be explicitly declared on P+ -->
+112        <uses-library
+112-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:39:9-41:40
+113            android:name="org.apache.http.legacy"
+113-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:40:13-50
+114            android:required="false" />
+114-->[com.google.android.gms:play-services-maps:17.0.1] C:\Users\georg\.gradle\caches\transforms-3\765a7d436ca3c4774be0cd34ebb9cc56\transformed\play-services-maps-17.0.1\AndroidManifest.xml:41:13-37
+115
+116        <service
+116-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:30:9-36:19
+117            android:name="com.google.firebase.components.ComponentDiscoveryService"
+117-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:31:13-84
+118            android:directBootAware="true"
+118-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+119            android:exported="false" >
+119-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:32:13-37
+120            <meta-data
+120-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:33:13-35:85
+121                android:name="com.google.firebase.components:com.google.firebase.storage.StorageRegistrar"
+121-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:34:17-107
+122                android:value="com.google.firebase.components.ComponentRegistrar" />
+122-->[com.google.firebase:firebase-storage:19.1.1] C:\Users\georg\.gradle\caches\transforms-3\4880bce88e9170b8522b9fb6511c5125\transformed\firebase-storage-19.1.1\AndroidManifest.xml:35:17-82
+123            <meta-data
+123-->[com.google.firebase:firebase-database:20.1.0] C:\Users\georg\.gradle\caches\transforms-3\f423388c118323ac1f139e905d254fa6\transformed\firebase-database-20.1.0\AndroidManifest.xml:31:13-33:85
+124                android:name="com.google.firebase.components:com.google.firebase.database.DatabaseRegistrar"
+124-->[com.google.firebase:firebase-database:20.1.0] C:\Users\georg\.gradle\caches\transforms-3\f423388c118323ac1f139e905d254fa6\transformed\firebase-database-20.1.0\AndroidManifest.xml:32:17-109
+125                android:value="com.google.firebase.components.ComponentRegistrar" />
+125-->[com.google.firebase:firebase-database:20.1.0] C:\Users\georg\.gradle\caches\transforms-3\f423388c118323ac1f139e905d254fa6\transformed\firebase-database-20.1.0\AndroidManifest.xml:33:17-82
+126            <meta-data
+126-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:67:13-69:85
+127                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+127-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:68:17-109
+128                android:value="com.google.firebase.components.ComponentRegistrar" />
+128-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:69:17-82
+129            <meta-data
+129-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\georg\.gradle\caches\transforms-3\4edec0daf16b23722503482547d240e8\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:19:13-21:85
+130                android:name="com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar"
+130-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\georg\.gradle\caches\transforms-3\4edec0daf16b23722503482547d240e8\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:20:17-111
+131                android:value="com.google.firebase.components.ComponentRegistrar" />
+131-->[com.google.firebase:firebase-firestore:24.4.1] C:\Users\georg\.gradle\caches\transforms-3\4edec0daf16b23722503482547d240e8\transformed\firebase-firestore-24.4.1\AndroidManifest.xml:21:17-82
+132        </service>
+133
+134        <activity
+134-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:27:9-44:20
+135            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+135-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:28:13-80
+136            android:excludeFromRecents="true"
+136-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:29:13-46
+137            android:exported="true"
+137-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:30:13-36
+138            android:launchMode="singleTask"
+138-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:31:13-44
+139            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+139-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:32:13-72
+140            <intent-filter>
+140-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:33:13-43:29
+141                <action android:name="android.intent.action.VIEW" />
+141-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+141-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+142
+143                <category android:name="android.intent.category.DEFAULT" />
+143-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+143-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+144                <category android:name="android.intent.category.BROWSABLE" />
+144-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+144-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+145
+146                <data
+146-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+147                    android:host="firebase.auth"
+147-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+148                    android:path="/"
+148-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+149                    android:scheme="genericidp" />
+149-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+150            </intent-filter>
+151        </activity>
+152        <activity
+152-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:45:9-62:20
+153            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+153-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:46:13-79
+154            android:excludeFromRecents="true"
+154-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:47:13-46
+155            android:exported="true"
+155-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:48:13-36
+156            android:launchMode="singleTask"
+156-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:49:13-44
+157            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+157-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:50:13-72
+158            <intent-filter>
+158-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:51:13-61:29
+159                <action android:name="android.intent.action.VIEW" />
+159-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:17-69
+159-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:34:25-66
+160
+161                <category android:name="android.intent.category.DEFAULT" />
+161-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:17-76
+161-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:36:27-73
+162                <category android:name="android.intent.category.BROWSABLE" />
+162-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:17-78
+162-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:37:27-75
+163
+164                <data
+164-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:39:17-42:51
+165                    android:host="firebase.auth"
+165-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:40:21-49
+166                    android:path="/"
+166-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:41:21-37
+167                    android:scheme="recaptcha" />
+167-->[com.google.firebase:firebase-auth:21.1.0] C:\Users\georg\.gradle\caches\transforms-3\55b351767d2b6739efe9e3cafef4e1e1\transformed\firebase-auth-21.1.0\AndroidManifest.xml:42:21-48
+168            </intent-filter>
+169        </activity>
+170        <activity
+170-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\georg\.gradle\caches\transforms-3\4c8e6d12f5149f864440bbda36957948\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+171            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+171-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\georg\.gradle\caches\transforms-3\4c8e6d12f5149f864440bbda36957948\transformed\play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+172            android:exported="false"
+172-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\georg\.gradle\caches\transforms-3\4c8e6d12f5149f864440bbda36957948\transformed\play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+173            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+173-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\georg\.gradle\caches\transforms-3\4c8e6d12f5149f864440bbda36957948\transformed\play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+174
+175        <provider
+175-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+176            android:name="com.google.firebase.provider.FirebaseInitProvider"
+176-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+177            android:authorities="umn.ac.id.project_map.firebaseinitprovider"
+177-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+178            android:directBootAware="true"
+178-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+179            android:exported="false"
+179-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+180            android:initOrder="100" />
+180-->[com.google.firebase:firebase-common:20.2.0] C:\Users\georg\.gradle\caches\transforms-3\9df098d324a233590f505f77abd15d07\transformed\firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+181        <provider
+181-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:24:9-32:20
+182            android:name="androidx.startup.InitializationProvider"
+182-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:25:13-67
+183            android:authorities="umn.ac.id.project_map.androidx-startup"
+183-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:26:13-68
+184            android:exported="false" >
+184-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:27:13-37
+185            <meta-data
+185-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:29:13-31:52
+186                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+186-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:30:17-75
+187                android:value="androidx.startup" />
+187-->[androidx.emoji2:emoji2:1.2.0] C:\Users\georg\.gradle\caches\transforms-3\19f5f33a136002599b27a9d990c5a7c4\transformed\emoji2-1.2.0\AndroidManifest.xml:31:17-49
+188            <meta-data
+188-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\40731945f017327b3b8ab712185de4d2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:31:13-33:52
+189                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+189-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\40731945f017327b3b8ab712185de4d2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:32:17-78
+190                android:value="androidx.startup" />
+190-->[androidx.lifecycle:lifecycle-process:2.4.1] C:\Users\georg\.gradle\caches\transforms-3\40731945f017327b3b8ab712185de4d2\transformed\lifecycle-process-2.4.1\AndroidManifest.xml:33:17-49
+191        </provider>
+192    </application>
+193
+194</manifest>
