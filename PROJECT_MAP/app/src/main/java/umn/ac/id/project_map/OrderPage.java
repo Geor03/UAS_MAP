@@ -23,27 +23,41 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.ArrayList;
+import java.util.List;
 
 
 public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
     boolean isPermissionGranted;
     MapView mapView;
     private Button btnConfirmToCheckOut;
-    private ArrayList<SelectLaundryItemModel> orderArrayList;
+    private int baju;
+    private int celana;
+
     private String orderId;
+    FirebaseFirestore fStore = FirebaseFirestore.getInstance();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.order_page);
-        Intent intent=getIntent();
-        Log.d("Isi dari order id", intent.getStringExtra("outlet"));
-//        orderId = intent.getStringExtra("id_outlet");
-        Log.d("Isi dari order id", String.valueOf(orderId));
+        Bundle extras = getIntent().getExtras();
+        if(extras != null) {
 
-        orderArrayList = intent.getParcelableArrayListExtra("jumlah_item");
+            orderId =  String.valueOf(extras.getString("Outlet"));
+//        orderId = intent.getStringExtra("id_outlet");
+            Log.d("Isi dari order id", String.valueOf(orderId));
+
+            baju = extras.getInt("Jumlah_baju") ;
+            celana = extras.getInt("Jumlah_celana");
+        }
+        else{
+            Log.d("Isi dari order id", "KOSONGGGG");
+
+        }
 
         mapView = findViewById(R.id.mapView);
         btnConfirmToCheckOut = findViewById(R.id.button_confirmToCheckout);

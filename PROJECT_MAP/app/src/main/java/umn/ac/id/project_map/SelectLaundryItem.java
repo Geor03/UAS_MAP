@@ -1,5 +1,6 @@
 package umn.ac.id.project_map;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -7,11 +8,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcel;
+import android.os.Parcelable;
+import android.security.identity.AccessControlProfileId;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentChange;
+import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
@@ -24,12 +31,14 @@ public class SelectLaundryItem extends AppCompatActivity {
     private Button btnConfirm;
     private Button btnBackToOutlet;
     private RecyclerView laundryRV;
-    private ArrayList<SelectLaundryItemModel> itemArrayList;
-    public String order;
+    private static ArrayList<SelectLaundryItemModel> itemArrayList;
+    String order;
     private RecyclerView.LayoutManager mLayoutManager;
     SelectLaundryItemAdapter itemAdapter;
 
-    FirebaseFirestore fStore = FirebaseFirestore.getInstance();
+    public FirebaseFirestore fStore = FirebaseFirestore.getInstance();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,12 +51,20 @@ public class SelectLaundryItem extends AppCompatActivity {
         btnConfirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentToCheckOut = new Intent(SelectLaundryItem.this, OrderPage.class);
+                Intent intentToCheckOut = new Intent(view.getContext(), OrderPage.class);
+                Bundle bundle = new Bundle();
+
                 // dan total input baju.
-                intentToCheckOut.putParcelableArrayListExtra("Jumlah_item",itemArrayList);
-                intentToCheckOut.putExtra("outlet", order);
+                bundle.putInt("Jumlah_celana", itemArrayList.get(0).qty);
+                bundle.putInt("Jumlah_baju", itemArrayList.get(1).qty);
+
+                bundle.putString("Outlet", order );
+                Log.d("Isi dari pakaian", itemArrayList.toString());
+                Log.d("Tipe dari order", String.valueOf(order.getClass()));
                 Log.d("Isi dari order", String.valueOf(order));
-                startActivity(intentToCheckOut);
+
+                intentToCheckOut.putExtras(bundle);
+                view.getContext().startActivity(intentToCheckOut);
             }
         });
         btnBackToOutlet.setOnClickListener(new View.OnClickListener() {
@@ -59,7 +76,7 @@ public class SelectLaundryItem extends AppCompatActivity {
         laundryRV = findViewById(R.id.idRVSelectLaundryItem);
 
         // Here, we have created new array list and added data to it
-        itemArrayList = new ArrayList<SelectLaundryItemModel>();
+            itemArrayList = new ArrayList<SelectLaundryItemModel>();
 
         // we are initializing our adapter class and passing our arraylist to it.
         itemAdapter = new SelectLaundryItemAdapter(this, itemArrayList);
@@ -71,6 +88,7 @@ public class SelectLaundryItem extends AppCompatActivity {
         // in below two lines we are setting layoutmanager and adapter to our recycler view.
         laundryRV.setLayoutManager(mLayoutManager);
         laundryRV.setAdapter(itemAdapter);
+
 
         fetchData();
     }
@@ -84,7 +102,13 @@ public class SelectLaundryItem extends AppCompatActivity {
                 }
                 for(DocumentChange dc : value.getDocumentChanges()){
                     if(dc.getType() == DocumentChange.Type.ADDED){
+
                         itemArrayList.add(dc.getDocument().toObject(SelectLaundryItemModel.class));
+
+//                        SelectLaundryItemModel itemModel = (dc.getDocument().toObject(SelectLaundryItemModel.class));
+//                        itemArrayList.addAll(itemModel.getItemModels());
+//                        Log.d("Isi dari pakaian FS", String.valueOf(itemArrayList.get(0).item_name));
+
                     }
 
                     itemAdapter.notifyDataSetChanged();
@@ -92,4 +116,6 @@ public class SelectLaundryItem extends AppCompatActivity {
             }
         });
     }
+
+
 }

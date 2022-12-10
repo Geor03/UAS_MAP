@@ -5,21 +5,30 @@ import android.os.Parcelable;
 
 import com.google.firebase.firestore.DocumentId;
 
-public class SelectLaundryItemModel implements Parcelable {
+import java.util.ArrayList;
+import java.util.List;
 
+public class SelectLaundryItemModel implements Parcelable {
+    private ArrayList<SelectLaundryItemModel> itemModels;
     public String item_name, docId;
     public int item_image;
     public int qty;
 
     public SelectLaundryItemModel(){}
     // Constructor
-    public SelectLaundryItemModel(String laundry_name, int qty, String docId) {
+    public SelectLaundryItemModel(String laundry_name, int qty, String docId, ArrayList<SelectLaundryItemModel> itemModels) {
         this.item_name = laundry_name;
 //        this.item_image = laundry_image;
         this.qty = qty;
         this.docId = docId;
+        this.itemModels = itemModels;
 
     }
+
+    public List<SelectLaundryItemModel> getItemModels() {
+        return itemModels;
+    }
+
 
     protected SelectLaundryItemModel(Parcel in) {
         item_name = in.readString();
