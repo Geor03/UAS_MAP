@@ -5,11 +5,11 @@ import java.util.Date;
 public class OrderModel {
     String address, outlet, status, laundry_type;
     Date date;
-    String total_cardigans, total_dress, total_outwear, total_pants, total_shirt, total_shorts, total_tshirts, total_tie;
-    String total_price;
+    int total_cardigans, total_dress, total_outwear, total_pants, total_shirt, total_shorts, total_tshirts, total_tie;
+    int total_price;
 
     public OrderModel(){}
-    public OrderModel(String address, Date date,String outlet,String status, String total_cardigans,String total_dress,String total_outwear,String total_pants,String total_shirt,String total_shorts,String total_tshirts,String total_tie, String total_price, String laundry_type){
+    public OrderModel(String address, Date date, String outlet, String status, int total_cardigans, int total_dress, int total_outwear, int total_pants, int total_shirt, int total_shorts, int total_tshirts, int total_tie, int total_price, String laundry_type){
         this.address = address;
         this.date = date;
         this.outlet = outlet;
@@ -46,39 +46,39 @@ public class OrderModel {
         return outlet;
     }
 
-    public String getTotal_dress() {
+    public int getTotal_dress() {
         return total_dress;
     }
 
-    public String getTotal_outwear() {
+    public int getTotal_outwear() {
         return total_outwear;
     }
 
-    public String getTotal_pants() {
+    public int getTotal_pants() {
         return total_pants;
     }
 
-    public String getTotal_price() {
+    public int getTotal_price() {
         return total_price;
     }
 
-    public String getTotal_shirt() {
+    public int getTotal_shirt() {
         return total_shirt;
     }
 
-    public String getTotal_shorts() {
+    public int getTotal_shorts() {
         return total_shorts;
     }
 
-    public String getTotal_tie() {
+    public int getTotal_tie() {
         return total_tie;
     }
 
-    public String getTotal_tshirts() {
+    public int getTotal_tshirts() {
         return total_tshirts;
     }
 
-    public String getTotal_cardigans() {
+    public int getTotal_cardigans() {
         return total_cardigans;
     }
 
@@ -98,7 +98,7 @@ public class OrderModel {
         this.status = status;
     }
 
-    public void setTotal_cardigans(String total_cardigans) {
+    public void setTotal_cardigans(int total_cardigans) {
         this.total_cardigans = total_cardigans;
     }
 
@@ -106,35 +106,35 @@ public class OrderModel {
         this.laundry_type = laundry_type;
     }
 
-    public void setTotal_dress(String total_dress) {
+    public void setTotal_dress(int total_dress) {
         this.total_dress = total_dress;
     }
 
-    public void setTotal_outwear(String total_outwear) {
+    public void setTotal_outwear(int total_outwear) {
         this.total_outwear = total_outwear;
     }
 
-    public void setTotal_pants(String total_pants) {
+    public void setTotal_pants(int total_pants) {
         this.total_pants = total_pants;
     }
 
-    public void setTotal_price(String total_price) {
+    public void setTotal_price(int total_price) {
         this.total_price = total_price;
     }
 
-    public void setTotal_shirt(String total_shirt) {
+    public void setTotal_shirt(int total_shirt) {
         this.total_shirt = total_shirt;
     }
 
-    public void setTotal_shorts(String total_shorts) {
+    public void setTotal_shorts(int total_shorts) {
         this.total_shorts = total_shorts;
     }
 
-    public void setTotal_tie(String total_tie) {
+    public void setTotal_tie(int total_tie) {
         this.total_tie = total_tie;
     }
 
-    public void setTotal_tshirts(String total_tshirts) {
+    public void setTotal_tshirts(int total_tshirts) {
         this.total_tshirts = total_tshirts;
     }
 }

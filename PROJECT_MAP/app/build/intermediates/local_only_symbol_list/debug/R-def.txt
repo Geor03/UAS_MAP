@@ -26,6 +26,7 @@ drawable custom_button_confirm
 drawable custom_button_dark
 drawable custom_button_login
 drawable custom_button_minus
+drawable custom_card_bgorderlist
 drawable custom_input_login_logout
 drawable dress_item
 drawable drycleaning_image
@@ -74,11 +75,15 @@ id Total_order
 id address
 id agree
 id appCompatButton
+id btnBackToMain
 id btnUpdate
+id btnViewAllorder
+id btnViewAlloupon
 id button5
 id button6
 id button7
 id button_back
+id button_backSelectFromNotification
 id button_backSelectLaundry
 id button_backSelectOutlet
 id button_burger
@@ -124,6 +129,7 @@ id idTVSelectOutletDesc
 id idTVTitle
 id imageView
 id imageView10
+id imageView11
 id imageView12
 id imageView13
 id imageView14
@@ -149,6 +155,7 @@ id imageView8
 id imageView9
 id item_name
 id item_type
+id ivClothes
 id last_name
 id logout
 id mapView
@@ -172,11 +179,13 @@ id profilePhoneNo
 id qty
 id ratingBar
 id rvHorizontal
+id rvOrderList
 id savelogin
 id status
 id subtotal
 id subtotal2
 id switch1
+id textView
 id textView10
 id textView11
 id textView12
@@ -229,6 +238,10 @@ id title_paymentMethodl
 id total_harga
 id total_price
 id tvMessage
+id tvOrderListDate
+id tvOrderListOrderID
+id tvOrderListPrice
+id tvOrderListStatus
 id tvTitle
 id username
 id visa
@@ -240,6 +253,7 @@ layout activity_edit_profile
 layout activity_login
 layout activity_main
 layout activity_notification
+layout activity_order_list
 layout activity_profile
 layout activity_rating_driver
 layout activity_rating_outlet
@@ -251,6 +265,7 @@ layout activity_sign_up
 layout activity_splash_screen
 layout coupon_view
 layout notification_card_layout
+layout order_list_card_layout
 layout order_page
 layout order_view
 layout select_laundry_card_layout

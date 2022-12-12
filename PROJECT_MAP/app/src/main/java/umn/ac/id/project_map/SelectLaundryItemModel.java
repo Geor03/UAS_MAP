@@ -5,10 +5,11 @@ import android.os.Parcelable;
 
 import com.google.firebase.firestore.DocumentId;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SelectLaundryItemModel implements Parcelable {
+public class SelectLaundryItemModel implements Serializable {
     private ArrayList<SelectLaundryItemModel> itemModels;
     public String item_name, docId;
     public int item_image;
@@ -37,17 +38,17 @@ public class SelectLaundryItemModel implements Parcelable {
         qty = in.readInt();
     }
 
-    public static final Creator<SelectLaundryItemModel> CREATOR = new Creator<SelectLaundryItemModel>() {
-        @Override
-        public SelectLaundryItemModel createFromParcel(Parcel in) {
-            return new SelectLaundryItemModel(in);
-        }
-
-        @Override
-        public SelectLaundryItemModel[] newArray(int size) {
-            return new SelectLaundryItemModel[size];
-        }
-    };
+//    public static final Creator<SelectLaundryItemModel> CREATOR = new Creator<SelectLaundryItemModel>() {
+//        @Override
+//        public SelectLaundryItemModel createFromParcel(Parcel in) {
+//            return new SelectLaundryItemModel(in);
+//        }
+//
+//        @Override
+//        public SelectLaundryItemModel[] newArray(int size) {
+//            return new SelectLaundryItemModel[size];
+//        }
+//    };
 
     // Getter and Setter
     public String getLaundry_name() {
@@ -96,15 +97,15 @@ public class SelectLaundryItemModel implements Parcelable {
         this.docId = docId;
     }
 
-    @Override
-    public int describeContents() {
-        return 0;
-    }
-
-    @Override
-    public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeString(item_name);
-        parcel.writeInt(qty);
-        parcel.writeString(docId);
-    }
+//    @Override
+//    public int describeContents() {
+//        return 0;
+//    }
+//
+//    @Override
+//    public void writeToParcel(Parcel parcel, int i) {
+//        parcel.writeString(item_name);
+//        parcel.writeInt(qty);
+//        parcel.writeString(docId);
+//    }
 }

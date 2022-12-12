@@ -25,6 +25,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.firestore.FirebaseFirestore;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,10 +33,11 @@ import java.util.List;
 public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
     boolean isPermissionGranted;
     MapView mapView;
-    private Button btnConfirmToCheckOut;
+    private Button btnConfirmToCheckOut, backButton;
     private int baju;
     private int celana;
-
+    private ArrayList<SelectLaundryItemModel> itemArrayList;
+    private ArrayList<OrderModel> items;
     private String orderId;
     FirebaseFirestore fStore = FirebaseFirestore.getInstance();
 
@@ -46,13 +48,11 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
         setContentView(R.layout.order_page);
         Bundle extras = getIntent().getExtras();
         if(extras != null) {
-
             orderId =  String.valueOf(extras.getString("Outlet"));
-//        orderId = intent.getStringExtra("id_outlet");
-            Log.d("Isi dari order id", String.valueOf(orderId));
+            itemArrayList = (ArrayList<SelectLaundryItemModel>) extras.getSerializable("items");
 
-            baju = extras.getInt("Jumlah_baju") ;
-            celana = extras.getInt("Jumlah_celana");
+            Log.d("Isi dari order", String.valueOf(itemArrayList));
+            Log.d("Isi dari order id", String.valueOf(orderId));
         }
         else{
             Log.d("Isi dari order id", "KOSONGGGG");
@@ -64,19 +64,22 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
         btnConfirmToCheckOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Intent intent = new Intent(OrderPage.this, ConfirmOrder.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+        backButton = findViewById(R.id.button_back);
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 onBackPressed();
             }
         });
-//        checkMyPermission();
-//        if(isPermissionGranted){
-            mapView.onCreate(savedInstanceState);
-            mapView.getMapAsync(this);
+
+        mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(this);
     }
-
-    public void showMore(View view){
-
-    }
-
 
     @Override
     protected void onStart(){

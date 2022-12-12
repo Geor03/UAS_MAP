@@ -43,7 +43,7 @@ public class SelectLaundryItem extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_laundry_item);
-        Intent intent=getIntent();
+        Intent intent = getIntent();
         order = intent.getStringExtra("laundry_outlet");
 
         btnConfirm = (Button) findViewById(R.id.button_confirm);
@@ -55,11 +55,10 @@ public class SelectLaundryItem extends AppCompatActivity {
                 Bundle bundle = new Bundle();
 
                 // dan total input baju.
-                bundle.putInt("Jumlah_celana", itemArrayList.get(0).qty);
-                bundle.putInt("Jumlah_baju", itemArrayList.get(1).qty);
-
+                bundle.putSerializable("items", itemArrayList);
                 bundle.putString("Outlet", order );
-                Log.d("Isi dari pakaian", itemArrayList.toString());
+
+                Log.d("Isi dari pakaian", String.valueOf(itemArrayList.getClass()));
                 Log.d("Tipe dari order", String.valueOf(order.getClass()));
                 Log.d("Isi dari order", String.valueOf(order));
 
@@ -67,6 +66,7 @@ public class SelectLaundryItem extends AppCompatActivity {
                 view.getContext().startActivity(intentToCheckOut);
             }
         });
+
         btnBackToOutlet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -76,7 +76,7 @@ public class SelectLaundryItem extends AppCompatActivity {
         laundryRV = findViewById(R.id.idRVSelectLaundryItem);
 
         // Here, we have created new array list and added data to it
-            itemArrayList = new ArrayList<SelectLaundryItemModel>();
+        itemArrayList = new ArrayList<SelectLaundryItemModel>();
 
         // we are initializing our adapter class and passing our arraylist to it.
         itemAdapter = new SelectLaundryItemAdapter(this, itemArrayList);
@@ -104,11 +104,6 @@ public class SelectLaundryItem extends AppCompatActivity {
                     if(dc.getType() == DocumentChange.Type.ADDED){
 
                         itemArrayList.add(dc.getDocument().toObject(SelectLaundryItemModel.class));
-
-//                        SelectLaundryItemModel itemModel = (dc.getDocument().toObject(SelectLaundryItemModel.class));
-//                        itemArrayList.addAll(itemModel.getItemModels());
-//                        Log.d("Isi dari pakaian FS", String.valueOf(itemArrayList.get(0).item_name));
-
                     }
 
                     itemAdapter.notifyDataSetChanged();

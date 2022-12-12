@@ -43,7 +43,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
         holder.status.setText(order.status);
         holder.address.setText(order.address);
         holder.dateOrder.setText(format.format(order.date));
-        holder.priceOrder.setText(order.total_price);
+        holder.priceOrder.setText(String.valueOf(order.total_price));
     }
 
     @Override
