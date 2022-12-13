@@ -64,7 +64,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback{
         btnConfirmToCheckOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(OrderPage.this, ConfirmOrder.class);
+                Intent intent = new Intent(OrderPage.this, RatingOutlet.class);
                 startActivity(intent);
                 finish();
             }
