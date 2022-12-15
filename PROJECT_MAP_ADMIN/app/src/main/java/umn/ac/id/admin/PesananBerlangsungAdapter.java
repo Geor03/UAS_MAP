@@ -10,11 +10,18 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import java.util.ArrayList;
 
 public class PesananBerlangsungAdapter extends RecyclerView.Adapter<PesananBerlangsungAdapter.PesananBerlangsungHolder> {
     Context context;
     ArrayList<PesananBerlangsungModel> PesananBerlangsungModelArrayList;
+    public FirebaseFirestore fStore = FirebaseFirestore.getInstance();
 
     public PesananBerlangsungAdapter(Context context, ArrayList<PesananBerlangsungModel> PesananBerlangsungModelArrayList){
         this.context = context;
@@ -32,10 +39,22 @@ public class PesananBerlangsungAdapter extends RecyclerView.Adapter<PesananBerla
     @Override
     public void onBindViewHolder(@NonNull PesananBerlangsungHolder holder, int position) {
         PesananBerlangsungModel pesananberlangsungmodel = PesananBerlangsungModelArrayList.get(position);
-        holder.tvNamaPelanggan.setText(pesananberlangsungmodel.tvNamaPelanggan);
-        holder.tvTotalItem.setText(pesananberlangsungmodel.tvTotalItem);
 
+        DocumentReference documentReference = fStore.collection("users").document(pesananberlangsungmodel.customerId);
+        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if(documentSnapshot.exists()) {
+                    holder.tvNamaPelanggan.setText(documentSnapshot.getString("fName"));
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
 
+            }
+        });
+        holder.tvTotalItem.setText(String.valueOf(pesananberlangsungmodel.total_price));
     }
 
     @Override

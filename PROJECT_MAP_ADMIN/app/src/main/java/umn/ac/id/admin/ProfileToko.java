@@ -24,9 +24,7 @@ public class ProfileToko extends AppCompatActivity {
         btnBackToMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentBackToHome = new Intent(ProfileToko.this, MainActivity.class);
-                startActivity(intentBackToHome);
-                finish();
+                onBackPressed();
             }
         });
 

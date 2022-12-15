@@ -107,6 +107,11 @@ public class MainActivity extends AppCompatActivity {
                         Intent intentProfileToko = new Intent(MainActivity.this, ProfileToko.class);
                         startActivity(intentProfileToko);
                         break;
+                    case R.id.nav_keluar:
+                        FirebaseAuth.getInstance().signOut();
+                        startActivity(new Intent(getBaseContext(), Login.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+                        finish();
+                        break;
                 }
                 return true;
             }

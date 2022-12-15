@@ -1,5 +1,6 @@
 package umn.ac.id.admin;
 
+import android.app.DownloadManager;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,9 +9,18 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentChange;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -30,9 +40,12 @@ public class BerlangsungPesananFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private ArrayList<PesananBerlangsungModel> PesananBerlangsungArraylist;
-    private String[] detailNamaPelanggan;
-    private String[] detailTotalItem;
     private RecyclerView recyclerviewPesananBerlangsung;
+    private PesananBerlangsungAdapter PesananBerlangsungAdapter;
+    public FirebaseFirestore fStore;
+    private FirebaseAuth fAuth;
+    private String outletId;
+
 
     public BerlangsungPesananFragment() {
         // Required empty public constructor
@@ -59,10 +72,13 @@ public class BerlangsungPesananFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        fStore = FirebaseFirestore.getInstance();
+        fAuth = FirebaseAuth.getInstance();
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        fetchData();
     }
 
     @Override
@@ -76,36 +92,33 @@ public class BerlangsungPesananFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        dataInitialize();
-
         recyclerviewPesananBerlangsung = view.findViewById(R.id.rvPesananBerlangsung);
+        PesananBerlangsungArraylist = new ArrayList<PesananBerlangsungModel>();
+        PesananBerlangsungAdapter = new PesananBerlangsungAdapter(getContext(), PesananBerlangsungArraylist);
+
         recyclerviewPesananBerlangsung.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerviewPesananBerlangsung.setHasFixedSize(true);
-        PesananBerlangsungAdapter PesananBerlangsungAdapter = new PesananBerlangsungAdapter(getContext(), PesananBerlangsungArraylist);
         recyclerviewPesananBerlangsung.setAdapter(PesananBerlangsungAdapter);
-        PesananBerlangsungAdapter.notifyDataSetChanged();
-
+        fetchData();
     }
 
-    private void dataInitialize() {
-        PesananBerlangsungArraylist = new ArrayList<>();
+    public void fetchData() {
+        outletId = fAuth.getCurrentUser().getUid();
+        fStore.collection("outlets").document(outletId).collection("orders").orderBy("address", Query.Direction.ASCENDING).addSnapshotListener(new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+                if (error != null) {
+                    Log.e("Firestore error", error.getMessage());
+                    return;
+                }
+                for (DocumentChange dc : value.getDocumentChanges()) {
+                    if (dc.getType() == DocumentChange.Type.ADDED) {
+                        PesananBerlangsungArraylist.add(dc.getDocument().toObject(PesananBerlangsungModel.class));
+                    }
 
-        detailNamaPelanggan = new String[]{
-                getString(R.string.nama1),
-                getString(R.string.nama2),
-                getString(R.string.nama3),
-                getString(R.string.nama4)
-        };
-        detailTotalItem = new String[]{
-                getString(R.string.item1),
-                getString(R.string.item2),
-                getString(R.string.item3),
-                getString(R.string.item4)
-        };
-
-        for(int i = 0; i < detailNamaPelanggan.length; i++){
-            PesananBerlangsungModel pesananBerlangsungModel = new PesananBerlangsungModel(detailNamaPelanggan[i], detailTotalItem[i]);
-            PesananBerlangsungArraylist.add(pesananBerlangsungModel);
-        }
+                    PesananBerlangsungAdapter.notifyDataSetChanged();
+                }
+            }
+        });
     }
 }
