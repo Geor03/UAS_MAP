@@ -2,14 +2,14 @@ package umn.ac.id.admin;
 
 import java.util.Date;
 
-public class PesananBerlangsungModel {
+public class PesananModel {
     String address, customerId, status, laundry_type;
     Date date;
     int total_pants, total_shirt;
     int total_price;
 
-    public PesananBerlangsungModel(){}
-    public PesananBerlangsungModel(String address, String customerId, Date date,  String laundry_type, String status, int total_pants, int total_price, int total_shirt){
+    public PesananModel(){}
+    public PesananModel(String address, String customerId, Date date, String laundry_type, String status, int total_pants, int total_price, int total_shirt){
         this.address = address;
         this.customerId = customerId;
         this.date = date;

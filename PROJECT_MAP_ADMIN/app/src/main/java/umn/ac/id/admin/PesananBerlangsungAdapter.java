@@ -20,10 +20,10 @@ import java.util.ArrayList;
 
 public class PesananBerlangsungAdapter extends RecyclerView.Adapter<PesananBerlangsungAdapter.PesananBerlangsungHolder> {
     Context context;
-    ArrayList<PesananBerlangsungModel> PesananBerlangsungModelArrayList;
+    ArrayList<PesananModel> PesananBerlangsungModelArrayList;
     public FirebaseFirestore fStore = FirebaseFirestore.getInstance();
 
-    public PesananBerlangsungAdapter(Context context, ArrayList<PesananBerlangsungModel> PesananBerlangsungModelArrayList){
+    public PesananBerlangsungAdapter(Context context, ArrayList<PesananModel> PesananBerlangsungModelArrayList){
         this.context = context;
         this.PesananBerlangsungModelArrayList = PesananBerlangsungModelArrayList;
     }
@@ -38,7 +38,7 @@ public class PesananBerlangsungAdapter extends RecyclerView.Adapter<PesananBerla
 
     @Override
     public void onBindViewHolder(@NonNull PesananBerlangsungHolder holder, int position) {
-        PesananBerlangsungModel pesananberlangsungmodel = PesananBerlangsungModelArrayList.get(position);
+        PesananModel pesananberlangsungmodel = PesananBerlangsungModelArrayList.get(position);
 
         DocumentReference documentReference = fStore.collection("users").document(pesananberlangsungmodel.customerId);
         documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {

@@ -10,13 +10,21 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
+
 import java.util.ArrayList;
 
 public class PesananSelesaiAdapter extends RecyclerView.Adapter<PesananSelesaiAdapter.PesananSelesaiHolder> {
     Context context;
-    ArrayList<PesananSelesaiModel> PesananSelesaiArrayList;
+    ArrayList<PesananModel> PesananSelesaiArrayList;
+    public FirebaseFirestore fStore = FirebaseFirestore.getInstance();
 
-    public PesananSelesaiAdapter(Context context, ArrayList<PesananSelesaiModel> pesananSelesaiArrayList) {
+
+    public PesananSelesaiAdapter(Context context, ArrayList<PesananModel> pesananSelesaiArrayList) {
         this.context = context;
         this.PesananSelesaiArrayList = pesananSelesaiArrayList;
     }
@@ -31,9 +39,22 @@ public class PesananSelesaiAdapter extends RecyclerView.Adapter<PesananSelesaiAd
 
     @Override
     public void onBindViewHolder(@NonNull PesananSelesaiHolder holder, int position) {
-        PesananSelesaiModel pesananSelesaiModel = PesananSelesaiArrayList.get(position);
-        holder.tvNamaPelanggan.setText(pesananSelesaiModel.tvNamaPelanggan);
-        holder.tvTotalItem.setText(pesananSelesaiModel.tvTotalItem);
+        PesananModel pesananSelesaiModel = PesananSelesaiArrayList.get(position);
+        DocumentReference documentReference = fStore.collection("users").document(pesananSelesaiModel.customerId);
+        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if(documentSnapshot.exists()) {
+                    holder.tvNamaPelanggan.setText(documentSnapshot.getString("fName"));
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+            }
+        });
+        holder.tvTotalItem.setText(String.valueOf(pesananSelesaiModel.total_price));
     }
 
     @Override

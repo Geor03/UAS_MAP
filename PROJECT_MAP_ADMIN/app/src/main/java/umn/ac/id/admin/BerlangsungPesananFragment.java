@@ -1,6 +1,5 @@
 package umn.ac.id.admin;
 
-import android.app.DownloadManager;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -39,7 +38,7 @@ public class BerlangsungPesananFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private ArrayList<PesananBerlangsungModel> PesananBerlangsungArraylist;
+    private ArrayList<PesananModel> PesananBerlangsungArraylist;
     private RecyclerView recyclerviewPesananBerlangsung;
     private PesananBerlangsungAdapter PesananBerlangsungAdapter;
     public FirebaseFirestore fStore;
@@ -93,7 +92,7 @@ public class BerlangsungPesananFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         recyclerviewPesananBerlangsung = view.findViewById(R.id.rvPesananBerlangsung);
-        PesananBerlangsungArraylist = new ArrayList<PesananBerlangsungModel>();
+        PesananBerlangsungArraylist = new ArrayList<PesananModel>();
         PesananBerlangsungAdapter = new PesananBerlangsungAdapter(getContext(), PesananBerlangsungArraylist);
 
         recyclerviewPesananBerlangsung.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -113,7 +112,13 @@ public class BerlangsungPesananFragment extends Fragment {
                 }
                 for (DocumentChange dc : value.getDocumentChanges()) {
                     if (dc.getType() == DocumentChange.Type.ADDED) {
-                        PesananBerlangsungArraylist.add(dc.getDocument().toObject(PesananBerlangsungModel.class));
+                        if(dc.getDocument().toObject(PesananModel.class).status.equals("Ongoing")) {
+                            PesananBerlangsungArraylist.add(dc.getDocument().toObject(PesananModel.class));
+                        }
+                        else{
+                            Log.e("Empty Data", "Order is empty");
+                            return;
+                        }
                     }
 
                     PesananBerlangsungAdapter.notifyDataSetChanged();

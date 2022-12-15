@@ -8,9 +8,18 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentChange;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -29,11 +38,13 @@ public class PesananSelesaiFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private ArrayList<PesananSelesaiModel> PesananSelesaiArrayList;
-    private String[] detailNamaPelanggan;
-    private String[] detailTotalItem;
-    private Object PesananSelesaiModel;
+    private ArrayList<PesananModel> PesananSelesaiArrayList;
     private RecyclerView recyclerviewPesananSelesai;
+    private PesananSelesaiAdapter PesananSelesaiAdapter;
+
+    public FirebaseFirestore fStore;
+    private FirebaseAuth fAuth;
+    private String outletId;
 
     public PesananSelesaiFragment() {
         // Required empty public constructor
@@ -60,6 +71,8 @@ public class PesananSelesaiFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        fStore = FirebaseFirestore.getInstance();
+        fAuth = FirebaseAuth.getInstance();
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -67,8 +80,7 @@ public class PesananSelesaiFragment extends Fragment {
     }
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_pesanan_selesai, container, false);
     }
@@ -77,30 +89,41 @@ public class PesananSelesaiFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        dataInitialize();
+
 
         recyclerviewPesananSelesai = view.findViewById(R.id.rvPesananSelesai);
+        PesananSelesaiArrayList = new ArrayList<PesananModel>();
+        PesananSelesaiAdapter = new PesananSelesaiAdapter(getContext(), PesananSelesaiArrayList);
+
         recyclerviewPesananSelesai.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerviewPesananSelesai.setHasFixedSize(true);
-        PesananSelesaiAdapter PesananSelesaiAdapter = new PesananSelesaiAdapter(getContext(), PesananSelesaiArrayList);
         recyclerviewPesananSelesai.setAdapter(PesananSelesaiAdapter);
-        PesananSelesaiAdapter.notifyDataSetChanged();
+        fetchData();
     }
 
-    private void dataInitialize() {
-        PesananSelesaiArrayList = new ArrayList<>();
+    public void fetchData() {
+        outletId = fAuth.getCurrentUser().getUid();
+        fStore.collection("outlets").document(outletId).collection("orders").orderBy("address", Query.Direction.ASCENDING).addSnapshotListener(new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+                if (error != null) {
+                    Log.e("Firestore error", error.getMessage());
+                    return;
+                }
+                for (DocumentChange dc : value.getDocumentChanges()) {
+                    if (dc.getType() == DocumentChange.Type.ADDED) {
+                        if(dc.getDocument().toObject(PesananModel.class).status.equals("Finished")) {
+                            PesananSelesaiArrayList.add(dc.getDocument().toObject(PesananModel.class));
+                        }
+                        else{
+                            Log.e("Empty Data", "Order is empty");
+                            return;
+                        }
+                    }
 
-        detailNamaPelanggan = new String[]{
-                getString(R.string.nama3)
-        };
-        detailTotalItem = new String[]{
-                getString(R.string.item3)
-        };
-
-        for(int i = 0; i < detailNamaPelanggan.length; i++){
-            PesananSelesaiModel pesananSelesaiModel = new PesananSelesaiModel(detailNamaPelanggan[i], detailTotalItem[i]);
-            PesananSelesaiArrayList.add(pesananSelesaiModel);
-        }
-        
+                    PesananSelesaiAdapter.notifyDataSetChanged();
+                }
+            }
+        });
     }
 }

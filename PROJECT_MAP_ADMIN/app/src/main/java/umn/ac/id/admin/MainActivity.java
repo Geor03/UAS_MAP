@@ -17,8 +17,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentReference;
+import com.google.firebase.firestore.DocumentSnapshot;
+import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,7 +32,9 @@ public class MainActivity extends AppCompatActivity {
     private NavigationView nvDrawer;
     boolean mSlideState;
     private TextView name;
-
+    FirebaseAuth fAuth;
+    FirebaseFirestore fStore;
+    String outletID;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,9 +45,22 @@ public class MainActivity extends AppCompatActivity {
         }
 
         name = (TextView) findViewById(R.id.name);
-        Intent intent = getIntent();
-        name.setText("Hello, "+intent.getStringExtra("Name"));
-//        replaceFragment(new TerimaFragment());
+
+        outletID = fAuth.getCurrentUser().getUid();
+        DocumentReference documentReference = fStore.collection("users").document(outletID);
+        documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+            @Override
+            public void onSuccess(DocumentSnapshot documentSnapshot) {
+                if(documentSnapshot.exists()) {
+                    name.setText("Hello, "+documentSnapshot.getString("fName"));
+                }
+            }
+        }).addOnFailureListener(new OnFailureListener() {
+            @Override
+            public void onFailure(@NonNull Exception e) {
+
+            }
+        });
 
         //    Sidebar Code
         btnSidebar = findViewById(R.id.button_burger);
