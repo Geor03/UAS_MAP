@@ -3,10 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/activity_confirm_order.xml" value="0.10833333333333334" />
+        <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/activity_coupon_list.xml" value="0.10833333333333334" />
+        <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/activity_edit_profile.xml" value="0.10833333333333334" />
+        <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/activity_notification.xml" value="0.10833333333333334" />
+        <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/activity_order_list.xml" value="0.10833333333333334" />
         <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/activity_select_laundry_item.xml" value="0.2" />
+        <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/activity_splash_screen.xml" value="0.10833333333333334" />
+        <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/coupon_view.xml" value="0.10833333333333334" />
+        <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/notification_card_layout.xml" value="0.10833333333333334" />
         <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/order_item_list.xml" value="0.19895833333333332" />
         <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/order_list_card_layout.xml" value="0.2" />
         <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/order_page.xml" value="0.1" />
+        <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/order_view.xml" value="0.10833333333333334" />
         <entry key="..\:/KULI(ah)/smester 5/IF 570 Lab - Mobile Programming/MAP/PROJECT_MAP/app/src/main/res/layout/select_laundry_item_card_layout.xml" value="0.2" />
         <entry key="..\:/Users/LENOVO/UASMobile/UAS_MAP/PROJECT_MAP/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/LENOVO/UASMobile/UAS_MAP/PROJECT_MAP/app/src/main/res/layout/activity_notification.xml" value="0.25" />
