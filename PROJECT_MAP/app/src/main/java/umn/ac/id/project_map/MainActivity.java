@@ -1,5 +1,13 @@
 package umn.ac.id.project_map;
 
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -9,17 +17,6 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.app.ProgressDialog;
-import android.content.Intent;
-import android.nfc.Tag;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.Gravity;
-import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -35,14 +32,13 @@ import com.google.firebase.firestore.Query;
 import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
     private RecyclerView rvHorizontal;
     private RecyclerView orderHorizontal;
     private ArrayList<OrderModel> orderArrayList;
-    private ArrayList<Coupon_list> couponArrayList;
+    private ArrayList<CouponModel> couponArrayList;
     private RecyclerView.LayoutManager mLayoutManagerHorizontal;
     private RecyclerView.LayoutManager orderManagerHorizontal;
     CouponAdapter couponAdapter;
@@ -149,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
         btnViewAllCoupon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentHomeToCouponList = new Intent(MainActivity.this, Coupon_list.class);
+                Intent intentHomeToCouponList = new Intent(MainActivity.this, CouponModel.class);
                 startActivity(intentHomeToCouponList);
                 finish();
             }
@@ -178,7 +174,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         orderArrayList = new ArrayList<OrderModel>();
-        couponArrayList = new ArrayList<Coupon_list>();
+        couponArrayList = new ArrayList<CouponModel>();
 
         //________initialize adapters
         couponAdapter = new CouponAdapter(this, couponArrayList);
@@ -204,7 +200,7 @@ public class MainActivity extends AppCompatActivity {
                 }
                 for(DocumentChange dc : value.getDocumentChanges()){
                     if(dc.getType() == DocumentChange.Type.ADDED){
-                        couponArrayList.add(dc.getDocument().toObject(Coupon_list.class));
+                        couponArrayList.add(dc.getDocument().toObject(CouponModel.class));
                     }
 
                     couponAdapter.notifyDataSetChanged();

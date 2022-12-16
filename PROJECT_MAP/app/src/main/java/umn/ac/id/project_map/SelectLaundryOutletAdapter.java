@@ -2,28 +2,29 @@ package umn.ac.id.project_map;
 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Parcelable;
 import android.util.Log;
 import android.view.LayoutInflater;
-        import android.view.View;
-        import android.view.ViewGroup;
-        import android.widget.ImageView;
-        import android.widget.TextView;
-        import androidx.annotation.NonNull;
-        import androidx.recyclerview.widget.RecyclerView;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-import java.io.Serializable;
+import androidx.annotation.NonNull;
+import androidx.recyclerview.widget.RecyclerView;
+
 import java.util.ArrayList;
 
 public class SelectLaundryOutletAdapter extends RecyclerView.Adapter<SelectLaundryOutletAdapter.ViewHolder> {
 
     private final Context context;
     private final ArrayList<SelectLaundryOutletModel> laundryModelArrayList;
+    private final String name;
 
     // Constructor
-    public SelectLaundryOutletAdapter(Context context, ArrayList<SelectLaundryOutletModel> laundryModelArrayList) {
+    public SelectLaundryOutletAdapter(Context context, ArrayList<SelectLaundryOutletModel> laundryModelArrayList, String name) {
         this.context = context;
         this.laundryModelArrayList = laundryModelArrayList;
+        this.name = name;
     }
 
     @NonNull
@@ -46,6 +47,7 @@ public class SelectLaundryOutletAdapter extends RecyclerView.Adapter<SelectLaund
             public void onClick(View view) {
                 Intent intentToSelectOutlet = new Intent(view.getContext(), SelectLaundryItem.class);
                 intentToSelectOutlet.putExtra("laundry_outlet", model.getDocId());
+                intentToSelectOutlet.putExtra("laundry_type", name);
                 view.getContext().startActivity(intentToSelectOutlet);
             }
         });

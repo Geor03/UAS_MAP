@@ -9,7 +9,6 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
@@ -17,13 +16,12 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
     Context context;
     ArrayList<OrderModel>orderArrayList;
     SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-    //________create  constructor with required parameter
-    public OrderAdapter(ArrayList<OrderModel>orderArrayList, Context context){
 
-        //________initialize
+    public OrderAdapter(ArrayList<OrderModel> orderArrayList, Context context) {
         this.context = context;
         this.orderArrayList = orderArrayList;
     }
+
 
     @Override
     public OrderAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {

@@ -9,20 +9,14 @@ public class OrderModel {
     int total_price;
 
     public OrderModel(){}
-    public OrderModel(String address, Date date, String outlet, String status, int total_cardigans, int total_dress, int total_outwear, int total_pants, int total_shirt, int total_shorts, int total_tshirts, int total_tie, int total_price, String laundry_type){
+    public OrderModel(String address, Date date, String laundry_type, String outlet, String status, int total_pants, int total_price, int total_shirt ){
         this.address = address;
         this.date = date;
         this.outlet = outlet;
         this.laundry_type = laundry_type;
         this.status = status;
-        this.total_cardigans = total_cardigans;
-        this.total_dress = total_dress;
-        this.total_outwear = total_outwear;
         this.total_pants = total_pants;
         this.total_shirt = total_shirt;
-        this.total_shorts = total_shorts;
-        this.total_tshirts = total_tshirts;
-        this.total_tie = total_tie;
         this.total_price = total_price;
     }
 

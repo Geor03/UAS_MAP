@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Coupon_list">
+    tools:context=".CouponModel">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/couponVertical"

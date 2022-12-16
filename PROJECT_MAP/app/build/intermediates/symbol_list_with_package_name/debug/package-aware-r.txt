@@ -273,6 +273,10 @@ attr circularflow_defaultAngle
 attr circularflow_defaultRadius
 attr circularflow_radiusInDP
 attr circularflow_viewCenter
+attr civ_border_color
+attr civ_border_overlay
+attr civ_border_width
+attr civ_circle_background_color
 attr clearsTag
 attr clickAction
 attr clockFaceBackgroundColor
@@ -2750,6 +2754,7 @@ drawable others_item
 drawable outwear_item
 drawable pants_item
 drawable plus_button
+drawable profile_dummy
 drawable satu
 drawable shorts_item
 drawable star
@@ -2882,11 +2887,10 @@ id btnBackToMain
 id btnUpdate
 id btnViewAllorder
 id btnViewAlloupon
-id button5
-id button6
 id button7
 id buttonPanel
 id button_back
+id button_backHome
 id button_backSelectFromNotification
 id button_backSelectLaundry
 id button_backSelectOutlet
@@ -2900,6 +2904,7 @@ id button_order
 id button_plus
 id button_registerAccount
 id button_singup
+id button_submit
 id button_toSelectOutlet
 id cache_measures
 id callMeasure
@@ -4108,6 +4113,7 @@ style Base_Widget_MaterialComponents_TextView
 style CardView
 style CardView_Dark
 style CardView_Light
+style Dexter_Internal_Theme_Transparent
 style MaterialAlertDialog_Material3
 style MaterialAlertDialog_Material3_Body_Text
 style MaterialAlertDialog_Material3_Body_Text_CenterStacked
@@ -4917,6 +4923,7 @@ styleable Carousel carousel_backwardTransition carousel_emptyViewsBehavior carou
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
 styleable Chip android_textAppearance android_textSize android_textColor android_ellipsize android_maxWidth android_text android_checkable checkedIcon checkedIconEnabled checkedIconTint checkedIconVisible chipBackgroundColor chipCornerRadius chipEndPadding chipIcon chipIconEnabled chipIconSize chipIconTint chipIconVisible chipMinHeight chipMinTouchTargetSize chipStartPadding chipStrokeColor chipStrokeWidth chipSurfaceColor closeIcon closeIconEnabled closeIconEndPadding closeIconSize closeIconStartPadding closeIconTint closeIconVisible ensureMinTouchTargetSize hideMotionSpec iconEndPadding iconStartPadding rippleColor shapeAppearance shapeAppearanceOverlay showMotionSpec textEndPadding textStartPadding
 styleable ChipGroup checkedChip chipSpacing chipSpacingHorizontal chipSpacingVertical selectionRequired singleLine singleSelection
+styleable CircleImageView civ_border_color civ_border_overlay civ_border_width civ_circle_background_color
 styleable CircularProgressIndicator indicatorDirectionCircular indicatorInset indicatorSize
 styleable ClockFaceView clockFaceBackgroundColor clockNumberTextColor
 styleable ClockHandView clockHandColor materialCircleRadius selectorSize

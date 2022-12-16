@@ -55,6 +55,7 @@ drawable others_item
 drawable outwear_item
 drawable pants_item
 drawable plus_button
+drawable profile_dummy
 drawable satu
 drawable shorts_item
 drawable star
@@ -79,10 +80,9 @@ id btnBackToMain
 id btnUpdate
 id btnViewAllorder
 id btnViewAlloupon
-id button5
-id button6
 id button7
 id button_back
+id button_backHome
 id button_backSelectFromNotification
 id button_backSelectLaundry
 id button_backSelectOutlet
@@ -96,6 +96,7 @@ id button_order
 id button_plus
 id button_registerAccount
 id button_singup
+id button_submit
 id button_toSelectOutlet
 id cardView
 id cardView4

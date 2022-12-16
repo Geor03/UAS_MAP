@@ -272,6 +272,10 @@ int attr circularflow_defaultAngle 0x7f0300cb
 int attr circularflow_defaultRadius 0x7f0300cc
 int attr circularflow_radiusInDP 0x7f0300cd
 int attr circularflow_viewCenter 0x7f0300ce
+int attr civ_border_color 0x7f0304ab
+int attr civ_border_overlay 0x7f0304ac
+int attr civ_border_width 0x7f0304ad
+int attr civ_circle_background_color 0x7f0304ae
 int attr clearsTag 0x7f0300cf
 int attr clickAction 0x7f0300d0
 int attr clockFaceBackgroundColor 0x7f0300d1
@@ -2749,6 +2753,7 @@ int drawable others_item 0x7f07010c
 int drawable outwear_item 0x7f07010d
 int drawable pants_item 0x7f07010e
 int drawable plus_button 0x7f07010f
+int drawable profile_dummy 0x7f07011d
 int drawable satu 0x7f070110
 int drawable shorts_item 0x7f070111
 int drawable star 0x7f070112
@@ -2881,11 +2886,10 @@ int id btnBackToMain 0x7f080073
 int id btnUpdate 0x7f080074
 int id btnViewAllorder 0x7f080075
 int id btnViewAlloupon 0x7f080076
-int id button5 0x7f080077
-int id button6 0x7f080078
 int id button7 0x7f080079
 int id buttonPanel 0x7f08007a
 int id button_back 0x7f08007b
+int id button_backHome 0x7f08029e
 int id button_backSelectFromNotification 0x7f08007c
 int id button_backSelectLaundry 0x7f08007d
 int id button_backSelectOutlet 0x7f08007e
@@ -2899,6 +2903,7 @@ int id button_order 0x7f080085
 int id button_plus 0x7f080086
 int id button_registerAccount 0x7f080087
 int id button_singup 0x7f080088
+int id button_submit 0x7f08029f
 int id button_toSelectOutlet 0x7f080089
 int id cache_measures 0x7f08008a
 int id callMeasure 0x7f08008b
@@ -4107,6 +4112,7 @@ int style Base_Widget_MaterialComponents_TextView 0x7f12010e
 int style CardView 0x7f12010f
 int style CardView_Dark 0x7f120110
 int style CardView_Light 0x7f120111
+int style Dexter_Internal_Theme_Transparent 0x7f12041c
 int style MaterialAlertDialog_Material3 0x7f120112
 int style MaterialAlertDialog_Material3_Body_Text 0x7f120113
 int style MaterialAlertDialog_Material3_Body_Text_CenterStacked 0x7f120114
@@ -5294,6 +5300,11 @@ int styleable ChipGroup_chipSpacingVertical 3
 int styleable ChipGroup_selectionRequired 4
 int styleable ChipGroup_singleLine 5
 int styleable ChipGroup_singleSelection 6
+int[] styleable CircleImageView { 0x7f0304ab, 0x7f0304ac, 0x7f0304ad, 0x7f0304ae }
+int styleable CircleImageView_civ_border_color 0
+int styleable CircleImageView_civ_border_overlay 1
+int styleable CircleImageView_civ_border_width 2
+int styleable CircleImageView_civ_circle_background_color 3
 int[] styleable CircularProgressIndicator { 0x7f030210, 0x7f030212, 0x7f030213 }
 int styleable CircularProgressIndicator_indicatorDirectionCircular 0
 int styleable CircularProgressIndicator_indicatorInset 1

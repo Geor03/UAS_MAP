@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentChange;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -37,6 +36,8 @@ public class SelectLaundryOutlet extends AppCompatActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_select_laundry_outlet);
+        Intent intent = getIntent();
+        String name = intent.getStringExtra("laundry_type");
         btnBackToSelectLaundry = (Button) findViewById(R.id.button_backSelectLaundry);
         btnBackToSelectLaundry.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,7 +65,7 @@ public class SelectLaundryOutlet extends AppCompatActivity{
         laundryArrayList = new ArrayList<SelectLaundryOutletModel>();
 
         // we are initializing our adapter class and passing our arraylist to it.
-        laundryOutletAdapter = new SelectLaundryOutletAdapter(this, laundryArrayList);
+        laundryOutletAdapter = new SelectLaundryOutletAdapter(this, laundryArrayList, name);
 
         laundryRV.setAdapter(laundryOutletAdapter);
 

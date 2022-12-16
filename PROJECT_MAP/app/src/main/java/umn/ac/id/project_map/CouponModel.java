@@ -1,21 +1,13 @@
 package umn.ac.id.project_map;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-
-import java.util.ArrayList;
-
-public class Coupon_list{
+public class CouponModel {
     String date, desc, name;
 
-    public Coupon_list(){
+    public CouponModel(){
 
     }
 
-    public Coupon_list(String date, String desc, String name){
+    public CouponModel(String date, String desc, String name){
         this.date = date;
         this.desc = desc;
         this.name = name;

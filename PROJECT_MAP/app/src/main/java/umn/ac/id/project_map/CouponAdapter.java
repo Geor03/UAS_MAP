@@ -6,18 +6,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
-import android.view.ViewGroup;
-import androidx.annotation.NonNull;
 
 public class CouponAdapter extends RecyclerView.Adapter<CouponAdapter.ViewHolder> {
 
     Context context;
-    ArrayList<Coupon_list> couponArrayList;
+    ArrayList<CouponModel> couponArrayList;
 
-    public CouponAdapter(Context context, ArrayList<Coupon_list> couponArrayList){
+    public CouponAdapter(Context context, ArrayList<CouponModel> couponArrayList){
         this.context = context;
         this.couponArrayList = couponArrayList;
     }
@@ -33,7 +32,7 @@ public class CouponAdapter extends RecyclerView.Adapter<CouponAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull CouponAdapter.ViewHolder holder, int position){
 
-        Coupon_list coupon = couponArrayList.get(position);
+        CouponModel coupon = couponArrayList.get(position);
 
         holder.name.setText(coupon.name);
         holder.date.setText(coupon.date);

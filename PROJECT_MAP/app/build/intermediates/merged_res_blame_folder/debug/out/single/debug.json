@@ -232,6 +232,10 @@
         "source": "umn.ac.id.project_map.app-main-8:/drawable/libro_outlet.png"
     },
     {
+        "merged": "umn.ac.id.project_map.app-merged_res-6:/drawable-v24_profile_dummy.jpg.flat",
+        "source": "umn.ac.id.project_map.app-main-8:/drawable-v24/profile_dummy.jpg"
+    },
+    {
         "merged": "umn.ac.id.project_map.app-merged_res-6:/layout_activity_profile.xml.flat",
         "source": "umn.ac.id.project_map.app-main-8:/layout/activity_profile.xml"
     },

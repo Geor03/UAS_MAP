@@ -1,24 +1,17 @@
 package umn.ac.id.project_map;
 
-import androidx.annotation.NonNull;
+import android.content.Intent;
+import android.os.Bundle;
+import android.util.Log;
+import android.view.View;
+import android.widget.Button;
+
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.security.identity.AccessControlProfileId;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentChange;
-import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
@@ -33,6 +26,7 @@ public class SelectLaundryItem extends AppCompatActivity {
     private RecyclerView laundryRV;
     private static ArrayList<SelectLaundryItemModel> itemArrayList;
     String order;
+    String type;
     private RecyclerView.LayoutManager mLayoutManager;
     SelectLaundryItemAdapter itemAdapter;
 
@@ -45,7 +39,7 @@ public class SelectLaundryItem extends AppCompatActivity {
         setContentView(R.layout.activity_select_laundry_item);
         Intent intent = getIntent();
         order = intent.getStringExtra("laundry_outlet");
-
+        type = intent.getStringExtra("laundry_type");
         btnConfirm = (Button) findViewById(R.id.button_confirm);
         btnBackToOutlet = (Button) findViewById(R.id.button_backSelectOutlet);
         btnConfirm.setOnClickListener(new View.OnClickListener() {
@@ -57,6 +51,7 @@ public class SelectLaundryItem extends AppCompatActivity {
                 // dan total input baju.
                 bundle.putSerializable("items", itemArrayList);
                 bundle.putString("Outlet", order );
+                bundle.putString("Type", type );
 
                 Log.d("Isi dari pakaian", String.valueOf(itemArrayList.getClass()));
                 Log.d("Tipe dari order", String.valueOf(order.getClass()));

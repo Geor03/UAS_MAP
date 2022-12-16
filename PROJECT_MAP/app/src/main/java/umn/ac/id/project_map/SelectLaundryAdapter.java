@@ -43,6 +43,15 @@ public class SelectLaundryAdapter extends RecyclerView.Adapter<SelectLaundryAdap
         holder.selectlaundryNameTV.setText(model.getLaundry_name());
 //        holder.LaundryRatingTV.setText("" + model.getLaundry_rating());
         holder.selectlaundryIV.setImageResource(model.getLaundry_image());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intentToSelectOutlet = new Intent(view.getContext(), SelectLaundryOutlet.class);
+                intentToSelectOutlet.putExtra("laundry_type", model.getLaundry_name());
+                view.getContext().startActivity(intentToSelectOutlet);
+            }
+        });
     }
 
     @Override
@@ -61,13 +70,6 @@ public class SelectLaundryAdapter extends RecyclerView.Adapter<SelectLaundryAdap
             super(view);
             selectlaundryIV = view.findViewById(R.id.idIVSelectLaundryImage);
             selectlaundryNameTV = view.findViewById(R.id.idTVSelectLaundryName);
-            view.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intentToSelectOutlet = new Intent(view.getContext(), SelectLaundryOutlet.class);
-                    view.getContext().startActivity(intentToSelectOutlet);
-                }
-            });
             //laundryRatingTV = itemView.findViewById(R.id.idTVLaundryRating);
         }
     }
