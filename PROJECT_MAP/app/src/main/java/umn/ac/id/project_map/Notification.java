@@ -5,15 +5,27 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
 public class Notification extends AppCompatActivity {
+    private Button btnBack;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_notification);
+
+        btnBack = (Button) findViewById(R.id.button_backFromNotif);
+
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                onBackPressed();
+            }
+        });
 
         RecyclerView notificationRV = findViewById(R.id.idRVNotification);
 
