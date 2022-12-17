@@ -12,136 +12,136 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"
-        android:textSize="50sp"
         android:textColor="@color/white"
+        android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.185" />
+        app:layout_constraintVertical_bias="0.161" />
 
     <EditText
         android:id="@+id/email"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_input_login_logout"
         android:hint="Email"
         android:inputType="textEmailAddress"
         android:paddingLeft="10dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="14sp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/last_name" />
 
     <EditText
         android:id="@+id/confirm_password"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_input_login_logout"
         android:hint="Confirm Password"
         android:inputType="textPassword"
         android:paddingLeft="10dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="14sp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <EditText
         android:id="@+id/phone"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_input_login_logout"
         android:hint="Phone Number"
         android:paddingLeft="10dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="14sp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
 
     <EditText
         android:id="@+id/password"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_input_login_logout"
         android:hint="Password"
         android:inputType="textPassword"
         android:paddingLeft="10dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="14sp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/confirm_password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
 
     <EditText
         android:id="@+id/last_name"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_input_login_logout"
         android:hint="Last Name"
         android:paddingLeft="10dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="14sp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.961" />
+        app:layout_constraintTop_toBottomOf="@+id/first_name" />
 
     <EditText
         android:id="@+id/first_name"
         android:layout_width="292dp"
         android:layout_height="47.4dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_input_login_logout"
         android:hint="First Name"
         android:paddingLeft="10dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="14sp"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/last_name"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.956" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/button_registerAccount"
         android:layout_width="292dp"
         android:layout_height="41.93dp"
+        android:layout_marginTop="28dp"
         android:layout_marginBottom="68dp"
         android:background="@drawable/custom_button_login"
         android:text="Register my account"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agree" />
 
     <CheckBox
         android:id="@+id/agree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="140dp"
+        android:layout_marginTop="8dp"
         android:text="I agree to the terms and service"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
