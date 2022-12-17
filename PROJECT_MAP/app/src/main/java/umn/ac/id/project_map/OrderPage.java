@@ -12,6 +12,7 @@ import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.os.PersistableBundle;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -23,6 +24,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -35,6 +37,7 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FieldValue;
@@ -94,14 +97,14 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         }
 
         mapView = findViewById(R.id.mapView);
-        address_name = findViewById(R.id.address);
+        address_name = findViewById(R.id.Address);
         btnConfirmToCheckOut = findViewById(R.id.button_confirmToCheckout);
         btnConfirmToCheckOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                DocumentReference docref = fStore.collection("orders").document(Uid).collection("orders").document();
+                DocumentReference docref = fStore.collection("users").document(Uid).collection("orders").document();
                 Map<String, Object> user = new HashMap<>();
-                user.put("address_longitude", address);
+                user.put("address", address);
                 user.put("date", FieldValue.serverTimestamp());
                 user.put("laundry_type", orderType);
                 user.put("outlet_id",orderId);
@@ -109,10 +112,15 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
                 user.put("total_pants", itemArrayList.get(0).qty);
                 user.put("total_price", 100000);
                 user.put("total_shirts", itemArrayList.get(1).qty);
-
-                Intent intent = new Intent(OrderPage.this, CheckOut.class);
-                startActivity(intent);
-                finish();
+                docref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+                    @Override
+                    public void onSuccess(Void unused) {
+                        outlet_order();
+                    }
+                    public void onFailure(@NonNull Exception e){
+                        Log.d("TAG","onFailure:"+e.toString());
+                    }
+                });
             }
         });
         backButton = findViewById(R.id.button_back);
@@ -124,15 +132,40 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         });
 
 
-        mapView.onCreate(savedInstanceState);
-        mapView.getMapAsync(this);
+
         if (requestSinglePermission()){
             mGoogleApiClient = new GoogleApiClient.Builder(this).addConnectionCallbacks(this).addOnConnectionFailedListener(this).addApi(LocationServices.API).build();
             mLocationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
             checkLocation();
         }
+        mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(this);
     }
+    private void outlet_order() {
+        DocumentReference docref = fStore.collection("outlets").document(orderId).collection("orders").document();
+        Map<String, Object> user = new HashMap<>();
+        user.put("address", address);
+        user.put("date", FieldValue.serverTimestamp());
+        user.put("laundry_type", orderType);
+        user.put("customerId",Uid);
+        user.put("status", "Ongoing");
+        user.put("total_pants", itemArrayList.get(0).qty);
+        user.put("total_price", 100000);
+        user.put("total_shirts", itemArrayList.get(1).qty);
+        docref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
+            @Override
+            public void onSuccess(Void unused) {
+                Log.d("TAG","onSuccess: order is created");
+                Intent intent = new Intent(OrderPage.this, RatingOutlet.class);
+                startActivity(intent);
+                finish();
+            }
+            public void onFailure(@NonNull Exception e){
+                Log.d("TAG","onFailure:"+e.toString());
+            }
+        });
 
+    }
     @Override
     protected void onStart(){
         mapView.onStart();
@@ -169,11 +202,11 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
 
     }
 
-//    @Override
-//    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState){
-//        super.onSaveInstanceState(outState, outPersistentState);
-//        mapView.onSaveInstanceState(outState);
-//    }
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState){
+        super.onSaveInstanceState(outState, outPersistentState);
+        mapView.onSaveInstanceState(outState);
+    }
 
     @Override
     public void onLowMemory() {
@@ -214,7 +247,10 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
         mGooglemap = googleMap;
-        mGooglemap.setMyLocationEnabled(true);
+        if ( ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) ==PackageManager.PERMISSION_GRANTED &&
+                ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                mGooglemap.setMyLocationEnabled(true);
+        }
         if(latLng!=null){
             mGooglemap.addMarker(new MarkerOptions().position(latLng).title("Marker"));
             mGooglemap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 14f));
@@ -241,11 +277,6 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
     }
 
     @Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-
-    }
-
-    @Override
     public void onConnected(@Nullable Bundle bundle) {
         if(ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this,Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){
             return;
@@ -261,6 +292,10 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         }
     }
 
+    @Override
+    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
+
+    }
     private void startLocationUpdates() {
         mLocationRequest = com.google.android.gms.location.LocationRequest.create().setPriority(com.google.android.gms.location.LocationRequest.PRIORITY_HIGH_ACCURACY);
         if(ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED){

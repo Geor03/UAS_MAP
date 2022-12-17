@@ -115,7 +115,7 @@
                     card_view:layout_constraintTop_toBottomOf="@+id/titleAddress" />
 
                 <Button
-                    android:id="@+id/address"
+                    android:id="@+id/change_address"
                     android:layout_width="100dp"
                     android:layout_height="25dp"
                     android:layout_marginBottom="108dp"

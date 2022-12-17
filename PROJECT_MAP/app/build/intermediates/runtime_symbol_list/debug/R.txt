@@ -2927,6 +2927,7 @@ int id center_vertical 0x7f080097
 int id chain 0x7f080098
 int id chain2 0x7f080099
 int id chains 0x7f08009a
+int id change_address 0x7f0802ab
 int id checkbox 0x7f08009b
 int id checked 0x7f08009c
 int id choose_paymentMethod 0x7f08009d
