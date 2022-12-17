@@ -1,19 +1,22 @@
 package umn.ac.id.project_map;
 
+import java.util.Date;
+
 public class CouponModel {
-    String date, desc, name;
+    String desc, name;
+    Date date;
 
     public CouponModel(){
 
     }
 
-    public CouponModel(String date, String desc, String name){
+    public CouponModel(Date date, String desc, String name){
         this.date = date;
         this.desc = desc;
         this.name = name;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
@@ -25,7 +28,7 @@ public class CouponModel {
         return desc;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 

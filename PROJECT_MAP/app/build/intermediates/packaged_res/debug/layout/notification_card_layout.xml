@@ -17,11 +17,13 @@
         android:layout_height="match_parent">
 
 
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp">
+            android:layout_marginTop="68dp"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_editor_absoluteX="-16dp">
 
             <!-- ImageVIew to display our Course Image -->
             <!--        <ImageView-->
@@ -51,27 +53,26 @@
 
             <TextView
                 android:id="@+id/idTVMessage"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentTop="true"
+                android:layout_width="267dp"
+                android:layout_height="88dp"
+                android:layout_below="@+id/idTVTitle"
+                android:layout_alignParentStart="true"
                 android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_marginTop="687dp"
-                android:layout_marginEnd="124dp"
-                android:layout_marginBottom="325dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="9dp"
                 android:drawablePadding="1dp"
-                android:text="laundry_message"
-                app:drawableStartCompat="@drawable/star" />
+                android:text="laundry_message" />
 
-            <Button
-                android:id="@+id/button_backSelectFromNotification"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="-5dp"
-                android:background="@drawable/back_button"
-                tools:ignore="SpeakableTextPresentCheck" />
+<!--                        <Button-->
+<!--                            android:id="@+id/button_backSelectFromNotification"-->
+<!--                            android:layout_width="48dp"-->
+<!--                            android:layout_height="48dp"-->
+<!--                            android:layout_alignParentTop="true"-->
+<!--                            android:layout_marginStart="16dp"-->
+<!--                            android:layout_marginTop="-5dp"-->
+<!--                            android:background="@drawable/back_button"-->
+<!--                            tools:ignore="SpeakableTextPresentCheck" />-->
         </RelativeLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

@@ -51,15 +51,13 @@
         </activity>
         <activity
             android:name=".OrderPage"
-            android:exported="false" />
+            android:exported="false"
+            android:hardwareAccelerated="true"/>
         <activity
             android:name=".SelectLaundry"
             android:exported="false" />
         <activity
             android:name=".CheckOut"
-            android:exported="false" />
-        <activity
-            android:name=".ConfirmOrder"
             android:exported="false" />
         <activity
             android:name=".Receipt"
@@ -87,9 +85,6 @@
             android:exported="false" />
         <activity
             android:name=".SelectLaundryItem"
-            android:exported="false" />
-        <activity
-            android:name=".EditProfile"
             android:exported="false" />
         <activity
             android:name=".Notification"
