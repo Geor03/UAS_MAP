@@ -124,9 +124,9 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         });
 
 
+        mapView.onCreate(savedInstanceState);
+        mapView.getMapAsync(this);
         if (requestSinglePermission()){
-            mapView.onCreate(savedInstanceState);
-            mapView.getMapAsync(this);
             mGoogleApiClient = new GoogleApiClient.Builder(this).addConnectionCallbacks(this).addOnConnectionFailedListener(this).addApi(LocationServices.API).build();
             mLocationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
             checkLocation();

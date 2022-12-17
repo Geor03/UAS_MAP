@@ -59,9 +59,6 @@
             android:name=".CheckOut"
             android:exported="false" />
         <activity
-            android:name=".ConfirmOrder"
-            android:exported="false" />
-        <activity
             android:name=".Receipt"
             android:exported="false" />
         <activity
@@ -87,9 +84,6 @@
             android:exported="false" />
         <activity
             android:name=".SelectLaundryItem"
-            android:exported="false" />
-        <activity
-            android:name=".EditProfile"
             android:exported="false" />
         <activity
             android:name=".Notification"

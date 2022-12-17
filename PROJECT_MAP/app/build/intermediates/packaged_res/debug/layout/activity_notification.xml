@@ -6,6 +6,16 @@
     android:layout_height="match_parent"
     tools:context=".Notification">
 
+    <Button
+        android:id="@+id/button_backFromNotif"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/back_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/idRVNotification"
         android:layout_width="match_parent"

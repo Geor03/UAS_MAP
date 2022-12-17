@@ -39,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        fAuth = FirebaseAuth.getInstance();
+        fStore = FirebaseFirestore.getInstance();
         if(FirebaseAuth.getInstance().getCurrentUser() == null){
             startActivity(new Intent(getApplicationContext(), Login.class));
             finish();
@@ -47,12 +49,12 @@ public class MainActivity extends AppCompatActivity {
         name = (TextView) findViewById(R.id.name);
 
         outletID = fAuth.getCurrentUser().getUid();
-        DocumentReference documentReference = fStore.collection("users").document(outletID);
+        DocumentReference documentReference = fStore.collection("outlets").document(outletID);
         documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 if(documentSnapshot.exists()) {
-                    name.setText("Hello, "+documentSnapshot.getString("fName"));
+                    name.setText("Hello, "+documentSnapshot.getString("outlet_name"));
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {

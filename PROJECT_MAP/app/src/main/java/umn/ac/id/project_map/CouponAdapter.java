@@ -9,12 +9,15 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class CouponAdapter extends RecyclerView.Adapter<CouponAdapter.ViewHolder> {
 
     Context context;
     ArrayList<CouponModel> couponArrayList;
+    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+
 
     public CouponAdapter(Context context, ArrayList<CouponModel> couponArrayList){
         this.context = context;
@@ -35,7 +38,7 @@ public class CouponAdapter extends RecyclerView.Adapter<CouponAdapter.ViewHolder
         CouponModel coupon = couponArrayList.get(position);
 
         holder.name.setText(coupon.name);
-        holder.date.setText(coupon.date);
+        holder.date.setText(format.format(coupon.date));
     }
 // 08.57
     @Override
