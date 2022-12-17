@@ -110,7 +110,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
                 user.put("total_price", 100000);
                 user.put("total_shirts", itemArrayList.get(1).qty);
 
-                Intent intent = new Intent(OrderPage.this, RatingOutlet.class);
+                Intent intent = new Intent(OrderPage.this, CheckOut.class);
                 startActivity(intent);
                 finish();
             }
