@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -29,6 +30,7 @@ public class Profile extends AppCompatActivity {
 
     public String firstName, lastName, dbEmail, dbPhone;
 
+    private Button btnBackToMain;
 
     protected FirebaseAuth fAuth;
     protected FirebaseFirestore fStore;
@@ -67,6 +69,17 @@ public class Profile extends AppCompatActivity {
                 email.setText(dbEmail);
                 //user = documentSnapshot.toObject(User.class);
 
+            }
+        });
+
+
+        btnBackToMain = findViewById(R.id.btnBackToMain);
+        btnBackToMain.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intentBackToMain = new Intent(Profile.this, MainActivity.class);
+                startActivity(intentBackToMain);
+                finish();
             }
         });
     }
