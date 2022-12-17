@@ -7,22 +7,21 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class CheckOut extends AppCompatActivity {
+public class Track_Order extends AppCompatActivity {
 
     private Button button_back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_check_out);
+        setContentView(R.layout.activity_track_order);
 
         button_back = findViewById(R.id.button_back);
-
         button_back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentBackToHomeFromeCheckout = new Intent(CheckOut.this, MainActivity.class);
-                startActivity(intentBackToHomeFromeCheckout);
+                Intent intentBackToHomeFromTrackOder = new Intent(Track_Order.this, MainActivity.class);
+                startActivity(intentBackToHomeFromTrackOder);
                 finish();
             }
         });
