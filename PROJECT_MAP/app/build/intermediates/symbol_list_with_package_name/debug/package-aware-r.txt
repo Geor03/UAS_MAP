@@ -2928,6 +2928,7 @@ id center_vertical
 id chain
 id chain2
 id chains
+id change_address
 id checkbox
 id checked
 id choose_paymentMethod
