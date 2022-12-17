@@ -16,6 +16,7 @@ import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -66,6 +67,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
 
     private ArrayList<SelectLaundryItemModel> itemArrayList;
     private List<Address> addressList;
+    private TextView address_name;
     private String address;
     private String orderId;
     private String orderType;
@@ -92,6 +94,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         }
 
         mapView = findViewById(R.id.mapView);
+        address_name = findViewById(R.id.address);
         btnConfirmToCheckOut = findViewById(R.id.button_confirmToCheckout);
         btnConfirmToCheckOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -228,6 +231,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
             geocoder = new Geocoder(this, Locale.getDefault());
             addressList = geocoder.getFromLocation(location.getLatitude(), location.getLongitude(), 1);
             address = addressList.get(0).getAddressLine(0);
+            address_name.setText(address);
         }catch (Exception e){
             e.printStackTrace();
         }
