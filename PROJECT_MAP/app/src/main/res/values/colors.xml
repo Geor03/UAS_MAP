@@ -12,4 +12,7 @@
     <color name="dark_slate_input">#213C46</color>
     <color name="dark_slate_select">#355E6E</color>
     <color name="dark_slate_addres">#284956</color>
+    <color name="gray_statusRemaining">#757575</color>
+    <color name="dark_statusCurrent">#00CDAC</color>
+    <color name="violet_statusCompleted">#CD0074</color>
 </resources>
