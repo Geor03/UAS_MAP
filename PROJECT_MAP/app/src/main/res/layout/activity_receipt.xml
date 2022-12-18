@@ -315,12 +315,14 @@
         android:id="@+id/button_backHome"
         android:layout_width="159dp"
         android:layout_height="39dp"
-        android:layout_marginTop="20dp"
-        android:text="Back Home"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
+        android:layout_marginTop="16dp"
         android:background="@drawable/custom_button_resep"
+        android:text="Back Home"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/view4"
         app:layout_constraintStart_toStartOf="@+id/view4"
-        app:layout_constraintTop_toBottomOf="@+id/textView32" />
+        app:layout_constraintTop_toBottomOf="@+id/textView32"
+        app:layout_constraintVertical_bias="0.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
