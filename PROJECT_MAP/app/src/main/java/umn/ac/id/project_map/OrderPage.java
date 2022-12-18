@@ -163,8 +163,8 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
             @Override
             public void onSuccess(Void unused) {
                 Log.d("Hore","onSuccess: order is created"+ docref.getId());
-
                 Intent intent = new Intent(OrderPage.this, CheckOut.class);
+                intent.putExtra("OrderID", docref.getId());
                 startActivity(intent);
                 finish();
             }
