@@ -49,18 +49,18 @@
         android:layout_height="16dp"
         android:layout_marginStart="28dp"
         android:layout_marginTop="52dp"
-        android:text="Driver Name"
+        android:text="Outlet Name"
         android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/view4"
         app:layout_constraintTop_toTopOf="@+id/view4" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/outlet_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="28dp"
         android:layout_marginTop="4dp"
-        android:text="George Rumengan"
+        android:text="outlet name"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
@@ -81,19 +81,19 @@
         app:layout_constraintTop_toTopOf="@+id/textView37" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="28dp"
-        android:text="17 April 2022"
+        android:text="Date"
         android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintBottom_toBottomOf="@+id/outlet_name"
         app:layout_constraintEnd_toEndOf="@+id/view4"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/textView19"
-        app:layout_constraintTop_toTopOf="@+id/textView19" />
+        app:layout_constraintStart_toEndOf="@+id/outlet_name"
+        app:layout_constraintTop_toTopOf="@+id/outlet_name" />
 
     <TextView
         android:id="@+id/textView22"
@@ -108,7 +108,7 @@
         app:layout_constraintEnd_toStartOf="@+id/textView24"
         app:layout_constraintHorizontal_bias="0.376"
         app:layout_constraintStart_toEndOf="@+id/imageView15"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/outlet_name" />
 
 
     <ImageView
@@ -119,7 +119,7 @@
         android:layout_marginTop="44dp"
         android:background="@drawable/clothes_green"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+        app:layout_constraintTop_toBottomOf="@+id/outlet_name" />
 
     <TextView
         android:id="@+id/textView24"
@@ -158,14 +158,14 @@
         app:layout_constraintTop_toTopOf="@+id/textView24" />
 
     <TextView
-        android:id="@+id/textView23"
+        android:id="@+id/laundry"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="152dp"
         android:background="@drawable/custom_shape_resep"
         android:paddingStart="20dp"
         android:paddingEnd="20dp"
-        android:text="Laundry Casey"
+        android:text="Laundry"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView22"
@@ -187,10 +187,10 @@
         android:layout_width="18dp"
         android:layout_height="18dp"
         android:background="@drawable/custom_shape_resep_circle"
-        app:layout_constraintBottom_toTopOf="@+id/textView23"
-        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintBottom_toTopOf="@+id/laundry"
+        app:layout_constraintEnd_toEndOf="@+id/laundry"
         app:layout_constraintHorizontal_bias="0.50"
-        app:layout_constraintStart_toStartOf="@+id/textView23" />
+        app:layout_constraintStart_toStartOf="@+id/laundry" />
 
     <View
         android:layout_width="2dp"
@@ -207,10 +207,10 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
         android:src="@drawable/stripe_black_horizontal"
-        app:layout_constraintEnd_toEndOf="@+id/textView23"
+        app:layout_constraintEnd_toEndOf="@+id/laundry"
         app:layout_constraintHorizontal_bias="0.532"
-        app:layout_constraintStart_toStartOf="@+id/textView23"
-        app:layout_constraintTop_toBottomOf="@+id/textView23" />
+        app:layout_constraintStart_toStartOf="@+id/laundry"
+        app:layout_constraintTop_toBottomOf="@+id/laundry" />
 
     <TextView
         android:id="@+id/textView28"
@@ -270,11 +270,11 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView26" />
 
     <TextView
-        android:id="@+id/textView36"
+        android:id="@+id/total_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="35dp"
-        android:text="Rp. 13000"
+        android:text="Rp. "
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView32"
         app:layout_constraintEnd_toEndOf="@+id/view4"
@@ -287,7 +287,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="35dp"
-        android:text="Rp. 12000"
+        android:text="Rp. 1000"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView30"
         app:layout_constraintEnd_toEndOf="@+id/view4"
@@ -296,7 +296,7 @@
         app:layout_constraintTop_toTopOf="@+id/textView30" />
 
     <TextView
-        android:id="@+id/textView33"
+        android:id="@+id/items"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="188dp"

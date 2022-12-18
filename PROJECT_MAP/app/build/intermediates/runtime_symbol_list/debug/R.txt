@@ -3108,6 +3108,7 @@ int id jumpToEnd 0x7f080141
 int id jumpToStart 0x7f080142
 int id labeled 0x7f080143
 int id last_name 0x7f080144
+int id laundry 0x7f08029d
 int id layout 0x7f080145
 int id left 0x7f080146
 int id leftToRight 0x7f080147
@@ -3340,12 +3341,9 @@ int id textView10 0x7f08022a
 int id textView11 0x7f08022b
 int id textView16 0x7f08022e
 int id textView18 0x7f080230
-int id textView19 0x7f080231
 int id textView2 0x7f080232
-int id textView20 0x7f080233
 int id textView21 0x7f080234
 int id textView22 0x7f080235
-int id textView23 0x7f080236
 int id textView24 0x7f080237
 int id textView25 0x7f080238
 int id textView26 0x7f080239
@@ -3354,9 +3352,7 @@ int id textView29 0x7f08023b
 int id textView3 0x7f08023c
 int id textView30 0x7f08023d
 int id textView32 0x7f08023f
-int id textView33 0x7f080240
 int id textView34 0x7f080241
-int id textView36 0x7f080243
 int id textView37 0x7f080244
 int id textView4 0x7f080246
 int id textView41 0x7f080247
