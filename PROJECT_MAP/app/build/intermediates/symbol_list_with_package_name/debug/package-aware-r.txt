@@ -2965,6 +2965,7 @@ id custom
 id customPanel
 id cut
 id dark
+id date
 id dateFirstOrder
 id date_picker_actions
 id decelerate
@@ -3015,7 +3016,6 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id fade
-id faq
 id fill
 id fill_horizontal
 id fill_vertical
@@ -3070,7 +3070,6 @@ id ignore
 id ignoreRequest
 id image
 id imageView
-id imageView11
 id imageView12
 id imageView13
 id imageView14
@@ -3092,6 +3091,7 @@ id inward
 id italic
 id item_name
 id item_touch_helper_previous_elevation
+id items
 id ivClothes
 id jumpToEnd
 id jumpToStart
@@ -3192,6 +3192,7 @@ id onInterceptTouchReturnSwipe
 id orderHorizontal
 id orderId
 id otherinfo
+id outlet_name
 id outline
 id outward
 id overshoot
@@ -3232,6 +3233,7 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
+id rvCouponList
 id rvHorizontal
 id rvOrderList
 id satellite
@@ -3325,8 +3327,6 @@ id textTop
 id textView
 id textView10
 id textView11
-id textView12
-id textView13
 id textView16
 id textView17
 id textView18
@@ -3350,12 +3350,9 @@ id textView34
 id textView35
 id textView36
 id textView37
-id textView39
 id textView4
 id textView41
-id textView42
 id textView48
-id textView5
 id textView6
 id textView7
 id textView8
@@ -3381,6 +3378,7 @@ id toggle
 id top
 id topPanel
 id total_harga
+id total_price
 id touch_outside
 id trackOderStatus
 id transitionToEnd
@@ -3407,8 +3405,6 @@ id vertical_only
 id view
 id view2
 id view3
-id view4
-id view5
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3553,6 +3549,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_check_out
+layout activity_coupon_list
 layout activity_login
 layout activity_main
 layout activity_notification

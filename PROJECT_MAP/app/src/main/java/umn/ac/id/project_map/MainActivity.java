@@ -220,13 +220,11 @@ public class MainActivity extends AppCompatActivity {
                 }
                 for(DocumentChange dc : value.getDocumentChanges()){
                     if(dc.getType() == DocumentChange.Type.ADDED){
-                        if(dc.getDocument().toObject(OrderModel.class).status.equals("Ongoing")) {
-                            orderArrayList.add(dc.getDocument().toObject(OrderModel.class));
-                        }
-                        else{
-                            Log.e("Empty Data", "Order is empty");
-                            return;
-                        }
+                        orderArrayList.add(dc.getDocument().toObject(OrderModel.class));
+                    }
+                    else{
+                        Log.e("Empty Data", "Order is empty");
+                        return;
                     }
                 }
                 orderAdapter.notifyDataSetChanged();

@@ -41,6 +41,9 @@
         android:theme="@style/AppTheme.NoActionBar"
         android:usesCleartextTraffic="true" >
         <activity
+            android:name="umn.ac.id.project_map.Coupon_list"
+            android:exported="false" />
+        <activity
             android:name="umn.ac.id.project_map.Track_Order"
             android:exported="false" />
 
