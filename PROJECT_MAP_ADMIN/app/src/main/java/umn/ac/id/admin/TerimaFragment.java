@@ -1,5 +1,6 @@
 package umn.ac.id.admin;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -8,9 +9,18 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.firestore.DocumentChange;
+import com.google.firebase.firestore.EventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.FirebaseFirestoreException;
+import com.google.firebase.firestore.Query;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -29,10 +39,12 @@ public class TerimaFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private ArrayList<TerimaPesananModel> TerimaPesananModelArrayList;
-    private String[] detailNamaPelanggan;
-    private String[] detailTotalItem;
+    private ArrayList<PesananModel> TerimaPesananModelArrayList;
     private RecyclerView recyclerviewTerimaPesanan;
+    private TerimaPesananAdapter terimaPesananAdapter;
+    public FirebaseFirestore fStore;
+    private FirebaseAuth fAuth;
+    private String outletId;
 
     public TerimaFragment() {
         // Required empty public constructor
@@ -76,31 +88,39 @@ public class TerimaFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        dataInitialize();
+        recyclerviewTerimaPesanan = view.findViewById(R.id.rvPesananSelesai);
+        TerimaPesananModelArrayList = new ArrayList<PesananModel>();
+        terimaPesananAdapter = new TerimaPesananAdapter(getContext(), TerimaPesananModelArrayList);
 
-        recyclerviewTerimaPesanan = view.findViewById(R.id.rvTerimaPesanan);
         recyclerviewTerimaPesanan.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerviewTerimaPesanan.setHasFixedSize(true);
-        TerimaPesananAdapter TerimaPesananAdapter = new TerimaPesananAdapter(getContext(),TerimaPesananModelArrayList);
-        recyclerviewTerimaPesanan.setAdapter(TerimaPesananAdapter);
-        TerimaPesananAdapter.notifyDataSetChanged();
+        recyclerviewTerimaPesanan.setAdapter(terimaPesananAdapter);
+        fetchData();
     }
 
-    private void dataInitialize() {
-        TerimaPesananModelArrayList = new ArrayList<>();
-
-        detailNamaPelanggan = new String[]{
-                getString(R.string.nama1),
-                getString(R.string.nama2)
-        };
-        detailTotalItem = new String[]{
-                getString(R.string.item1),
-                getString(R.string.item2),
-        };
-
-        for(int i = 0; i < detailNamaPelanggan.length; i++){
-            TerimaPesananModel terimaPesananModel = new TerimaPesananModel(detailNamaPelanggan[i], detailTotalItem[i]);
-            TerimaPesananModelArrayList.add(terimaPesananModel);
-        }
+    public void fetchData() {
+        outletId = fAuth.getCurrentUser().getUid();
+        fStore.collection("outlets").document(outletId).collection("orders").orderBy("address", Query.Direction.ASCENDING).addSnapshotListener(new EventListener<QuerySnapshot>() {
+            @Override
+            public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
+                if (error != null) {
+                    Log.e("Firestore error", error.getMessage());
+                    return;
+                }
+                for (DocumentChange dc : value.getDocumentChanges()) {
+                    if (dc.getType() == DocumentChange.Type.ADDED) {
+                        if(dc.getDocument().toObject(PesananModel.class).status.equals("New Order")) {
+                            TerimaPesananModelArrayList.add(dc.getDocument().toObject(PesananModel.class));
+                        }
+                        else{
+                            Log.e("Empty Data", "Order is empty");
+                            return;
+                        }
+                    }
+                    terimaPesananAdapter.notifyDataSetChanged();
+                }
+            }
+        });
     }
+
 }

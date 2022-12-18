@@ -1,6 +1,7 @@
 package umn.ac.id.admin;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -22,6 +24,8 @@ public class PesananBerlangsungAdapter extends RecyclerView.Adapter<PesananBerla
     Context context;
     ArrayList<PesananModel> PesananBerlangsungModelArrayList;
     public FirebaseFirestore fStore = FirebaseFirestore.getInstance();
+    private FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+    private String outletID = firebaseAuth.getCurrentUser().getUid();
 
     public PesananBerlangsungAdapter(Context context, ArrayList<PesananModel> PesananBerlangsungModelArrayList){
         this.context = context;
@@ -51,10 +55,45 @@ public class PesananBerlangsungAdapter extends RecyclerView.Adapter<PesananBerla
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-
+                Log.d("Query Error", "Failed to get user name on. PesananBerlangsungAdapter:57");
             }
         });
         holder.tvTotalItem.setText(String.valueOf(pesananberlangsungmodel.total_price));
+        holder.btnPesananBerlangsung.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DocumentReference docref = fStore.collection("outlets").document(outletID).collection("orders").document(pesananberlangsungmodel.docID);
+                DocumentReference documentReference = fStore.collection("users").document(pesananberlangsungmodel.customerId).collection("orders").document(pesananberlangsungmodel.docID);
+                docref.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        if(documentSnapshot.exists()) {
+                            docref.update("status", "Finished");
+                            notifyDataSetChanged();
+                        }
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.d("Fail on updating data", "Data gagal diupdate. TerimaPesananAdapter:78");
+                    }
+                });
+                documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+                    @Override
+                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+                        if(documentSnapshot.exists()) {
+                            documentReference.update("status", "Finished");
+                            notifyDataSetChanged();
+                        }
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {
+                        Log.d("Fail on updating data", "Data gagal diupdate. TerimaPesananAdapter:92");
+                    }
+                });
+            }
+        });
     }
 
     @Override

@@ -1,6 +1,7 @@
 package umn.ac.id.admin;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -22,7 +24,8 @@ public class PesananSelesaiAdapter extends RecyclerView.Adapter<PesananSelesaiAd
     Context context;
     ArrayList<PesananModel> PesananSelesaiArrayList;
     public FirebaseFirestore fStore = FirebaseFirestore.getInstance();
-
+    private FirebaseAuth firebaseAuth = FirebaseAuth.getInstance();
+    private String outletID = firebaseAuth.getCurrentUser().getUid();
 
     public PesananSelesaiAdapter(Context context, ArrayList<PesananModel> pesananSelesaiArrayList) {
         this.context = context;
@@ -55,6 +58,27 @@ public class PesananSelesaiAdapter extends RecyclerView.Adapter<PesananSelesaiAd
             }
         });
         holder.tvTotalItem.setText(String.valueOf(pesananSelesaiModel.total_price));
+
+//        holder.btnPesananSelesai.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                DocumentReference docref = fStore.collection("outlets").document(outletID).collection("orders").document(pesananSelesaiModel.docID);
+//                docref.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
+//                    @Override
+//                    public void onSuccess(DocumentSnapshot documentSnapshot) {
+//                        if(documentSnapshot.exists()) {
+//                            docref.update("status", "Ongoing");
+//                            notifyDataSetChanged();
+//                        }
+//                    }
+//                }).addOnFailureListener(new OnFailureListener() {
+//                    @Override
+//                    public void onFailure(@NonNull Exception e) {
+//                        Log.d("Fail on updating data", "Data gagal diupdate. TerimaPesananAdapter:80");
+//                    }
+//                });
+//            }
+//        });
     }
 
     @Override

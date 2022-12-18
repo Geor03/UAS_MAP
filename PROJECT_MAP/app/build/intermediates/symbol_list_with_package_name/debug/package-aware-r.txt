@@ -2924,7 +2924,6 @@ id cardView4
 id cardView5
 id cardView6
 id card_view
-id cardview_expandable
 id carryVelocity
 id center
 id centerCrop
@@ -3215,9 +3214,7 @@ id position
 id postLayout
 id pressed
 id priceOrders
-id price_promo
-id price_shippingCost
-id price_subtotal
+id price_per_item
 id price_totalharga
 id profile
 id profile_image
@@ -3301,7 +3298,6 @@ id stretch
 id submenuarrow
 id submit_area
 id subtotal
-id subtotal2
 id supportScrollUp
 id switch1
 id tabMode

@@ -52,7 +52,7 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="Estimasi waktu"
+                android:text="Order Date"
                 app:layout_constraintEnd_toStartOf="@id/orderId"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -66,13 +66,14 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
                 android:gravity="center"
-                android:text="Order ID"
+                android:text="Outlet Name"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.923"
                 app:layout_constraintStart_toEndOf="@+id/estimasiWaktu"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -87,6 +88,7 @@
                 app:layout_constraintTop_toBottomOf="@id/estimasiWaktu" />
 
             <TextView
+                android:id="@+id/outlet_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"

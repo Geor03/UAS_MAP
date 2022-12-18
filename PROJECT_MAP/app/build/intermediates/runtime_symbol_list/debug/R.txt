@@ -2923,7 +2923,6 @@ int id cardView4 0x7f080091
 int id cardView5 0x7f080092
 int id cardView6 0x7f080093
 int id card_view 0x7f080094
-int id cardview_expandable 0x7f080095
 int id carryVelocity 0x7f080096
 int id center 0x7f080097
 int id centerCrop 0x7f080098
@@ -3214,9 +3213,7 @@ int id position 0x7f0801b6
 int id postLayout 0x7f0801b7
 int id pressed 0x7f0801b8
 int id priceOrders 0x7f0801b9
-int id price_promo 0x7f0801ba
-int id price_shippingCost 0x7f0801bb
-int id price_subtotal 0x7f0801bc
+int id price_per_item 0x7f080295
 int id price_totalharga 0x7f0801bd
 int id profile 0x7f0801be
 int id profile_image 0x7f0801bf
@@ -3300,7 +3297,6 @@ int id stretch 0x7f08020c
 int id submenuarrow 0x7f08020d
 int id submit_area 0x7f08020e
 int id subtotal 0x7f08020f
-int id subtotal2 0x7f080210
 int id supportScrollUp 0x7f080211
 int id switch1 0x7f080212
 int id tabMode 0x7f080213
