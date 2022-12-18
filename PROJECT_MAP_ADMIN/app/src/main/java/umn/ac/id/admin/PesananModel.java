@@ -11,7 +11,7 @@ public class PesananModel {
     int total_price;
 
     public PesananModel(){}
-    public PesananModel(String address, String customerId, Date date, String laundry_type, String status, int total_pants, int total_price, int total_shirt, String docID){
+    public PesananModel(String address, String customerId, Date date, String laundry_type, String status, int total_pants, int total_price, int total_shirt, String docID) {
         this.address = address;
         this.customerId = customerId;
         this.date = date;
@@ -22,11 +22,7 @@ public class PesananModel {
         this.total_shirt = total_shirt;
         this.docID = docID;
     }
-
-    public String getCustomerId() {
-        return customerId;
-    }
-
+    
     @DocumentId
     public String getDocID() {
         return docID;

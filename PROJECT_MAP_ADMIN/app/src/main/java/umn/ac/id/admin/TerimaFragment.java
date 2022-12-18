@@ -71,6 +71,9 @@ public class TerimaFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        fStore = FirebaseFirestore.getInstance();
+        fAuth = FirebaseAuth.getInstance();
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -88,7 +91,7 @@ public class TerimaFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        recyclerviewTerimaPesanan = view.findViewById(R.id.rvPesananSelesai);
+        recyclerviewTerimaPesanan = view.findViewById(R.id.rvTerimaPesanan);
         TerimaPesananModelArrayList = new ArrayList<PesananModel>();
         terimaPesananAdapter = new TerimaPesananAdapter(getContext(), TerimaPesananModelArrayList);
 
