@@ -46,7 +46,6 @@ public class Profile extends AppCompatActivity {
         fStore = FirebaseFirestore.getInstance();
         userID = fAuth.getCurrentUser().getUid();
 
-
         reference = FirebaseFirestore.getInstance().collection("users").document(userID);
 
         phone = (EditText) findViewById(R.id.phone);
@@ -68,7 +67,6 @@ public class Profile extends AppCompatActivity {
                 fName.setText(firstName+" "+lastName);
                 email.setText(dbEmail);
                 //user = documentSnapshot.toObject(User.class);
-
             }
         });
 
