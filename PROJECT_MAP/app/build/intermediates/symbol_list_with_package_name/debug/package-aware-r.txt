@@ -1333,6 +1333,7 @@ color dark_slate
 color dark_slate_addres
 color dark_slate_input
 color dark_slate_select
+color dark_statusCurrent
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1379,6 +1380,7 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray_statusRemaining
 color highlighted_text_material_dark
 color highlighted_text_material_light
 color m3_appbar_overlay_color
@@ -1897,6 +1899,7 @@ color teal_700
 color tooltip_background_dark
 color tooltip_background_light
 color trans
+color violet_statusCompleted
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -2644,6 +2647,9 @@ drawable custom_button_minus
 drawable custom_card_bgorderlist
 drawable custom_card_bgprofile
 drawable custom_input_login_logout
+drawable custom_shape_status_completed
+drawable custom_shape_status_current
+drawable custom_shape_status_remaining
 drawable design_fab_background
 drawable design_ic_visibility
 drawable design_ic_visibility_off
@@ -2773,14 +2779,12 @@ drawable vit_outlet
 drawable waterfall_outlet
 id ALT
 id Add
-id Addmoreitem
 id Address
 id BOTTOM_END
 id BOTTOM_START
 id CTRL
 id Coupontext
 id FUNCTION
-id Item_details
 id META
 id NO_DEBUG
 id Notification
@@ -2909,6 +2913,7 @@ id button_registerAccount
 id button_singup
 id button_submit
 id button_toSelectOutlet
+id button_trackOrder
 id cache_measures
 id callMeasure
 id cancel_button
@@ -2917,6 +2922,7 @@ id cardView2
 id cardView3
 id cardView4
 id cardView5
+id cardView6
 id card_view
 id cardview_expandable
 id carryVelocity
@@ -2928,7 +2934,6 @@ id center_vertical
 id chain
 id chain2
 id chains
-id change_address
 id checkbox
 id checked
 id choose_paymentMethod
@@ -2944,6 +2949,7 @@ id compress
 id confirm_button
 id confirm_password
 id constraint
+id constraintCardEstimasi
 id container
 id content
 id contentPanel
@@ -3005,6 +3011,7 @@ id end
 id endToStart
 id enterAlways
 id enterAlwaysCollapsed
+id estimasiWaktu
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3086,7 +3093,6 @@ id inward
 id italic
 id item_name
 id item_touch_helper_previous_elevation
-id item_type
 id ivClothes
 id jumpToEnd
 id jumpToStart
@@ -3321,6 +3327,10 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView10
+id textView11
+id textView12
+id textView13
 id textView16
 id textView17
 id textView18
@@ -3352,6 +3362,8 @@ id textView48
 id textView5
 id textView6
 id textView7
+id textView8
+id textView9
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3373,8 +3385,8 @@ id toggle
 id top
 id topPanel
 id total_harga
-id total_price
 id touch_outside
+id trackOderStatus
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -3396,6 +3408,11 @@ id up
 id useLogo
 id username
 id vertical_only
+id view
+id view2
+id view3
+id view4
+id view5
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -3553,6 +3570,7 @@ layout activity_select_laundry_item
 layout activity_select_laundry_outlet
 layout activity_sign_up
 layout activity_splash_screen
+layout activity_track_order
 layout browser_actions_context_menu_page
 layout browser_actions_context_menu_row
 layout coupon_view

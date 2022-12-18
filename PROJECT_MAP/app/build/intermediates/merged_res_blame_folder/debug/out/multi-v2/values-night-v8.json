@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "umn.ac.id.project_map.app-mergeDebugResources-4:/values-night-v8/values-night-v8.xml",
+            "outputFile": "umn.ac.id.project_map.app-mergeDebugResources-35:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "C:\\Users\\georg\\.gradle\\caches\\transforms-3\\5fdf0eec002d7dce7d8375bc37b0ed41\\transformed\\appcompat-1.5.1\\res\\values-night-v8\\values-night-v8.xml",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\KULI(ah)\\smester 5\\IF 570 Lab - Mobile Programming\\MAP\\PROJECT_MAP\\app\\src\\main\\res\\values-night\\themes.xml",
+                    "source": "D:\\georgestuff\\smester 5\\IF 570 - Mobile programming\\PROJECT_MAP\\PROJECT_MAP\\app\\src\\main\\res\\values-night\\themes.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

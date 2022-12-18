@@ -71,6 +71,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
     private ArrayList<SelectLaundryItemModel> itemArrayList;
     private List<Address> addressList;
     private TextView address_name;
+    private TextView total_price;
     private String address;
     private String orderId;
     private String orderType;
@@ -97,7 +98,9 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         }
 
         mapView = findViewById(R.id.mapView);
-        address_name = findViewById(R.id.Address);
+        address_name = (TextView) findViewById(R.id.Address);
+        total_price = (TextView) findViewById(R.id.price_totalharga);
+        total_price.setText(String.valueOf(getPrice(itemArrayList.get(0).qty, itemArrayList.get(1).qty)));
         btnConfirmToCheckOut = findViewById(R.id.button_confirmToCheckout);
         btnConfirmToCheckOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -110,7 +113,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
                 user.put("outlet_id",orderId);
                 user.put("status", "Ongoing");
                 user.put("total_pants", itemArrayList.get(0).qty);
-                user.put("total_price", 100000);
+                user.put("total_price", getPrice(itemArrayList.get(0).qty, itemArrayList.get(1).qty));
                 user.put("total_shirts", itemArrayList.get(1).qty);
                 docref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
@@ -150,7 +153,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         user.put("customerId",Uid);
         user.put("status", "Ongoing");
         user.put("total_pants", itemArrayList.get(0).qty);
-        user.put("total_price", 100000);
+        user.put("total_price", getPrice(itemArrayList.get(0).qty, itemArrayList.get(1).qty));
         user.put("total_shirts", itemArrayList.get(1).qty);
         docref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
@@ -166,78 +169,12 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         });
 
     }
-    @Override
-    protected void onStart(){
-        mapView.onStart();
-        super.onStart();
-        if(mGoogleApiClient != null){
-            mGoogleApiClient.connect();
-        }
+    private int getPrice(int pants, int shirts){
+        int pant = pants;
+        int shirt = shirts;
+        int total_price = (pants*1000) + (shirts*1000);
+        return total_price;
     }
-
-    @Override
-    protected void onResume(){
-        mapView.onResume();
-        super.onResume();
-    }
-
-    @Override
-    protected void onPause(){
-        mapView.onPause();
-        super.onPause();
-    }
-    @Override
-    protected void onStop(){
-        mapView.onStop();
-        super.onStop();
-
-        if(mGoogleApiClient.isConnected()){
-            mGoogleApiClient.disconnect();
-        }
-    }
-    @Override
-    protected void onDestroy(){
-        mapView.onDestroy();
-        super.onDestroy();
-
-    }
-
-    @Override
-    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState){
-        super.onSaveInstanceState(outState, outPersistentState);
-        mapView.onSaveInstanceState(outState);
-    }
-
-    @Override
-    public void onLowMemory() {
-        mapView.onLowMemory();
-        super.onLowMemory();
-    }
-    private boolean checkLocation(){
-        if(!isLocationEnabled()){
-            showAlert();
-        }
-        return isLocationEnabled();
-    }
-
-    private void showAlert(){
-        final AlertDialog.Builder dialog = new AlertDialog.Builder(this);
-        dialog.setTitle("Enable Location").setMessage("Turn on location service for this app").
-                setPositiveButton("Location Settings", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        Intent myIntent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
-                        startActivity(myIntent);
-                    }
-                }).setNegativeButton("cancel", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-
-                    }
-                });
-        dialog.show();
-    }
-
     private boolean isLocationEnabled(){
         mLocationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         return mLocationManager.isProviderEnabled(LocationManager.GPS_PROVIDER) || mLocationManager.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
@@ -249,7 +186,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         mGooglemap = googleMap;
         if ( ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) ==PackageManager.PERMISSION_GRANTED &&
                 ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
-                mGooglemap.setMyLocationEnabled(true);
+            mGooglemap.setMyLocationEnabled(true);
         }
         if(latLng!=null){
             mGooglemap.addMarker(new MarkerOptions().position(latLng).title("Marker"));
@@ -331,4 +268,77 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         }).check();
         return isPermissionGranted;
     }
+    @Override
+    protected void onStart(){
+        mapView.onStart();
+        super.onStart();
+        if(mGoogleApiClient != null){
+            mGoogleApiClient.connect();
+        }
+    }
+
+    @Override
+    protected void onResume(){
+        mapView.onResume();
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause(){
+        mapView.onPause();
+        super.onPause();
+    }
+    @Override
+    protected void onStop(){
+        mapView.onStop();
+        super.onStop();
+
+        if(mGoogleApiClient.isConnected()){
+            mGoogleApiClient.disconnect();
+        }
+    }
+    @Override
+    protected void onDestroy(){
+        mapView.onDestroy();
+        super.onDestroy();
+
+    }
+
+    @Override
+    public void onSaveInstanceState(@NonNull Bundle outState, @NonNull PersistableBundle outPersistentState){
+        super.onSaveInstanceState(outState, outPersistentState);
+        mapView.onSaveInstanceState(outState);
+    }
+
+    @Override
+    public void onLowMemory() {
+        mapView.onLowMemory();
+        super.onLowMemory();
+    }
+    private boolean checkLocation(){
+        if(!isLocationEnabled()){
+            showAlert();
+        }
+        return isLocationEnabled();
+    }
+
+    private void showAlert(){
+        final AlertDialog.Builder dialog = new AlertDialog.Builder(this);
+        dialog.setTitle("Enable Location").setMessage("Turn on location service for this app").
+                setPositiveButton("Location Settings", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+                        Intent myIntent = new Intent(Settings.ACTION_LOCATION_SOURCE_SETTINGS);
+                        startActivity(myIntent);
+                    }
+                }).setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialogInterface, int i) {
+
+                    }
+                });
+        dialog.show();
+    }
+
+
 }

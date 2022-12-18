@@ -51,24 +51,27 @@
                 android:id="@+id/tvMessage"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
                 android:layout_marginBottom="20dp"
                 android:text="message"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 card_view:layout_constraintEnd_toEndOf="parent"
                 card_view:layout_constraintHorizontal_bias="0.095"
-                card_view:layout_constraintStart_toStartOf="parent" />
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toBottomOf="@+id/tvTitle" />
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/appCompatButton"
                 android:layout_width="111dp"
                 android:layout_height="25dp"
+                android:layout_marginEnd="28dp"
                 android:background="@drawable/custom_button_dark"
                 android:text="Use Code"
                 android:textColor="@color/white"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 card_view:layout_constraintEnd_toEndOf="parent"
-                card_view:layout_constraintHorizontal_bias="0.911"
-                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintHorizontal_bias="1.0"
+                card_view:layout_constraintStart_toEndOf="@+id/imageView19"
                 card_view:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
@@ -86,11 +89,12 @@
                 android:id="@+id/imageView20"
                 android:layout_width="193dp"
                 android:layout_height="73dp"
-                android:layout_marginTop="2dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
                 card_view:layout_constraintEnd_toEndOf="parent"
                 card_view:layout_constraintHorizontal_bias="0.393"
                 card_view:layout_constraintStart_toStartOf="parent"
                 card_view:layout_constraintTop_toTopOf="parent"
+                card_view:layout_constraintVertical_bias="0.26"
                 card_view:srcCompat="@drawable/clothes_green" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
