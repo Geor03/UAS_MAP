@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="Status Order"
+        android:text="Notifaction"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textStyle="bold"
