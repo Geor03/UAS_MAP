@@ -15,4 +15,6 @@
     <color name="gray_statusRemaining">#757575</color>
     <color name="dark_statusCurrent">#00CDAC</color>
     <color name="violet_statusCompleted">#CD0074</color>
+    <color name="color_semiDark">#40000000</color>
+    <color name="light_orange">#FF781F</color>
 </resources>
