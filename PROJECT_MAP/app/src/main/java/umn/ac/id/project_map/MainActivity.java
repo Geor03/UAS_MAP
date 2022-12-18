@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity {
         btnViewAllCoupon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intentHomeToCouponList = new Intent(MainActivity.this, CouponModel.class);
+                Intent intentHomeToCouponList = new Intent(MainActivity.this, Coupon_list.class);
                 startActivity(intentHomeToCouponList);
                 finish();
             }
