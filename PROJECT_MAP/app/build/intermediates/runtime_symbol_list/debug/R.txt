@@ -2762,6 +2762,7 @@ int drawable outwear_item 0x7f070112
 int drawable pants_item 0x7f070113
 int drawable plus_button 0x7f070114
 int drawable profile_dummy 0x7f070115
+int drawable resep_card 0x7f070124
 int drawable satu 0x7f070116
 int drawable shorts_item 0x7f070117
 int drawable star 0x7f070118

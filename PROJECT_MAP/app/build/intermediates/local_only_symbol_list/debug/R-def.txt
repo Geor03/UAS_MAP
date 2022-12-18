@@ -64,6 +64,7 @@ drawable outwear_item
 drawable pants_item
 drawable plus_button
 drawable profile_dummy
+drawable resep_card
 drawable satu
 drawable shorts_item
 drawable star
