@@ -124,9 +124,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
                         Log.d("TAG","onFailure:"+e.toString());
                     }
                 });
-                Intent intentToCheckOut = new Intent(OrderPage.this, CheckOut.class);
-                startActivity(intentToCheckOut);
-                finish();
+
             }
         });
         backButton = findViewById(R.id.button_back);
@@ -162,7 +160,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
             @Override
             public void onSuccess(Void unused) {
                 Log.d("TAG","onSuccess: order is created");
-                Intent intent = new Intent(OrderPage.this, RatingOutlet.class);
+                Intent intent = new Intent(OrderPage.this, CheckOut.class);
                 startActivity(intent);
                 finish();
             }
