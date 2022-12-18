@@ -1,15 +1,17 @@
 package umn.ac.id.project_map;
 
+import com.google.firebase.firestore.DocumentId;
+
 import java.util.Date;
 
 public class OrderModel {
-    String address, outlet, status, laundry_type;
+    String address, outlet, status, laundry_type, docId;
     Date date;
     int total_cardigans, total_dress, total_outwear, total_pants, total_shirt, total_shorts, total_tshirts, total_tie;
     int total_price;
 
     public OrderModel(){}
-    public OrderModel(String address, Date date, String laundry_type, String outlet, String status, int total_pants, int total_price, int total_shirt ){
+    public OrderModel(String address, Date date, String laundry_type, String outlet, String status, int total_pants, int total_price, int total_shirt, String docId ){
         this.address = address;
         this.date = date;
         this.outlet = outlet;
@@ -18,6 +20,12 @@ public class OrderModel {
         this.total_pants = total_pants;
         this.total_shirt = total_shirt;
         this.total_price = total_price;
+        this.docId = docId;
+    }
+
+    @DocumentId
+    public String getDocId() {
+        return docId;
     }
 
     public String getLaundry_type() {
@@ -130,5 +138,10 @@ public class OrderModel {
 
     public void setTotal_tshirts(int total_tshirts) {
         this.total_tshirts = total_tshirts;
+    }
+
+    @DocumentId
+    public void setDocId(String docId) {
+        this.docId = docId;
     }
 }
