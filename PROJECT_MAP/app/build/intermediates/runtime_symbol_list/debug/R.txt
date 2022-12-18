@@ -2665,6 +2665,7 @@ int drawable googleg_standard_color_18 0x7f0700b1
 int drawable gradient_bg_login 0x7f0700b2
 int drawable gradient_bg_logout 0x7f0700b3
 int drawable gradient_bg_splashscreen 0x7f0700b4
+int drawable half_circle_bg_resep_card 0x7f070125
 int drawable ic_clock_black_24dp 0x7f0700b5
 int drawable ic_coupon_icon 0x7f0700b6
 int drawable ic_keyboard_black_24dp 0x7f0700b7
@@ -3328,7 +3329,6 @@ int id textView 0x7f080229
 int id textView10 0x7f08022a
 int id textView11 0x7f08022b
 int id textView16 0x7f08022e
-int id textView17 0x7f08022f
 int id textView18 0x7f080230
 int id textView19 0x7f080231
 int id textView2 0x7f080232
@@ -3391,7 +3391,6 @@ int id transition_transform 0x7f08026d
 int id triangle 0x7f08026e
 int id tvMessage 0x7f08026f
 int id tvOrderListDate 0x7f080270
-int id tvOrderListOrderID 0x7f080271
 int id tvOrderListPrice 0x7f080272
 int id tvOrderListStatus 0x7f080273
 int id tvTitle 0x7f080274
@@ -3405,6 +3404,7 @@ int id vertical_only 0x7f08027b
 int id view 0x7f08027c
 int id view2 0x7f08027d
 int id view3 0x7f08027e
+int id view4 0x7f08027f
 int id view_offset_helper 0x7f080281
 int id view_transition 0x7f080282
 int id view_tree_lifecycle_owner 0x7f080283

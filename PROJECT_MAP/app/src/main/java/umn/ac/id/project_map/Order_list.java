@@ -25,7 +25,7 @@ public class Order_list extends AppCompatActivity {
     private RecyclerView rvOrderList;
     private ArrayList<OrderModel> orderArrayList;
     private RecyclerView.LayoutManager mLayoutManager;
-    OrderAdapter orderAdapter;
+    Order_listAdapter orderAdapter;
 
 
     private Button btnBackToMain;
@@ -45,7 +45,9 @@ public class Order_list extends AppCompatActivity {
         btnBackToMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                onBackPressed();
+                Intent intentBackToMainFromOderList = new Intent(Order_list.this, MainActivity.class);
+                startActivity(intentBackToMainFromOderList);
+                finish();
             }
         });
 
@@ -53,7 +55,7 @@ public class Order_list extends AppCompatActivity {
         mLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
         rvOrderList.setLayoutManager(mLayoutManager);
         orderArrayList = new ArrayList<OrderModel>();
-        orderAdapter = new OrderAdapter(orderArrayList, this);
+        orderAdapter = new Order_listAdapter(this, orderArrayList);
         rvOrderList.setAdapter(orderAdapter);
         fetchData();
     }

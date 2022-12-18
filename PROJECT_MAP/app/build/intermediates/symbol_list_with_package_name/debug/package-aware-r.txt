@@ -2666,6 +2666,7 @@ drawable googleg_standard_color_18
 drawable gradient_bg_login
 drawable gradient_bg_logout
 drawable gradient_bg_splashscreen
+drawable half_circle_bg_resep_card
 drawable ic_clock_black_24dp
 drawable ic_coupon_icon
 drawable ic_keyboard_black_24dp
@@ -3329,7 +3330,6 @@ id textView
 id textView10
 id textView11
 id textView16
-id textView17
 id textView18
 id textView19
 id textView2
@@ -3392,7 +3392,6 @@ id transition_transform
 id triangle
 id tvMessage
 id tvOrderListDate
-id tvOrderListOrderID
 id tvOrderListPrice
 id tvOrderListStatus
 id tvTitle
@@ -3406,6 +3405,7 @@ id vertical_only
 id view
 id view2
 id view3
+id view4
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner

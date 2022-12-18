@@ -9,13 +9,16 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 public class Order_listAdapter extends RecyclerView.Adapter<Order_listAdapter.ViewHolder> {
     private Context context;
-    private ArrayList<Order_listMOdel> order_ListArrayList;
+    private ArrayList<OrderModel> order_ListArrayList;
+    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
 
-    public Order_listAdapter(Context context, ArrayList<Order_listMOdel> order_ListArrayList) {
+
+    public Order_listAdapter(Context context, ArrayList<OrderModel> order_ListArrayList) {
         this.context = context;
         this.order_ListArrayList = order_ListArrayList;
     }
@@ -30,11 +33,11 @@ public class Order_listAdapter extends RecyclerView.Adapter<Order_listAdapter.Vi
 
     @Override
     public void onBindViewHolder(@NonNull Order_listAdapter.ViewHolder holder, int position) {
-        Order_listMOdel order_ListModel = order_ListArrayList.get(position);
-        holder.tvOrderListStatus.setText(order_ListModel.getTvOrderListStatus());
-        holder.tvOrderListOrderID.setText(order_ListModel.getTvOrderListOrderID());
-        holder.tvOrderListDate.setText(order_ListModel.getTvOrderListDate());
-        holder.tvOrderListPrice.setText(order_ListModel.getTvOrderListPrice());
+        OrderModel order_ListModel = order_ListArrayList.get(position);
+        holder.tvOrderListStatus.setText(order_ListModel.status);
+        holder.tvOrderListOrderID.setText(order_ListModel.address);
+        holder.tvOrderListDate.setText(format.format(order_ListModel.date));
+        holder.tvOrderListPrice.setText(String.valueOf(order_ListModel.total_price));
     }
 
     @Override
@@ -52,7 +55,7 @@ public class Order_listAdapter extends RecyclerView.Adapter<Order_listAdapter.Vi
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             tvOrderListStatus = itemView.findViewById(R.id.tvOrderListStatus);
-            tvOrderListOrderID = itemView.findViewById(R.id.tvOrderListOrderID);
+            tvOrderListOrderID = itemView.findViewById(R.id.address);
             tvOrderListDate = itemView.findViewById(R.id.tvOrderListDate);
             tvOrderListPrice = itemView.findViewById(R.id.tvOrderListPrice);
         }

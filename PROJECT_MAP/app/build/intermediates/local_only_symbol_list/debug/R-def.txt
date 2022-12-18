@@ -44,6 +44,7 @@ drawable folding_image
 drawable gradient_bg_login
 drawable gradient_bg_logout
 drawable gradient_bg_splashscreen
+drawable half_circle_bg_resep_card
 drawable ic_coupon_icon
 drawable ic_launcher_background
 drawable ic_launcher_background2
@@ -187,7 +188,6 @@ id textView
 id textView10
 id textView11
 id textView16
-id textView17
 id textView18
 id textView19
 id textView2
@@ -225,7 +225,6 @@ id total_price
 id trackOderStatus
 id tvMessage
 id tvOrderListDate
-id tvOrderListOrderID
 id tvOrderListPrice
 id tvOrderListStatus
 id tvTitle
@@ -233,6 +232,7 @@ id username
 id view
 id view2
 id view3
+id view4
 id visa
 id welcomeText
 layout activity_check_out

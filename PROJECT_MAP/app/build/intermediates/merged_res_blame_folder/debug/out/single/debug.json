@@ -56,12 +56,12 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\ic_coupon_icon.xml"
     },
     {
-        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_profile.xml.flat",
-        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\activity_profile.xml"
-    },
-    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_select_laundry_outlet_card_layout.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\select_laundry_outlet_card_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_profile.xml.flat",
+        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\activity_profile.xml"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_login.xml.flat",
@@ -88,12 +88,12 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable-v24\\done_order.png"
     },
     {
-        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_tshirt_item.png.flat",
-        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\tshirt_item.png"
-    },
-    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_select_laundry_card_layout.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\select_laundry_card_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_tshirt_item.png.flat",
+        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\tshirt_item.png"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_track_order.xml.flat",
@@ -128,12 +128,12 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_custom_button_address.xml.flat",
-        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\custom_button_address.xml"
-    },
-    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_vit_outlet.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\vit_outlet.png"
+    },
+    {
+        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_custom_button_address.xml.flat",
+        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\custom_button_address.xml"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_notification.xml.flat",
@@ -220,10 +220,6 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\ic_launcher_foreground2.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-37:/layout_activity_receipt.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-39:/layout/activity_receipt.xml"
-    },
-    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_waterfall_outlet.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\waterfall_outlet.png"
     },
@@ -240,12 +236,12 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\plus_button.png"
     },
     {
-        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_sign_up.xml.flat",
-        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\activity_sign_up.xml"
+        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable-v24_resep_card.png.flat",
+        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable-v24\\resep_card.png"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable-v24_resep_card.png.flat",
-        "source": "umn.ac.id.project_map.app-main-39:/drawable-v24/resep_card.png"
+        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_sign_up.xml.flat",
+        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\activity_sign_up.xml"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_pants_item.png.flat",
@@ -294,6 +290,10 @@
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_coupon_list.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\activity_coupon_list.xml"
+    },
+    {
+        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable-v24_half_circle_bg_resep_card.png.flat",
+        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable-v24\\half_circle_bg_resep_card.png"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable-v24_stripe_black_horizontal.png.flat",
