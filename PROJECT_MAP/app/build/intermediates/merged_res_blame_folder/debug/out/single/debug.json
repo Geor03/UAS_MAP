@@ -220,12 +220,12 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\ic_launcher_foreground2.xml"
     },
     {
-        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_waterfall_outlet.png.flat",
-        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\waterfall_outlet.png"
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/layout_activity_receipt.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-39:/layout/activity_receipt.xml"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-37:/layout_coupon_view.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-39:/layout/coupon_view.xml"
+        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_waterfall_outlet.png.flat",
+        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\waterfall_outlet.png"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_laundry_button.png.flat",
@@ -244,8 +244,16 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\activity_sign_up.xml"
     },
     {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable-v24_resep_card.png.flat",
+        "source": "umn.ac.id.project_map.app-main-39:/drawable-v24/resep_card.png"
+    },
+    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_pants_item.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\pants_item.png"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/layout_order_list_card_layout.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-39:/layout/order_list_card_layout.xml"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_custom_shape_status_completed.xml.flat",
