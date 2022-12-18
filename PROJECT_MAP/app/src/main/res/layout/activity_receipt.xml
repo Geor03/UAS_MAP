@@ -7,6 +7,20 @@
     tools:context=".Receipt"
     android:background="@drawable/bg_dark">
 
+    <View
+        android:id="@+id/view4"
+        android:layout_width="357dp"
+        android:layout_height="613dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/resep_card"
+        android:foregroundGravity="center"
+        android:translationZ="-1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView14"
+        app:layout_constraintVertical_bias="0.0" />
+
     <Button
         android:id="@+id/button_back"
         android:layout_width="48dp"
@@ -28,66 +42,58 @@
         app:layout_constraintStart_toEndOf="@+id/button_back"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:text="Order Receipt"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView14" />
 
     <TextView
         android:id="@+id/textView37"
         android:layout_width="86dp"
         android:layout_height="16dp"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="52dp"
         android:text="Driver Name"
         android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintStart_toStartOf="@+id/view4"
+        app:layout_constraintTop_toTopOf="@+id/view4" />
 
     <TextView
         android:id="@+id/textView19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="56dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="4dp"
         android:text="George Rumengan"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/view4"
         app:layout_constraintTop_toBottomOf="@+id/textView37" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="75dp"
         android:layout_height="15dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginEnd="28dp"
         android:text="Order Date"
         android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.417"
+        app:layout_constraintBottom_toBottomOf="@+id/textView37"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView37"
-        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+        app:layout_constraintTop_toTopOf="@+id/textView37" />
 
     <TextView
         android:id="@+id/textView20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginEnd="28dp"
         android:text="17 April 2022"
+        android:textColor="@color/black"
         android:textSize="16sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.264"
+        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="@+id/view4"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView19"
-        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+        app:layout_constraintTop_toTopOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView22"
@@ -105,13 +111,13 @@
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/clothes_green"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19"
-        tools:srcCompat="@tools:sample/avatars" />
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
 
     <TextView
         android:id="@+id/textView24"
@@ -154,12 +160,12 @@
         android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="104dp"
         android:text="Laundry Casey"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.032"
         app:layout_constraintStart_toEndOf="@+id/imageView15"
         app:layout_constraintTop_toBottomOf="@+id/textView22" />
 
@@ -167,7 +173,7 @@
         android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="144dp"
         android:text="Total Order"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -267,15 +273,6 @@
         app:layout_constraintStart_toEndOf="@+id/textView32"
         app:layout_constraintTop_toBottomOf="@+id/textView35" />
 
-    <View
-        android:layout_width="357dp"
-        android:layout_height="613dp"
-        android:background="@drawable/resep_card"
-        android:foregroundGravity="center"
-        android:translationZ="-1dp"
-        tools:layout_editor_absoluteX="27dp"
-        tools:layout_editor_absoluteY="86dp" />
-
     <Button
         android:id="@+id/button_backHome"
         android:layout_width="wrap_content"
@@ -283,6 +280,7 @@
         android:text="Back Home"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView32" />
 </androidx.constraintlayout.widget.ConstraintLayout>
