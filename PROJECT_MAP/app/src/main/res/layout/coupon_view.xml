@@ -70,7 +70,7 @@
                 android:textColor="@color/white"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 card_view:layout_constraintEnd_toEndOf="parent"
-                card_view:layout_constraintHorizontal_bias="1.0"
+                card_view:layout_constraintHorizontal_bias="0.846"
                 card_view:layout_constraintStart_toEndOf="@+id/imageView19"
                 card_view:layout_constraintTop_toTopOf="parent" />
 
@@ -80,7 +80,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="1dp"
                 card_view:layout_constraintEnd_toEndOf="parent"
-                card_view:layout_constraintHorizontal_bias="0.655"
+                card_view:layout_constraintHorizontal_bias="0.519"
                 card_view:layout_constraintStart_toEndOf="@+id/tvTitle"
                 card_view:layout_constraintTop_toTopOf="parent"
                 card_view:srcCompat="@drawable/stripe_black" />
@@ -91,10 +91,9 @@
                 android:layout_height="73dp"
                 card_view:layout_constraintBottom_toBottomOf="parent"
                 card_view:layout_constraintEnd_toEndOf="parent"
-                card_view:layout_constraintHorizontal_bias="0.393"
+                card_view:layout_constraintHorizontal_bias="0.274"
                 card_view:layout_constraintStart_toStartOf="parent"
                 card_view:layout_constraintTop_toTopOf="parent"
-                card_view:layout_constraintVertical_bias="0.26"
                 card_view:srcCompat="@drawable/clothes_green" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>

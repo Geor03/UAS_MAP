@@ -64,9 +64,11 @@ public class Track_Order extends AppCompatActivity {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 if(documentSnapshot.exists()) {
-                    date.setText(format.format(documentSnapshot.getString("date")));
+                    date.setText(format.format(documentSnapshot.getDate("date")));
                     status = (documentSnapshot.getString("status"));
+                    setStatus(status);
                     outletid = (documentSnapshot.getString("outlet_id"));
+                    getOutletName(outletid);
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {
@@ -75,12 +77,20 @@ public class Track_Order extends AppCompatActivity {
                 Log.d("Query", "Data ga keluar, Track Order:75");
             }
         });
-        DocumentReference documentReference = fStore.collection("outlets").document(outletid).collection("orders").document(orderID);
+
+    }
+
+    private void getOutletName(String outletid) {
+        String Outlet = outletid;
+        Log.d("nama outlet: 85", String.valueOf(Outlet));
+
+        DocumentReference documentReference = fStore.collection("outlets").document(Outlet);
         documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 if(documentSnapshot.exists()) {
                     outlet_name.setText(documentSnapshot.getString("outlet_name"));
+                    Log.d("nama outlet : 93", String.valueOf(documentSnapshot.getString("outlet_name")) );
                 }
             }
         }).addOnFailureListener(new OnFailureListener() {
@@ -89,9 +99,7 @@ public class Track_Order extends AppCompatActivity {
                 Log.d("Query", "Data ga keluar, Track Order:89");
             }
         });
-        setStatus(status);
     }
-
     private void setStatus(String status) {
         if(status.equals("Ongoing")){
             Order_Received.setBackgroundResource(R.drawable.custom_shape_status_completed);

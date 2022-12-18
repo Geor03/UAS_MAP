@@ -52,7 +52,7 @@
                 android:layout_marginStart="25dp"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="Estimasi waktu"
+                android:text="Order Date"
                 app:layout_constraintEnd_toStartOf="@id/orderId"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
@@ -66,13 +66,14 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
                 android:gravity="center"
-                android:text="Order ID"
+                android:text="Outlet Name"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.923"
                 app:layout_constraintStart_toEndOf="@+id/estimasiWaktu"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
+                android:id="@+id/date"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -87,6 +88,7 @@
                 app:layout_constraintTop_toBottomOf="@id/estimasiWaktu" />
 
             <TextView
+                android:id="@+id/outlet_name"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -105,7 +107,7 @@
 
     <androidx.cardview.widget.CardView
         android:layout_width="380dp"
-        android:layout_height="300dp"
+        android:layout_height="180dp"
         android:layout_marginTop="20dp"
         app:cardCornerRadius="10dp"
         app:cardMaxElevation="30dp"
@@ -239,86 +241,9 @@
                 app:layout_constraintStart_toStartOf="@+id/view2"
                 app:layout_constraintTop_toBottomOf="@+id/view2" />
 
-            <View
-                android:id="@+id/view4"
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_marginStart="16dp"
-                android:background="@drawable/custom_shape_status_remaining"
-                app:layout_constraintBottom_toBottomOf="@+id/textView12"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView12" />
 
-            <TextView
-                android:id="@+id/textView12"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="28dp"
-                android:text="Pesanan sedang dikirim,"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/view4"
-                app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Agustus 4th Rabu. 2022"
-                android:textSize="11sp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView12"
-                app:layout_constraintStart_toEndOf="@+id/textView12"
-                app:layout_constraintTop_toTopOf="@+id/textView12" />
 
-            <View
-                android:layout_width="2dp"
-                android:layout_height="0dp"
-                android:background="@color/gray_statusRemaining"
-                app:layout_constraintBottom_toTopOf="@+id/view4"
-                app:layout_constraintEnd_toEndOf="@+id/view3"
-                app:layout_constraintStart_toStartOf="@+id/view3"
-                app:layout_constraintTop_toBottomOf="@+id/view3" />
-
-            <View
-                android:id="@+id/view5"
-                android:layout_width="18dp"
-                android:layout_height="18dp"
-                android:layout_marginStart="16dp"
-                android:background="@drawable/custom_shape_status_remaining"
-                app:layout_constraintBottom_toBottomOf="@+id/textView13"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="@+id/textView13" />
-
-            <TextView
-                android:id="@+id/textView13"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="36dp"
-                android:text="Pesanan sudah diterima,"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/view5"
-                app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Agustus 4th Rabu, 2022"
-                android:textSize="11sp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView13"
-                app:layout_constraintStart_toEndOf="@+id/textView13"
-                app:layout_constraintTop_toTopOf="@+id/textView13"
-                app:layout_constraintVertical_bias="0.75" />
-
-            <View
-                android:layout_width="2dp"
-                android:layout_height="0dp"
-                android:background="@color/gray_statusRemaining"
-                app:layout_constraintBottom_toTopOf="@+id/view5"
-                app:layout_constraintEnd_toEndOf="@+id/view4"
-                app:layout_constraintStart_toStartOf="@+id/view4"
-                app:layout_constraintTop_toBottomOf="@+id/view4" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

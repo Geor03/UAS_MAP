@@ -118,13 +118,13 @@ id confirm_password
 id constraintCardEstimasi
 id coupon
 id coupontext
+id date
 id dateFirstOrder
 id doneOrder
 id drawer_layout
 id editText5
 id email
 id estimasiWaktu
-id faq
 id first_name
 id home
 id idIVLaundryImage
@@ -141,7 +141,6 @@ id idTVSelectLaundryName
 id idTVSelectOutletDesc
 id idTVTitle
 id imageView
-id imageView11
 id imageView12
 id imageView13
 id imageView14
@@ -155,6 +154,7 @@ id imageView23
 id imageView24
 id imageView25
 id item_name
+id items
 id ivClothes
 id last_name
 id logout
@@ -164,6 +164,7 @@ id nvView
 id orderHorizontal
 id orderId
 id otherinfo
+id outlet_name
 id password
 id paymentMethod
 id phone
@@ -174,6 +175,7 @@ id profile
 id profile_image
 id qty
 id ratingBar
+id rvCouponList
 id rvHorizontal
 id rvOrderList
 id savelogin
@@ -183,8 +185,6 @@ id switch1
 id textView
 id textView10
 id textView11
-id textView12
-id textView13
 id textView16
 id textView17
 id textView18
@@ -208,12 +208,9 @@ id textView34
 id textView35
 id textView36
 id textView37
-id textView39
 id textView4
 id textView41
-id textView42
 id textView48
-id textView5
 id textView6
 id textView7
 id textView8
@@ -223,6 +220,7 @@ id titleLaundry
 id titleOutlet
 id title_paymentMethodl
 id total_harga
+id total_price
 id trackOderStatus
 id tvMessage
 id tvOrderListDate
@@ -234,11 +232,10 @@ id username
 id view
 id view2
 id view3
-id view4
-id view5
 id visa
 id welcomeText
 layout activity_check_out
+layout activity_coupon_list
 layout activity_login
 layout activity_main
 layout activity_notification

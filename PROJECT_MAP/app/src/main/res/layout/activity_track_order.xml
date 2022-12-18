@@ -78,7 +78,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="1 Jam 29 Menit"
+                android:text="Date"
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 android:textStyle="bold"
@@ -93,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:gravity="center"
-                android:text="#92881"
+                android:text="Store Name"
                 android:textColor="@color/black"
                 android:textSize="13sp"
                 android:textStyle="bold"
@@ -138,21 +138,13 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="24dp"
                 android:gravity="center"
-                android:text="Orderan sedang di ambil,"
+                android:text="Order Received"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/view"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Agustus 2th Senin, 2022"
-                android:textSize="11sp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView9"
-                app:layout_constraintStart_toEndOf="@+id/textView9"
-                app:layout_constraintTop_toTopOf="@+id/textView9"
-                app:layout_constraintVertical_bias="1.0" />
+
 
             <View
                 android:id="@+id/view2"
@@ -172,22 +164,11 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="36dp"
                 android:gravity="center"
-                android:text="Pesanan sudah di ambil,"
+                android:text="Order Processed"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/view2"
                 app:layout_constraintTop_toBottomOf="@+id/textView9" />
-
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Agustus 2th Senin, 2022"
-                android:textSize="11sp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView10"
-                app:layout_constraintStart_toEndOf="@+id/textView10"
-                app:layout_constraintTop_toTopOf="@+id/textView10"
-                app:layout_constraintVertical_bias="0.8" />
 
             <View
                 android:layout_width="2dp"
@@ -216,21 +197,13 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="36dp"
                 android:gravity="center"
-                android:text="Pesanan sedang di kerjakan,"
+                android:text="Order Finished"
                 android:textColor="@color/black"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/view3"
                 app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
-            <TextView
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="Agustus 3th Selasa, 2022"
-                android:textSize="11sp"
-                app:layout_constraintBottom_toBottomOf="@+id/textView11"
-                app:layout_constraintStart_toEndOf="@+id/textView11"
-                app:layout_constraintTop_toTopOf="@+id/textView11"
-                app:layout_constraintVertical_bias="1.0" />
+
 
             <View
                 android:layout_width="2dp"

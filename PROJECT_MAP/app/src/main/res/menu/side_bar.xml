@@ -12,10 +12,6 @@
             android:title="Profile"
             android:clickable = "true"/>
         <item
-            android:id="@+id/faq"
-            android:title="FAQ"
-            android:clickable = "true"/>
-        <item
             android:id="@+id/logout"
             android:title="Log Out"
             android:clickable = "true"/>

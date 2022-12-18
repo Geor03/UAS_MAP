@@ -1,6 +1,8 @@
 package umn.ac.id.project_map;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -42,6 +44,23 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder> 
         holder.address.setText(order.address);
         holder.dateOrder.setText(format.format(order.date));
         holder.priceOrder.setText(String.valueOf(order.total_price));
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(order.status.equals("Ongoing")){
+                    Intent intentToTrackOrder = new Intent(context, Track_Order.class);
+                    intentToTrackOrder.putExtra("order", order.docId);
+                    Log.d("Isi order id", order.docId);
+                    context.startActivity(intentToTrackOrder);
+                }
+                else if(order.status.equals("Finished")){
+                    Intent intentToTrackOrder = new Intent(context, Receipt.class);
+                    intentToTrackOrder.putExtra("order", order.docId);
+                    Log.d("Isi order id", order.docId);
+                    context.startActivity(intentToTrackOrder);
+                }
+            }
+        });
     }
 
     @Override

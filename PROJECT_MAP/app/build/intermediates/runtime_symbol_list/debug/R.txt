@@ -2964,6 +2964,7 @@ int id custom 0x7f0800bc
 int id customPanel 0x7f0800bd
 int id cut 0x7f0800be
 int id dark 0x7f0800bf
+int id date 0x7f080296
 int id dateFirstOrder 0x7f0800c0
 int id date_picker_actions 0x7f0800c1
 int id decelerate 0x7f0800c2
@@ -3014,7 +3015,6 @@ int id exitUntilCollapsed 0x7f0800ee
 int id expand_activities_button 0x7f0800ef
 int id expanded_menu 0x7f0800f0
 int id fade 0x7f0800f1
-int id faq 0x7f0800f2
 int id fill 0x7f0800f3
 int id fill_horizontal 0x7f0800f4
 int id fill_vertical 0x7f0800f5
@@ -3069,7 +3069,6 @@ int id ignore 0x7f080125
 int id ignoreRequest 0x7f080126
 int id image 0x7f080127
 int id imageView 0x7f080128
-int id imageView11 0x7f080129
 int id imageView12 0x7f08012a
 int id imageView13 0x7f08012b
 int id imageView14 0x7f08012c
@@ -3091,6 +3090,7 @@ int id inward 0x7f08013b
 int id italic 0x7f08013c
 int id item_name 0x7f08013d
 int id item_touch_helper_previous_elevation 0x7f08013e
+int id items 0x7f080297
 int id ivClothes 0x7f080140
 int id jumpToEnd 0x7f080141
 int id jumpToStart 0x7f080142
@@ -3191,6 +3191,7 @@ int id onInterceptTouchReturnSwipe 0x7f0801a0
 int id orderHorizontal 0x7f0801a1
 int id orderId 0x7f0801a2
 int id otherinfo 0x7f0801a3
+int id outlet_name 0x7f080298
 int id outline 0x7f0801a4
 int id outward 0x7f0801a5
 int id overshoot 0x7f0801a6
@@ -3231,6 +3232,7 @@ int id right_icon 0x7f0801ca
 int id right_side 0x7f0801cb
 int id rounded 0x7f0801cc
 int id row_index_key 0x7f0801cd
+int id rvCouponList 0x7f080299
 int id rvHorizontal 0x7f0801ce
 int id rvOrderList 0x7f0801cf
 int id satellite 0x7f0801d0
@@ -3324,8 +3326,6 @@ int id textTop 0x7f080228
 int id textView 0x7f080229
 int id textView10 0x7f08022a
 int id textView11 0x7f08022b
-int id textView12 0x7f08022c
-int id textView13 0x7f08022d
 int id textView16 0x7f08022e
 int id textView17 0x7f08022f
 int id textView18 0x7f080230
@@ -3349,12 +3349,9 @@ int id textView34 0x7f080241
 int id textView35 0x7f080242
 int id textView36 0x7f080243
 int id textView37 0x7f080244
-int id textView39 0x7f080245
 int id textView4 0x7f080246
 int id textView41 0x7f080247
-int id textView42 0x7f080248
 int id textView48 0x7f080249
-int id textView5 0x7f08024a
 int id textView6 0x7f08024b
 int id textView7 0x7f08024c
 int id textView8 0x7f08024d
@@ -3380,6 +3377,7 @@ int id toggle 0x7f080260
 int id top 0x7f080261
 int id topPanel 0x7f080262
 int id total_harga 0x7f080263
+int id total_price 0x7f080264
 int id touch_outside 0x7f080265
 int id trackOderStatus 0x7f080266
 int id transitionToEnd 0x7f080267
@@ -3406,8 +3404,6 @@ int id vertical_only 0x7f08027b
 int id view 0x7f08027c
 int id view2 0x7f08027d
 int id view3 0x7f08027e
-int id view4 0x7f08027f
-int id view5 0x7f080280
 int id view_offset_helper 0x7f080281
 int id view_transition 0x7f080282
 int id view_tree_lifecycle_owner 0x7f080283
@@ -3552,6 +3548,7 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_check_out 0x7f0b001c
+int layout activity_coupon_list 0x7f0b007f
 int layout activity_login 0x7f0b001d
 int layout activity_main 0x7f0b001e
 int layout activity_notification 0x7f0b001f
