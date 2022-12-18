@@ -124,6 +124,9 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
                         Log.d("TAG","onFailure:"+e.toString());
                     }
                 });
+                Intent intentToCheckOut = new Intent(OrderPage.this, CheckOut.class);
+                startActivity(intentToCheckOut);
+                finish();
             }
         });
         backButton = findViewById(R.id.button_back);

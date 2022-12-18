@@ -90,14 +90,14 @@
                     android:id="@+id/titleAddress"
                     android:layout_width="200dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="100dp"
                     android:text="Home"
                     android:textAllCaps="false"
                     android:textColor="@color/black"
+                    card_view:layout_constraintBottom_toBottomOf="parent"
                     card_view:layout_constraintEnd_toEndOf="parent"
                     card_view:layout_constraintHorizontal_bias="0.106"
-                    card_view:layout_constraintStart_toStartOf="parent"
-                    card_view:layout_constraintTop_toBottomOf="@+id/address" />
+                    card_view:layout_constraintStart_toStartOf="parent" />
 
                 <TextView
                     android:id="@+id/Address"
@@ -113,7 +113,7 @@
                     card_view:layout_constraintHorizontal_bias="0.225"
                     card_view:layout_constraintStart_toStartOf="parent"
                     card_view:layout_constraintTop_toBottomOf="@+id/titleAddress"
-                    card_view:layout_constraintVertical_bias="0.858" />
+                    card_view:layout_constraintVertical_bias="0.7" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.cardview.widget.CardView>
@@ -201,42 +201,42 @@
 
         </androidx.cardview.widget.CardView>
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardview_expandable"
-            android:layout_width="370dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:layout_gravity="center"
-            android:layout_margin="16dp"
-            card_view:cardCornerRadius="13dp"
-            card_view:cardElevation="3dp"
-            card_view:layout_constraintBottom_toBottomOf="parent"
-            card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintHorizontal_bias="0.533"
-            card_view:layout_constraintStart_toStartOf="parent"
-            card_view:layout_constraintTop_toTopOf="parent"
-            card_view:layout_constraintVertical_bias="0.426">
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cardview_expandable"-->
+<!--            android:layout_width="370dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_alignParentTop="true"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:layout_margin="16dp"-->
+<!--            card_view:cardCornerRadius="13dp"-->
+<!--            card_view:cardElevation="3dp"-->
+<!--            card_view:layout_constraintBottom_toBottomOf="parent"-->
+<!--            card_view:layout_constraintEnd_toEndOf="parent"-->
+<!--            card_view:layout_constraintHorizontal_bias="0.533"-->
+<!--            card_view:layout_constraintStart_toStartOf="parent"-->
+<!--            card_view:layout_constraintTop_toTopOf="parent"-->
+<!--            card_view:layout_constraintVertical_bias="0.426">-->
 
-<!--            <LinearLayout-->
-<!--                android:layout_width="match_parent"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:layout_margin="10dp"-->
-<!--                android:orientation="vertical"-->
-<!--                android:visibility="visible">-->
+<!--&lt;!&ndash;            <LinearLayout&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_margin="10dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:orientation="vertical"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:visibility="visible">&ndash;&gt;-->
 
-<!--                <TextView-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="wrap_content"-->
-<!--                    android:text="this is just testing"-->
-<!--                    android:textAlignment="center"-->
-<!--                    android:textSize="20sp"-->
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="this is just testing"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textAlignment="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textSize="20sp"&ndash;&gt;-->
 
-<!--            </LinearLayout>-->
+<!--&lt;!&ndash;            </LinearLayout>&ndash;&gt;-->
 
-        </androidx.cardview.widget.CardView>
+<!--        </androidx.cardview.widget.CardView>-->
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardView4"
@@ -285,7 +285,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="8dp"
-                    android:text="Subtotal"
+                    android:text="Qty"
                     android:textColor="@color/black"
                     card_view:layout_constraintEnd_toEndOf="parent"
                     card_view:layout_constraintHorizontal_bias="0.055"
@@ -301,7 +301,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginTop="8dp"
-                    android:text="Shipping Cost"
+                    android:text="Price/item"
                     android:textColor="@color/black"
                     android:visibility="visible"
                     card_view:layout_constraintEnd_toEndOf="parent"
@@ -309,22 +309,22 @@
                     card_view:layout_constraintStart_toStartOf="parent"
                     card_view:layout_constraintTop_toBottomOf="@+id/Subtotal" />
 
-                <TextView
-                    android:id="@+id/subtotal2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="24dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="8dp"
-                    android:text="Promo"
-                    android:textColor="@color/black"
-                    android:visibility="visible"
-                    card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintHorizontal_bias="0.048"
-                    card_view:layout_constraintStart_toStartOf="parent"
-                    card_view:layout_constraintTop_toBottomOf="@+id/subtotal" />
+<!--                <TextView-->
+<!--                    android:id="@+id/subtotal2"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="24dp"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_alignParentTop="true"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_marginTop="8dp"-->
+<!--                    android:text="Promo"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:visibility="visible"-->
+<!--                    card_view:layout_constraintEnd_toEndOf="parent"-->
+<!--                    card_view:layout_constraintHorizontal_bias="0.048"-->
+<!--                    card_view:layout_constraintStart_toStartOf="parent"-->
+<!--                    card_view:layout_constraintTop_toBottomOf="@+id/subtotal" />-->
 
                 <TextView
                     android:id="@+id/price_subtotal"
@@ -335,7 +335,7 @@
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
                     android:layout_marginEnd="16dp"
-                    android:text="Rp.xxx.xxx"
+                    android:text="x20 Item"
                     android:textColor="@color/black"
                     card_view:layout_constraintBottom_toBottomOf="@+id/Subtotal"
                     card_view:layout_constraintEnd_toEndOf="parent"
@@ -362,25 +362,25 @@
                     card_view:layout_constraintTop_toTopOf="@+id/subtotal"
                     card_view:layout_constraintVertical_bias="1.0" />
 
-                <TextView
-                    android:id="@+id/price_promo"
-                    android:layout_width="81dp"
-                    android:layout_height="20dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_alignParentBottom="true"
-                    android:layout_marginTop="4dp"
-                    android:layout_marginEnd="16dp"
-                    android:text="Rp.xxx.xxx"
-                    android:textColor="@color/black"
-                    android:visibility="visible"
-                    card_view:layout_constraintBottom_toBottomOf="@+id/subtotal2"
-                    card_view:layout_constraintEnd_toEndOf="parent"
-                    card_view:layout_constraintHorizontal_bias="1.0"
-                    card_view:layout_constraintStart_toEndOf="@+id/subtotal2"
-                    card_view:layout_constraintTop_toTopOf="@+id/subtotal2"
-                    card_view:layout_constraintVertical_bias="0.0" />
+<!--                <TextView-->
+<!--                    android:id="@+id/price_promo"-->
+<!--                    android:layout_width="81dp"-->
+<!--                    android:layout_height="20dp"-->
+<!--                    android:layout_alignParentStart="true"-->
+<!--                    android:layout_alignParentTop="true"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_alignParentBottom="true"-->
+<!--                    android:layout_marginTop="4dp"-->
+<!--                    android:layout_marginEnd="16dp"-->
+<!--                    android:text="Rp.xxx.xxx"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:visibility="visible"-->
+<!--                    card_view:layout_constraintBottom_toBottomOf="@+id/subtotal2"-->
+<!--                    card_view:layout_constraintEnd_toEndOf="parent"-->
+<!--                    card_view:layout_constraintHorizontal_bias="1.0"-->
+<!--                    card_view:layout_constraintStart_toEndOf="@+id/subtotal2"-->
+<!--                    card_view:layout_constraintTop_toTopOf="@+id/subtotal2"-->
+<!--                    card_view:layout_constraintVertical_bias="0.0" />-->
 
                 <ImageView
                     android:id="@+id/imageView25"
@@ -388,7 +388,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
                     android:src="@drawable/stripe_black_horizontal"
-                    card_view:layout_constraintTop_toBottomOf="@+id/subtotal2"
+                    card_view:layout_constraintTop_toBottomOf="@+id/subtotal"
                     tools:layout_editor_absoluteX="0dp" />
 
                 <TextView
@@ -460,11 +460,12 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
                     android:text="Choose Payment Method"
                     android:textAllCaps="false"
-                    card_view:layout_constraintTop_toBottomOf="@+id/title_paymentMethodl"
-                    tools:layout_editor_absoluteX="16dp" />
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/title_paymentMethodl" />
 
                 <TextView
                     android:id="@+id/title_paymentMethodl"
@@ -509,6 +510,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="true"
+                    android:layout_marginStart="16dp"
                     android:layout_marginTop="15dp"
                     android:background="@drawable/custom_button_dark"
                     android:drawableLeft="@drawable/ic_va"
@@ -518,8 +520,8 @@
                     android:paddingRight="10dp"
                     android:text="Virtual Account"
                     android:textColor="@color/white"
-                    card_view:layout_constraintTop_toBottomOf="@+id/choose_paymentMethod"
-                    tools:layout_editor_absoluteX="16dp" />
+                    card_view:layout_constraintStart_toStartOf="parent"
+                    card_view:layout_constraintTop_toBottomOf="@+id/choose_paymentMethod" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
