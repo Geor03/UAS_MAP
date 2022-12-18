@@ -61,8 +61,8 @@ public class CheckOut extends AppCompatActivity {
             @Override
             public void onSuccess(DocumentSnapshot documentSnapshot) {
                 if(documentSnapshot.exists()) {
-                    items.setText(String.valueOf(documentSnapshot.getString("total_pants")+documentSnapshot.getString("total_shirts"))+" items");
-                    total_price.setText("Rp. "+documentSnapshot.getString("total_price"));
+                    items.setText(String.valueOf(documentSnapshot.getDouble("total_pants")+documentSnapshot.getDouble("total_shirts"))+" items");
+                    total_price.setText("Rp. "+String.valueOf(documentSnapshot.get("total_price")));
                     address.setText(documentSnapshot.getString("address"));
                 }
             }

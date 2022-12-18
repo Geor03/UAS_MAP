@@ -7,11 +7,11 @@ import java.util.Date;
 public class PesananModel {
     String address, customerId, status, laundry_type,docID;
     Date date;
-    int total_pants, total_shirt;
+    int total_pants, total_shirts;
     int total_price;
 
     public PesananModel(){}
-    public PesananModel(String address, String customerId, Date date, String laundry_type, String status, int total_pants, int total_price, int total_shirt, String docID) {
+    public PesananModel(String address, String customerId, Date date, String laundry_type, String status, int total_pants, int total_price, int total_shirts, String docID) {
         this.address = address;
         this.customerId = customerId;
         this.date = date;
@@ -19,10 +19,10 @@ public class PesananModel {
         this.status = status;
         this.total_pants = total_pants;
         this.total_price = total_price;
-        this.total_shirt = total_shirt;
+        this.total_shirts = total_shirts;
         this.docID = docID;
     }
-    
+
     @DocumentId
     public String getDocID() {
         return docID;
@@ -40,8 +40,8 @@ public class PesananModel {
         return total_price;
     }
 
-    public int getTotal_shirt() {
-        return total_shirt;
+    public int getTotal_shirts() {
+        return total_shirts;
     }
 
     public String getAddress() {
@@ -88,8 +88,8 @@ public class PesananModel {
         this.total_price = total_price;
     }
 
-    public void setTotal_shirt(int total_shirt) {
-        this.total_shirt = total_shirt;
+    public void setTotal_shirts(int total_shirts) {
+        this.total_shirts = total_shirts;
     }
 
     @DocumentId

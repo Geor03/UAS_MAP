@@ -1,12 +1,14 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color color_semiDark
 color dark_slate
 color dark_slate_addres
 color dark_slate_input
 color dark_slate_select
 color dark_statusCurrent
 color gray_statusRemaining
+color light_orange
 color purple_200
 color purple_500
 color purple_700
@@ -23,20 +25,25 @@ drawable casey_outlet
 drawable circle
 drawable clothes_green
 drawable clothes_order
+drawable coin
 drawable coupon_card
 drawable custom_button_address
 drawable custom_button_confirm
 drawable custom_button_dark
 drawable custom_button_login
 drawable custom_button_minus
+drawable custom_button_resep
 drawable custom_card_bgorderlist
 drawable custom_card_bgprofile
 drawable custom_input_login_logout
+drawable custom_shape_resep
+drawable custom_shape_resep_circle
 drawable custom_shape_status_completed
 drawable custom_shape_status_current
 drawable custom_shape_status_remaining
 drawable done_order
 drawable dress_item
+drawable drop_shadow
 drawable drycleaning_image
 drawable eclipse_bottom
 drawable eclipse_top
@@ -45,6 +52,7 @@ drawable gradient_bg_login
 drawable gradient_bg_logout
 drawable gradient_bg_splashscreen
 drawable half_circle_bg_resep_card
+drawable ic_coin
 drawable ic_coupon_icon
 drawable ic_launcher_background
 drawable ic_launcher_background2
@@ -95,6 +103,7 @@ id button_backFromNotif
 id button_backHome
 id button_backSelectLaundry
 id button_backSelectOutlet
+id button_backToOrderList
 id button_burger
 id button_confirm
 id button_confirmToCheckout
@@ -155,6 +164,7 @@ id imageView22
 id imageView23
 id imageView24
 id imageView25
+id imageView26
 id item_name
 id items
 id ivClothes
@@ -202,11 +212,9 @@ id textView28
 id textView29
 id textView3
 id textView30
-id textView31
 id textView32
 id textView33
 id textView34
-id textView35
 id textView36
 id textView37
 id textView4
@@ -233,6 +241,8 @@ id view
 id view2
 id view3
 id view4
+id view5
+id view6
 id visa
 id welcomeText
 layout activity_check_out

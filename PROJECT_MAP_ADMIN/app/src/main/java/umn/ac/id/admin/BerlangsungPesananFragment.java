@@ -44,6 +44,8 @@ public class BerlangsungPesananFragment extends Fragment {
     public FirebaseFirestore fStore;
     private FirebaseAuth fAuth;
     private String outletId;
+    private RecyclerView.LayoutManager mLayoutManager;
+
 
 
     public BerlangsungPesananFragment() {
@@ -95,7 +97,8 @@ public class BerlangsungPesananFragment extends Fragment {
         PesananBerlangsungArraylist = new ArrayList<PesananModel>();
         PesananBerlangsungAdapter = new PesananBerlangsungAdapter(getContext(), PesananBerlangsungArraylist);
 
-        recyclerviewPesananBerlangsung.setLayoutManager(new LinearLayoutManager(getContext()));
+        mLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
+        recyclerviewPesananBerlangsung.setLayoutManager(mLayoutManager);
         recyclerviewPesananBerlangsung.setHasFixedSize(true);
         recyclerviewPesananBerlangsung.setAdapter(PesananBerlangsungAdapter);
         fetchData();
@@ -115,10 +118,10 @@ public class BerlangsungPesananFragment extends Fragment {
                         if(dc.getDocument().toObject(PesananModel.class).status.equals("Ongoing")) {
                             PesananBerlangsungArraylist.add(dc.getDocument().toObject(PesananModel.class));
                         }
-                        else{
-                            Log.e("Empty Data", "Order is empty");
-                            return;
-                        }
+                    }
+                    else{
+                        Log.e("Empty Data", "Order is empty");
+                        return;
                     }
 
                     PesananBerlangsungAdapter.notifyDataSetChanged();

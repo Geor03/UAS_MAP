@@ -19,6 +19,9 @@ import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class EditProfile extends AppCompatActivity {
 
     private Button btnBackToProfile;
@@ -28,6 +31,7 @@ public class EditProfile extends AppCompatActivity {
     private TextView address;
     private TextView phone;
     private TextView email;
+    private Button save;
 
     protected FirebaseAuth fAuth;
     protected FirebaseFirestore fStore;
@@ -49,6 +53,7 @@ public class EditProfile extends AppCompatActivity {
         address = (EditText) findViewById(R.id.etAlamatToko);
         phone = (EditText) findViewById(R.id.etNomorToko);
         email = (EditText) findViewById(R.id.etEmailToko);
+        save = (Button) findViewById(R.id.btnSaveProfile);
 
         btnBackToProfile = findViewById(R.id.btnBackToPorfile);
         btnSaveProfile = findViewById(R.id.btnSaveProfile);
@@ -71,6 +76,12 @@ public class EditProfile extends AppCompatActivity {
             }
         });
 
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Update(view);
+            }
+        });
         DocumentReference documentReference = fStore.collection("outlets").document(outletId);
         documentReference.get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
             @Override
@@ -83,12 +94,19 @@ public class EditProfile extends AppCompatActivity {
             }
         });
     }
-    public void update(View view){
+    public void Update(View view){
 
-        fStore.collection("outlets").document(outletId).update("outlet_name", name.getText().toString()).addOnSuccessListener(new OnSuccessListener<Void>() {
+        Map<String, Object> outlet = new HashMap<>();
+        outlet.put("outlet_name", name.getText().toString());
+        outlet.put("address", address.getText().toString());
+        outlet.put("email", email.getText().toString());
+        outlet.put("phone", phone.getText().toString());
+
+        fStore.collection("outlets").document(outletId).update(outlet).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
                 Toast.makeText(EditProfile.this, "Data telah diupdate", Toast.LENGTH_LONG).show();
+                notifyAll();
             }
             public void onFailure(Void unused){
                 Toast.makeText(EditProfile.this, "Data gagal",Toast.LENGTH_LONG).show();

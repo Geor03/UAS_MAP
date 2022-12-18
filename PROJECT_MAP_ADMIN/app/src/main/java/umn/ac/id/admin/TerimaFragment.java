@@ -40,11 +40,13 @@ public class TerimaFragment extends Fragment {
     private String mParam1;
     private String mParam2;
     private ArrayList<PesananModel> TerimaPesananModelArrayList;
+
     private RecyclerView recyclerviewTerimaPesanan;
     private TerimaPesananAdapter terimaPesananAdapter;
     public FirebaseFirestore fStore;
     private FirebaseAuth fAuth;
     private String outletId;
+    private RecyclerView.LayoutManager mLayoutManager;
 
     public TerimaFragment() {
         // Required empty public constructor
@@ -95,7 +97,8 @@ public class TerimaFragment extends Fragment {
         TerimaPesananModelArrayList = new ArrayList<PesananModel>();
         terimaPesananAdapter = new TerimaPesananAdapter(getContext(), TerimaPesananModelArrayList);
 
-        recyclerviewTerimaPesanan.setLayoutManager(new LinearLayoutManager(getContext()));
+        mLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
+        recyclerviewTerimaPesanan.setLayoutManager(mLayoutManager);
         recyclerviewTerimaPesanan.setHasFixedSize(true);
         recyclerviewTerimaPesanan.setAdapter(terimaPesananAdapter);
         fetchData();
@@ -115,10 +118,10 @@ public class TerimaFragment extends Fragment {
                         if(dc.getDocument().toObject(PesananModel.class).status.equals("New Order")) {
                             TerimaPesananModelArrayList.add(dc.getDocument().toObject(PesananModel.class));
                         }
-                        else{
-                            Log.e("Empty Data", "Order is empty");
-                            return;
-                        }
+                    }
+                    else{
+                        Log.e("Empty Data", "Order is empty");
+                        return;
                     }
                     terimaPesananAdapter.notifyDataSetChanged();
                 }

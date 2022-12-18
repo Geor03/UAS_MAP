@@ -1317,6 +1317,7 @@ int color cardview_dark_background 0x7f05002e
 int color cardview_light_background 0x7f05002f
 int color cardview_shadow_end_color 0x7f050030
 int color cardview_shadow_start_color 0x7f050031
+int color color_semiDark 0x7f050279
 int color common_google_signin_btn_text_dark 0x7f050032
 int color common_google_signin_btn_text_dark_default 0x7f050033
 int color common_google_signin_btn_text_dark_disabled 0x7f050034
@@ -1382,6 +1383,7 @@ int color foreground_material_light 0x7f05006f
 int color gray_statusRemaining 0x7f050070
 int color highlighted_text_material_dark 0x7f050071
 int color highlighted_text_material_light 0x7f050072
+int color light_orange 0x7f05027a
 int color m3_appbar_overlay_color 0x7f050073
 int color m3_assist_chip_icon_tint_color 0x7f050074
 int color m3_assist_chip_stroke_color 0x7f050075
@@ -2618,6 +2620,7 @@ int drawable casey_outlet 0x7f070082
 int drawable circle 0x7f070083
 int drawable clothes_green 0x7f070084
 int drawable clothes_order 0x7f070085
+int drawable coin 0x7f07012a
 int drawable common_full_open_on_phone 0x7f070086
 int drawable common_google_signin_btn_icon_dark 0x7f070087
 int drawable common_google_signin_btn_icon_dark_focused 0x7f070088
@@ -2643,9 +2646,12 @@ int drawable custom_button_confirm 0x7f07009b
 int drawable custom_button_dark 0x7f07009c
 int drawable custom_button_login 0x7f07009d
 int drawable custom_button_minus 0x7f07009e
+int drawable custom_button_resep 0x7f07012b
 int drawable custom_card_bgorderlist 0x7f07009f
 int drawable custom_card_bgprofile 0x7f0700a0
 int drawable custom_input_login_logout 0x7f0700a1
+int drawable custom_shape_resep 0x7f07012c
+int drawable custom_shape_resep_circle 0x7f07012d
 int drawable custom_shape_status_completed 0x7f0700a2
 int drawable custom_shape_status_current 0x7f0700a3
 int drawable custom_shape_status_remaining 0x7f0700a4
@@ -2656,6 +2662,7 @@ int drawable design_password_eye 0x7f0700a8
 int drawable design_snackbar_background 0x7f0700a9
 int drawable done_order 0x7f0700aa
 int drawable dress_item 0x7f0700ab
+int drawable drop_shadow 0x7f07012e
 int drawable drycleaning_image 0x7f0700ac
 int drawable eclipse_bottom 0x7f0700ad
 int drawable eclipse_top 0x7f0700ae
@@ -2667,6 +2674,7 @@ int drawable gradient_bg_logout 0x7f0700b3
 int drawable gradient_bg_splashscreen 0x7f0700b4
 int drawable half_circle_bg_resep_card 0x7f070125
 int drawable ic_clock_black_24dp 0x7f0700b5
+int drawable ic_coin 0x7f07012f
 int drawable ic_coupon_icon 0x7f0700b6
 int drawable ic_keyboard_black_24dp 0x7f0700b7
 int drawable ic_launcher_background 0x7f0700b8
@@ -2902,6 +2910,7 @@ int id button_backFromNotif 0x7f08007a
 int id button_backHome 0x7f08007b
 int id button_backSelectLaundry 0x7f08007c
 int id button_backSelectOutlet 0x7f08007d
+int id button_backToOrderList 0x7f08029a
 int id button_burger 0x7f08007e
 int id button_confirm 0x7f08007f
 int id button_confirmToCheckout 0x7f080080
@@ -3083,6 +3092,7 @@ int id imageView22 0x7f080132
 int id imageView23 0x7f080133
 int id imageView24 0x7f080134
 int id imageView25 0x7f080135
+int id imageView26 0x7f08029b
 int id immediateStop 0x7f080136
 int id included 0x7f080137
 int id indeterminate 0x7f080138
@@ -3343,11 +3353,9 @@ int id textView28 0x7f08023a
 int id textView29 0x7f08023b
 int id textView3 0x7f08023c
 int id textView30 0x7f08023d
-int id textView31 0x7f08023e
 int id textView32 0x7f08023f
 int id textView33 0x7f080240
 int id textView34 0x7f080241
-int id textView35 0x7f080242
 int id textView36 0x7f080243
 int id textView37 0x7f080244
 int id textView4 0x7f080246
@@ -3405,6 +3413,8 @@ int id view 0x7f08027c
 int id view2 0x7f08027d
 int id view3 0x7f08027e
 int id view4 0x7f08027f
+int id view5 0x7f080280
+int id view6 0x7f08029c
 int id view_offset_helper 0x7f080281
 int id view_transition 0x7f080282
 int id view_tree_lifecycle_owner 0x7f080283

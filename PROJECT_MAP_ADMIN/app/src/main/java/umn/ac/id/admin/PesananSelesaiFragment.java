@@ -41,6 +41,8 @@ public class PesananSelesaiFragment extends Fragment {
     private ArrayList<PesananModel> PesananSelesaiArrayList;
     private RecyclerView recyclerviewPesananSelesai;
     private PesananSelesaiAdapter PesananSelesaiAdapter;
+    private RecyclerView.LayoutManager mLayoutManager;
+
 
     public FirebaseFirestore fStore;
     private FirebaseAuth fAuth;
@@ -93,7 +95,8 @@ public class PesananSelesaiFragment extends Fragment {
         PesananSelesaiArrayList = new ArrayList<PesananModel>();
         PesananSelesaiAdapter = new PesananSelesaiAdapter(getContext(), PesananSelesaiArrayList);
 
-        recyclerviewPesananSelesai.setLayoutManager(new LinearLayoutManager(getContext()));
+        mLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
+        recyclerviewPesananSelesai.setLayoutManager(mLayoutManager);
         recyclerviewPesananSelesai.setHasFixedSize(true);
         recyclerviewPesananSelesai.setAdapter(PesananSelesaiAdapter);
         fetchData();
@@ -113,10 +116,10 @@ public class PesananSelesaiFragment extends Fragment {
                         if(dc.getDocument().toObject(PesananModel.class).status.equals("Finished")) {
                             PesananSelesaiArrayList.add(dc.getDocument().toObject(PesananModel.class));
                         }
-                        else{
-                            Log.e("Empty Data", "Order is empty");
-                            return;
-                        }
+                    }
+                    else{
+                        Log.e("Empty Data", "Order is empty");
+                        return;
                     }
                     PesananSelesaiAdapter.notifyDataSetChanged();
                 }

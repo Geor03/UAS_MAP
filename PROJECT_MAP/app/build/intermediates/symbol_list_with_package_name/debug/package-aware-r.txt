@@ -1318,6 +1318,7 @@ color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color color_semiDark
 color common_google_signin_btn_text_dark
 color common_google_signin_btn_text_dark_default
 color common_google_signin_btn_text_dark_disabled
@@ -1383,6 +1384,7 @@ color foreground_material_light
 color gray_statusRemaining
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color light_orange
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
 color m3_assist_chip_stroke_color
@@ -2619,6 +2621,7 @@ drawable casey_outlet
 drawable circle
 drawable clothes_green
 drawable clothes_order
+drawable coin
 drawable common_full_open_on_phone
 drawable common_google_signin_btn_icon_dark
 drawable common_google_signin_btn_icon_dark_focused
@@ -2644,9 +2647,12 @@ drawable custom_button_confirm
 drawable custom_button_dark
 drawable custom_button_login
 drawable custom_button_minus
+drawable custom_button_resep
 drawable custom_card_bgorderlist
 drawable custom_card_bgprofile
 drawable custom_input_login_logout
+drawable custom_shape_resep
+drawable custom_shape_resep_circle
 drawable custom_shape_status_completed
 drawable custom_shape_status_current
 drawable custom_shape_status_remaining
@@ -2657,6 +2663,7 @@ drawable design_password_eye
 drawable design_snackbar_background
 drawable done_order
 drawable dress_item
+drawable drop_shadow
 drawable drycleaning_image
 drawable eclipse_bottom
 drawable eclipse_top
@@ -2668,6 +2675,7 @@ drawable gradient_bg_logout
 drawable gradient_bg_splashscreen
 drawable half_circle_bg_resep_card
 drawable ic_clock_black_24dp
+drawable ic_coin
 drawable ic_coupon_icon
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
@@ -2903,6 +2911,7 @@ id button_backFromNotif
 id button_backHome
 id button_backSelectLaundry
 id button_backSelectOutlet
+id button_backToOrderList
 id button_burger
 id button_confirm
 id button_confirmToCheckout
@@ -3084,6 +3093,7 @@ id imageView22
 id imageView23
 id imageView24
 id imageView25
+id imageView26
 id immediateStop
 id included
 id indeterminate
@@ -3344,11 +3354,9 @@ id textView28
 id textView29
 id textView3
 id textView30
-id textView31
 id textView32
 id textView33
 id textView34
-id textView35
 id textView36
 id textView37
 id textView4
@@ -3406,6 +3414,8 @@ id view
 id view2
 id view3
 id view4
+id view5
+id view6
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner

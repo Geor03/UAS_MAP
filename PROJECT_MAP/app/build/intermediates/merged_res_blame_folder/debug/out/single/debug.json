@@ -40,6 +40,10 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\custom_button_confirm.xml"
     },
     {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable_custom_shape_resep_circle.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-39:/drawable/custom_shape_resep_circle.xml"
+    },
+    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_order_view.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\order_view.xml"
     },
@@ -56,12 +60,12 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\ic_coupon_icon.xml"
     },
     {
-        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_select_laundry_outlet_card_layout.xml.flat",
-        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\select_laundry_outlet_card_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_profile.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\activity_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_select_laundry_outlet_card_layout.xml.flat",
+        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\select_laundry_outlet_card_layout.xml"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_login.xml.flat",
@@ -88,12 +92,16 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable-v24\\done_order.png"
     },
     {
-        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_select_laundry_card_layout.xml.flat",
-        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\select_laundry_card_layout.xml"
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable-xxxhdpi_ic_coin.png.flat",
+        "source": "umn.ac.id.project_map.app-pngs-32:/drawable-xxxhdpi/ic_coin.png"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_tshirt_item.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\tshirt_item.png"
+    },
+    {
+        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_select_laundry_card_layout.xml.flat",
+        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\select_laundry_card_layout.xml"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_track_order.xml.flat",
@@ -128,12 +136,16 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\mipmap-mdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_custom_button_address.xml.flat",
+        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\custom_button_address.xml"
+    },
+    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_vit_outlet.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\vit_outlet.png"
     },
     {
-        "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_custom_button_address.xml.flat",
-        "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\custom_button_address.xml"
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable-hdpi_ic_coin.png.flat",
+        "source": "umn.ac.id.project_map.app-pngs-32:/drawable-hdpi/ic_coin.png"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_activity_notification.xml.flat",
@@ -164,6 +176,10 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\drycleaning_image.png"
     },
     {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable_drop_shadow.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-39:/drawable/drop_shadow.xml"
+    },
+    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable-v24_custom_card_bgorderlist.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable-v24\\custom_card_bgorderlist.xml"
     },
@@ -178,6 +194,10 @@
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_notif_button.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\notif_button.png"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable-v24_coin.png.flat",
+        "source": "umn.ac.id.project_map.app-main-39:/drawable-v24/coin.png"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_order_list_card_layout.xml.flat",
@@ -220,6 +240,10 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\ic_launcher_foreground2.xml"
     },
     {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/layout_activity_receipt.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-39:/layout/activity_receipt.xml"
+    },
+    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_waterfall_outlet.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\waterfall_outlet.png"
     },
@@ -244,12 +268,16 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\activity_sign_up.xml"
     },
     {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable-mdpi_ic_coin.png.flat",
+        "source": "umn.ac.id.project_map.app-pngs-32:/drawable-mdpi/ic_coin.png"
+    },
+    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_pants_item.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\pants_item.png"
     },
     {
-        "merged": "umn.ac.id.project_map.app-merged_res-37:/layout_order_list_card_layout.xml.flat",
-        "source": "umn.ac.id.project_map.app-main-39:/layout/order_list_card_layout.xml"
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable_custom_button_resep.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-39:/drawable/custom_button_resep.xml"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_custom_shape_status_completed.xml.flat",
@@ -262,6 +290,14 @@
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable-v24_coupon_card.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable-v24\\coupon_card.png"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable-xxhdpi_ic_coin.png.flat",
+        "source": "umn.ac.id.project_map.app-pngs-32:/drawable-xxhdpi/ic_coin.png"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable-anydpi-v24_ic_coin.xml.flat",
+        "source": "umn.ac.id.project_map.app-pngs-32:/drawable-anydpi-v24/ic_coin.xml"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_clothes_order.png.flat",
@@ -328,12 +364,20 @@
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\dress_item.png"
     },
     {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable-ldpi_ic_coin.png.flat",
+        "source": "umn.ac.id.project_map.app-pngs-32:/drawable-ldpi/ic_coin.png"
+    },
+    {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\drawable_minus_button.png.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\drawable\\minus_button.png"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_order_page.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\order_page.xml"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable-xhdpi_ic_coin.png.flat",
+        "source": "umn.ac.id.project_map.app-pngs-32:/drawable-xhdpi/ic_coin.png"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\mipmap-hdpi_ic_launcher.png.flat",
@@ -370,6 +414,14 @@
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\layout_coupon_view.xml.flat",
         "source": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-main-39:\\layout\\coupon_view.xml"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/layout_order_page.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-39:/layout/order_page.xml"
+    },
+    {
+        "merged": "umn.ac.id.project_map.app-merged_res-37:/drawable_custom_shape_resep.xml.flat",
+        "source": "umn.ac.id.project_map.app-main-39:/drawable/custom_shape_resep.xml"
     },
     {
         "merged": "C:\\Users\\georg\\.gradle\\daemon\\7.3.3\\umn.ac.id.project_map.app-merged_res-37:\\xml_backup_rules.xml.flat",

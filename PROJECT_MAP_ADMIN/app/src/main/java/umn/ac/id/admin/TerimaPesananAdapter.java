@@ -37,7 +37,6 @@ public class TerimaPesananAdapter extends RecyclerView.Adapter<TerimaPesananAdap
     @Override
     public TerimaPesananAdapter.TerimaPesananViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.cardview_terimapesanan, parent, false);
-
         return new TerimaPesananViewHolder(v);
     }
 
