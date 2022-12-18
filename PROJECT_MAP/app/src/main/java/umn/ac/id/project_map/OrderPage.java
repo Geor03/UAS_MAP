@@ -72,6 +72,8 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
     private List<Address> addressList;
     private TextView address_name;
     private TextView total_price;
+    private TextView quantity;
+    private TextView price_item;
     private String address;
     private String orderId;
     private String orderType;
@@ -100,7 +102,11 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         mapView = findViewById(R.id.mapView);
         address_name = (TextView) findViewById(R.id.Address);
         total_price = (TextView) findViewById(R.id.price_totalharga);
-        total_price.setText(String.valueOf(getPrice(itemArrayList.get(0).qty, itemArrayList.get(1).qty)));
+        quantity = (TextView) findViewById(R.id.qty);
+        price_item = (TextView) findViewById(R.id.price_per_item);
+        total_price.setText("Rp. "+String.valueOf(getPrice(itemArrayList.get(0).qty, itemArrayList.get(1).qty)));
+        quantity.setText("x" + String.valueOf(itemArrayList.get(0).qty+itemArrayList.get(1).qty) + " item");
+        price_item.setText(String.valueOf("Rp. 1000"));
         btnConfirmToCheckOut = findViewById(R.id.button_confirmToCheckout);
         btnConfirmToCheckOut.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -118,7 +124,7 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
                 docref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
                     @Override
                     public void onSuccess(Void unused) {
-                        outlet_order();
+                        outlet_order(docref.getId());
                     }
                     public void onFailure(@NonNull Exception e){
                         Log.d("TAG","onFailure:"+e.toString());
@@ -134,9 +140,6 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
                 onBackPressed();
             }
         });
-
-
-
         if (requestSinglePermission()){
             mGoogleApiClient = new GoogleApiClient.Builder(this).addConnectionCallbacks(this).addOnConnectionFailedListener(this).addApi(LocationServices.API).build();
             mLocationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
@@ -145,21 +148,22 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         mapView.onCreate(savedInstanceState);
         mapView.getMapAsync(this);
     }
-    private void outlet_order() {
-        DocumentReference docref = fStore.collection("outlets").document(orderId).collection("orders").document();
+    private void outlet_order(String doc) {
+        DocumentReference docref = fStore.collection("outlets").document(orderId).collection("orders").document(doc);
         Map<String, Object> user = new HashMap<>();
         user.put("address", address);
         user.put("date", FieldValue.serverTimestamp());
         user.put("laundry_type", orderType);
         user.put("customerId",Uid);
-        user.put("status", "Ongoing");
+        user.put("status", "New Order");
         user.put("total_pants", itemArrayList.get(0).qty);
         user.put("total_price", getPrice(itemArrayList.get(0).qty, itemArrayList.get(1).qty));
         user.put("total_shirts", itemArrayList.get(1).qty);
         docref.set(user).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void unused) {
-                Log.d("TAG","onSuccess: order is created");
+                Log.d("Hore","onSuccess: order is created"+ docref.getId());
+
                 Intent intent = new Intent(OrderPage.this, CheckOut.class);
                 startActivity(intent);
                 finish();
@@ -168,11 +172,8 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
                 Log.d("TAG","onFailure:"+e.toString());
             }
         });
-
     }
     private int getPrice(int pants, int shirts){
-        int pant = pants;
-        int shirt = shirts;
         int total_price = (pants*1000) + (shirts*1000);
         return total_price;
     }
@@ -209,7 +210,6 @@ public class OrderPage extends AppCompatActivity implements OnMapReadyCallback, 
         }catch (Exception e){
             e.printStackTrace();
         }
-
         mapView = findViewById(R.id.mapView);
         mapView.getMapAsync(this);
     }

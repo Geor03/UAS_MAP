@@ -1,15 +1,17 @@
 package umn.ac.id.admin;
 
+import com.google.firebase.firestore.DocumentId;
+
 import java.util.Date;
 
 public class PesananModel {
-    String address, customerId, status, laundry_type;
+    String address, customerId, status, laundry_type,docID;
     Date date;
     int total_pants, total_shirt;
     int total_price;
 
     public PesananModel(){}
-    public PesananModel(String address, String customerId, Date date, String laundry_type, String status, int total_pants, int total_price, int total_shirt){
+    public PesananModel(String address, String customerId, Date date, String laundry_type, String status, int total_pants, int total_price, int total_shirt, String docID){
         this.address = address;
         this.customerId = customerId;
         this.date = date;
@@ -18,6 +20,16 @@ public class PesananModel {
         this.total_pants = total_pants;
         this.total_price = total_price;
         this.total_shirt = total_shirt;
+        this.docID = docID;
+    }
+
+    public String getCustomerId() {
+        return customerId;
+    }
+
+    @DocumentId
+    public String getDocID() {
+        return docID;
     }
 
     public Date getDate() {
@@ -82,5 +94,10 @@ public class PesananModel {
 
     public void setTotal_shirt(int total_shirt) {
         this.total_shirt = total_shirt;
+    }
+
+    @DocumentId
+    public void setDocID(String docID) {
+        this.docID = docID;
     }
 }

@@ -113,7 +113,6 @@ id cardView4
 id cardView5
 id cardView6
 id card_view
-id cardview_expandable
 id choose_paymentMethod
 id confirm_password
 id constraintCardEstimasi
@@ -169,9 +168,7 @@ id password
 id paymentMethod
 id phone
 id priceOrders
-id price_promo
-id price_shippingCost
-id price_subtotal
+id price_per_item
 id price_totalharga
 id profile
 id profile_image
@@ -182,7 +179,6 @@ id rvOrderList
 id savelogin
 id status
 id subtotal
-id subtotal2
 id switch1
 id textView
 id textView10

@@ -89,8 +89,6 @@ public class PesananSelesaiFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-
-
         recyclerviewPesananSelesai = view.findViewById(R.id.rvPesananSelesai);
         PesananSelesaiArrayList = new ArrayList<PesananModel>();
         PesananSelesaiAdapter = new PesananSelesaiAdapter(getContext(), PesananSelesaiArrayList);
@@ -120,7 +118,6 @@ public class PesananSelesaiFragment extends Fragment {
                             return;
                         }
                     }
-
                     PesananSelesaiAdapter.notifyDataSetChanged();
                 }
             }
